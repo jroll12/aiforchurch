@@ -1,0 +1,23 @@
+{
+  "name": "aiforchurch-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Public site for the Claude for Church Offices workshop, built from the Direction C design.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "serve": "node qa/checks/lib/server.mjs dist 4321",
+    "check": "node qa/checks/run-all.mjs"
+  },
+  "dependencies": {
+    "astro": "7.4.2"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}
