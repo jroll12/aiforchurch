@@ -1,0 +1,19 @@
+/* Direction C, Plain print. Values copied from the :root block in design/*.dc.html. */
+:root{
+  --ground:#FFFFFF;
+  --ink:#111111;
+  --ink2:#4A4A4A;
+  --accent:#C2410C;      /* interactive elements only */
+  --accent-hover:#9A3412; /* button hover, from home-c-desktop */
+  --tint:#F4F4F2;
+  --hair:#BDBDBD;
+  --err:#B42318;
+  --disabled-bg:#E6E6E6;  /* disabled button, text is --ink2 */
+  --sans:'Libre Franklin','Helvetica Neue',Arial,sans-serif;
+
+  /* layout */
+  --max:1200px;
+  --pad-x:40px;           /* 20px below the mobile breakpoint */
+  --col-gap:24px;
+  --rule-top:6px;         /* thick ink rule at page top and above footer */
+}

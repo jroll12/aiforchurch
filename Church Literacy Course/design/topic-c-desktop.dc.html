@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Topic page, C Plain print, desktop</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ground:#FFFFFF;--ink:#111111;--ink2:#4A4A4A;--accent:#C2410C;--tint:#F4F4F2;--hair:#BDBDBD;--err:#B42318;--sans:'Libre Franklin','Helvetica Neue',Arial,sans-serif}
+body{margin:0}
+.pg{display:flex;flex-direction:column;background:var(--ground);color:var(--ink);font:400 18px/1.55 var(--sans);border-top:6px solid var(--ink)}
+.pg *{box-sizing:border-box}
+.pg h1,.pg h2,.pg h3{margin:0;font-weight:800;letter-spacing:-0.02em;text-wrap:balance}
+.pg p{margin:0;text-wrap:pretty}
+.pg a{color:var(--accent);text-underline-offset:3px}
+.pg svg{flex:none}
+.g{width:100%;max-width:1200px;margin:0 auto;padding:0 40px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px}
+.hd{border-bottom:1px solid var(--ink)}
+.hd .g{height:80px;align-items:center}
+.pg a.mark{grid-column:1/5;color:var(--ink);text-decoration:none;font:800 19px/1 var(--sans);letter-spacing:.02em;text-transform:uppercase}
+.nav{grid-column:5/13;display:flex;gap:28px;justify-content:flex-end}
+.pg .nav a{color:var(--ink);text-decoration:none;font-size:16px;font-weight:500}
+.pg .nav a:hover{text-decoration:underline}
+.top .g{padding-top:56px;padding-bottom:48px}
+.top .l{grid-column:1/4}
+.k{font:700 14px/1.4 var(--sans);letter-spacing:.1em;text-transform:uppercase}
+.num{font:300 120px/0.85 var(--sans);letter-spacing:-0.05em;margin-top:14px}
+.top .r{grid-column:4/13}
+.pg .top h1{font-size:64px;line-height:1;letter-spacing:-0.035em;margin-bottom:20px}
+.meta{font:700 14px/1.4 var(--sans);letter-spacing:.1em;text-transform:uppercase;margin-bottom:24px}
+.outcome{font-size:26px;line-height:1.35;font-weight:500;letter-spacing:-0.01em;margin-bottom:32px}
+.pl{font-weight:700;margin-bottom:10px}
+.seg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px}
+.seg i{display:block;height:16px;border:1.5px solid var(--ink)}
+.seg i.d{background:var(--ink)}
+.seg i.c{background:var(--tint);border-width:3px}
+.s{border-top:1px solid var(--ink)}
+.s .g{padding-top:40px;padding-bottom:56px}
+.pg h2.lab{grid-column:1/4;font:700 14px/1.4 var(--sans);letter-spacing:.1em;text-transform:uppercase}
+.ct{grid-column:4/13}
+.big{font-size:22px;line-height:1.45;max-width:760px}
+.steps{list-style:none;margin:0;padding:0;border-bottom:1px solid var(--hair)}
+.stp{display:grid;grid-template-columns:72px 36px 1fr;column-gap:16px;align-items:start;padding:20px 16px;border-top:1px solid var(--hair)}
+.stp.cur{outline:2px solid var(--ink);outline-offset:-2px;background:var(--tint)}
+.stp .no{font:300 56px/0.9 var(--sans);letter-spacing:-0.04em}
+.stp input{width:28px;height:28px;margin:4px 0 0;accent-color:var(--accent)}
+.stp label{font-size:20px;line-height:1.5}
+.stp.done label{color:var(--ink2)}
+.here{display:inline-block;margin-top:10px;background:var(--ink);color:#fff;font:700 14px/1 var(--sans);letter-spacing:.08em;text-transform:uppercase;padding:7px 10px}
+.call{border:1.5px solid var(--ink);padding:28px;max-width:760px}
+.call .t{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.call h3{font-size:26px;line-height:1.2}
+.call p{font-size:18px}
+.rule h3{font-size:40px;line-height:1.1;letter-spacing:-0.03em;margin-bottom:12px}
+.safe{display:flex;gap:16px;align-items:flex-start;border:1.5px solid var(--ink);padding:24px;max-width:760px;font-size:20px}
+.dls{border-bottom:1px solid var(--hair)}
+.pg a.dl{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:22px 0;border-top:1px solid var(--hair);color:var(--ink);text-decoration:none}
+.dl .nm{font:800 22px/1.25 var(--sans);letter-spacing:-0.01em}
+.dl .mt{color:var(--ink2);font-size:17px}
+.dl .go{display:flex;align-items:center;gap:8px;color:var(--accent);font-weight:700;font-size:17px}
+.pg a.nx{display:inline-flex;flex-direction:column;gap:6px;text-decoration:none}
+.nx .lb{font:700 14px/1.4 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--ink)}
+.nx .tt{display:flex;align-items:center;gap:14px;font:800 40px/1.1 var(--sans);letter-spacing:-0.03em;color:var(--accent)}
+.ft{margin-top:auto;border-top:6px solid var(--ink)}
+.ft .g{padding-top:36px;padding-bottom:48px;font-size:16px;color:var(--ink2)}
+.ft .c{grid-column:1/13}
+.ft p+p{margin-top:4px}
+</style>
+</helmet>
+<div class="pg" data-screen="11_Topic_C_desktop" style="min-height: 2800px">
+<header class="hd" data-component="PageHeader">
+<div class="g">
+<a class="mark" href="#">Claude for Church Offices</a>
+<nav class="nav" aria-label="Member"><a href="#">Course home</a><a href="#" aria-current="page" style="text-decoration:underline">Topics</a><a href="#">Resources</a><a href="#">Account</a></nav>
+</div>
+</header>
+<main>
+<section class="top" aria-labelledby="h1"><div class="g">
+<div class="l"><p class="k">Topic 1 of 7</p><p class="num" aria-hidden="true">01</p></div>
+<div class="r">
+<h1 id="h1">Weekly newsletter from staff notes</h1>
+<p class="meta">About 30 minutes</p>
+<p class="outcome">By the end, you can turn a week of staff notes into a newsletter draft in your church’s voice in about 30 minutes, with every date, time and room traced to a source.</p>
+<div data-component="ProgressBar" role="img" aria-label="2 of 4 steps done"><p class="pl">2 of 4 steps done</p><div class="seg"><i class="d"></i><i class="d"></i><i class="c"></i><i></i></div></div>
+</div>
+</div></section>
+
+<section class="s" aria-labelledby="idea"><div class="g">
+<h2 class="lab" id="idea">The idea, 5 minutes</h2>
+<div class="ct"><p class="big">Claude drafts quickly, but it can fill gaps with guesses. The fix is simple: ask it to show where every date, time and room came from, then check those against your calendar.</p></div>
+</div></section>
+
+<section class="s" aria-labelledby="ex"><div class="g">
+<h2 class="lab" id="ex">The exercise</h2>
+<div class="ct"><ol class="steps" data-component="StepList">
+<li class="stp done"><span class="no" aria-hidden="true">1</span><input type="checkbox" id="st1" checked="checked"><label for="st1">Make a Project for the newsletter. Add instructions, a short voice guide and two past newsletters as examples.</label></li>
+<li class="stp done"><span class="no" aria-hidden="true">2</span><input type="checkbox" id="st2" checked="checked"><label for="st2">Paste this week’s staff notes. Ask for a draft and a facts table: every date, time, room and name, each with the line from the notes it came from.</label></li>
+<li class="stp cur" aria-current="step"><span class="no" aria-hidden="true">3</span><input type="checkbox" id="st3"><div><label for="st3">Tell Claude to mark anything without a source line [CONFIRM] instead of filling the gap.</label><br><span class="here">You are here</span></div></li>
+<li class="stp"><span class="no" aria-hidden="true">4</span><input type="checkbox" id="st4"><label for="st4">Check the facts table against the church calendar. Edit for voice, then send.</label></li>
+</ol></div>
+</div></section>
+
+<section class="s" aria-labelledby="watch"><div class="g">
+<h2 class="lab" id="watch">Watch for this</h2>
+<div class="ct"><div class="call" data-component="CalloutPanel">
+<div class="t"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg><h3>A stale time.</h3></div>
+<p>An old newsletter says Bible study meets Tuesday at 9:30 in Fellowship Hall. This week’s notes say it moved to Thursday at 6:30 in Room 4. A draft can still say Tuesday.</p>
+</div></div>
+</div></section>
+
+<section class="s rule" aria-labelledby="habit"><div class="g">
+<h2 class="lab" id="habit">The habit</h2>
+<div class="ct"><h3>Source-line check.</h3><p class="big">Every date, time, room and name in the draft needs a source line from the notes. No source line means delete it or mark it [CONFIRM]. Then compare the facts table with the calendar.</p></div>
+</div></section>
+
+<section class="s" aria-labelledby="safe"><div class="g">
+<h2 class="lab" id="safe">Data safety</h2>
+<div class="ct"><div class="safe" data-component="Notice"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg><p>Public announcements only. Keep prayer requests, health details, children’s names and giving information out of this exercise.</p></div></div>
+</div></section>
+
+<section class="s" aria-labelledby="dl"><div class="g">
+<h2 class="lab" id="dl">Downloads</h2>
+<div class="ct dls">
+<a class="dl" data-component="DownloadRow" href="#"><span><span class="nm">Handout (PDF)</span><br><span class="mt">One page to print or keep.</span></span><span class="go"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>Download</span></a>
+<a class="dl" data-component="DownloadRow" href="#"><span><span class="nm">Sample files, all labeled FAKE</span><br><span class="mt">Staff notes, two past newsletters, church calendar.</span></span><span class="go"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>Download</span></a>
+</div>
+</div></section>
+
+<section class="s" aria-labelledby="next"><div class="g">
+<h2 class="lab" id="next">Next</h2>
+<div class="ct"><a class="nx" data-component="Button" href="#"><span class="lb">Next topic</span><span class="tt">Church AI use policy <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a></div>
+</div></section>
+</main>
+<footer class="ft" data-component="Footer">
+<div class="g"><div class="c">
+<p>Course materials are drafted with AI, then taught and checked by Jarret Roloff.</p>
+<p>Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]</p>
+</div></div>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2800}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

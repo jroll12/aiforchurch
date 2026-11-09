@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Home, C Plain print, mobile</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ground:#FFFFFF;--ink:#111111;--ink2:#4A4A4A;--accent:#C2410C;--tint:#F4F4F2;--hair:#BDBDBD;--err:#B42318;--sans:'Libre Franklin','Helvetica Neue',Arial,sans-serif}
+body{margin:0}
+.pg{display:flex;flex-direction:column;background:var(--ground);color:var(--ink);font:400 17px/1.55 var(--sans);border-top:6px solid var(--ink)}
+.pg *{box-sizing:border-box}
+.pg h1,.pg h2,.pg h3{margin:0;font-weight:800;letter-spacing:-0.02em;text-wrap:balance}
+.pg p{margin:0;text-wrap:pretty}
+.pg a{color:var(--accent);text-underline-offset:3px}
+.pg svg{flex:none}
+.in{padding:0 20px}
+.hd{border-bottom:1px solid var(--ink)}
+.hd .in{height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.pg a.mark{color:var(--ink);text-decoration:none;font:800 16px/1.1 var(--sans);letter-spacing:.02em;text-transform:uppercase}
+.menu{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:1.5px solid var(--ink);border-radius:0;background:var(--ground);color:var(--ink)}
+.pg a.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:0;background:var(--accent);color:#fff;font:700 17px/1 var(--sans);text-decoration:none;letter-spacing:.01em}
+.pg a.ghost{display:flex;align-items:center;justify-content:center;min-height:44px;font-weight:700;font-size:17px}
+.hero{padding:36px 0 40px}
+.eyebrow{font:700 14px/1.4 var(--sans);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px}
+.pg .hero h1{font-size:40px;line-height:1;letter-spacing:-0.035em;margin-bottom:24px}
+.lede{font-size:19px;line-height:1.45;margin-bottom:20px}
+.cta{display:flex;flex-direction:column;gap:8px;margin-bottom:24px}
+.facts{margin:0;border-top:1px solid var(--ink)}
+.facts div{display:grid;grid-template-columns:80px 1fr;gap:12px;padding:14px 0;border-bottom:1px solid var(--hair)}
+.facts dt{font:700 14px/1.6 var(--sans);letter-spacing:.08em;text-transform:uppercase}
+.facts dd{margin:0}
+.seatnote{margin-top:16px;border:1.5px solid var(--ink);padding:12px 14px;font-weight:700;font-size:17px;display:flex;gap:10px;align-items:center}
+.s{border-top:1px solid var(--ink);padding:32px 0 48px}
+.pg h2.lab{font:700 14px/1.4 var(--sans);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px}
+.big{font-size:22px;line-height:1.35;font-weight:500;letter-spacing:-0.01em}
+.mod{display:grid;grid-template-columns:72px 1fr;column-gap:16px;padding:24px 0;border-top:1px solid var(--hair)}
+.mod:first-of-type{border-top:0;padding-top:0}
+.mod .num{font:300 56px/0.9 var(--sans);letter-spacing:-0.04em;grid-row:1/3}
+.mod h3{font-size:22px;line-height:1.2;margin-bottom:6px}
+.mod p{color:var(--ink2)}
+.more{margin-top:20px;color:var(--ink2);font-size:16px}
+.st{padding:20px 0;border-top:1px solid var(--hair)}
+.st:first-of-type{border-top:0;padding-top:0}
+.st .n{font:700 14px/1.4 var(--sans);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.st h3{font-size:22px;line-height:1.25;margin-bottom:8px}
+.st p{font-size:17px;color:var(--ink2)}
+.sq{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.sq li{display:flex;gap:14px;align-items:flex-start;font-size:20px}
+.sq li::before{content:"";width:10px;height:10px;background:var(--ink);margin-top:11px;flex:none}
+.tbl{border-top:1px solid var(--ink);margin-bottom:24px}
+.tbl .r{padding:18px 0;border-bottom:1px solid var(--hair)}
+.tbl h3{font-size:24px;line-height:1.25}
+.tbl p{color:var(--ink2);font-size:17px}
+.tbl .price{font:800 30px/1 var(--sans);letter-spacing:-0.02em;color:var(--ink);margin-top:10px}
+.box{border:1.5px solid var(--ink);padding:20px}
+.box+.box{margin-top:16px}
+.box .t{font:700 14px/1.4 var(--sans);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.faq details{border-top:1px solid var(--hair)}
+.faq details:first-of-type{border-top:0}
+.faq summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:10px 0;font:700 20px/1.3 var(--sans);letter-spacing:-0.01em}
+.faq summary::-webkit-details-marker{display:none}
+.faq p{padding:0 0 22px;color:var(--ink2)}
+.ft{margin-top:auto;border-top:6px solid var(--ink);padding:36px 0 48px;font-size:16px;color:var(--ink2)}
+.ft p+p{margin-top:4px}
+</style>
+</helmet>
+<div class="pg" data-screen="01_Home_C_mobile" style="min-height: 4750px">
+<header class="hd" data-component="PageHeader">
+<div class="in">
+<a class="mark" href="#top">Claude for Church Offices</a>
+<button class="menu" type="button" aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16"/><path d="M4 6h16"/><path d="M4 18h16"/></svg></button>
+</div>
+</header>
+<main id="top">
+<section class="hero in" aria-labelledby="h1">
+<p class="eyebrow">A half-day workshop for church and ministry office staff</p>
+<h1 id="h1">Turn a week of staff notes into a newsletter draft in your church’s voice.</h1>
+<p class="lede">A hands-on, in-person workshop on using Claude for real office work. Every date, time and room checked against a source.</p>
+<div class="cta"><a class="btn" data-component="Button" href="register-c-mobile.dc.html">Reserve seats <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="ghost" href="#topics">See what we cover</a></div>
+<dl class="facts">
+<div><dt>When</dt><dd>[DATE], [START TIME]</dd></div>
+<div><dt>Where</dt><dd>[VENUE]</dd></div>
+<div><dt>Seats</dt><dd>[SEATS LEFT] left</dd></div>
+</dl>
+<p class="seatnote" data-component="Notice"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>[SEATS LEFT] seats left for [DATE] at [VENUE]</p>
+</section>
+
+<section class="s in" aria-labelledby="who">
+<h2 class="lab" id="who">Who it is for</h2>
+<p class="big">Church administrators, communications staff, executive pastors and financial administrators. No technical background needed.</p>
+</section>
+
+<section class="s in" id="topics" aria-labelledby="do">
+<h2 class="lab" id="do">What you will do</h2>
+<article class="mod" data-component="ModuleCard"><span class="num" aria-hidden="true">01</span><h3>Weekly newsletter from staff notes</h3><p>Turn a week of notes into a draft in your church’s voice, with every date, time and room traced to a source.</p></article>
+<article class="mod" data-component="ModuleCard"><span class="num" aria-hidden="true">02</span><h3>A church AI use policy</h3><p>Write a one-page policy your pastor and board can review.</p></article>
+<article class="mod" data-component="ModuleCard"><span class="num" aria-hidden="true">03</span><h3>Prayer chain and care messages, privacy first</h3><p>Format messages without exposing private details.</p></article>
+<p class="more">Seven topics in all. Topics are subject to change.</p>
+</section>
+
+<section class="s in" aria-labelledby="runs">
+<h2 class="lab" id="runs">How the half-day runs</h2>
+<div class="st" data-component="StepCard"><p class="n">Step 1</p><h3>Learn the idea</h3><p>A five-minute explanation of each task, in plain words.</p></div>
+<div class="st" data-component="StepCard"><p class="n">Step 2</p><h3>Try it</h3><p>Work through a short exercise using invented sample files.</p></div>
+<div class="st" data-component="StepCard"><p class="n">Step 3</p><h3>Catch the mistake</h3><p>Watch Claude get something wrong, then learn the habit that catches it.</p></div>
+</section>
+
+<section class="s in" aria-labelledby="leave">
+<h2 class="lab" id="leave">What you leave with</h2>
+<ul class="sq">
+<li data-component="ChecklistItem">Handouts for each topic</li>
+<li data-component="ChecklistItem">Sample files to practice with, all invented</li>
+<li data-component="ChecklistItem">A draft AI use policy for your board to review [CONFIRM]</li>
+</ul>
+</section>
+
+<section class="s in" aria-labelledby="seats">
+<h2 class="lab" id="seats">Choose your seats</h2>
+<div class="tbl">
+<div class="r" data-component="SeatOption"><h3>One seat</h3><p>For a single staff member.</p><p class="price">[SEAT PRICE]</p></div>
+<div class="r" data-component="SeatOption"><h3>Three seats for your office</h3><p>For a small office that wants to learn together.</p><p class="price">[3-SEAT PRICE]</p></div>
+</div>
+<a class="btn" data-component="Button" href="register-c-mobile.dc.html">Reserve seats <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+</section>
+
+<section class="s in" aria-label="Safety and scope">
+<h2 class="lab">Our promises</h2>
+<div class="box" data-component="Notice"><p class="t">Safe by design</p><p>Workshops use invented sample data only. Bring no real names, giving, prayer or child information.</p></div>
+<div class="box" data-component="Notice"><p class="t">Our scope</p><p>This covers office administration, not sermons or pastoral care.</p></div>
+</section>
+
+<section class="s in faq" id="faq" aria-labelledby="q">
+<h2 class="lab" id="q">Questions</h2>
+<details open="open" data-component="FaqItem"><summary>Do we need a paid Claude account? <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg></summary><p>The newsletter topic works on a free account. We will list what each topic needs before you register. [CONFIRM]</p></details>
+<details data-component="FaqItem"><summary>Can our whole office come? <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary><p>Yes. The three-seat option is built for a small office, and you can register more people. [CONFIRM maximum per church]</p></details>
+<details data-component="FaqItem"><summary>Is our information safe? <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary><p>Nothing from your church is needed. We use invented sample data, and one topic shows how to keep private information out of AI tools.</p></details>
+<details data-component="FaqItem"><summary>Is this about sermons? <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary><p>No. This covers office administration, not sermons or pastoral care.</p></details>
+<details data-component="FaqItem"><summary>What if we are new to AI? <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary><p>That is who this is for. Every exercise is step by step, and no technical background is needed.</p></details>
+<details data-component="FaqItem"><summary>What if our board must approve it? <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5v14"/></svg></summary><p>We made a one-page summary for exactly that. See For your board.</p></details>
+</section>
+</main>
+<footer class="ft in" data-component="Footer">
+<p>Course materials are drafted with AI, then taught and checked by Jarret Roloff.</p>
+<p>Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]</p>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":4750}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

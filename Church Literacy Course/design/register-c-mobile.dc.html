@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Register, C Plain print, mobile</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ground:#FFFFFF;--ink:#111111;--ink2:#4A4A4A;--accent:#C2410C;--tint:#F4F4F2;--hair:#BDBDBD;--err:#B42318;--sans:'Libre Franklin','Helvetica Neue',Arial,sans-serif}
+body{margin:0}
+.pg{display:flex;flex-direction:column;background:var(--ground);color:var(--ink);font:400 17px/1.55 var(--sans);border-top:6px solid var(--ink)}
+.pg *{box-sizing:border-box}
+.pg h1,.pg h2,.pg h3{margin:0;font-weight:800;letter-spacing:-0.02em;text-wrap:balance}
+.pg p{margin:0;text-wrap:pretty}
+.pg a{color:var(--accent);text-underline-offset:3px}
+.pg svg{flex:none}
+.in{padding:0 20px}
+.hd{border-bottom:1px solid var(--ink)}
+.hd .in{height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.pg a.mark{color:var(--ink);text-decoration:none;font:800 16px/1.1 var(--sans);letter-spacing:.02em;text-transform:uppercase}
+.menu{width:44px;height:44px;display:flex;align-items:center;justify-content:center;border:1.5px solid var(--ink);border-radius:0;background:var(--ground);color:var(--ink)}
+.top{padding-top:36px;padding-bottom:32px}
+.k{font:700 14px/1.4 var(--sans);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+.pg .top h1{font-size:40px;line-height:1;letter-spacing:-0.035em;margin-bottom:12px}
+.lede{font-size:18px;color:var(--ink2);margin-bottom:20px}
+.prog{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border:1.5px solid var(--ink)}
+.prog li{display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 4px;font-weight:700;font-size:16px;color:var(--ink2);text-align:center}
+.prog li+li{border-left:1.5px solid var(--ink)}
+.prog .done{color:var(--ink)}
+.prog .cur{background:var(--ink);color:#fff}
+.sn{width:28px;height:28px;display:flex;align-items:center;justify-content:center;border:1.5px solid currentColor;font:700 15px/1 var(--sans)}
+.s{border-top:1px solid var(--ink);padding:32px 0 48px}
+.pg h2.lab{font:700 14px/1.4 var(--sans);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px}
+.srows{border-bottom:1px solid var(--hair)}
+.srow{display:grid;grid-template-columns:28px 1fr;column-gap:14px;align-items:start;padding:18px 12px;border-top:1px solid var(--hair);cursor:pointer}
+.srow.on{outline:2px solid var(--ink);outline-offset:-2px;background:var(--tint)}
+.srow input{grid-row:1/4;width:24px;height:24px;margin:2px 0 0;accent-color:var(--accent)}
+.srow .t{font:800 22px/1.25 var(--sans);letter-spacing:-0.01em}
+.srow .p{font:800 28px/1.2 var(--sans);letter-spacing:-0.02em;margin:2px 0}
+.srow .d{color:var(--ink2);font-size:17px}
+.stack{display:grid;gap:16px}
+.fld{display:flex;flex-direction:column;gap:8px}
+.fld label{font-weight:700;font-size:16px}
+.fld .n{font-weight:400;color:var(--ink2)}
+.inp{width:100%;height:52px;border:1.5px solid var(--ink);border-radius:0;padding:0 14px;font:400 17px/1 var(--sans);color:var(--ink);background:var(--ground)}
+textarea.inp{height:120px;padding:12px 14px;line-height:1.5;resize:none}
+.inp.bad{border:3px solid var(--err)}
+.err{display:flex;align-items:flex-start;gap:8px;color:var(--err);font-weight:700;font-size:16px}
+.err svg{margin-top:3px}
+.stat{font-weight:700;margin-bottom:8px}
+.att{padding:20px 0;border-top:1px solid var(--hair)}
+.att .h{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.att h3{font-size:20px}
+.rm{width:44px;height:44px;border:1.5px solid var(--ink);border-radius:0;background:var(--ground);color:var(--ink);display:flex;align-items:center;justify-content:center}
+.afs{display:grid;gap:14px}
+.pg .btn,.pg button.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:0;background:var(--accent);color:#fff;font:700 17px/1 var(--sans);text-decoration:none;letter-spacing:.01em;border:0;cursor:pointer;width:100%}
+.pg .btn.alt{background:var(--ground);color:var(--ink);border:1.5px solid var(--ink)}
+.pg .btn[disabled]{background:#E6E6E6;color:#4A4A4A;cursor:not-allowed;border:0}
+.helper{margin-top:10px;color:var(--ink2);font-size:16px}
+.chkrow{display:flex;gap:14px;align-items:center;margin-top:16px;min-height:44px}
+.chkrow input{width:24px;height:24px;margin:0;accent-color:var(--accent)}
+.facts{margin:0;border-top:1px solid var(--ink)}
+.facts div{display:grid;grid-template-columns:84px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--hair)}
+.facts dt{font:700 14px/1.7 var(--sans);letter-spacing:.08em;text-transform:uppercase}
+.facts dd{margin:0}
+.acts{display:flex;flex-direction:column;gap:12px;margin-top:24px}
+.ft{margin-top:auto;border-top:6px solid var(--ink);padding:36px 0 48px;font-size:16px;color:var(--ink2)}
+.ft p+p{margin-top:4px}
+</style>
+</helmet>
+<div class="pg" data-screen="05_Register_C_mobile" style="min-height: 3800px">
+<header class="hd" data-component="PageHeader">
+<div class="in">
+<a class="mark" href="home-c-mobile.dc.html">Claude for Church Offices</a>
+<button class="menu" type="button" aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h16"/><path d="M4 6h16"/><path d="M4 18h16"/></svg></button>
+</div>
+</header>
+<main>
+<section class="top in" aria-labelledby="h1">
+<p class="k">Step 2 of 3</p>
+<h1 id="h1">Reserve your seats</h1>
+<p class="lede">You will review everything before you pay.</p>
+<ol class="prog" aria-label="Progress" data-component="ProgressSteps">
+<li class="done"><span class="sn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Seats</li>
+<li class="cur" aria-current="step"><span class="sn">2</span>Attendees</li>
+<li><span class="sn">3</span>Review</li>
+</ol>
+</section>
+
+<section class="s in" aria-labelledby="s1">
+<h2 class="lab" id="s1">Your seats</h2>
+<div class="srows" role="radiogroup" aria-labelledby="s1" data-component="SeatPicker">
+<label class="srow"><input type="radio" name="seats" id="seat-1"><span class="t">One seat</span><span class="p">[SEAT PRICE]</span><span class="d">For a single staff member.</span></label>
+<label class="srow on"><input type="radio" name="seats" id="seat-3" checked="checked"><span class="t">Three seats for your office</span><span class="p">[3-SEAT PRICE]</span><span class="d">For a small office that wants to learn together.</span></label>
+</div>
+</section>
+
+<section class="s in" aria-labelledby="s2">
+<h2 class="lab" id="s2">Your church or ministry</h2>
+<div class="stack">
+<div class="fld" data-component="FormField"><label for="org">Organization name</label><input class="inp" id="org" type="text" value="Sample Community Church"></div>
+<div class="fld" data-component="FormField"><label for="contact">Contact person</label><input class="inp" id="contact" type="text" value="Sample Person A"></div>
+</div>
+</section>
+
+<section class="s in" aria-labelledby="s3">
+<h2 class="lab" id="s3">Who is coming</h2>
+<p class="stat">2 of 3 seats filled</p>
+
+<div class="att" data-component="AttendeeRow">
+<div class="h"><h3>Attendee 1</h3><button class="rm" type="button" aria-label="Remove attendee 1"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button></div>
+<div class="afs">
+<div class="fld" data-component="FormField"><label for="n1">Name</label><input class="inp" id="n1" type="text" value="Sample Person A"></div>
+<div class="fld" data-component="FormField"><label for="e1">Email</label><input class="inp" id="e1" type="email" value="person.a@example.org"></div>
+<div class="fld" data-component="FormField"><label for="r1">Role</label><select class="inp" id="r1" value="Administrator"><option>Administrator</option><option>Communications</option><option>Pastor</option><option>Finance</option><option>Other</option></select></div>
+</div>
+</div>
+
+<div class="att" data-component="AttendeeRow">
+<div class="h"><h3>Attendee 2</h3><button class="rm" type="button" aria-label="Remove attendee 2"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button></div>
+<div class="afs">
+<div class="fld" data-component="FormField"><label for="n2">Name</label><input class="inp" id="n2" type="text" value="Sample Person B"></div>
+<div class="fld" data-component="FormField"><label for="e2">Email</label><input class="inp bad" id="e2" type="email" aria-invalid="true" aria-describedby="e2-err"><p class="err" id="e2-err"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>Add an email so we can send the confirmation.</p></div>
+<div class="fld" data-component="FormField"><label for="r2">Role</label><select class="inp" id="r2" value="Communications"><option>Administrator</option><option>Communications</option><option>Pastor</option><option>Finance</option><option>Other</option></select></div>
+</div>
+</div>
+
+<div class="att" data-component="AttendeeRow">
+<div class="h"><h3>Attendee 3</h3><button class="rm" type="button" aria-label="Remove attendee 3"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button></div>
+<div class="afs">
+<div class="fld" data-component="FormField"><label for="n3">Name</label><input class="inp" id="n3" type="text" placeholder="Full name"></div>
+<div class="fld" data-component="FormField"><label for="e3">Email</label><input class="inp" id="e3" type="email" placeholder="name@church.org"></div>
+<div class="fld" data-component="FormField"><label for="r3">Role</label><select class="inp" id="r3" value=""><option value="">Choose a role</option><option>Administrator</option><option>Communications</option><option>Pastor</option><option>Finance</option><option>Other</option></select></div>
+</div>
+</div>
+<button class="btn alt" type="button" disabled="disabled" data-component="Button">Add another attendee</button>
+<p class="helper">Three seats, three rows. Choose more seats to add people.</p>
+</section>
+
+<section class="s in" aria-labelledby="s4">
+<h2 class="lab" id="s4">One question for us</h2>
+<div class="fld" data-component="FormField"><label for="task">What office task takes the most time? <span class="n">(optional)</span></label><textarea class="inp" id="task" rows="4" placeholder="For example: building the weekly newsletter"></textarea></div>
+<div class="chkrow"><input type="checkbox" id="consent"><label for="consent">Email me about this workshop and future dates.</label></div>
+</section>
+
+<section class="s in" aria-labelledby="s5">
+<h2 class="lab" id="s5">Your order</h2>
+<div data-component="SummaryPanel">
+<dl class="facts">
+<div><dt>Seats</dt><dd>Three seats for your office</dd></div>
+<div><dt>Price</dt><dd>[3-SEAT PRICE]</dd></div>
+<div><dt>When</dt><dd>[DATE], [START TIME]</dd></div>
+<div><dt>Where</dt><dd>[VENUE]</dd></div>
+<div><dt>Refunds</dt><dd>[REFUND POLICY]</dd></div>
+</dl>
+<div class="acts"><button class="btn" type="button" data-component="Button">Continue to review <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button><a class="btn alt" data-component="Button" href="home-c-mobile.dc.html">Back</a></div>
+</div>
+</section>
+</main>
+<footer class="ft in" data-component="Footer">
+<p>Course materials are drafted with AI, then taught and checked by Jarret Roloff.</p>
+<p>Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]</p>
+</footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":3800}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

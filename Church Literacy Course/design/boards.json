@@ -1,0 +1,38 @@
+{
+  "home-c-desktop.dc.html": {
+    "title": "01_Home_C_desktop",
+    "width": 1440,
+    "estimated_height": 3600,
+    "note": "height is an estimate of full page height, not measured"
+  },
+  "home-c-mobile.dc.html": {
+    "title": "01_Home_C_mobile",
+    "width": 390,
+    "estimated_height": 4750,
+    "note": "height is an estimate of full page height, not measured"
+  },
+  "register-c-desktop.dc.html": {
+    "title": "05_Register_C_desktop",
+    "width": 1440,
+    "estimated_height": 2300,
+    "note": "height is an estimate of full page height, not measured"
+  },
+  "register-c-mobile.dc.html": {
+    "title": "05_Register_C_mobile",
+    "width": 390,
+    "estimated_height": 3800,
+    "note": "height is an estimate of full page height, not measured"
+  },
+  "topic-c-desktop.dc.html": {
+    "title": "11_Topic_C_desktop",
+    "width": 1440,
+    "estimated_height": 2800,
+    "note": "height is an estimate of full page height, not measured"
+  },
+  "topic-c-mobile.dc.html": {
+    "title": "11_Topic_C_mobile",
+    "width": 390,
+    "estimated_height": 3650,
+    "note": "height is an estimate of full page height, not measured"
+  }
+}
