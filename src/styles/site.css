@@ -6,7 +6,11 @@
  * Lines marked "derived" have no artboard; see qa/questions.md.
  */
 
-/* ---------- base ---------- */
+/* ---------- base ----------
+ * .pg p { margin: 0 } outranks single-class margins on p elements, exactly as in the
+ * artboards, so .eyebrow, .seatnote, .more, .stat, .helper and .k keep their declared
+ * margins in the source but render without them, matching what the artboards show.
+ */
 *, *::before, *::after { box-sizing: border-box; }
 html { background: var(--ground); -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body { margin: 0; }
@@ -159,7 +163,9 @@ html:not(.js) .menu { display: none; }
   letter-spacing: -0.035em;
   margin-bottom: 24px;
 }
-.hero .lede { font-size: 19px; line-height: 1.45; margin-bottom: 20px; }
+/* The artboard CSS declares margin-bottom on .lede, but its .pg p reset outranks it, so the artboards
+   render no gap here. The page matches the artboards; see qa/questions.md (design file issues). */
+.hero .lede { font-size: 19px; line-height: 1.45; }
 .cta { display: flex; flex-direction: column; gap: 8px; margin-bottom: 24px; }
 .facts { margin: 0; border-top: 1px solid var(--ink); }
 .facts div { display: grid; gap: 12px; border-bottom: 1px solid var(--hair); }
@@ -183,7 +189,7 @@ html:not(.js) .menu { display: none; }
   .pg .hero h1 { grid-column: 1 / 12; margin-bottom: 40px; }
   .hero .l { grid-column: 1 / 7; }
   .hero .r { grid-column: 8 / 13; }
-  .hero .lede { font-size: 22px; margin-bottom: 28px; }
+  .hero .lede { font-size: 22px; }
   .cta { flex-direction: row; align-items: center; gap: 24px; margin-bottom: 0; }
   .hero .facts div { grid-template-columns: 90px 1fr; }
   .seatnote { padding: 12px 16px; }
@@ -302,7 +308,7 @@ html:not(.js) .menu { display: none; }
   letter-spacing: -0.035em;
   margin-bottom: 12px;
 }
-.top .lede { font-size: 18px; color: var(--ink2); margin-bottom: 20px; }
+.top .lede { font-size: 18px; color: var(--ink2); } /* mobile artboard: margin cancelled by the p reset, as above */
 
 @media (min-width: 900px) {
   .top .g { padding-top: 56px; padding-bottom: 48px; }

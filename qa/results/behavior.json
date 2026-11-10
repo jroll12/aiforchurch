@@ -1,0 +1,342 @@
+{
+  "check": "behavior",
+  "target": "built",
+  "ranAt": "2026-11-10T22:33:36.863Z",
+  "status": "pass",
+  "summary": "25 of 25 behavior assertions hold",
+  "failed": [],
+  "steps": [
+    {
+      "name": "first load",
+      "ok": true,
+      "actual": {
+        "checked": null,
+        "rows": 1,
+        "status": null,
+        "helper": false,
+        "addDisabled": true,
+        "summarySeats": null,
+        "summaryPrice": null,
+        "removeDisabled": [
+          true
+        ],
+        "focus": null
+      },
+      "wanted": {
+        "checked": null,
+        "rows": 1,
+        "status": null,
+        "helper": false,
+        "addDisabled": true,
+        "summarySeats": null,
+        "summaryPrice": null,
+        "removeDisabled": [
+          true
+        ],
+        "focus": null
+      }
+    },
+    {
+      "name": "three seats: rows, status, helper, summary",
+      "ok": true,
+      "actual": {
+        "checked": "3",
+        "rows": 3,
+        "status": "0 of 3 seats filled",
+        "helper": true,
+        "addDisabled": true,
+        "summarySeats": "Three seats for your office",
+        "summaryPrice": "[3-SEAT PRICE]",
+        "removeDisabled": [
+          false,
+          false,
+          false
+        ],
+        "focus": null
+      },
+      "wanted": {
+        "checked": "3",
+        "rows": 3,
+        "status": "0 of 3 seats filled",
+        "helper": true,
+        "addDisabled": true,
+        "summarySeats": "Three seats for your office",
+        "summaryPrice": "[3-SEAT PRICE]",
+        "removeDisabled": [
+          false,
+          false,
+          false
+        ],
+        "focus": null
+      }
+    },
+    {
+      "name": "status counts rows with any value",
+      "ok": true,
+      "actual": "2 of 3 seats filled",
+      "wanted": "2 of 3 seats filled"
+    },
+    {
+      "name": "remove: two rows, Add enabled and focused, helper hidden",
+      "ok": true,
+      "actual": [
+        2,
+        false,
+        "Add another attendee",
+        false
+      ],
+      "wanted": [
+        2,
+        false,
+        "Add another attendee",
+        false
+      ]
+    },
+    {
+      "name": "remove: row 2 moved up",
+      "ok": true,
+      "actual": [
+        "",
+        "Pastor"
+      ],
+      "wanted": [
+        "",
+        "Pastor"
+      ]
+    },
+    {
+      "name": "add: three rows, focus on new name field",
+      "ok": true,
+      "actual": [
+        3,
+        "n3",
+        true
+      ],
+      "wanted": [
+        3,
+        "n3",
+        true
+      ]
+    },
+    {
+      "name": "one seat: one row, summary, no helper",
+      "ok": true,
+      "actual": [
+        1,
+        "1 of 1 seats filled",
+        "One seat",
+        "[SEAT PRICE]",
+        false,
+        [
+          true
+        ]
+      ],
+      "wanted": [
+        1,
+        "1 of 1 seats filled",
+        "One seat",
+        "[SEAT PRICE]",
+        false,
+        [
+          true
+        ]
+      ]
+    },
+    {
+      "name": "three again: hidden row kept its value",
+      "ok": true,
+      "actual": "Kept Value",
+      "wanted": "Kept Value"
+    },
+    {
+      "name": "no seats chosen",
+      "ok": true,
+      "actual": {
+        "text": "Choose how many seats.",
+        "invalid": null,
+        "describedby": null
+      },
+      "wanted": {
+        "text": "Choose how many seats.",
+        "invalid": null,
+        "describedby": null
+      }
+    },
+    {
+      "name": "seat group marked invalid",
+      "ok": true,
+      "actual": [
+        "true",
+        "seat-1"
+      ],
+      "wanted": [
+        "true",
+        "seat-1"
+      ]
+    },
+    {
+      "name": "organization required",
+      "ok": true,
+      "actual": "Add your organization name.",
+      "wanted": "Add your organization name."
+    },
+    {
+      "name": "contact required",
+      "ok": true,
+      "actual": "Add a contact person.",
+      "wanted": "Add a contact person."
+    },
+    {
+      "name": "at least one attendee",
+      "ok": true,
+      "actual": "Add a name.",
+      "wanted": "Add a name."
+    },
+    {
+      "name": "choosing seats clears the seat error",
+      "ok": true,
+      "actual": null,
+      "wanted": null
+    },
+    {
+      "name": "typing clears the field error",
+      "ok": true,
+      "actual": null,
+      "wanted": null
+    },
+    {
+      "name": "row with only an email",
+      "ok": true,
+      "actual": [
+        "Add a name.",
+        "Enter a valid email.",
+        "Choose a role."
+      ],
+      "wanted": [
+        "Add a name.",
+        "Enter a valid email.",
+        "Choose a role."
+      ]
+    },
+    {
+      "name": "focus on first invalid field",
+      "ok": true,
+      "actual": "n1",
+      "wanted": "n1"
+    },
+    {
+      "name": "empty rows are allowed",
+      "ok": true,
+      "actual": [
+        null,
+        null
+      ],
+      "wanted": [
+        null,
+        null
+      ]
+    },
+    {
+      "name": "error linked to field",
+      "ok": true,
+      "actual": {
+        "text": "Enter a valid email.",
+        "invalid": "true",
+        "describedby": "e1-err"
+      },
+      "wanted": {
+        "text": "Enter a valid email.",
+        "invalid": "true",
+        "describedby": "e1-err"
+      }
+    },
+    {
+      "name": "no navigation in Stage 1",
+      "ok": true,
+      "actual": "http://127.0.0.1:37605/register/",
+      "wanted": "http://127.0.0.1:37605/register/"
+    },
+    {
+      "name": "saved state shape",
+      "ok": true,
+      "actual": {
+        "v": 1,
+        "seats": 3,
+        "org": "Test Church",
+        "contact": "Test Contact",
+        "attendees": [
+          {
+            "name": "Test Person",
+            "email": "test.person@church.org",
+            "role": "Finance"
+          }
+        ],
+        "question": "Bulletins",
+        "consent": true
+      },
+      "wanted": {
+        "v": 1,
+        "seats": 3,
+        "org": "Test Church",
+        "contact": "Test Contact",
+        "attendees": [
+          {
+            "name": "Test Person",
+            "email": "test.person@church.org",
+            "role": "Finance"
+          }
+        ],
+        "question": "Bulletins",
+        "consent": true
+      }
+    },
+    {
+      "name": "reference code: 6 characters, no lookalikes",
+      "ok": true,
+      "actual": true,
+      "wanted": true
+    },
+    {
+      "name": "restore: seats and rows",
+      "ok": true,
+      "actual": [
+        "3",
+        3,
+        "1 of 3 seats filled"
+      ],
+      "wanted": [
+        "3",
+        3,
+        "1 of 3 seats filled"
+      ]
+    },
+    {
+      "name": "restore: values",
+      "ok": true,
+      "actual": [
+        "Test Church",
+        "Test Contact",
+        "Test Person",
+        "test.person@church.org",
+        "Finance",
+        "Bulletins",
+        true
+      ],
+      "wanted": [
+        "Test Church",
+        "Test Contact",
+        "Test Person",
+        "test.person@church.org",
+        "Finance",
+        "Bulletins",
+        true
+      ]
+    },
+    {
+      "name": "reference code is stable",
+      "ok": true,
+      "actual": "JH76QS",
+      "wanted": "JH76QS"
+    }
+  ]
+}

@@ -1,0 +1,709 @@
+{
+  "check": "keyboard",
+  "target": "built",
+  "ranAt": "2026-11-10T22:33:27.070Z",
+  "status": "pass",
+  "summary": "4 page layouts walked, all stops visible, FAQ, errors and menu OK",
+  "problems": [],
+  "pages": [
+    {
+      "screen": "home",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.btn \"Reserve seats\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.ghost \"See what we cover\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.btn \"Reserve seats\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "summary \"Do we need a paid Claude account?\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "summary \"Can our whole office come?\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "summary \"Is our information safe?\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "summary \"Is this about sermons?\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "summary \"What if we are new to AI?\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "summary \"What if our board must approve it?\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 11,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]",
+          "a.btn \"Reserve seats\"",
+          "a.ghost \"See what we cover\"",
+          "a.btn \"Reserve seats\"",
+          "summary \"Do we need a paid Claude account?\"",
+          "summary \"Can our whole office come?\"",
+          "summary \"Is our information safe?\"",
+          "summary \"Is this about sermons?\"",
+          "summary \"What if we are new to AI?\"",
+          "summary \"What if our board must approve it?\""
+        ]
+      },
+      "faq": [
+        {
+          "item": 1,
+          "before": true,
+          "afterEnter": false,
+          "afterSpace": true,
+          "ok": true
+        },
+        {
+          "item": 2,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 3,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 4,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 5,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 6,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        }
+      ],
+      "menu": {
+        "opened": {
+          "expanded": "true",
+          "navVisible": true
+        },
+        "next": {
+          "el": "a \"Questions\"",
+          "inNav": true
+        },
+        "closed": {
+          "expanded": "false",
+          "navVisible": false,
+          "focusOnButton": true
+        },
+        "ok": true
+      }
+    },
+    {
+      "screen": "home",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Questions\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.btn.hcta \"Reserve seats\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.btn \"Reserve seats\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.ghost \"See what we cover\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.btn \"Reserve seats\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "summary \"Do we need a paid Claude account?\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "summary \"Can our whole office come?\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "summary \"Is our information safe?\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "summary \"Is this about sermons?\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "summary \"What if we are new to AI?\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "summary \"What if our board must approve it?\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 12,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Questions\"",
+          "a.btn.hcta \"Reserve seats\"",
+          "a.btn \"Reserve seats\"",
+          "a.ghost \"See what we cover\"",
+          "a.btn \"Reserve seats\"",
+          "summary \"Do we need a paid Claude account?\"",
+          "summary \"Can our whole office come?\"",
+          "summary \"Is our information safe?\"",
+          "summary \"Is this about sermons?\"",
+          "summary \"What if we are new to AI?\"",
+          "summary \"What if our board must approve it?\""
+        ]
+      },
+      "faq": [
+        {
+          "item": 1,
+          "before": true,
+          "afterEnter": false,
+          "afterSpace": true,
+          "ok": true
+        },
+        {
+          "item": 2,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 3,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 4,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 5,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 6,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "register",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#seat-1",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#org.inp",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#contact.inp",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#n1.inp",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#e1.inp",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "select#r1.inp \"Choose a roleAdministratorCommunications\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "textarea#task.inp",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#consent",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.btn.alt \"Back\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.btn \"Continue to review\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 12,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]",
+          "input#seat-1",
+          "input#org.inp",
+          "input#contact.inp",
+          "input#n1.inp",
+          "input#e1.inp",
+          "select#r1.inp \"Choose a roleAdministratorCommunications\"",
+          "textarea#task.inp",
+          "input#consent",
+          "a.btn.alt \"Back\"",
+          "button.btn \"Continue to review\""
+        ]
+      },
+      "faq": [],
+      "errors": {
+        "empty": {
+          "fields": [
+            {
+              "el": "div.srows \"One seat[SEAT PRICE]For a single staff m\"",
+              "describedby": [
+                "seats-err"
+              ],
+              "visible": true,
+              "message": "Choose how many seats."
+            },
+            {
+              "el": "input#org.inp",
+              "describedby": [
+                "org-err"
+              ],
+              "visible": true,
+              "message": "Add your organization name."
+            },
+            {
+              "el": "input#contact.inp",
+              "describedby": [
+                "contact-err"
+              ],
+              "visible": true,
+              "message": "Add a contact person."
+            },
+            {
+              "el": "input#n1.inp",
+              "describedby": [
+                "n1-err"
+              ],
+              "visible": true,
+              "message": "Add a name."
+            }
+          ],
+          "focused": "input#seat-1"
+        },
+        "designed": {
+          "fields": [
+            {
+              "el": "input#e2.inp",
+              "describedby": [
+                "e2-err"
+              ],
+              "visible": true,
+              "message": "Add an email so we can send the confirmation."
+            }
+          ],
+          "focused": "input#e2.inp"
+        },
+        "ok": true
+      },
+      "menu": {
+        "opened": {
+          "expanded": "true",
+          "navVisible": true
+        },
+        "next": {
+          "el": "a \"Questions\"",
+          "inNav": true
+        },
+        "closed": {
+          "expanded": "false",
+          "navVisible": false,
+          "focusOnButton": true
+        },
+        "ok": true
+      }
+    },
+    {
+      "screen": "register",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Questions\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#seat-1",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#org.inp",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#contact.inp",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#n1.inp",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#e1.inp",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "select#r1.inp \"Choose a roleAdministratorCommunications\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "textarea#task.inp",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#consent",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.btn.alt \"Back\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.btn \"Continue to review\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 12,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Questions\"",
+          "input#seat-1",
+          "input#org.inp",
+          "input#contact.inp",
+          "input#n1.inp",
+          "input#e1.inp",
+          "select#r1.inp \"Choose a roleAdministratorCommunications\"",
+          "textarea#task.inp",
+          "input#consent",
+          "a.btn.alt \"Back\"",
+          "button.btn \"Continue to review\""
+        ]
+      },
+      "faq": [],
+      "errors": {
+        "empty": {
+          "fields": [
+            {
+              "el": "div.srows \"One seat[SEAT PRICE]For a single staff m\"",
+              "describedby": [
+                "seats-err"
+              ],
+              "visible": true,
+              "message": "Choose how many seats."
+            },
+            {
+              "el": "input#org.inp",
+              "describedby": [
+                "org-err"
+              ],
+              "visible": true,
+              "message": "Add your organization name."
+            },
+            {
+              "el": "input#contact.inp",
+              "describedby": [
+                "contact-err"
+              ],
+              "visible": true,
+              "message": "Add a contact person."
+            },
+            {
+              "el": "input#n1.inp",
+              "describedby": [
+                "n1-err"
+              ],
+              "visible": true,
+              "message": "Add a name."
+            }
+          ],
+          "focused": "input#seat-1"
+        },
+        "designed": {
+          "fields": [
+            {
+              "el": "input#e2.inp",
+              "describedby": [
+                "e2-err"
+              ],
+              "visible": true,
+              "message": "Add an email so we can send the confirmation."
+            }
+          ],
+          "focused": "input#e2.inp"
+        },
+        "ok": true
+      }
+    }
+  ]
+}

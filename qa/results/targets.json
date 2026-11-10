@@ -1,0 +1,710 @@
+{
+  "check": "targets",
+  "target": "built",
+  "ranAt": "2026-11-10T22:33:26.119Z",
+  "status": "pass",
+  "summary": "92 targets measured, 0 below 44px",
+  "failures": [],
+  "samples": [
+    {
+      "screen": "home",
+      "width": 390,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn \"Reserve seats\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn \"Reserve seats\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.ghost \"See what we cover\"",
+          "w": 350,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Do we need a paid Claude account?\"",
+          "w": 350,
+          "h": 72,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Can our whole office come?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Is our information safe?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Is this about sermons?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"What if we are new to AI?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"What if our board must approve it?\"",
+          "w": 350,
+          "h": 72,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "home",
+      "width": 390,
+      "state": "menu open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn \"Reserve seats\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn \"Reserve seats\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.ghost \"See what we cover\"",
+          "w": 350,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Do we need a paid Claude account?\"",
+          "w": 350,
+          "h": 72,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Can our whole office come?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Is our information safe?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Is this about sermons?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"What if we are new to AI?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"What if our board must approve it?\"",
+          "w": 350,
+          "h": 72,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "home",
+      "width": 1440,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "a.btn.hcta \"Reserve seats\"",
+          "w": 169.3,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn \"Reserve seats\"",
+          "w": 199.3,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn \"Reserve seats\"",
+          "w": 199.3,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 76.6,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.ghost \"See what we cover\"",
+          "w": 151.2,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Do we need a paid Claude account?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Can our whole office come?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Is our information safe?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Is this about sermons?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"What if we are new to AI?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"What if our board must approve it?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "register",
+      "width": 390,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.rm[aria-label=\"Remove attendee 1\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn.alt \"Add another attendee\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn.alt \"Back\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn \"Continue to review\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "radio label",
+          "el": "label.srow \"One seat[SEAT PRICE]For a single staff m\"",
+          "w": 350,
+          "h": 128.4,
+          "ok": true
+        },
+        {
+          "group": "radio label",
+          "el": "label.srow \"Three seats for your office[3-SEAT PRICE\"",
+          "w": 350,
+          "h": 154.8,
+          "ok": true
+        },
+        {
+          "group": "checkbox label",
+          "el": "label \"Email me about this workshop and future \"",
+          "w": 312,
+          "h": 52.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "register",
+      "width": 390,
+      "state": "three rows",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.rm[aria-label=\"Remove attendee 1\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.rm[aria-label=\"Remove attendee 2\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.rm[aria-label=\"Remove attendee 3\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn.alt \"Add another attendee\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn.alt \"Back\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn \"Continue to review\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "radio label",
+          "el": "label.srow \"One seat[SEAT PRICE]For a single staff m\"",
+          "w": 350,
+          "h": 128.4,
+          "ok": true
+        },
+        {
+          "group": "radio label",
+          "el": "label.srow \"Three seats for your office[3-SEAT PRICE\"",
+          "w": 350,
+          "h": 154.8,
+          "ok": true
+        },
+        {
+          "group": "checkbox label",
+          "el": "label \"Email me about this workshop and future \"",
+          "w": 312,
+          "h": 52.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "register",
+      "width": 390,
+      "state": "menu open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.rm[aria-label=\"Remove attendee 1\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.rm[aria-label=\"Remove attendee 2\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.rm[aria-label=\"Remove attendee 3\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn.alt \"Add another attendee\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn.alt \"Back\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn \"Continue to review\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "radio label",
+          "el": "label.srow \"One seat[SEAT PRICE]For a single staff m\"",
+          "w": 350,
+          "h": 128.4,
+          "ok": true
+        },
+        {
+          "group": "radio label",
+          "el": "label.srow \"Three seats for your office[3-SEAT PRICE\"",
+          "w": 350,
+          "h": 154.8,
+          "ok": true
+        },
+        {
+          "group": "checkbox label",
+          "el": "label \"Email me about this workshop and future \"",
+          "w": 312,
+          "h": 52.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "register",
+      "width": 1440,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.rm[aria-label=\"Remove attendee 1\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn.alt \"Add another attendee\"",
+          "w": 234.1,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn.alt \"Back\"",
+          "w": 96.2,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn \"Continue to review\"",
+          "w": 238,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "radio label",
+          "el": "label.srow \"One seat[SEAT PRICE]For a single staff m\"",
+          "w": 834,
+          "h": 94.8,
+          "ok": true
+        },
+        {
+          "group": "radio label",
+          "el": "label.srow \"Three seats for your office[3-SEAT PRICE\"",
+          "w": 834,
+          "h": 94.8,
+          "ok": true
+        },
+        {
+          "group": "checkbox label",
+          "el": "label \"Email me about this workshop and future \"",
+          "w": 395.6,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 76.6,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "register",
+      "width": 1440,
+      "state": "three rows",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.rm[aria-label=\"Remove attendee 1\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.rm[aria-label=\"Remove attendee 2\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.rm[aria-label=\"Remove attendee 3\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn.alt \"Add another attendee\"",
+          "w": 234.1,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn.alt \"Back\"",
+          "w": 96.2,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn \"Continue to review\"",
+          "w": 238,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "radio label",
+          "el": "label.srow \"One seat[SEAT PRICE]For a single staff m\"",
+          "w": 834,
+          "h": 94.8,
+          "ok": true
+        },
+        {
+          "group": "radio label",
+          "el": "label.srow \"Three seats for your office[3-SEAT PRICE\"",
+          "w": 834,
+          "h": 94.8,
+          "ok": true
+        },
+        {
+          "group": "checkbox label",
+          "el": "label \"Email me about this workshop and future \"",
+          "w": 395.6,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 76.6,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    }
+  ]
+}

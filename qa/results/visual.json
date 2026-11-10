@@ -1,0 +1,41 @@
+{
+  "check": "visual",
+  "target": "built",
+  "ranAt": "2026-11-10T22:33:37.978Z",
+  "status": "review",
+  "summary": "substitute reference (artboards rendered in Chromium; design/screenshots/ not provided). home@390: heights 4193/4383px, 20% pixels changed; home@1440: heights 3232/3232px, 0.3% pixels changed; register@390: heights 3499/3549px, 12% pixels changed; register@1440: heights 2574/2574px, 0.1% pixels changed",
+  "rows": [
+    {
+      "screen": "home",
+      "width": 390,
+      "image": "qa/screenshots/home-390.jpg",
+      "designHeight": 4193,
+      "builtHeight": 4383,
+      "changedPercent": 20
+    },
+    {
+      "screen": "home",
+      "width": 1440,
+      "image": "qa/screenshots/home-1440.jpg",
+      "designHeight": 3232,
+      "builtHeight": 3232,
+      "changedPercent": 0.3
+    },
+    {
+      "screen": "register",
+      "width": 390,
+      "image": "qa/screenshots/register-390.jpg",
+      "designHeight": 3499,
+      "builtHeight": 3549,
+      "changedPercent": 12
+    },
+    {
+      "screen": "register",
+      "width": 1440,
+      "image": "qa/screenshots/register-1440.jpg",
+      "designHeight": 2574,
+      "builtHeight": 2574,
+      "changedPercent": 0.1
+    }
+  ]
+}

@@ -30,6 +30,7 @@ if (TARGET === 'design' || !fs.existsSync(DIST)) {
   const placeholders = [
     ...new Set(
       read(path.join(ROOT, 'PLACEHOLDERS.md'))
+        .split('\n## ')[0] // the design placeholder table; later sections list config values no page shows
         .split('\n')
         .filter((l) => l.startsWith('| ['))
         .flatMap((l) => l.split('|')[1].match(/\[[^\]]+\]/g) ?? []),

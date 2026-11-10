@@ -13,7 +13,7 @@ import { startServer } from './lib/server.mjs';
 
 const design = process.argv.includes('--design');
 const only = process.argv.find((a) => a.startsWith('--only='))?.slice(7).split(',');
-const CHECKS = ['text-diff', 'overflow', 'contrast', 'keyboard', 'targets', 'zoom', 'visual', 'network', 'guards'].filter(
+const CHECKS = ['text-diff', 'overflow', 'contrast', 'keyboard', 'targets', 'zoom', 'visual', 'network', 'guards', 'behavior'].filter(
   (c) => !only || only.includes(c),
 );
 

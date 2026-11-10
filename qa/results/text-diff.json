@@ -1,0 +1,154 @@
+{
+  "check": "text-diff",
+  "target": "built",
+  "ranAt": "2026-11-10T22:33:21.138Z",
+  "status": "pass",
+  "summary": "16 differences, 0 unexplained, 0 stale expectations",
+  "unexplained": [],
+  "stale": [],
+  "results": [
+    {
+      "screen": "home",
+      "width": 390,
+      "designLines": 64,
+      "builtLines": 64,
+      "diffs": []
+    },
+    {
+      "screen": "home",
+      "width": 1440,
+      "designLines": 68,
+      "builtLines": 65,
+      "diffs": [
+        {
+          "side": "design-only",
+          "text": "Workshop",
+          "at": 1,
+          "explained": true,
+          "reason": "Nav item omitted: /workshop/ is not built in Stage 1 (SITE-KICKOFF-PROMPT.md Stage 1 step 3; CLAUDE.md hard rule 6)."
+        },
+        {
+          "side": "design-only",
+          "text": "For your board",
+          "at": 2,
+          "explained": true,
+          "reason": "Nav item omitted: /board/ is not built in Stage 1 (SITE-KICKOFF-PROMPT.md Stage 1 step 3; CLAUDE.md hard rule 6)."
+        },
+        {
+          "side": "design-only",
+          "text": "About",
+          "at": 3,
+          "explained": true,
+          "reason": "Nav item omitted: /about/ is not built in Stage 1 (SITE-KICKOFF-PROMPT.md Stage 1 step 3; CLAUDE.md hard rule 6)."
+        }
+      ]
+    },
+    {
+      "screen": "register",
+      "width": 390,
+      "designLines": 73,
+      "builtLines": 73,
+      "diffs": [
+        {
+          "side": "design-only",
+          "text": "[placeholder]",
+          "at": 39,
+          "explained": true,
+          "reason": "Attendee 2 email: the composite artboard leaves this field without a placeholder. HANDOFF-SPEC.md section 7 sets the email placeholder to \"name@church.org\", and every row ships empty with its placeholder (CLAUDE.md hard rule 4)."
+        },
+        {
+          "side": "built-only",
+          "text": "[placeholder] name@church.org",
+          "at": 39,
+          "explained": true,
+          "reason": "Attendee 2 email placeholder from HANDOFF-SPEC.md section 7 (see the design-only entry above)."
+        },
+        {
+          "side": "design-only",
+          "text": "[select] Administrator",
+          "at": 42,
+          "explained": true,
+          "reason": "Attendee 2 role: the static artboard shows the select's first option because its value comes from the canvas runtime (design/README.md). HANDOFF-SPEC.md section 7 and the artboard markup (value=\"Communications\") give Communications, which the test fixture selects."
+        },
+        {
+          "side": "built-only",
+          "text": "[select] Communications",
+          "at": 42,
+          "explained": true,
+          "reason": "Attendee 2 role as intended (see the design-only entry above). Test fixture value only; the shipped select starts on \"Choose a role\"."
+        },
+        {
+          "side": "design-only",
+          "text": "Continue to review",
+          "at": 69,
+          "explained": true,
+          "reason": "Button order: the mobile artboard puts Continue before Back; the desktop artboard puts Back first. One responsive page has one DOM, so it keeps the desktop order and CSS shows Continue first on mobile (SITE-KICKOFF-PROMPT.md Stage 1 step 2). Visual order matches both artboards; mobile keyboard order is Back then Continue. Logged in qa/stage1-report.md."
+        },
+        {
+          "side": "built-only",
+          "text": "Continue to review",
+          "at": 70,
+          "explained": true,
+          "reason": "Same button, read after Back because of the shared DOM order (see the design-only entry above)."
+        }
+      ]
+    },
+    {
+      "screen": "register",
+      "width": 1440,
+      "designLines": 76,
+      "builtLines": 73,
+      "diffs": [
+        {
+          "side": "design-only",
+          "text": "Workshop",
+          "at": 1,
+          "explained": true,
+          "reason": "Nav item omitted: /workshop/ is not built in Stage 1 (SITE-KICKOFF-PROMPT.md Stage 1 step 3; CLAUDE.md hard rule 6)."
+        },
+        {
+          "side": "design-only",
+          "text": "For your board",
+          "at": 2,
+          "explained": true,
+          "reason": "Nav item omitted: /board/ is not built in Stage 1 (SITE-KICKOFF-PROMPT.md Stage 1 step 3; CLAUDE.md hard rule 6)."
+        },
+        {
+          "side": "design-only",
+          "text": "About",
+          "at": 3,
+          "explained": true,
+          "reason": "Nav item omitted: /about/ is not built in Stage 1 (SITE-KICKOFF-PROMPT.md Stage 1 step 3; CLAUDE.md hard rule 6)."
+        },
+        {
+          "side": "design-only",
+          "text": "[placeholder]",
+          "at": 42,
+          "explained": true,
+          "reason": "Attendee 2 email: the composite artboard leaves this field without a placeholder. HANDOFF-SPEC.md section 7 sets the email placeholder to \"name@church.org\", and every row ships empty with its placeholder (CLAUDE.md hard rule 4)."
+        },
+        {
+          "side": "built-only",
+          "text": "[placeholder] name@church.org",
+          "at": 39,
+          "explained": true,
+          "reason": "Attendee 2 email placeholder from HANDOFF-SPEC.md section 7 (see the design-only entry above)."
+        },
+        {
+          "side": "design-only",
+          "text": "[select] Administrator",
+          "at": 45,
+          "explained": true,
+          "reason": "Attendee 2 role: the static artboard shows the select's first option because its value comes from the canvas runtime (design/README.md). HANDOFF-SPEC.md section 7 and the artboard markup (value=\"Communications\") give Communications, which the test fixture selects."
+        },
+        {
+          "side": "built-only",
+          "text": "[select] Communications",
+          "at": 42,
+          "explained": true,
+          "reason": "Attendee 2 role as intended (see the design-only entry above). Test fixture value only; the shipped select starts on \"Choose a role\"."
+        }
+      ]
+    }
+  ]
+}

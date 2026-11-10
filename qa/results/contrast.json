@@ -1,0 +1,217 @@
+{
+  "check": "contrast",
+  "target": "built",
+  "ranAt": "2026-11-10T22:33:17.869Z",
+  "status": "pass",
+  "summary": "12 token pairs (0 off), 12 rendered color pairs, 0 text below minimum, 0 accent misuses",
+  "tokenPairs": [
+    {
+      "pair": "ink on white",
+      "fg": "ink",
+      "bg": "ground",
+      "spec": 18.88,
+      "ratio": 18.88,
+      "ok": true
+    },
+    {
+      "pair": "ink2 on white",
+      "fg": "ink2",
+      "bg": "ground",
+      "spec": 8.86,
+      "ratio": 8.86,
+      "ok": true
+    },
+    {
+      "pair": "accent on white, and white on accent",
+      "fg": "accent",
+      "bg": "ground",
+      "spec": 5.18,
+      "ratio": 5.18,
+      "ok": true
+    },
+    {
+      "pair": "err on white",
+      "fg": "err",
+      "bg": "ground",
+      "spec": 6.57,
+      "ratio": 6.57,
+      "ok": true
+    },
+    {
+      "pair": "ink2 on tint",
+      "fg": "ink2",
+      "bg": "tint",
+      "spec": 8.05,
+      "ratio": 8.05,
+      "ok": true
+    },
+    {
+      "pair": "white on ink (ProgressSteps current step)",
+      "fg": "ground",
+      "bg": "ink",
+      "min": 4.5,
+      "ratio": 18.88,
+      "ok": true
+    },
+    {
+      "pair": "ink on tint (selected seat row text)",
+      "fg": "ink",
+      "bg": "tint",
+      "min": 4.5,
+      "ratio": 17.15,
+      "ok": true
+    },
+    {
+      "pair": "accent on tint (radio control in the selected seat row, non-text)",
+      "fg": "accent",
+      "bg": "tint",
+      "min": 3,
+      "ratio": 4.7,
+      "ok": true
+    },
+    {
+      "pair": "white on accent-hover (button hover)",
+      "fg": "ground",
+      "bg": "accent-hover",
+      "min": 4.5,
+      "ratio": 7.31,
+      "ok": true
+    },
+    {
+      "pair": "ink2 on disabled-bg (disabled button text and icon)",
+      "fg": "ink2",
+      "bg": "disabled-bg",
+      "min": 4.5,
+      "ratio": 7.1,
+      "ok": true
+    },
+    {
+      "pair": "ink on white (input, menu and remove borders, focus ring, non-text)",
+      "fg": "ink",
+      "bg": "ground",
+      "min": 3,
+      "ratio": 18.88,
+      "ok": true
+    },
+    {
+      "pair": "err on white (3px error border, non-text)",
+      "fg": "err",
+      "bg": "ground",
+      "min": 3,
+      "ratio": 6.57,
+      "ok": true
+    }
+  ],
+  "renderedPairs": [
+    {
+      "pair": "#757575 on #ffffff (min 4.5)",
+      "fg": "#757575",
+      "bg": "#ffffff",
+      "min": 4.5,
+      "ratio": 4.61,
+      "count": 18,
+      "example": "register@390: input#n1.inp"
+    },
+    {
+      "pair": "#ffffff on #c2410c (min 4.5)",
+      "fg": "#ffffff",
+      "bg": "#c2410c",
+      "min": 4.5,
+      "ratio": 5.18,
+      "count": 10,
+      "example": "home@390: a.btn \"Reserve seats\""
+    },
+    {
+      "pair": "#c2410c on #ffffff (min 4.5)",
+      "fg": "#c2410c",
+      "bg": "#ffffff",
+      "min": 4.5,
+      "ratio": 5.18,
+      "count": 3,
+      "example": "home@390: a.ghost \"See what we cover\""
+    },
+    {
+      "pair": "#b42318 on #ffffff (min 4.5)",
+      "fg": "#b42318",
+      "bg": "#ffffff",
+      "min": 4.5,
+      "ratio": 6.57,
+      "count": 3,
+      "example": "register@390: span.err-msg \"Add an email so we can send the confirma\""
+    },
+    {
+      "pair": "#4a4a4a on #e6e6e6 (min 4.5)",
+      "fg": "#4a4a4a",
+      "bg": "#e6e6e6",
+      "min": 4.5,
+      "ratio": 7.1,
+      "count": 5,
+      "example": "register@390: button.btn.alt \"Add another attendee\""
+    },
+    {
+      "pair": "#ffffff on #9a3412 (min 4.5)",
+      "fg": "#ffffff",
+      "bg": "#9a3412",
+      "min": 4.5,
+      "ratio": 7.31,
+      "count": 2,
+      "example": "register@390: button.btn \"Continue to review\""
+    },
+    {
+      "pair": "#4a4a4a on #f4f4f2 (min 4.5)",
+      "fg": "#4a4a4a",
+      "bg": "#f4f4f2",
+      "min": 4.5,
+      "ratio": 8.05,
+      "count": 3,
+      "example": "register@390: span.d \"For a small office that wants to learn t\""
+    },
+    {
+      "pair": "#4a4a4a on #ffffff (min 4.5)",
+      "fg": "#4a4a4a",
+      "bg": "#ffffff",
+      "min": 4.5,
+      "ratio": 8.86,
+      "count": 85,
+      "example": "home@390: p \"Turn a week of notes into a draft in you\""
+    },
+    {
+      "pair": "#111111 on #f4f4f2 (min 3)",
+      "fg": "#111111",
+      "bg": "#f4f4f2",
+      "min": 3,
+      "ratio": 17.15,
+      "count": 6,
+      "example": "register@390: span.t \"Three seats for your office\""
+    },
+    {
+      "pair": "#111111 on #ffffff (min 4.5)",
+      "fg": "#111111",
+      "bg": "#ffffff",
+      "min": 4.5,
+      "ratio": 18.88,
+      "count": 251,
+      "example": "home@390: a.mark \"Claude for Church Offices\""
+    },
+    {
+      "pair": "#111111 on #ffffff (min 3)",
+      "fg": "#111111",
+      "bg": "#ffffff",
+      "min": 3,
+      "ratio": 18.88,
+      "count": 94,
+      "example": "home@390: h1#h1 \"Turn a week of staff notes into a newsle\""
+    },
+    {
+      "pair": "#ffffff on #111111 (min 4.5)",
+      "fg": "#ffffff",
+      "bg": "#111111",
+      "min": 4.5,
+      "ratio": 18.88,
+      "count": 10,
+      "example": "register@390: li.cur \"2Attendees\""
+    }
+  ],
+  "textFailures": [],
+  "accentMisuse": []
+}
