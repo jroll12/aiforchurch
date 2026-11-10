@@ -1,56 +1,11 @@
 {
   "target": "built",
-  "ranAt": "2026-11-10T22:33:38.047Z",
+  "ranAt": "2026-11-10T22:35:20.809Z",
   "summary": [
-    {
-      "check": "text-diff",
-      "status": "pass",
-      "summary": "16 differences, 0 unexplained, 0 stale expectations"
-    },
-    {
-      "check": "overflow",
-      "status": "pass",
-      "summary": "21 page states measured, 0 with horizontal scroll"
-    },
-    {
-      "check": "contrast",
-      "status": "pass",
-      "summary": "12 token pairs (0 off), 12 rendered color pairs, 0 text below minimum, 0 accent misuses"
-    },
-    {
-      "check": "keyboard",
-      "status": "pass",
-      "summary": "4 page layouts walked, all stops visible, FAQ, errors and menu OK"
-    },
-    {
-      "check": "targets",
-      "status": "pass",
-      "summary": "92 targets measured, 0 below 44px"
-    },
-    {
-      "check": "zoom",
-      "status": "pass",
-      "summary": "10 states at 720 and 640 px (device scale 2), 0 with scroll, clipping or overlap"
-    },
-    {
-      "check": "visual",
-      "status": "review",
-      "summary": "substitute reference (artboards rendered in Chromium; design/screenshots/ not provided). home@390: heights 4193/4383px, 20% pixels changed; home@1440: heights 3232/3232px, 0.3% pixels changed; register@390: heights 3499/3549px, 12% pixels changed; register@1440: heights 2574/2574px, 0.1% pixels changed"
-    },
-    {
-      "check": "network",
-      "status": "pass",
-      "summary": "4 page loads; hosts seen: 127.0.0.1, fonts.googleapis.com, fonts.gstatic.com"
-    },
     {
       "check": "guards",
       "status": "pass",
-      "summary": "0 findings; 62 repo files scanned for dashes"
-    },
-    {
-      "check": "behavior",
-      "status": "pass",
-      "summary": "25 of 25 behavior assertions hold"
+      "summary": "0 findings; 68 repo files scanned for dashes"
     }
   ]
 }
