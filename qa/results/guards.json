@@ -1,7 +1,7 @@
 {
   "check": "guards",
   "target": "built",
-  "ranAt": "2026-11-10T22:35:20.795Z",
+  "ranAt": "2026-11-10T22:35:54.124Z",
   "status": "pass",
   "summary": "0 findings; 68 repo files scanned for dashes",
   "findings": [],

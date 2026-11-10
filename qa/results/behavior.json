@@ -1,7 +1,7 @@
 {
   "check": "behavior",
   "target": "built",
-  "ranAt": "2026-11-10T22:33:36.863Z",
+  "ranAt": "2026-11-10T22:35:57.904Z",
   "status": "pass",
   "summary": "25 of 25 behavior assertions hold",
   "failed": [],
@@ -253,8 +253,8 @@
     {
       "name": "no navigation in Stage 1",
       "ok": true,
-      "actual": "http://127.0.0.1:37605/register/",
-      "wanted": "http://127.0.0.1:37605/register/"
+      "actual": "http://127.0.0.1:40783/register/",
+      "wanted": "http://127.0.0.1:40783/register/"
     },
     {
       "name": "saved state shape",
@@ -335,8 +335,8 @@
     {
       "name": "reference code is stable",
       "ok": true,
-      "actual": "JH76QS",
-      "wanted": "JH76QS"
+      "actual": "TNUCG4",
+      "wanted": "TNUCG4"
     }
   ]
 }

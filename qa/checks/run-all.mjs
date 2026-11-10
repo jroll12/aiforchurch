@@ -64,9 +64,13 @@ const summary = CHECKS.map((name) => {
   return { check: name, status: data.status, summary: data.summary };
 });
 
+// A partial run (--only) updates its own lines and keeps the rest of the last summary.
+const summaryFile = path.join(RESULTS, `summary${suffix}.json`);
+const previous = only && fs.existsSync(summaryFile) ? JSON.parse(fs.readFileSync(summaryFile, 'utf8')).summary : [];
+const merged = [...previous.filter((p) => !CHECKS.includes(p.check)), ...summary];
 fs.writeFileSync(
-  path.join(RESULTS, `summary${suffix}.json`),
-  `${JSON.stringify({ target: design ? 'design' : 'built', ranAt: new Date().toISOString(), summary }, null, 2)}\n`,
+  summaryFile,
+  `${JSON.stringify({ target: design ? 'design' : 'built', ranAt: new Date().toISOString(), summary: merged }, null, 2)}\n`,
 );
 for (const s of summary) console.log(`${s.status.toUpperCase().padEnd(8)} ${s.check.padEnd(10)} ${s.summary ?? ''}`);
 process.exitCode = summary.some((s) => s.status === 'fail' || s.status === 'error') ? 1 : 0;

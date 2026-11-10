@@ -87,7 +87,7 @@ The placeholder color is the browser default, as in the artboards. It passes in 
 
 ### Check 7: what the side-by-side images show
 
-- **Desktop (1440):** Home and Register match the artboards to within anti-aliasing (0.3% and 0.1% of pixels changed, identical page heights). The visible difference is the three nav items omitted on purpose.
+- **Desktop (1440):** Home and Register match the artboards to within anti-aliasing (under 0.05% and 0.1% of pixels changed in the final run, identical page heights). The visible difference is the three nav items omitted on purpose.
 - **Mobile (390):** the built pages are taller (Home 4383 vs 4193 px, Register 3549 vs 3499 px). The cause is the artboard files, not the build: in a browser, the mobile artboards render their sections flush to the left edge because later padding shorthands cancel `.in{padding:0 20px}`. The build uses the 20px side padding HANDOFF-SPEC.md section 4 specifies, so lines wrap a little sooner. Order, type, rules, boxes, the seat picker, the designed error and the button stack otherwise match.
 
 ## Deviations from the design, with reasons
