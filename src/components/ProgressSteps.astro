@@ -1,0 +1,9 @@
+---
+/* ProgressSteps: three cells, as designed: Seats done, Attendees current, Review to do. */
+import Icon from './Icon.astro';
+---
+<ol class="prog" role="list" aria-label="Progress" data-component="ProgressSteps">
+<li class="done"><span class="sn"><Icon name="check" size={16} strokeWidth={3} /></span>Seats</li>
+<li class="cur" aria-current="step"><span class="sn">2</span>Attendees</li>
+<li><span class="sn">3</span>Review</li>
+</ol>

@@ -1,0 +1,10 @@
+---
+/* StepCard: "Step N" label, title, description. */
+interface Props {
+  step: number;
+  title: string;
+}
+
+const { step, title } = Astro.props;
+---
+<div class="st" data-component="StepCard"><p class="n">Step {step}</p><h3>{title}</h3><p><slot /></p></div>

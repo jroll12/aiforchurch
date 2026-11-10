@@ -1,0 +1,18 @@
+---
+/*
+ * SummaryPanel: the order as a definition list. The Seats and Price rows stay
+ * hidden until a seat option is chosen (derived); register.js fills them from
+ * the chosen option. The slot holds the Back and Continue buttons.
+ */
+import { PH } from '../config';
+---
+<div class="ct sum" data-component="SummaryPanel">
+<dl class="facts">
+<div data-sum="seats" hidden><dt>Seats</dt><dd></dd></div>
+<div data-sum="price" hidden><dt>Price</dt><dd></dd></div>
+<div><dt>When</dt><dd>{PH.date}, {PH.startTime}</dd></div>
+<div><dt>Where</dt><dd>{PH.venue}</dd></div>
+<div><dt>Refunds</dt><dd>{PH.refundPolicy}</dd></div>
+</dl>
+<slot />
+</div>

@@ -1,0 +1,12 @@
+---
+/* FaqItem: details and summary. Both icons render; CSS shows minus when open, plus when closed. */
+import Icon from './Icon.astro';
+
+interface Props {
+  question: string;
+  open?: boolean;
+}
+
+const { question, open = false } = Astro.props;
+---
+<details open={open} data-component="FaqItem"><summary>{question}<Icon name="minus" size={22} class="i-minus" /><Icon name="plus" size={22} class="i-plus" /></summary><p><slot /></p></details>

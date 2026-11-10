@@ -1,0 +1,48 @@
+---
+/*
+ * FormField: label above, 52px input (120px textarea), error message below.
+ * The error stays hidden until register.js fills it; aria-invalid and
+ * aria-describedby are set only while an error shows.
+ */
+import Icon from './Icon.astro';
+
+interface Props {
+  id: string;
+  label: string;
+  type?: 'text' | 'email' | 'textarea' | 'select';
+  name?: string;
+  placeholder?: string;
+  optional?: boolean;
+  options?: readonly string[];
+  optionPlaceholder?: string;
+  autocomplete?: string;
+  required?: boolean;
+  rows?: number;
+}
+
+const {
+  id,
+  label,
+  type = 'text',
+  name = id,
+  placeholder,
+  optional = false,
+  options = [],
+  optionPlaceholder,
+  autocomplete,
+  required = false,
+  rows,
+} = Astro.props;
+const ariaRequired = required ? 'true' : undefined;
+---
+<div class="fld" data-component="FormField">
+<label for={id}>{label}{optional && ' '}{optional && <span class="n">(optional)</span>}</label>
+{type === 'textarea' ? (
+  <textarea class="inp" id={id} name={name} rows={rows} placeholder={placeholder}></textarea>
+) : type === 'select' ? (
+  <select class="inp" id={id} name={name} aria-required={ariaRequired}>{optionPlaceholder && <option value="">{optionPlaceholder}</option>}{options.map((o) => <option>{o}</option>)}</select>
+) : (
+  <input class="inp" id={id} name={name} type={type} placeholder={placeholder} autocomplete={autocomplete} aria-required={ariaRequired} />
+)}
+<p class="err" id={`${id}-err`} hidden><Icon name="circle-alert" size={18} /><span class="err-msg"></span></p>
+</div>

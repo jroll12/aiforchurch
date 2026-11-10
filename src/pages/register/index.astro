@@ -1,0 +1,73 @@
+---
+/*
+ * 05 Register. Markup and copy from design/register-c-desktop.dc.html and
+ * register-c-mobile.dc.html. Fields ship empty and no seat is preselected.
+ * Behavior is in src/scripts/register.js (HANDOFF-SPEC.md section 7).
+ */
+import Base from '../../layouts/Base.astro';
+import Button from '../../components/Button.astro';
+import FormField from '../../components/FormField.astro';
+import ProgressSteps from '../../components/ProgressSteps.astro';
+import SeatPicker from '../../components/SeatPicker.astro';
+import AttendeeRow from '../../components/AttendeeRow.astro';
+import SummaryPanel from '../../components/SummaryPanel.astro';
+import { MESSAGES, ROUTES, SEAT_OPTIONS } from '../../config';
+import { url } from '../../lib/url';
+
+const rowCount = Math.max(...SEAT_OPTIONS.map((o) => o.seats));
+// Stage 1: the review page is not built, so Continue saves without navigating (no dead links).
+const reviewUrl = ROUTES.review.built ? url(ROUTES.review.path) : '';
+---
+<Base page="register" title="Reserve your seats" markHref={url(ROUTES.home.path)}>
+<main>
+<section class="top" aria-labelledby="h1"><div class="g">
+<p class="k">Step 2 of 3</p>
+<h1 id="h1">Reserve your seats</h1>
+<p class="lede">You will review everything before you pay.</p>
+<ProgressSteps />
+</div></section>
+
+<form id="reg" method="post" novalidate data-review-url={reviewUrl} data-messages={JSON.stringify(MESSAGES)}>
+<section class="s" aria-labelledby="s1"><div class="g">
+<h2 class="lab" id="s1">Your seats</h2>
+<div class="ct"><SeatPicker labelledby="s1" /></div>
+</div></section>
+
+<section class="s" aria-labelledby="s2"><div class="g">
+<h2 class="lab" id="s2">Your church or ministry</h2>
+<div class="ct two">
+<FormField id="org" label="Organization name" autocomplete="organization" required />
+<FormField id="contact" label="Contact person" autocomplete="name" required />
+</div>
+</div></section>
+
+<section class="s" aria-labelledby="s3"><div class="g">
+<h2 class="lab" id="s3">Who is coming</h2>
+<div class="ct">
+<p class="stat" data-status hidden><span data-filled>0</span> of <span data-seats>0</span> seats filled</p>
+{Array.from({ length: rowCount }, (_, k) => <AttendeeRow index={k + 1} hidden={k > 0} />)}
+<Button variant="alt" disabled data-add>Add another attendee</Button>
+<p class="helper" data-helper hidden>Three seats, three rows. Choose more seats to add people.</p>
+</div>
+</div></section>
+
+<section class="s" aria-labelledby="s4"><div class="g">
+<h2 class="lab" id="s4">One question for us</h2>
+<div class="ct">
+<FormField id="task" label="What office task takes the most time?" type="textarea" rows={4} placeholder="For example: building the weekly newsletter" optional />
+<div class="chkrow"><input type="checkbox" id="consent" name="consent"><label for="consent">Email me about this workshop and future dates.</label></div>
+</div>
+</div></section>
+
+<section class="s" aria-labelledby="s5"><div class="g">
+<h2 class="lab" id="s5">Your order</h2>
+<SummaryPanel>
+<div class="acts"><Button variant="alt" href={url(ROUTES.home.path)}>Back</Button><Button type="submit" arrow>Continue to review</Button></div>
+</SummaryPanel>
+</div></section>
+</form>
+</main>
+<script>
+  import '../../scripts/register.js';
+</script>
+</Base>

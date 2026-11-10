@@ -1,0 +1,22 @@
+---
+/* Button: accent fill, or alt (white fill, ink border). A link when href is set. */
+import Icon from './Icon.astro';
+
+interface Props {
+  href?: string;
+  type?: 'button' | 'submit';
+  variant?: 'primary' | 'alt';
+  arrow?: boolean;
+  disabled?: boolean;
+  class?: string;
+  [key: string]: unknown;
+}
+
+const { href, type = 'button', variant = 'primary', arrow = false, disabled = false, class: extra, ...rest } = Astro.props;
+const classes = ['btn', variant === 'alt' && 'alt', extra];
+---
+{href ? (
+  <a class:list={classes} href={href} data-component="Button" {...rest}><slot />{arrow && <Icon name="arrow-right" />}</a>
+) : (
+  <button class:list={classes} type={type} disabled={disabled} data-component="Button" {...rest}><slot />{arrow && <Icon name="arrow-right" />}</button>
+)}

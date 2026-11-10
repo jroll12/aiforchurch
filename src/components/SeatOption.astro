@@ -1,0 +1,11 @@
+---
+/* SeatOption: static row on Home. Desktop puts the price right; mobile puts it below. */
+interface Props {
+  title: string;
+  description: string;
+  price: string;
+}
+
+const { title, description, price } = Astro.props;
+---
+<div class="r" data-component="SeatOption"><div><h3>{title}</h3><p>{description}</p></div><p class="price">{price}</p></div>

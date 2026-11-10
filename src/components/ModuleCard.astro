@@ -1,0 +1,10 @@
+---
+/* ModuleCard: large light numeral, title, description. */
+interface Props {
+  num: string;
+  title: string;
+}
+
+const { num, title } = Astro.props;
+---
+<article class="mod" data-component="ModuleCard"><span class="num" aria-hidden="true">{num}</span><h3>{title}</h3><p><slot /></p></article>

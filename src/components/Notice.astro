@@ -1,0 +1,16 @@
+---
+/* Notice: a 1.5px ink box with an uppercase label, or the hero seat-note strip. */
+import Icon from './Icon.astro';
+
+interface Props {
+  variant: 'box' | 'seatnote';
+  label?: string;
+}
+
+const { variant, label } = Astro.props;
+---
+{variant === 'seatnote' ? (
+  <p class="seatnote" data-component="Notice"><Icon name="circle-alert" /><slot /></p>
+) : (
+  <div class="box" data-component="Notice"><p class="t">{label}</p><p><slot /></p></div>
+)}

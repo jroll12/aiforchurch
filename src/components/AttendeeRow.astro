@@ -1,0 +1,26 @@
+---
+/*
+ * AttendeeRow: "Attendee N", a 44px remove button, then name, email and role.
+ * The page renders one row per seat in the largest seat option and register.js
+ * shows as many as the chosen seats. Rows are positional, so headings, ids and
+ * aria-labels never need renumbering. Fields ship empty (CLAUDE.md hard rule 4).
+ */
+import Icon from './Icon.astro';
+import FormField from './FormField.astro';
+import { ROLES } from '../config';
+
+interface Props {
+  index: number;
+  hidden?: boolean;
+}
+
+const { index: i, hidden = false } = Astro.props;
+---
+<div class="att" data-component="AttendeeRow" data-row={i} hidden={hidden}>
+<div class="h"><h3>Attendee {i}</h3><button class="rm" type="button" aria-label={`Remove attendee ${i}`} disabled={i === 1}><Icon name="x" /></button></div>
+<div class="afs">
+<FormField id={`n${i}`} name={`attendee${i}-name`} label="Name" placeholder="Full name" autocomplete="off" />
+<FormField id={`e${i}`} name={`attendee${i}-email`} label="Email" type="email" placeholder="name@church.org" autocomplete="off" />
+<FormField id={`r${i}`} name={`attendee${i}-role`} label="Role" type="select" options={ROLES} optionPlaceholder="Choose a role" />
+</div>
+</div>

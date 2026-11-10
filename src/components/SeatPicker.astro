@@ -1,0 +1,22 @@
+---
+/*
+ * SeatPicker: a radiogroup of rows. The selected style comes from
+ * :has(input:checked), so it works without JavaScript. No option is
+ * preselected (HANDOFF-SPEC.md section 9 default). The error line below the
+ * group is derived; register.js shows it.
+ */
+import Icon from './Icon.astro';
+import { SEAT_OPTIONS } from '../config';
+
+interface Props {
+  labelledby: string;
+}
+
+const { labelledby } = Astro.props;
+---
+<div class="srows" role="radiogroup" aria-labelledby={labelledby} data-component="SeatPicker">
+{SEAT_OPTIONS.map((o) => (
+  <label class="srow"><input type="radio" name="seats" id={`seat-${o.seats}`} value={o.seats} /><span class="t">{o.title}</span><span class="p">{o.price}</span><span class="d">{o.description}</span></label>
+))}
+</div>
+<p class="err" id="seats-err" hidden><Icon name="circle-alert" size={18} /><span class="err-msg"></span></p>
