@@ -1,0 +1,7 @@
+{
+  "check": "zoom",
+  "target": "design",
+  "ranAt": "2026-11-10T22:23:48.972Z",
+  "status": "not run",
+  "summary": "artboards are fixed-width files; zoom applies to the built pages"
+}

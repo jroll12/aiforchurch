@@ -1,0 +1,12 @@
+{
+  "check": "guards",
+  "target": "design",
+  "ranAt": "2026-11-10T22:24:25.232Z",
+  "status": "pass",
+  "summary": "0 findings; 30 repo files scanned for dashes",
+  "findings": [],
+  "notes": [
+    "dist/ scans not run: no build yet",
+    "src/styles/site.css not present yet"
+  ]
+}

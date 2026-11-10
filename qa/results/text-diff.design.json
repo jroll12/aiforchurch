@@ -1,0 +1,81 @@
+{
+  "check": "text-diff",
+  "target": "design",
+  "ranAt": "2026-11-10T22:23:48.427Z",
+  "status": "pass",
+  "summary": "home@390: 64 lines, home@1440: 68 lines, register@390: 73 lines, register@1440: 76 lines",
+  "counts": [
+    {
+      "screen": "home",
+      "width": 390,
+      "lines": 64,
+      "first": [
+        "Claude for Church Offices",
+        "[label] Open menu",
+        "A half-day workshop for church and ministry office staff",
+        "Turn a week of staff notes into a newsletter draft in your church’s voice.",
+        "A hands-on, in-person workshop on using Claude for real office work. Every date, time and room checked against a source.",
+        "Reserve seats"
+      ],
+      "last": [
+        "What if our board must approve it?",
+        "Course materials are drafted with AI, then taught and checked by Jarret Roloff.",
+        "Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]"
+      ]
+    },
+    {
+      "screen": "home",
+      "width": 1440,
+      "lines": 68,
+      "first": [
+        "Claude for Church Offices",
+        "Workshop",
+        "For your board",
+        "About",
+        "Questions",
+        "Reserve seats"
+      ],
+      "last": [
+        "What if our board must approve it?",
+        "Course materials are drafted with AI, then taught and checked by Jarret Roloff.",
+        "Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]"
+      ]
+    },
+    {
+      "screen": "register",
+      "width": 390,
+      "lines": 73,
+      "first": [
+        "Claude for Church Offices",
+        "[label] Open menu",
+        "Step 2 of 3",
+        "Reserve your seats",
+        "You will review everything before you pay.",
+        "Seats"
+      ],
+      "last": [
+        "Back",
+        "Course materials are drafted with AI, then taught and checked by Jarret Roloff.",
+        "Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]"
+      ]
+    },
+    {
+      "screen": "register",
+      "width": 1440,
+      "lines": 76,
+      "first": [
+        "Claude for Church Offices",
+        "Workshop",
+        "For your board",
+        "About",
+        "Questions",
+        "Step 2 of 3"
+      ],
+      "last": [
+        "Continue to review",
+        "Course materials are drafted with AI, then taught and checked by Jarret Roloff.",
+        "Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]"
+      ]
+    }
+  ]
+}

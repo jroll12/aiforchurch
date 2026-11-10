@@ -1,0 +1,42 @@
+{
+  "check": "overflow",
+  "target": "design",
+  "ranAt": "2026-11-10T22:23:48.443Z",
+  "status": "pass",
+  "summary": "4 page states measured, 0 with horizontal scroll",
+  "failures": [],
+  "rows": [
+    {
+      "screen": "home",
+      "width": 390,
+      "state": "default",
+      "scrollWidth": 390,
+      "viewport": 390,
+      "offenders": []
+    },
+    {
+      "screen": "home",
+      "width": 1440,
+      "state": "default",
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "offenders": []
+    },
+    {
+      "screen": "register",
+      "width": 390,
+      "state": "default",
+      "scrollWidth": 390,
+      "viewport": 390,
+      "offenders": []
+    },
+    {
+      "screen": "register",
+      "width": 1440,
+      "state": "default",
+      "scrollWidth": 1440,
+      "viewport": 1440,
+      "offenders": []
+    }
+  ]
+}

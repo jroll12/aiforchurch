@@ -1,0 +1,792 @@
+{
+  "check": "keyboard",
+  "target": "design",
+  "ranAt": "2026-11-10T22:23:53.399Z",
+  "status": "fail",
+  "summary": "4 problems",
+  "problems": [
+    "home@390: 11 of 11 focus stops without a 2px ink outline (first: a.mark \"Claude for Church Offices\", auto 1px rgb(16, 16, 16) offset 1px)",
+    "home@1440: 15 of 15 focus stops without a 2px ink outline (first: a.mark \"Claude for Church Offices\", auto 1px rgb(16, 16, 16) offset 1px)",
+    "register@390: 21 of 21 focus stops without a 2px ink outline (first: a.mark \"Claude for Church Offices\", auto 1px rgb(16, 16, 16) offset 1px)",
+    "register@1440: 24 of 24 focus stops without a 2px ink outline (first: a.mark \"Claude for Church Offices\", auto 1px rgb(16, 16, 16) offset 1px)"
+  ],
+  "pages": [
+    {
+      "screen": "home",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "a.btn \"Reserve seats\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "a.ghost \"See what we cover\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "a.btn \"Reserve seats\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "summary \"Do we need a paid Claude account?\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "summary \"Can our whole office come?\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "summary \"Is our information safe?\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "summary \"Is this about sermons?\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "summary \"What if we are new to AI?\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "summary \"What if our board must approve it?\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          }
+        ],
+        "expectedCount": 11,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]",
+          "a.btn \"Reserve seats\"",
+          "a.ghost \"See what we cover\"",
+          "a.btn \"Reserve seats\"",
+          "summary \"Do we need a paid Claude account?\"",
+          "summary \"Can our whole office come?\"",
+          "summary \"Is our information safe?\"",
+          "summary \"Is this about sermons?\"",
+          "summary \"What if we are new to AI?\"",
+          "summary \"What if our board must approve it?\""
+        ]
+      },
+      "faq": [
+        {
+          "item": 1,
+          "before": true,
+          "afterEnter": false,
+          "afterSpace": true,
+          "ok": true
+        },
+        {
+          "item": 2,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 3,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 4,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 5,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 6,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "home",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "a \"Workshop\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "a \"For your board\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "a \"About\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "a \"Questions\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "a.btn.hcta \"Reserve seats\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "a.btn \"Reserve seats\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "a.ghost \"See what we cover\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "a.btn \"Reserve seats\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "summary \"Do we need a paid Claude account?\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "summary \"Can our whole office come?\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "summary \"Is our information safe?\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "summary \"Is this about sermons?\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "summary \"What if we are new to AI?\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "summary \"What if our board must approve it?\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          }
+        ],
+        "expectedCount": 15,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Workshop\"",
+          "a \"For your board\"",
+          "a \"About\"",
+          "a \"Questions\"",
+          "a.btn.hcta \"Reserve seats\"",
+          "a.btn \"Reserve seats\"",
+          "a.ghost \"See what we cover\"",
+          "a.btn \"Reserve seats\"",
+          "summary \"Do we need a paid Claude account?\"",
+          "summary \"Can our whole office come?\"",
+          "summary \"Is our information safe?\"",
+          "summary \"Is this about sermons?\"",
+          "summary \"What if we are new to AI?\"",
+          "summary \"What if our board must approve it?\""
+        ]
+      },
+      "faq": [
+        {
+          "item": 1,
+          "before": true,
+          "afterEnter": false,
+          "afterSpace": true,
+          "ok": true
+        },
+        {
+          "item": 2,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 3,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 4,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 5,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 6,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "register",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#seat-3",
+            "outline": "auto 1px rgb(16, 16, 16) offset 2px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#org.inp",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#contact.inp",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "button.rm[aria-label=\"Remove attendee 1\"]",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#n1.inp",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#e1.inp",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "select#r1.inp \"AdministratorCommunicationsPastorFinance\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "button.rm[aria-label=\"Remove attendee 2\"]",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#n2.inp",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#e2.inp.bad",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "select#r2.inp \"AdministratorCommunicationsPastorFinance\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "button.rm[aria-label=\"Remove attendee 3\"]",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#n3.inp",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#e3.inp",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "select#r3.inp \"Choose a roleAdministratorCommunications\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "textarea#task.inp",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#consent",
+            "outline": "auto 1px rgb(16, 16, 16) offset 2px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "button.btn \"Continue to review\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "a.btn.alt \"Back\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          }
+        ],
+        "expectedCount": 21,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]",
+          "input#seat-1",
+          "input#org.inp",
+          "input#contact.inp",
+          "button.rm[aria-label=\"Remove attendee 1\"]",
+          "input#n1.inp",
+          "input#e1.inp",
+          "select#r1.inp \"AdministratorCommunicationsPastorFinance\"",
+          "button.rm[aria-label=\"Remove attendee 2\"]",
+          "input#n2.inp",
+          "input#e2.inp.bad",
+          "select#r2.inp \"AdministratorCommunicationsPastorFinance\"",
+          "button.rm[aria-label=\"Remove attendee 3\"]",
+          "input#n3.inp",
+          "input#e3.inp",
+          "select#r3.inp \"Choose a roleAdministratorCommunications\"",
+          "textarea#task.inp",
+          "input#consent",
+          "button.btn \"Continue to review\"",
+          "a.btn.alt \"Back\""
+        ]
+      },
+      "faq": []
+    },
+    {
+      "screen": "register",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "a \"Workshop\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "a \"For your board\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "a \"About\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "a \"Questions\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#seat-3",
+            "outline": "auto 1px rgb(16, 16, 16) offset 2px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#org.inp",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#contact.inp",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "button.rm[aria-label=\"Remove attendee 1\"]",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#n1.inp",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#e1.inp",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "select#r1.inp \"AdministratorCommunicationsPastorFinance\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "button.rm[aria-label=\"Remove attendee 2\"]",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#n2.inp",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#e2.inp.bad",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "select#r2.inp \"AdministratorCommunicationsPastorFinance\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "button.rm[aria-label=\"Remove attendee 3\"]",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#n3.inp",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#e3.inp",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "select#r3.inp \"Choose a roleAdministratorCommunications\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "textarea#task.inp",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "input#consent",
+            "outline": "auto 1px rgb(16, 16, 16) offset 2px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "a.btn.alt \"Back\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 1px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          },
+          {
+            "el": "button.btn \"Continue to review\"",
+            "outline": "auto 1px rgb(16, 16, 16) offset 0px",
+            "outlineStyle": "auto",
+            "outlineWidth": 1,
+            "outlineColor": "rgb(16, 16, 16)",
+            "visible": false
+          }
+        ],
+        "expectedCount": 24,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Workshop\"",
+          "a \"For your board\"",
+          "a \"About\"",
+          "a \"Questions\"",
+          "input#seat-1",
+          "input#org.inp",
+          "input#contact.inp",
+          "button.rm[aria-label=\"Remove attendee 1\"]",
+          "input#n1.inp",
+          "input#e1.inp",
+          "select#r1.inp \"AdministratorCommunicationsPastorFinance\"",
+          "button.rm[aria-label=\"Remove attendee 2\"]",
+          "input#n2.inp",
+          "input#e2.inp.bad",
+          "select#r2.inp \"AdministratorCommunicationsPastorFinance\"",
+          "button.rm[aria-label=\"Remove attendee 3\"]",
+          "input#n3.inp",
+          "input#e3.inp",
+          "select#r3.inp \"Choose a roleAdministratorCommunications\"",
+          "textarea#task.inp",
+          "input#consent",
+          "a.btn.alt \"Back\"",
+          "button.btn \"Continue to review\""
+        ]
+      },
+      "faq": []
+    }
+  ]
+}

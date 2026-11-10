@@ -1,0 +1,16 @@
+{
+  "target": "design",
+  "ranAt": "2026-11-10T22:24:29.547Z",
+  "summary": [
+    {
+      "check": "targets",
+      "status": "fail",
+      "summary": "53 targets measured, 14 below 44px"
+    },
+    {
+      "check": "guards",
+      "status": "pass",
+      "summary": "0 findings; 30 repo files scanned for dashes"
+    }
+  ]
+}
