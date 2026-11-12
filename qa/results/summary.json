@@ -1,21 +1,11 @@
 {
   "target": "built",
-  "ranAt": "2026-11-12T03:35:10.730Z",
+  "ranAt": "2026-11-12T03:44:16.135Z",
   "summary": [
     {
       "check": "text-diff",
       "status": "pass",
       "summary": "10 differences, 0 unexplained, 0 stale expectations"
-    },
-    {
-      "check": "provenance",
-      "status": "pass",
-      "summary": "482 strings on 6 derived pages at 390 and 1440; 0 with no allowed source, 0 placeholders missing from PLACEHOLDERS.md, 23 taken from spec wording (listed for confirmation)"
-    },
-    {
-      "check": "overflow",
-      "status": "pass",
-      "summary": "108 page states measured, 0 with horizontal scroll"
     },
     {
       "check": "headerfit",
@@ -48,19 +38,9 @@
       "summary": "substitute reference (artboards rendered in Chromium; design/screenshots/ not provided). home@390: heights 4193/4383px, 20% pixels changed; home@1440: heights 3232/3232px, 0% pixels changed; register@390: heights 3499/3549px, 12% pixels changed; register@1440: heights 2574/2574px, 0% pixels changed. Derived pages, no reference: 12 screenshots for review"
     },
     {
-      "check": "print",
-      "status": "pass",
-      "summary": "/board/ prints on 1 Letter page; content fills about 70% of the printable height with placeholders in place; 0 problems"
-    },
-    {
       "check": "network",
       "status": "pass",
       "summary": "16 page loads; hosts seen: 127.0.0.1, fonts.googleapis.com, fonts.gstatic.com"
-    },
-    {
-      "check": "guards",
-      "status": "pass",
-      "summary": "0 findings; 103 repo files scanned for dashes"
     },
     {
       "check": "behavior",
@@ -68,9 +48,29 @@
       "summary": "25 of 25 behavior assertions hold"
     },
     {
+      "check": "overflow",
+      "status": "pass",
+      "summary": "108 page states measured, 0 with horizontal scroll"
+    },
+    {
+      "check": "print",
+      "status": "pass",
+      "summary": "/board/ prints on 1 Letter page; content fills about 70% of the printable height with placeholders in place; 0 problems"
+    },
+    {
+      "check": "guards",
+      "status": "pass",
+      "summary": "0 findings; 103 repo files scanned for dashes"
+    },
+    {
       "check": "flow",
       "status": "pass",
       "summary": "31 of 31 flow assertions hold on dist-mock/"
+    },
+    {
+      "check": "provenance",
+      "status": "pass",
+      "summary": "482 strings on 6 derived pages at 390 and 1440; 0 with no allowed source, 0 placeholders missing from PLACEHOLDERS.md, 23 taken from spec wording (listed for confirmation)"
     }
   ]
 }

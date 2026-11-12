@@ -44,7 +44,9 @@ const APPROVED = fs.existsSync(draftFile)
       .filter(Boolean)
   : [];
 
-const DATA = [STATE.org, STATE.contact, STATE.question, STATE.ref, ...STATE.attendees.flatMap((a) => [a.name, a.email, a.role])].map((s) => s.toLowerCase());
+const DATA_VALUES = [STATE.org, STATE.contact, STATE.question, STATE.ref, ...STATE.attendees.flatMap((a) => [a.name, a.email, a.role])];
+const DATA = DATA_VALUES.map((s) => s.toLowerCase());
+const DATA_SPLIT = new RegExp(`(?:${DATA_VALUES.map((v) => v.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`);
 
 /** Collect text inside the page: visible lines, hidden state blocks, accessible names, the title. */
 const collect = (page) =>
@@ -70,12 +72,15 @@ function classify(raw) {
   let text = norm(raw);
   if (!text || CONTROL.test(text)) return { text, ok: true, sources: ['control'] };
   text = text.replace(PREFIX, '');
+  // FormField adds the designed " (optional)" after a label (Register artboard).
+  text = text.replace(/ \(optional\)$/, '');
   const placeholders = text.match(PLACEHOLDER) ?? [];
   const unlisted = placeholders.filter((p) => !listed.has(p));
   const sources = placeholders.length ? ['placeholder'] : [];
   const orphans = [];
   // " | " joins the page name and the site name in titles (Stage 1, D14).
-  const fragments = text.split(PLACEHOLDER).flatMap((f) => f.split(' | ')).map((f) => f.replace(/^[\s,.:;|()]+|[\s,:;|()]+$/g, '')).filter((f) => f && !/^[\d\s.,:;|()/-]+$/.test(f));
+  // The visitor's own data (seeded test values) also splits a line: "Your reference code: K7M2Q9".
+  const fragments = text.split(PLACEHOLDER).flatMap((f) => f.split(' | ')).flatMap((f) => f.split(DATA_SPLIT)).map((f) => f.replace(/^[\s,.:;|()]+|[\s,:;|()]+$/g, '')).filter((f) => f && !/^[\d\s.,:;|()/-]+$/.test(f));
   for (const f of fragments) {
     const src = sourceOf(f) ?? sentences(f);
     if (src) sources.push(src);

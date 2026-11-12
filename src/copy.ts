@@ -2,13 +2,14 @@
  * Copy for every page, in one file.
  *
  * CLAUDE.md hard rule 1: do not change, add or rewrite copy. The six Stage 2
- * pages have no artboards, so each string here has one of three sources:
+ * pages have no artboards, so each string here has one of four sources:
  *   design       exact text from design/ (typographic apostrophes included)
- *   spec         wording HANDOFF-SPEC.md sections 1 and 7 prescribe; Jarret to confirm
- *   placeholder  missing copy, kept as [LIKE THIS] until Jarret approves text
- * Draft text for every placeholder is in qa/stage2-copy-draft.md. Nothing
- * there ships until Jarret marks a row approved and it is copied in here.
- * qa/checks/provenance.mjs fails on any string without one of these sources.
+ *   spec         wording HANDOFF-SPEC.md sections 1 and 7 prescribe (confirmed 2026-11-12)
+ *   approved     text Jarret approved in qa/stage2-copy-draft.md (2026-11-12)
+ *   placeholder  still missing, kept as [LIKE THIS]; [CONFIRM] marks a fact to check
+ * New copy goes into qa/stage2-copy-draft.md as a draft row first.
+ * qa/checks/provenance.mjs fails on any string without one of these sources,
+ * and when this file and an approved row disagree.
  */
 import { PH } from './config';
 
@@ -45,20 +46,20 @@ export const WORKSHOP = {
   title: 'Workshop details', // spec: screen name
   whenLabel: 'When and where', // spec
   accessibilityLabel: 'Accessibility', // spec: "accessibility information"
-  accessibility: '[ACCESSIBILITY]',
+  accessibility: 'Step-free entrance [CONFIRM]. Accessible restroom [CONFIRM]. Parking [CONFIRM]. Tell us about any other need when you register.',
   agendaLabel: 'Half-day agenda', // spec
   agenda: [
-    { time: '[AGENDA TIME 1]', item: '[AGENDA ITEM 1]' },
-    { time: '[AGENDA TIME 2]', item: '[AGENDA ITEM 2]' },
-    { time: '[AGENDA TIME 3]', item: '[AGENDA ITEM 3]' },
-    { time: '[AGENDA TIME 4]', item: '[AGENDA ITEM 4]' },
+    { time: '9:00 [CONFIRM]', item: 'Arrive, sign in, set up your laptop' },
+    { time: '9:15 [CONFIRM]', item: 'Topics 1 to 3: newsletter, AI use policy, prayer chain and care messages' },
+    { time: '10:45 [CONFIRM]', item: 'Break' },
+    { time: '11:00 [CONFIRM]', item: 'Topics 4 to 7, then questions' },
   ],
   topicsLabel: 'What you will do', // design
   laterTopics: [
-    { num: '04', title: '[TOPIC 4 TITLE]', outcome: '[TOPIC 4 OUTCOME]' },
-    { num: '05', title: '[TOPIC 5 TITLE]', outcome: '[TOPIC 5 OUTCOME]' },
-    { num: '06', title: '[TOPIC 6 TITLE]', outcome: '[TOPIC 6 OUTCOME]' },
-    { num: '07', title: '[TOPIC 7 TITLE]', outcome: '[TOPIC 7 OUTCOME]' },
+    { num: '04', title: 'Event announcements from a ministry calendar [CONFIRM]', outcome: 'Turn calendar entries into announcements, with every date and room checked.' },
+    { num: '05', title: 'Volunteer schedules and reminder emails [CONFIRM]', outcome: 'Draft a month of reminders from a sign-up sheet.' },
+    { num: '06', title: 'Meeting notes into minutes and action items [CONFIRM]', outcome: 'Turn rough notes into minutes your board can approve.' },
+    { num: '07', title: 'Bulletin and slide text from one source [CONFIRM]', outcome: 'Write the bulletin once and reuse it for slides and the website.' },
   ],
   safetyLabel: 'Data safety', // design (Topic artboard)
   seatsLabel: 'Choose your seats', // design
@@ -67,14 +68,14 @@ export const WORKSHOP = {
 /** Shared by Workshop details and Confirmation. */
 export const BRING = {
   label: 'What to bring', // spec
-  items: ['[BRING ITEM 1]', '[BRING ITEM 2]', '[BRING ITEM 3]'],
+  items: ['A laptop and its charger', 'A Claude account. The newsletter topic works on a free account.', 'Nothing from your church. We bring invented sample files.'],
 } as const;
 
 /* ---------- 03 For your board ---------- */
 export const BOARD = {
   title: 'For your board', // design: nav label
-  lede: '[BOARD LEDE]',
-  print: '[PRINT BUTTON]',
+  lede: 'A one-page summary for your pastor or board.',
+  print: 'Print this page',
   pdf: 'Download PDF', // spec
   whatLabel: 'What it is', // spec
   whoLabel: 'Who it is for', // design
@@ -89,10 +90,10 @@ export const BOARD = {
 /* ---------- 04 About ---------- */
 export const ABOUT = {
   title: 'About', // design: nav label
-  bio: '[JARRET BIO]',
+  bio: 'Jarret Roloff runs Roloff AI in Hendricks County, Indiana. [ONE OR TWO SENTENCES ON YOUR BACKGROUND]',
   photo: '[PHOTO]',
   whyLabel: 'Why a local workshop', // spec
-  why: '[WHY LOCAL]',
+  why: 'Church office work is local: your calendar, your rooms, your people. A half-day in the room means you can ask as you go and leave with drafts you can use the next week.',
   madeLabel: 'How the materials are made', // spec
   notLabel: 'What the workshop will not do', // spec
 } as const;
@@ -101,51 +102,51 @@ export const ABOUT = {
 export const REVIEW = {
   step: 'Step 3 of 3', // derived pattern of the designed "Step 2 of 3"
   title: 'Review order', // spec: screen name
-  lede: '[REVIEW LEDE]',
+  lede: 'Check your order. You can edit anything before you pay.',
   edit: 'Edit', // spec: "Edit links back to Register"
   total: 'Total', // spec: "total [TOTAL]"; the total is the chosen option's price
-  pay: '[PAY BUTTON]',
-  payOffline: '[OFFLINE PAY BUTTON]',
-  sendError: '[SEND ERROR]',
+  pay: 'Continue to payment',
+  payOffline: 'Pay by check or cash',
+  sendError: 'We could not send this. Check your connection and try again.',
 } as const;
 
 /* ---------- 07 Confirmation ---------- */
 export const CONFIRMATION = {
   title: 'Confirmation', // spec: screen name (page title only)
   paid: 'You are in.', // spec
-  pendingHeading: '[PENDING HEADING]',
-  pending: '[PENDING MESSAGE]',
-  failedHeading: '[FAILED HEADING]',
-  failed: '[FAILED MESSAGE]',
-  retry: '[RETRY BUTTON]',
-  refLabel: '[REFERENCE LABEL]',
+  pendingHeading: 'We have your registration.',
+  pending: 'Your seats are confirmed when payment arrives. Use your reference code with any payment.',
+  failedHeading: 'Payment did not go through.',
+  failed: 'Your registration is saved. Try the payment again, or email us for help.',
+  retry: 'Try payment again',
+  refLabel: 'Your reference code:',
   nextLabel: 'What happens next', // spec
-  next: '[NEXT STEPS]',
+  next: 'We will email each attendee before the workshop with the room details and anything to prepare. [CONFIRM]',
   whenLabel: 'When and where', // spec
   calendar: 'Add to calendar', // spec
   prepLabel: 'Prep checklist', // spec
-  prep: ['[PREP ITEM 1]', '[PREP ITEM 2]', '[PREP ITEM 3]'],
+  prep: ['Check that you can sign in to Claude on the laptop you will bring.', 'Think of one office task that takes too long.', 'If your board must approve it, send them the one-page summary.'],
   boardLabel: 'For your board', // design: nav label
-  forward: '[FORWARD LINK]',
-  forwardSubject: '[FORWARD SUBJECT]',
-  forwardBody: '[FORWARD BODY]',
+  forward: 'Email the one-page summary to your board',
+  forwardSubject: 'Workshop summary for board review',
+  forwardBody: 'Here is a one-page summary of the workshop our office plans to attend.',
   contactLabel: 'Who to contact', // spec
 } as const;
 
 /* ---------- 08 Questions and interest list ---------- */
 export const QUESTIONS = {
   title: 'Questions', // design: nav label and section label
-  lede: '[QUESTIONS LEDE]',
-  formLabel: '[ASK LABEL]',
+  lede: 'Ask a question, or ask to hear about future dates.',
+  formLabel: 'Ask a question',
   name: 'Name', // design: Register field label
   namePlaceholder: 'Full name', // design
   church: 'Organization name', // design: Register field label
   email: 'Email', // design
   emailPlaceholder: 'name@church.org', // design
-  question: '[QUESTION FIELD LABEL]',
+  question: 'Your question',
   future: 'Email me about this workshop and future dates.', // design: Register checkbox
-  send: '[SEND BUTTON]',
-  sent: '[SENT MESSAGE]',
-  sendError: '[SEND ERROR]',
-  answersLabel: '[COMMON QUESTIONS LABEL]',
+  send: 'Send',
+  sent: 'Thank you. We got your message and will reply by email.',
+  sendError: 'We could not send this. Check your connection and try again.',
+  answersLabel: 'Common questions',
 } as const;
