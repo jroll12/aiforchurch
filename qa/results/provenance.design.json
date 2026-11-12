@@ -1,0 +1,30 @@
+{
+  "check": "provenance",
+  "target": "design",
+  "ranAt": "2026-11-12T03:17:42.928Z",
+  "status": "pass",
+  "summary": "proof fixture: 2 orphan strings found (Bring a sack lunch and a smile. / Thanks, we will be in touch soon.), 1 unlisted placeholder; expected 2 and 1",
+  "orphans": [
+    {
+      "page": "proof",
+      "width": 1440,
+      "kind": "visible",
+      "text": "Bring a sack lunch and a smile.",
+      "line": "Bring a sack lunch and a smile."
+    },
+    {
+      "page": "proof",
+      "width": 1440,
+      "kind": "state sent",
+      "text": "Thanks, we will be in touch soon.",
+      "line": "Thanks, we will be in touch soon."
+    }
+  ],
+  "unlisted": [
+    {
+      "page": "proof",
+      "width": 1440,
+      "placeholder": "[NOT A LISTED PLACEHOLDER]"
+    }
+  ]
+}

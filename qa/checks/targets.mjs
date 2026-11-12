@@ -2,7 +2,7 @@
 // buttons, the menu button, and the radio and checkbox labels. Links, the
 // wordmark and FAQ summaries are measured too, because HANDOFF-SPEC.md
 // section 8 sets 44px for every tap target.
-import { BREAKPOINT, targets, server, browser, open, save, installDescribe } from './lib/common.mjs';
+import { BREAKPOINT, targets, server, browser, open, save, installDescribe, revealStates } from './lib/common.mjs';
 import { driveComposite } from './fixtures/register.mjs';
 
 const GROUPS = [
@@ -35,6 +35,9 @@ for (const t of targets()) {
   const { context, page } = await open(br, srv.url, t);
   await installDescribe(page);
   samples.push({ screen: t.screen, width: t.width, state: 'default', items: await measure(page) });
+  if (t.derived && (await revealStates(page))) {
+    samples.push({ screen: t.screen, width: t.width, state: 'all states shown', items: await measure(page) });
+  }
   if (t.kind === 'built' && t.screen === 'register') {
     await driveComposite(page);
     samples.push({ screen: t.screen, width: t.width, state: 'three rows', items: await measure(page) });

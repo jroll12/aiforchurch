@@ -1,7 +1,8 @@
-// Shared helpers for the Stage 1 checks.
-// Written from design/ and HANDOFF-SPEC.md before any page existed: element
-// hooks come from the design markup (ids such as #seat-3 and #n1, classes
-// such as .srow, visible button text), not from how the pages were built.
+// Shared helpers for the checks.
+// Stage 1 hooks come from the design markup (ids such as #seat-3 and #n1,
+// classes such as .srow, visible button text). Stage 2 pages have no
+// artboards, so their hooks are the data-* contract listed under DERIVED,
+// written here before the pages.
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -11,6 +12,9 @@ import { startServer } from './server.mjs';
 export const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
 export const RESULTS = path.join(ROOT, 'qa/results');
 export const RAW = path.join(RESULTS, 'raw');
+export const DIST = path.join(ROOT, 'dist');
+/** Same site built with mock form and payment endpoints (`npm run build:mock`). Never deployed. */
+export const MOCK_DIST = path.join(ROOT, 'dist-mock');
 export const SHOTS = path.join(ROOT, 'qa/screenshots');
 
 /** "built" checks dist/; "design" runs the same checks on the artboards to prove the harness. */
@@ -22,42 +26,115 @@ export const SCREENS = [
   { id: 'register', built: '/register/', design: { 390: 'register-c-mobile.dc.html', 1440: 'register-c-desktop.dc.html' } },
 ];
 
+/**
+ * A saved registration as Register writes it (qa/questions.md D10). Test data
+ * only; it seeds sessionStorage for the pages that read it.
+ */
+export const STATE = {
+  v: 1,
+  ref: 'K7M2Q9',
+  seats: 3,
+  org: 'Test Church',
+  contact: 'Test Contact',
+  attendees: [
+    { name: 'Test Person', email: 'test.person@church.org', role: 'Finance' },
+    { name: 'Second Person', email: 'second.person@church.org', role: 'Pastor' },
+  ],
+  question: 'Bulletins',
+  consent: true,
+  savedAt: '2026-11-12T12:00:00.000Z',
+};
+export const STORAGE_KEY = 'cfco:registration';
+
+/**
+ * Stage 2 pages (HANDOFF-SPEC.md section 7). No artboards: "derived, not designed".
+ * Hook contract the pages are built to:
+ *   [data-state="<name>"]  every state block (success, error, payment states), hidden when inactive
+ *   [data-edit]            Review edit links back to Register
+ *   [data-sum="total"]     Review total row
+ *   button[data-pay]       Review payment button; button[data-pay-offline] only when OFFLINE_PAYMENT
+ *   [data-ref]             the reference code wherever it is shown
+ *   button[data-retry]     Confirmation retry after a failed payment
+ *   a[data-ics]            Add to calendar (absent while the date is a placeholder)
+ *   a[data-forward]        Forward to your board
+ *   button[data-print], a[data-pdf]  Board print or PDF
+ *   form#ask               Questions form: #q-name, #q-church, #q-email, #q-question, #q-future
+ */
+export const DERIVED = [
+  { id: 'workshop', built: '/workshop/' },
+  { id: 'board', built: '/board/' },
+  { id: 'about', built: '/about/' },
+  { id: 'questions', built: '/questions/' },
+  { id: 'review', built: '/register/review/', seed: STATE },
+  { id: 'confirmation', built: '/confirmation/?payment=paid', seed: STATE },
+];
+
 export const BREAKPOINT = 900; // HANDOFF-SPEC.md section 4
 export const LAYOUT_WIDTHS = [390, 1440];
 export const SCROLL_WIDTHS = [320, 390, 768, 1024, 1440]; // SITE-KICKOFF-PROMPT.md check 2
+export const HEADER_WIDTHS = [900, 960, 1024, 1100]; // where the four-item nav is tightest
 
 export const designPath = (screen, width) =>
   `/__design/${SCREENS.find((s) => s.id === screen).design[width]}`;
 
-/** Pages a check runs on: built pages at the given widths, or each artboard at its own width. */
-export function targets(widths = LAYOUT_WIDTHS) {
+/**
+ * Pages a check runs on: built pages (designed and derived) at the given
+ * widths, or each artboard at its own width.
+ */
+export function targets(widths = LAYOUT_WIDTHS, { derived = true } = {}) {
   if (TARGET === 'design') {
     return SCREENS.flatMap((s) =>
       Object.keys(s.design).map((w) => ({ screen: s.id, width: Number(w), path: designPath(s.id, Number(w)), kind: 'design' })),
     );
   }
-  return SCREENS.flatMap((s) => widths.map((width) => ({ screen: s.id, width, path: s.built, kind: 'built' })));
+  const pages = [...SCREENS, ...(derived ? DERIVED : [])];
+  return pages.flatMap((s) => widths.map((width) => ({ screen: s.id, width, path: s.built, kind: 'built', seed: s.seed, derived: !s.design })));
 }
 
 /** Start the static server unless run-all already started one. */
 export async function server() {
   if (process.env.CHECK_BASE_URL) return { url: process.env.CHECK_BASE_URL, close: async () => {} };
-  const { server: srv, url } = await startServer([
-    ['/__design/', path.join(ROOT, 'design')],
-    ['/', path.join(ROOT, 'dist')],
-  ]);
+  const { server: srv, url } = await startServer(MOUNTS());
   return { url, close: () => new Promise((resolve) => srv.close(resolve)) };
 }
+
+/** What the check server serves: artboards, proof fixtures, and the built site. */
+export const MOUNTS = (site = DIST) => [
+  ['/__design/', path.join(ROOT, 'design')],
+  ['/__fixtures/', path.join(ROOT, 'qa/checks/fixtures/pages')],
+  ['/', site],
+];
 
 export const browser = () => chromium.launch();
 
 /** Open a page at a width and wait for network and fonts to settle. */
 export async function open(br, base, target, { height = 900, deviceScaleFactor = 1 } = {}) {
   const context = await br.newContext({ viewport: { width: target.width, height }, deviceScaleFactor });
+  if (target.seed) await seed(context, target.seed);
   const page = await context.newPage();
   await page.goto(base + target.path, { waitUntil: 'networkidle' });
   await page.evaluate(() => document.fonts.ready);
   return { context, page };
+}
+
+/**
+ * Show every state block and every field error at once, so layout checks see
+ * the most text a derived page can hold without driving each state.
+ */
+export const revealStates = (page) =>
+  page.evaluate(() => {
+    for (const el of document.querySelectorAll('[data-state], .err')) el.hidden = false;
+    return document.querySelectorAll('[data-state]').length;
+  });
+
+/** Put a saved registration in sessionStorage before any page script runs. */
+export async function seed(context, state = STATE) {
+  await context.addInitScript(
+    ([key, value]) => {
+      if (!sessionStorage.getItem(key)) sessionStorage.setItem(key, value);
+    },
+    [STORAGE_KEY, JSON.stringify(state)],
+  );
 }
 
 /** Write qa/results/<name>.json (or <name>.design.json) and set the exit code. */

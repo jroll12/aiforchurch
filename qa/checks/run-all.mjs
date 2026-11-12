@@ -1,5 +1,5 @@
 // Runs every check and writes qa/results/summary.json.
-//   node qa/checks/run-all.mjs            checks dist/ (run `npm run build` first)
+//   node qa/checks/run-all.mjs            checks dist/ and dist-mock/ (`npm run verify` builds both first)
 //   node qa/checks/run-all.mjs --design   runs the checks on the artboards (harness proof)
 //   node qa/checks/run-all.mjs --only=contrast,keyboard
 // The checks have no data dependency on each other: they fan out as parallel
@@ -8,12 +8,14 @@
 import { spawn } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
-import { ROOT, RESULTS } from './lib/common.mjs';
+import { ROOT, RESULTS, MOUNTS } from './lib/common.mjs';
 import { startServer } from './lib/server.mjs';
 
 const design = process.argv.includes('--design');
 const only = process.argv.find((a) => a.startsWith('--only='))?.slice(7).split(',');
-const CHECKS = ['text-diff', 'overflow', 'contrast', 'keyboard', 'targets', 'zoom', 'visual', 'network', 'guards', 'behavior'].filter(
+const CHECKS = [
+  'text-diff', 'provenance', 'overflow', 'headerfit', 'contrast', 'keyboard', 'targets', 'zoom', 'visual', 'print', 'network', 'guards', 'behavior', 'flow',
+].filter(
   (c) => !only || only.includes(c),
 );
 
@@ -26,10 +28,7 @@ const suffix = design ? '.design' : '';
 fs.mkdirSync(RESULTS, { recursive: true });
 for (const c of CHECKS) fs.rmSync(path.join(RESULTS, `${c}${suffix}.json`), { force: true });
 
-const { server, url } = await startServer([
-  ['/__design/', path.join(ROOT, 'design')],
-  ['/', path.join(ROOT, 'dist')],
-]);
+const { server, url } = await startServer(MOUNTS());
 const env = { ...process.env, CHECK_BASE_URL: url, CHECK_TARGET: design ? 'design' : 'built' };
 
 const run = (name) =>

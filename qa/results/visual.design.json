@@ -1,7 +1,7 @@
 {
   "check": "visual",
   "target": "design",
-  "ranAt": "2026-11-10T22:23:49.412Z",
+  "ranAt": "2026-11-12T03:17:45.474Z",
   "status": "not run",
   "summary": "compares built pages with artboards; nothing to compare before pages exist"
 }

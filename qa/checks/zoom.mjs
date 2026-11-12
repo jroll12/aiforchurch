@@ -4,7 +4,7 @@
 // horizontal scroll, clipped text and text boxes that overlap each other.
 import fs from 'node:fs';
 import path from 'node:path';
-import { RAW, SCREENS, TARGET, server, browser, open, save, installDescribe } from './lib/common.mjs';
+import { RAW, SCREENS, DERIVED, TARGET, server, browser, open, save, installDescribe, revealStates } from './lib/common.mjs';
 import { driveComposite } from './fixtures/register.mjs';
 
 if (TARGET === 'design') {
@@ -48,9 +48,9 @@ const br = await browser();
 fs.mkdirSync(RAW, { recursive: true });
 const rows = [];
 
-for (const s of SCREENS) {
+for (const s of [...SCREENS, ...DERIVED]) {
   for (const width of [720, 640]) {
-    const { context, page } = await open(br, srv.url, { width, path: s.built }, { deviceScaleFactor: 2 });
+    const { context, page } = await open(br, srv.url, { width, path: s.built, seed: s.seed }, { deviceScaleFactor: 2 });
     await installDescribe(page);
     const shot = async (state) => page.screenshot({ path: path.join(RAW, `zoom-${s.id}-${width}-${state}.png`), fullPage: true });
     rows.push({ screen: s.id, width, state: 'default', ...(await analyze(page)) });
@@ -60,6 +60,10 @@ for (const s of SCREENS) {
       await menu.click();
       rows.push({ screen: s.id, width, state: 'menu open', ...(await analyze(page)) });
       await menu.click();
+    }
+    if (!s.design && (await revealStates(page))) {
+      rows.push({ screen: s.id, width, state: 'all states shown', ...(await analyze(page)) });
+      await shot('states');
     }
     if (s.id === 'register') {
       await driveComposite(page);

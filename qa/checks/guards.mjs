@@ -40,6 +40,14 @@ if (TARGET === 'design' || !fs.existsSync(DIST)) {
   for (const p of placeholders) if (!htmlText.includes(p)) findings.push(`placeholder missing from dist/: ${p}`);
   notes.push(`placeholders checked: ${placeholders.join(' ')}`);
 
+  // Every bracketed placeholder a page carries must be listed in PLACEHOLDERS.md.
+  const listed = new Set(read(path.join(ROOT, 'PLACEHOLDERS.md')).match(/\[[A-Z0-9][^\]]*\]/g) ?? []);
+  const shipped = new Set(all.flatMap(({ text }) => text.match(/\[[A-Z0-9][A-Z0-9 .,'’-]*\]/g) ?? []));
+  for (const p of shipped) if (!listed.has(p)) findings.push(`placeholder in dist/ not listed in PLACEHOLDERS.md: ${p}`);
+
+  // The mock build's service URLs must never reach the real build.
+  for (const { f, text } of all) if (text.includes('/__mock/')) findings.push(`mock service URL in ${f}`);
+
   const ALLOWED_HOSTS = new Set(['fonts.googleapis.com', 'fonts.gstatic.com']);
   for (const file of html) {
     const pagePath = `/${path.relative(DIST, path.dirname(file)).split(path.sep).filter(Boolean).join('/')}${path.dirname(file) === DIST ? '' : '/'}`;

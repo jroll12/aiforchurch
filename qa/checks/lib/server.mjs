@@ -22,10 +22,12 @@ const TYPES = {
 /**
  * Serve directories under URL prefixes, for example
  * [['/__design/', 'design'], ['/', 'dist']]. The longest prefix wins.
+ * A mount may be a function (req, res, rest) instead of a directory; the
+ * checks use one for the mock form and payment services.
  */
 export function startServer(mounts, port = 0) {
   const table = mounts
-    .map(([prefix, dir]) => [prefix, path.resolve(dir)])
+    .map(([prefix, dir]) => [prefix, typeof dir === 'function' ? dir : path.resolve(dir)])
     .sort((a, b) => b[0].length - a[0].length);
 
   const server = http.createServer((req, res) => {
@@ -38,6 +40,7 @@ export function startServer(mounts, port = 0) {
     const mount = table.find(([prefix]) => pathname.startsWith(prefix));
     if (!mount) return send(res, 404);
     const [prefix, root] = mount;
+    if (typeof root === 'function') return root(req, res, pathname.slice(prefix.length));
     let file = path.join(root, pathname.slice(prefix.length));
     if (file !== root && !file.startsWith(root + path.sep)) return send(res, 403);
     try {

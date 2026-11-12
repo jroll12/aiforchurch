@@ -3,9 +3,11 @@
 // files themselves rendered in Chromium. That is a substitute and is reported
 // as one. Output: qa/screenshots/<screen>-<width>.jpg, three panels side by
 // side (design | built | changed pixels in red), for human review.
+// The six derived pages have no artboard, so they get a plain screenshot
+// each (qa/screenshots/<page>-<width>.jpg) for review, with nothing to compare.
 import fs from 'node:fs';
 import path from 'node:path';
-import { RAW, SHOTS, SCREENS, TARGET, LAYOUT_WIDTHS, designPath, server, browser, open, save } from './lib/common.mjs';
+import { RAW, SHOTS, SCREENS, DERIVED, TARGET, LAYOUT_WIDTHS, designPath, server, browser, open, save } from './lib/common.mjs';
 import { driveComposite } from './fixtures/register.mjs';
 
 if (TARGET === 'design') {
@@ -101,12 +103,25 @@ for (const s of SCREENS) {
   }
 }
 
+const derived = [];
+for (const s of DERIVED) {
+  for (const width of LAYOUT_WIDTHS) {
+    const { context, page } = await open(br, srv.url, { width, path: s.built, seed: s.seed });
+    await page.evaluate(() => document.activeElement?.blur());
+    const out = path.join(SHOTS, `${s.id}-${width}.jpg`);
+    await page.screenshot({ path: out, fullPage: true, type: 'jpeg', quality: 60 });
+    derived.push({ screen: s.id, width, image: path.relative(path.resolve(SHOTS, '../..'), out), height: await page.evaluate(() => document.documentElement.scrollHeight) });
+    await context.close();
+  }
+}
+
 save('visual', {
   status: 'review',
   summary: `substitute reference (artboards rendered in Chromium; design/screenshots/ not provided). ${rows
     .map((r) => `${r.screen}@${r.width}: heights ${r.designHeight}/${r.builtHeight}px, ${r.changedPercent}% pixels changed`)
-    .join('; ')}`,
+    .join('; ')}. Derived pages, no reference: ${derived.length} screenshots for review`,
   rows,
+  derived,
 });
 
 await br.close();

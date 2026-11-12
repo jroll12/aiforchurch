@@ -1,7 +1,7 @@
 {
   "check": "targets",
   "target": "design",
-  "ranAt": "2026-11-10T22:24:29.496Z",
+  "ranAt": "2026-11-12T03:17:48.624Z",
   "status": "fail",
   "summary": "53 targets measured, 14 below 44px",
   "failures": [

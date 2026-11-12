@@ -1,0 +1,8 @@
+{
+  "check": "print",
+  "target": "design",
+  "ranAt": "2026-11-12T03:17:46.531Z",
+  "status": "pass",
+  "summary": "proof fixture printed to 4 Letter pages (expected 2 or more)",
+  "pages": 4
+}

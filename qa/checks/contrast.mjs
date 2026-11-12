@@ -5,7 +5,7 @@
 //    measuring the colors actually rendered against their background.
 // C. Direction C rule (HANDOFF-SPEC.md section 2): the accent appears only on
 //    interactive elements.
-import { BREAKPOINT, targets, server, browser, open, save, readTokens, parseColor, contrast, installDescribe } from './lib/common.mjs';
+import { BREAKPOINT, targets, server, browser, open, save, readTokens, parseColor, contrast, installDescribe, revealStates } from './lib/common.mjs';
 import { driveComposite } from './fixtures/register.mjs';
 
 const tokens = readTokens();
@@ -120,6 +120,9 @@ for (const t of targets()) {
   const { context, page } = await open(br, srv.url, t);
   await installDescribe(page);
   samples.push({ screen: t.screen, width: t.width, state: 'default', ...(await walk(page, accents)) });
+  if (t.derived && (await revealStates(page))) {
+    samples.push({ screen: t.screen, width: t.width, state: 'all states shown', ...(await walk(page, accents)) });
+  }
   if (t.kind === 'built' && t.screen === 'register') {
     await driveComposite(page);
     samples.push({ screen: t.screen, width: t.width, state: 'composite with error', ...(await walk(page, accents)) });

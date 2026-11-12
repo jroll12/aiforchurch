@@ -1,6 +1,8 @@
 # dependencies and build output
 node_modules/
 dist/
+# test-only build with mock form and payment URLs (npm run build:mock); never deployed
+dist-mock/
 .astro/
 
 # check runs: raw captures stay local; the report and composite images are committed

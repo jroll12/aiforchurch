@@ -2,9 +2,11 @@
 // Records every request during load and interaction. Allowed: this server,
 // Google Fonts (the stylesheet host and the font-file host), and the hosts of
 // the form endpoint and payment links once those are real URLs in config.
+// The full payment and question flow runs on dist-mock/ in flow.mjs, which
+// records its hosts the same way.
 import fs from 'node:fs';
 import path from 'node:path';
-import { ROOT, BREAKPOINT, targets, server, browser, save } from './lib/common.mjs';
+import { ROOT, BREAKPOINT, targets, server, browser, save, seed } from './lib/common.mjs';
 import { driveValid } from './fixtures/register.mjs';
 
 const configHosts = [...fs.readFileSync(path.join(ROOT, 'src/config.ts'), 'utf8').matchAll(/https?:\/\/([^/'"\s]+)/g)].map((m) => m[1]);
@@ -16,6 +18,7 @@ const rows = [];
 
 for (const t of targets()) {
   const context = await br.newContext({ viewport: { width: t.width, height: 900 } });
+  if (t.seed) await seed(context, t.seed);
   const page = await context.newPage();
   const urls = [];
   page.on('request', (r) => urls.push(r.url()));

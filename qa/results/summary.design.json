@@ -1,16 +1,76 @@
 {
   "target": "design",
-  "ranAt": "2026-11-10T22:24:29.547Z",
+  "ranAt": "2026-11-12T03:17:50.582Z",
   "summary": [
+    {
+      "check": "text-diff",
+      "status": "pass",
+      "summary": "home@390: 64 lines, home@1440: 68 lines, register@390: 73 lines, register@1440: 76 lines"
+    },
+    {
+      "check": "provenance",
+      "status": "pass",
+      "summary": "proof fixture: 2 orphan strings found (Bring a sack lunch and a smile. / Thanks, we will be in touch soon.), 1 unlisted placeholder; expected 2 and 1"
+    },
+    {
+      "check": "overflow",
+      "status": "pass",
+      "summary": "4 page states measured, 0 with horizontal scroll"
+    },
+    {
+      "check": "headerfit",
+      "status": "pass",
+      "summary": "artboard at 900, 960, 1024, 1100 px: 900: \"For your board\" wraps to 3 lines | 960: \"For your board\" wraps to 2 lines | 1024: \"For your board\" wraps to 2 lines; the wrap at 900 px was detected"
+    },
+    {
+      "check": "contrast",
+      "status": "pass",
+      "summary": "12 token pairs (0 off), 11 rendered color pairs, 0 text below minimum, 0 accent misuses"
+    },
+    {
+      "check": "keyboard",
+      "status": "fail",
+      "summary": "4 problems"
+    },
     {
       "check": "targets",
       "status": "fail",
       "summary": "53 targets measured, 14 below 44px"
     },
     {
+      "check": "zoom",
+      "status": "not run",
+      "summary": "artboards are fixed-width files; zoom applies to the built pages"
+    },
+    {
+      "check": "visual",
+      "status": "not run",
+      "summary": "compares built pages with artboards; nothing to compare before pages exist"
+    },
+    {
+      "check": "print",
+      "status": "pass",
+      "summary": "proof fixture printed to 4 Letter pages (expected 2 or more)"
+    },
+    {
+      "check": "network",
+      "status": "pass",
+      "summary": "4 page loads; hosts seen: 127.0.0.1, fonts.googleapis.com, fonts.gstatic.com"
+    },
+    {
       "check": "guards",
       "status": "pass",
-      "summary": "0 findings; 30 repo files scanned for dashes"
+      "summary": "0 findings; 78 repo files scanned for dashes"
+    },
+    {
+      "check": "behavior",
+      "status": "not run",
+      "summary": "the artboards have no behavior"
+    },
+    {
+      "check": "flow",
+      "status": "not run",
+      "summary": "the artboards have no behavior"
     }
   ]
 }

@@ -1,0 +1,123 @@
+{
+  "check": "headerfit",
+  "target": "design",
+  "ranAt": "2026-11-12T03:17:44.618Z",
+  "status": "pass",
+  "summary": "artboard at 900, 960, 1024, 1100 px: 900: \"For your board\" wraps to 3 lines | 960: \"For your board\" wraps to 2 lines | 1024: \"For your board\" wraps to 2 lines; the wrap at 900 px was detected",
+  "rows": [
+    {
+      "screen": "home artboard",
+      "width": 900,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 3
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 63,
+      "gapNavCta": 42,
+      "navRight": 649,
+      "viewport": 900,
+      "problems": [
+        "\"For your board\" wraps to 3 lines"
+      ]
+    },
+    {
+      "screen": "home artboard",
+      "width": 960,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 2
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 83,
+      "gapNavCta": 57,
+      "navRight": 694,
+      "viewport": 960,
+      "problems": [
+        "\"For your board\" wraps to 2 lines"
+      ]
+    },
+    {
+      "screen": "home artboard",
+      "width": 1024,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 2
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 104,
+      "gapNavCta": 73,
+      "navRight": 742,
+      "viewport": 1024,
+      "problems": [
+        "\"For your board\" wraps to 2 lines"
+      ]
+    },
+    {
+      "screen": "home artboard",
+      "width": 1100,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 68,
+      "gapNavCta": 92,
+      "navRight": 799,
+      "viewport": 1100,
+      "problems": []
+    }
+  ]
+}

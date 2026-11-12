@@ -1,7 +1,8 @@
 // Extra check: Register behavior (HANDOFF-SPEC.md section 7, including the
 // derived parts listed in qa/questions.md). Drives the built page through
 // seat changes, add and remove, every validation message, error clearing,
-// the saved state and its reference code, and restore on reload.
+// the saved state and its reference code, Continue opening Review, and
+// restore when Register opens again.
 import { TARGET, server, browser, open, save } from './lib/common.mjs';
 import { CONTINUE } from './fixtures/register.mjs';
 
@@ -100,31 +101,30 @@ expect('focus on first invalid field', await page.evaluate(() => document.active
 expect('empty rows are allowed', [await errorOf('n2'), await errorOf('n3')], [null, null]);
 expect('error linked to field', await errorOf('e1'), { text: 'Enter a valid email.', invalid: 'true', describedby: 'e1-err' });
 
-// 8. Valid Continue saves state; Stage 1 does not navigate
+// 8. Valid Continue saves state and opens Review (Stage 2: the review route is built)
 await page.fill('#n1', 'Test Person');
 await page.fill('#e1', 'test.person@church.org');
 await page.selectOption('#r1', 'Finance');
 await page.fill('#task', 'Bulletins');
 await page.check('#consent');
-const before = page.url();
 await page.click(CONTINUE);
-await page.waitForTimeout(300);
+await page.waitForURL('**/register/review/', { timeout: 5000 }).catch(() => {});
 const state = await page.evaluate(() => JSON.parse(sessionStorage.getItem('cfco:registration')));
-expect('no navigation in Stage 1', page.url(), before);
+expect('valid Continue opens Review', new URL(page.url()).pathname, '/register/review/');
 expect('saved state shape', state && { v: state.v, seats: state.seats, org: state.org, contact: state.contact, attendees: state.attendees, question: state.question, consent: state.consent }, {
   v: 1, seats: 3, org: 'Test Church', contact: 'Test Contact', attendees: [{ name: 'Test Person', email: 'test.person@church.org', role: 'Finance' }], question: 'Bulletins', consent: true,
 });
 expect('reference code: 6 characters, no lookalikes', /^[ABCDEFGHJKMNPQRSTUVWXYZ23456789]{6}$/.test(state?.ref ?? ''), true);
 
-// 9. Restore on reload, same reference code on the next save
-await page.reload({ waitUntil: 'networkidle' });
+// 9. Restore when Register opens again, same reference code on the next save
+await page.goto(`${srv.url}/register/`, { waitUntil: 'networkidle' });
 const restored = await ui();
 expect('restore: seats and rows', [restored.checked, restored.rows, restored.status], ['3', 3, '1 of 3 seats filled']);
 expect('restore: values', await page.evaluate(() => ['org', 'contact', 'n1', 'e1', 'r1', 'task'].map((id) => document.getElementById(id).value).concat(document.getElementById('consent').checked)), [
   'Test Church', 'Test Contact', 'Test Person', 'test.person@church.org', 'Finance', 'Bulletins', true,
 ]);
 await page.click(CONTINUE);
-await page.waitForTimeout(200);
+await page.waitForURL('**/register/review/', { timeout: 5000 }).catch(() => {});
 expect('reference code is stable', await page.evaluate(() => JSON.parse(sessionStorage.getItem('cfco:registration')).ref), state?.ref);
 
 await context.close();
