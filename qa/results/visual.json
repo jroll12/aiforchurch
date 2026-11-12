@@ -1,9 +1,9 @@
 {
   "check": "visual",
   "target": "built",
-  "ranAt": "2026-11-10T22:35:58.878Z",
+  "ranAt": "2026-11-12T03:31:56.719Z",
   "status": "review",
-  "summary": "substitute reference (artboards rendered in Chromium; design/screenshots/ not provided). home@390: heights 4193/4383px, 20% pixels changed; home@1440: heights 3232/3232px, 0% pixels changed; register@390: heights 3499/3549px, 12% pixels changed; register@1440: heights 2574/2574px, 0.1% pixels changed",
+  "summary": "substitute reference (artboards rendered in Chromium; design/screenshots/ not provided). home@390: heights 4193/4383px, 20% pixels changed; home@1440: heights 3232/3232px, 0% pixels changed; register@390: heights 3499/3549px, 12% pixels changed; register@1440: heights 2574/2574px, 0% pixels changed. Derived pages, no reference: 12 screenshots for review",
   "rows": [
     {
       "screen": "home",
@@ -35,7 +35,81 @@
       "image": "qa/screenshots/register-1440.jpg",
       "designHeight": 2574,
       "builtHeight": 2574,
-      "changedPercent": 0.1
+      "changedPercent": 0
+    }
+  ],
+  "derived": [
+    {
+      "screen": "workshop",
+      "width": 390,
+      "image": "qa/screenshots/workshop-390.jpg",
+      "height": 3389
+    },
+    {
+      "screen": "workshop",
+      "width": 1440,
+      "image": "qa/screenshots/workshop-1440.jpg",
+      "height": 3001
+    },
+    {
+      "screen": "board",
+      "width": 390,
+      "image": "qa/screenshots/board-390.jpg",
+      "height": 2595
+    },
+    {
+      "screen": "board",
+      "width": 1440,
+      "image": "qa/screenshots/board-1440.jpg",
+      "height": 2136
+    },
+    {
+      "screen": "about",
+      "width": 390,
+      "image": "qa/screenshots/about-390.jpg",
+      "height": 1281
+    },
+    {
+      "screen": "about",
+      "width": 1440,
+      "image": "qa/screenshots/about-1440.jpg",
+      "height": 1283
+    },
+    {
+      "screen": "questions",
+      "width": 390,
+      "image": "qa/screenshots/questions-390.jpg",
+      "height": 1451
+    },
+    {
+      "screen": "questions",
+      "width": 1440,
+      "image": "qa/screenshots/questions-1440.jpg",
+      "height": 1384
+    },
+    {
+      "screen": "review",
+      "width": 390,
+      "image": "qa/screenshots/review-390.jpg",
+      "height": 2283
+    },
+    {
+      "screen": "review",
+      "width": 1440,
+      "image": "qa/screenshots/review-1440.jpg",
+      "height": 1958
+    },
+    {
+      "screen": "confirmation",
+      "width": 390,
+      "image": "qa/screenshots/confirmation-390.jpg",
+      "height": 1622
+    },
+    {
+      "screen": "confirmation",
+      "width": 1440,
+      "image": "qa/screenshots/confirmation-1440.jpg",
+      "height": 1513
     }
   ]
 }

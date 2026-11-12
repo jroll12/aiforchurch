@@ -1,9 +1,9 @@
 {
   "check": "text-diff",
   "target": "built",
-  "ranAt": "2026-11-10T22:35:42.705Z",
+  "ranAt": "2026-11-12T03:30:55.172Z",
   "status": "pass",
-  "summary": "16 differences, 0 unexplained, 0 stale expectations",
+  "summary": "10 differences, 0 unexplained, 0 stale expectations",
   "unexplained": [],
   "stale": [],
   "results": [
@@ -18,30 +18,8 @@
       "screen": "home",
       "width": 1440,
       "designLines": 68,
-      "builtLines": 65,
-      "diffs": [
-        {
-          "side": "design-only",
-          "text": "Workshop",
-          "at": 1,
-          "explained": true,
-          "reason": "Nav item omitted: /workshop/ is not built in Stage 1 (SITE-KICKOFF-PROMPT.md Stage 1 step 3; CLAUDE.md hard rule 6)."
-        },
-        {
-          "side": "design-only",
-          "text": "For your board",
-          "at": 2,
-          "explained": true,
-          "reason": "Nav item omitted: /board/ is not built in Stage 1 (SITE-KICKOFF-PROMPT.md Stage 1 step 3; CLAUDE.md hard rule 6)."
-        },
-        {
-          "side": "design-only",
-          "text": "About",
-          "at": 3,
-          "explained": true,
-          "reason": "Nav item omitted: /about/ is not built in Stage 1 (SITE-KICKOFF-PROMPT.md Stage 1 step 3; CLAUDE.md hard rule 6)."
-        }
-      ]
+      "builtLines": 68,
+      "diffs": []
     },
     {
       "screen": "register",
@@ -97,29 +75,8 @@
       "screen": "register",
       "width": 1440,
       "designLines": 76,
-      "builtLines": 73,
+      "builtLines": 76,
       "diffs": [
-        {
-          "side": "design-only",
-          "text": "Workshop",
-          "at": 1,
-          "explained": true,
-          "reason": "Nav item omitted: /workshop/ is not built in Stage 1 (SITE-KICKOFF-PROMPT.md Stage 1 step 3; CLAUDE.md hard rule 6)."
-        },
-        {
-          "side": "design-only",
-          "text": "For your board",
-          "at": 2,
-          "explained": true,
-          "reason": "Nav item omitted: /board/ is not built in Stage 1 (SITE-KICKOFF-PROMPT.md Stage 1 step 3; CLAUDE.md hard rule 6)."
-        },
-        {
-          "side": "design-only",
-          "text": "About",
-          "at": 3,
-          "explained": true,
-          "reason": "Nav item omitted: /about/ is not built in Stage 1 (SITE-KICKOFF-PROMPT.md Stage 1 step 3; CLAUDE.md hard rule 6)."
-        },
         {
           "side": "design-only",
           "text": "[placeholder]",
@@ -130,7 +87,7 @@
         {
           "side": "built-only",
           "text": "[placeholder] name@church.org",
-          "at": 39,
+          "at": 42,
           "explained": true,
           "reason": "Attendee 2 email placeholder from HANDOFF-SPEC.md section 7 (see the design-only entry above)."
         },
@@ -144,7 +101,7 @@
         {
           "side": "built-only",
           "text": "[select] Communications",
-          "at": 42,
+          "at": 45,
           "explained": true,
           "reason": "Attendee 2 role as intended (see the design-only entry above). Test fixture value only; the shipped select starts on \"Choose a role\"."
         }

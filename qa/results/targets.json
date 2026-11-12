@@ -1,9 +1,9 @@
 {
   "check": "targets",
   "target": "built",
-  "ranAt": "2026-11-10T22:35:47.377Z",
+  "ranAt": "2026-11-12T03:31:35.619Z",
   "status": "pass",
-  "summary": "92 targets measured, 0 below 44px",
+  "summary": "293 targets measured, 0 below 44px",
   "failures": [],
   "samples": [
     {
@@ -139,6 +139,27 @@
         },
         {
           "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
           "el": "a \"Questions\"",
           "w": 350,
           "h": 48,
@@ -225,6 +246,27 @@
           "group": "link",
           "el": "a.mark \"Claude for Church Offices\"",
           "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 77.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 108.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 46.8,
           "h": 44,
           "ok": true
         },
@@ -545,6 +587,27 @@
         },
         {
           "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
           "el": "a \"Questions\"",
           "w": 350,
           "h": 48,
@@ -610,6 +673,27 @@
           "group": "link",
           "el": "a.mark \"Claude for Church Offices\"",
           "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 77.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 108.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 46.8,
           "h": 44,
           "ok": true
         },
@@ -699,8 +783,1499 @@
         },
         {
           "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 77.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 108.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 46.8,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
           "el": "a \"Questions\"",
           "w": 76.6,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "workshop",
+      "width": 390,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn \"Reserve seats\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "workshop",
+      "width": 390,
+      "state": "menu open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn \"Reserve seats\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "workshop",
+      "width": 1440,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "a.btn \"Reserve seats\"",
+          "w": 199.3,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 77.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 108.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 46.8,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 76.6,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "board",
+      "width": 390,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn.alt \"[PRINT BUTTON]\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn \"Reserve seats\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "board",
+      "width": 390,
+      "state": "menu open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn.alt \"[PRINT BUTTON]\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn \"Reserve seats\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "board",
+      "width": 1440,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.btn.alt \"[PRINT BUTTON]\"",
+          "w": 197.9,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn \"Reserve seats\"",
+          "w": 199.3,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 77.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 108.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 46.8,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 76.6,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "about",
+      "width": 390,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "about",
+      "width": 390,
+      "state": "menu open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "about",
+      "width": 1440,
+      "state": "default",
+      "items": [
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 77.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 108.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 46.8,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 76.6,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "questions",
+      "width": 390,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn \"[SEND BUTTON]\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "checkbox label",
+          "el": "label \"Email me about this workshop and future \"",
+          "w": 312,
+          "h": 52.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Do we need a paid Claude account?\"",
+          "w": 350,
+          "h": 72,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Can our whole office come?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Is our information safe?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "questions",
+      "width": 390,
+      "state": "all states shown",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn \"[SEND BUTTON]\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "checkbox label",
+          "el": "label \"Email me about this workshop and future \"",
+          "w": 312,
+          "h": 52.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Do we need a paid Claude account?\"",
+          "w": 350,
+          "h": 72,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Can our whole office come?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Is our information safe?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "questions",
+      "width": 390,
+      "state": "menu open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn \"[SEND BUTTON]\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "checkbox label",
+          "el": "label \"Email me about this workshop and future \"",
+          "w": 312,
+          "h": 52.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Do we need a paid Claude account?\"",
+          "w": 350,
+          "h": 72,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Can our whole office come?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Is our information safe?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "questions",
+      "width": 1440,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.btn \"[SEND BUTTON]\"",
+          "w": 219.8,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "checkbox label",
+          "el": "label \"Email me about this workshop and future \"",
+          "w": 395.6,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 77.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 108.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 46.8,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 76.6,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Do we need a paid Claude account?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Can our whole office come?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Is our information safe?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "questions",
+      "width": 1440,
+      "state": "all states shown",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.btn \"[SEND BUTTON]\"",
+          "w": 219.8,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "checkbox label",
+          "el": "label \"Email me about this workshop and future \"",
+          "w": 395.6,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 77.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 108.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 46.8,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 76.6,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Do we need a paid Claude account?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Can our whole office come?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Is our information safe?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "review",
+      "width": 390,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn.alt \"Back\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn \"[PAY BUTTON]\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "review",
+      "width": 390,
+      "state": "all states shown",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn.alt \"Back\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn \"[PAY BUTTON]\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "review",
+      "width": 390,
+      "state": "menu open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn.alt \"Back\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn \"[PAY BUTTON]\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "review",
+      "width": 1440,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "a.btn.alt \"Back\"",
+          "w": 96.2,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn \"[PAY BUTTON]\"",
+          "w": 205.2,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 77.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 108.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 46.8,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 76.6,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "review",
+      "width": 1440,
+      "state": "all states shown",
+      "items": [
+        {
+          "group": "button",
+          "el": "a.btn.alt \"Back\"",
+          "w": 96.2,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn \"[PAY BUTTON]\"",
+          "w": 205.2,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 77.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 108.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 46.8,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 76.6,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.edit \"Edit\"",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "confirmation",
+      "width": 390,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.lnk \"[FORWARD LINK]\"",
+          "w": 145.6,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "confirmation",
+      "width": 390,
+      "state": "all states shown",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn \"[RETRY BUTTON]\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.lnk \"[FORWARD LINK]\"",
+          "w": 145.6,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "confirmation",
+      "width": 390,
+      "state": "menu open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn \"[RETRY BUTTON]\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.lnk \"[FORWARD LINK]\"",
+          "w": 145.6,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "confirmation",
+      "width": 1440,
+      "state": "default",
+      "items": [
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 77.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 108.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 46.8,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 76.6,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.lnk \"[FORWARD LINK]\"",
+          "w": 154.1,
+          "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "confirmation",
+      "width": 1440,
+      "state": "all states shown",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.btn \"[RETRY BUTTON]\"",
+          "w": 230.8,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 77.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 108.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 46.8,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 76.6,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.lnk \"[FORWARD LINK]\"",
+          "w": 154.1,
           "h": 44,
           "ok": true
         }

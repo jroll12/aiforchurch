@@ -535,7 +535,8 @@ textarea.inp { height: 120px; padding: 12px 14px; line-height: 1.5; resize: none
   .ppl li { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 190px; gap: 16px; }
 }
 .qv { white-space: pre-line; overflow-wrap: anywhere; }
-.pg a.edit { display: inline-flex; align-items: center; min-height: 44px; margin-top: 8px; font-weight: 700; font-size: 17px; }
+.pg a.edit { display: inline-flex; align-items: center; min-height: 44px; min-width: 44px; margin-top: 8px; font-weight: 700; font-size: 17px; }
+.pg a.lnk { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; } /* a link on its own line, with a 44px hit area */
 .review .tbl { margin-bottom: 0; }
 
 /* Confirmation: the reference code line under the heading. */

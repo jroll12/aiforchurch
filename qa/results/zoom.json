@@ -1,9 +1,9 @@
 {
   "check": "zoom",
   "target": "built",
-  "ranAt": "2026-11-10T22:35:54.158Z",
+  "ranAt": "2026-11-12T03:31:53.821Z",
   "status": "pass",
-  "summary": "10 states at 720 and 640 px (device scale 2), 0 with scroll, clipping or overlap",
+  "summary": "40 states at 720 and 640 px (device scale 2), 0 with scroll, clipping or overlap",
   "failures": [],
   "rows": [
     {
@@ -91,6 +91,276 @@
       "screen": "register",
       "width": 640,
       "state": "composite with error",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "workshop",
+      "width": 720,
+      "state": "default",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "workshop",
+      "width": 720,
+      "state": "menu open",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "workshop",
+      "width": 640,
+      "state": "default",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "workshop",
+      "width": 640,
+      "state": "menu open",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "board",
+      "width": 720,
+      "state": "default",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "board",
+      "width": 720,
+      "state": "menu open",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "board",
+      "width": 640,
+      "state": "default",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "board",
+      "width": 640,
+      "state": "menu open",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "about",
+      "width": 720,
+      "state": "default",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "about",
+      "width": 720,
+      "state": "menu open",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "about",
+      "width": 640,
+      "state": "default",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "about",
+      "width": 640,
+      "state": "menu open",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "questions",
+      "width": 720,
+      "state": "default",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "questions",
+      "width": 720,
+      "state": "menu open",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "questions",
+      "width": 720,
+      "state": "all states shown",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "questions",
+      "width": 640,
+      "state": "default",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "questions",
+      "width": 640,
+      "state": "menu open",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "questions",
+      "width": 640,
+      "state": "all states shown",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "review",
+      "width": 720,
+      "state": "default",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "review",
+      "width": 720,
+      "state": "menu open",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "review",
+      "width": 720,
+      "state": "all states shown",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "review",
+      "width": 640,
+      "state": "default",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "review",
+      "width": 640,
+      "state": "menu open",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "review",
+      "width": 640,
+      "state": "all states shown",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "confirmation",
+      "width": 720,
+      "state": "default",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "confirmation",
+      "width": 720,
+      "state": "menu open",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "confirmation",
+      "width": 720,
+      "state": "all states shown",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "confirmation",
+      "width": 640,
+      "state": "default",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "confirmation",
+      "width": 640,
+      "state": "menu open",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "confirmation",
+      "width": 640,
+      "state": "all states shown",
       "viewport": 640,
       "scrollWidth": 640,
       "clipped": [],

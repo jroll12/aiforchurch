@@ -42,7 +42,9 @@ if (TARGET === 'design' || !fs.existsSync(DIST)) {
 
   // Every bracketed placeholder a page carries must be listed in PLACEHOLDERS.md.
   const listed = new Set(read(path.join(ROOT, 'PLACEHOLDERS.md')).match(/\[[A-Z0-9][^\]]*\]/g) ?? []);
-  const shipped = new Set(all.flatMap(({ text }) => text.match(/\[[A-Z0-9][A-Z0-9 .,'’-]*\]/g) ?? []));
+  // Page text only: scripts and styles hold array indexes such as [0] that are not copy.
+  const pageText = html.map((f) => read(f).replace(/<(script|style)\b[\s\S]*?<\/\1>/g, ''));
+  const shipped = new Set(pageText.flatMap((text) => text.match(/\[[A-Z0-9][A-Z0-9 .,'’-]*\]/g) ?? []));
   for (const p of shipped) if (!listed.has(p)) findings.push(`placeholder in dist/ not listed in PLACEHOLDERS.md: ${p}`);
 
   // The mock build's service URLs must never reach the real build.

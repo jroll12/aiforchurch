@@ -1,7 +1,7 @@
 {
   "check": "behavior",
   "target": "built",
-  "ranAt": "2026-11-12T03:25:02.946Z",
+  "ranAt": "2026-11-12T03:31:57.371Z",
   "status": "pass",
   "summary": "25 of 25 behavior assertions hold",
   "failed": [],
@@ -335,8 +335,8 @@
     {
       "name": "reference code is stable",
       "ok": true,
-      "actual": "F5Z9FN",
-      "wanted": "F5Z9FN"
+      "actual": "4Z9S8X",
+      "wanted": "4Z9S8X"
     }
   ]
 }

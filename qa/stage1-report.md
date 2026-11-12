@@ -101,7 +101,7 @@ The placeholder color is the browser default, as in the artboards. It passes in 
 7. **Attendee 2 email shows its placeholder** where the artboard showed none (section 7).
 8. **Derived behavior with no artboard:** pre-choice state, row changes, status count, remove and add focus, error placement for the seat picker, error clearing, saved state, mobile menu open state, page titles. All listed in qa/questions.md (D1 to D19).
 9. **Invisible additions:** viewport meta tag (the artboards lack one), `role="list"` on two styled lists, robots noindex while placeholders remain, an empty data: favicon, `aria-required` on organization and contact.
-10. **Not deviations, noted for clarity:** paragraph margins that the artboard CSS declares but its own reset cancels are left cancelled, so the pages match what the artboards show (qa/questions.md, open question 11).
+10. **Not deviations, noted for clarity:** paragraph margins that the artboard CSS declares but its own reset cancels are left cancelled, so the pages match what the artboards show (qa/questions.md, the open question on paragraph gaps).
 
 ## Known limits
 

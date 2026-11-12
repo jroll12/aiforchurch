@@ -1,9 +1,9 @@
 {
   "check": "network",
   "target": "built",
-  "ranAt": "2026-11-10T22:35:53.613Z",
+  "ranAt": "2026-11-12T03:31:54.511Z",
   "status": "pass",
-  "summary": "4 page loads; hosts seen: 127.0.0.1, fonts.googleapis.com, fonts.gstatic.com",
+  "summary": "16 page loads; hosts seen: 127.0.0.1, fonts.googleapis.com, fonts.gstatic.com",
   "allowed": [
     "127.0.0.1",
     "localhost",
@@ -36,7 +36,7 @@
     {
       "screen": "register",
       "width": 390,
-      "requests": 5,
+      "requests": 12,
       "hosts": [
         "127.0.0.1",
         "fonts.googleapis.com",
@@ -47,7 +47,139 @@
     {
       "screen": "register",
       "width": 1440,
-      "requests": 5,
+      "requests": 12,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "workshop",
+      "width": 390,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "workshop",
+      "width": 1440,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "board",
+      "width": 390,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "board",
+      "width": 1440,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "about",
+      "width": 390,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "about",
+      "width": 1440,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "questions",
+      "width": 390,
+      "requests": 6,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "questions",
+      "width": 1440,
+      "requests": 6,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "review",
+      "width": 390,
+      "requests": 6,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "review",
+      "width": 1440,
+      "requests": 6,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "confirmation",
+      "width": 390,
+      "requests": 6,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "confirmation",
+      "width": 1440,
+      "requests": 6,
       "hosts": [
         "127.0.0.1",
         "fonts.googleapis.com",

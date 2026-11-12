@@ -1,9 +1,9 @@
 {
   "check": "keyboard",
   "target": "built",
-  "ranAt": "2026-11-10T22:35:48.264Z",
+  "ranAt": "2026-11-12T03:31:38.591Z",
   "status": "pass",
-  "summary": "4 page layouts walked, all stops visible, FAQ, errors and menu OK",
+  "summary": "16 page layouts walked, all stops visible, FAQ, errors and menu OK",
   "problems": [],
   "pages": [
     {
@@ -166,7 +166,7 @@
           "navVisible": true
         },
         "next": {
-          "el": "a \"Questions\"",
+          "el": "a \"Workshop\"",
           "inNav": true
         },
         "closed": {
@@ -184,6 +184,30 @@
         "stops": [
           {
             "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Workshop\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"For your board\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"About\"",
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -279,10 +303,13 @@
             "visible": true
           }
         ],
-        "expectedCount": 12,
+        "expectedCount": 15,
         "missed": 0,
         "expected": [
           "a.mark \"Claude for Church Offices\"",
+          "a \"Workshop\"",
+          "a \"For your board\"",
+          "a \"About\"",
           "a \"Questions\"",
           "a.btn.hcta \"Reserve seats\"",
           "a.btn \"Reserve seats\"",
@@ -520,7 +547,7 @@
           "navVisible": true
         },
         "next": {
-          "el": "a \"Questions\"",
+          "el": "a \"Workshop\"",
           "inNav": true
         },
         "closed": {
@@ -538,6 +565,30 @@
         "stops": [
           {
             "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Workshop\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"For your board\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"About\"",
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -633,10 +684,13 @@
             "visible": true
           }
         ],
-        "expectedCount": 12,
+        "expectedCount": 15,
         "missed": 0,
         "expected": [
           "a.mark \"Claude for Church Offices\"",
+          "a \"Workshop\"",
+          "a \"For your board\"",
+          "a \"About\"",
           "a \"Questions\"",
           "input#seat-1",
           "input#org.inp",
@@ -704,6 +758,986 @@
         },
         "ok": true
       }
+    },
+    {
+      "screen": "workshop",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.btn \"Reserve seats\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 3,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]",
+          "a.btn \"Reserve seats\""
+        ]
+      },
+      "faq": [],
+      "menu": {
+        "opened": {
+          "expanded": "true",
+          "navVisible": true
+        },
+        "next": {
+          "el": "a \"Workshop\"",
+          "inNav": true
+        },
+        "closed": {
+          "expanded": "false",
+          "navVisible": false,
+          "focusOnButton": true
+        },
+        "ok": true
+      }
+    },
+    {
+      "screen": "workshop",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Workshop\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"For your board\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"About\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Questions\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.btn \"Reserve seats\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 6,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Workshop\"",
+          "a \"For your board\"",
+          "a \"About\"",
+          "a \"Questions\"",
+          "a.btn \"Reserve seats\""
+        ]
+      },
+      "faq": []
+    },
+    {
+      "screen": "board",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.btn.alt \"[PRINT BUTTON]\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.btn \"Reserve seats\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 4,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]",
+          "button.btn.alt \"[PRINT BUTTON]\"",
+          "a.btn \"Reserve seats\""
+        ]
+      },
+      "faq": [],
+      "menu": {
+        "opened": {
+          "expanded": "true",
+          "navVisible": true
+        },
+        "next": {
+          "el": "a \"Workshop\"",
+          "inNav": true
+        },
+        "closed": {
+          "expanded": "false",
+          "navVisible": false,
+          "focusOnButton": true
+        },
+        "ok": true
+      }
+    },
+    {
+      "screen": "board",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Workshop\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"For your board\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"About\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Questions\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.btn.alt \"[PRINT BUTTON]\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.btn \"Reserve seats\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 7,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Workshop\"",
+          "a \"For your board\"",
+          "a \"About\"",
+          "a \"Questions\"",
+          "button.btn.alt \"[PRINT BUTTON]\"",
+          "a.btn \"Reserve seats\""
+        ]
+      },
+      "faq": []
+    },
+    {
+      "screen": "about",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 2,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]"
+        ]
+      },
+      "faq": [],
+      "menu": {
+        "opened": {
+          "expanded": "true",
+          "navVisible": true
+        },
+        "next": {
+          "el": "a \"Workshop\"",
+          "inNav": true
+        },
+        "closed": {
+          "expanded": "false",
+          "navVisible": false,
+          "focusOnButton": true
+        },
+        "ok": true
+      }
+    },
+    {
+      "screen": "about",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Workshop\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"For your board\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"About\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Questions\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 5,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Workshop\"",
+          "a \"For your board\"",
+          "a \"About\"",
+          "a \"Questions\""
+        ]
+      },
+      "faq": []
+    },
+    {
+      "screen": "questions",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#q-name.inp",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#q-church.inp",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#q-email.inp",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "textarea#q-question.inp",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#q-future",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "summary \"Do we need a paid Claude account?\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "summary \"Can our whole office come?\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "summary \"Is our information safe?\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 10,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]",
+          "input#q-name.inp",
+          "input#q-church.inp",
+          "input#q-email.inp",
+          "textarea#q-question.inp",
+          "input#q-future",
+          "summary \"Do we need a paid Claude account?\"",
+          "summary \"Can our whole office come?\"",
+          "summary \"Is our information safe?\""
+        ]
+      },
+      "faq": [
+        {
+          "item": 1,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 2,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 3,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        }
+      ],
+      "menu": {
+        "opened": {
+          "expanded": "true",
+          "navVisible": true
+        },
+        "next": {
+          "el": "a \"Workshop\"",
+          "inNav": true
+        },
+        "closed": {
+          "expanded": "false",
+          "navVisible": false,
+          "focusOnButton": true
+        },
+        "ok": true
+      }
+    },
+    {
+      "screen": "questions",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Workshop\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"For your board\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"About\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Questions\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#q-name.inp",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#q-church.inp",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#q-email.inp",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "textarea#q-question.inp",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#q-future",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "summary \"Do we need a paid Claude account?\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "summary \"Can our whole office come?\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "summary \"Is our information safe?\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 13,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Workshop\"",
+          "a \"For your board\"",
+          "a \"About\"",
+          "a \"Questions\"",
+          "input#q-name.inp",
+          "input#q-church.inp",
+          "input#q-email.inp",
+          "textarea#q-question.inp",
+          "input#q-future",
+          "summary \"Do we need a paid Claude account?\"",
+          "summary \"Can our whole office come?\"",
+          "summary \"Is our information safe?\""
+        ]
+      },
+      "faq": [
+        {
+          "item": 1,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 2,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        },
+        {
+          "item": 3,
+          "before": false,
+          "afterEnter": true,
+          "afterSpace": false,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "review",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.edit \"Edit\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.edit \"Edit\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.edit \"Edit\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.edit \"Edit\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.btn.alt \"Back\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 7,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]",
+          "a.edit \"Edit\"",
+          "a.edit \"Edit\"",
+          "a.edit \"Edit\"",
+          "a.edit \"Edit\"",
+          "a.btn.alt \"Back\""
+        ]
+      },
+      "faq": [],
+      "menu": {
+        "opened": {
+          "expanded": "true",
+          "navVisible": true
+        },
+        "next": {
+          "el": "a \"Workshop\"",
+          "inNav": true
+        },
+        "closed": {
+          "expanded": "false",
+          "navVisible": false,
+          "focusOnButton": true
+        },
+        "ok": true
+      }
+    },
+    {
+      "screen": "review",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Workshop\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"For your board\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"About\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Questions\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.edit \"Edit\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.edit \"Edit\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.edit \"Edit\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.edit \"Edit\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.btn.alt \"Back\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 10,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Workshop\"",
+          "a \"For your board\"",
+          "a \"About\"",
+          "a \"Questions\"",
+          "a.edit \"Edit\"",
+          "a.edit \"Edit\"",
+          "a.edit \"Edit\"",
+          "a.edit \"Edit\"",
+          "a.btn.alt \"Back\""
+        ]
+      },
+      "faq": []
+    },
+    {
+      "screen": "confirmation",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.lnk \"[FORWARD LINK]\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 3,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]",
+          "a.lnk \"[FORWARD LINK]\""
+        ]
+      },
+      "faq": [],
+      "menu": {
+        "opened": {
+          "expanded": "true",
+          "navVisible": true
+        },
+        "next": {
+          "el": "a \"Workshop\"",
+          "inNav": true
+        },
+        "closed": {
+          "expanded": "false",
+          "navVisible": false,
+          "focusOnButton": true
+        },
+        "ok": true
+      }
+    },
+    {
+      "screen": "confirmation",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Workshop\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"For your board\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"About\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Questions\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.lnk \"[FORWARD LINK]\"",
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 6,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Workshop\"",
+          "a \"For your board\"",
+          "a \"About\"",
+          "a \"Questions\"",
+          "a.lnk \"[FORWARD LINK]\""
+        ]
+      },
+      "faq": []
     }
   ]
 }
