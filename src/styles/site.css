@@ -119,9 +119,17 @@ html:not(.js) .menu { display: none; }
   .menu { display: none; }
   .nav { grid-column: 5 / 13; grid-row: 1; flex-direction: row; gap: 24px; justify-content: flex-end; border-top: 0; }
   .hd--cta .nav { grid-column: 5 / 10; }
-  .pg .nav a { min-height: 44px; font-size: 16px; } /* derived: 44px hit area, no visual change */
+  .pg .nav a { min-height: 44px; font-size: 16px; white-space: nowrap; } /* derived: 44px hit area, no visual change */
   .pg .nav a + a { border-top: 0; }
   .pg .hd .hcta { display: inline-flex; grid-column: 10 / 13; grid-row: 1; justify-self: end; }
+}
+
+/* Derived (Stage 2): with four items, the nav does not fit columns 5 to 9 beside the Home header
+   button below about 1100px; the Home artboard itself wraps "For your board" at 900 to 1024px.
+   Here the links stay on one line and the nav extends left into the unused width of the wordmark
+   columns, with a 16px gap instead of 24px. Checked by qa/checks/headerfit.mjs. */
+@media (min-width: 900px) and (max-width: 1099.98px) {
+  .hd--cta .nav { justify-self: end; width: max-content; gap: 16px; }
 }
 
 /* ---------- Button ---------- */
@@ -452,4 +460,124 @@ textarea.inp { height: 120px; padding: 12px 14px; line-height: 1.5; resize: none
 @media (min-width: 900px) {
   .sum .facts div { grid-template-columns: 140px 1fr; }
   .acts { flex-direction: row; gap: 16px; margin-top: 28px; }
+}
+
+/* =====================================================================
+ * Stage 2 pages: derived, not designed. Built only from the patterns above
+ * (section rule, label columns, facts lists, boxes, buttons); see
+ * qa/stage2-report.md for each new piece.
+ * ===================================================================== */
+
+/* Title block without a step label: H1 and lede start at column 1. */
+@media (min-width: 900px) {
+  .pg .top.plain h1 { grid-column: 1 / 12; }
+  .top.plain .lede { grid-column: 1 / 9; }
+  .top.plain .tact, .top.plain .bio { grid-column: 1 / 8; }
+  .top.plain .photo { grid-column: 9 / 13; grid-row: 2 / 4; align-self: start; }
+}
+.tact { margin-top: 24px; }
+.bio { margin-top: 24px; }
+.bio p + p { margin-top: 12px; }
+
+/* Labeled lists (When and where, the agenda): the SummaryPanel list style. Labels sit above
+   their values on mobile so long labels such as ACCESSIBILITY never squeeze. */
+.dl .facts div { grid-template-columns: 1fr; gap: 2px; padding: 12px 0; }
+.dl .facts dt { font: 700 14px/1.7 var(--sans); letter-spacing: .08em; text-transform: uppercase; }
+@media (min-width: 900px) {
+  .dl .facts div { grid-template-columns: 160px 1fr; gap: 12px; }
+}
+.dl + .btn, .ct > .facts + .btn { margin-top: 24px; }
+
+/* PhotoBlock: flat tint, labeled, no image. */
+.photo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 4 / 5;
+  margin-top: 24px;
+  background: var(--tint);
+  color: var(--ink2);
+  font: 700 14px/1.4 var(--sans);
+  letter-spacing: .1em;
+}
+@media (min-width: 900px) {
+  .photo { max-width: none; margin-top: 0; }
+}
+
+/* FormStatus: the result of sending a form. */
+.fst { display: flex; gap: 10px; align-items: flex-start; margin-top: 20px; padding: 16px 18px; border: 1.5px solid var(--ink); font-weight: 700; }
+.fst svg { margin-top: 3px; }
+.fst.is-err { border: 3px solid var(--err); color: var(--err); }
+.fst:focus { outline: none; }
+.fst:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+
+/* Questions form: row spacing; the honeypot field stays out of sight and out of reach (derived). */
+.q-row { margin-top: 16px; }
+.hp { display: none !important; }
+@media (min-width: 900px) {
+  .q-row { margin-top: 20px; }
+}
+
+/* Review order: values, the attendee list and Edit links. */
+.vals .facts div { grid-template-columns: 1fr; gap: 2px; padding: 12px 0; }
+.vals .facts dt { font-weight: 700; font-size: 16px; }
+.vals .facts dd { overflow-wrap: anywhere; }
+@media (min-width: 900px) {
+  .vals .facts div { grid-template-columns: 220px 1fr; gap: 12px; }
+}
+.ppl { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink); }
+.ppl li { display: grid; gap: 2px; padding: 14px 0; border-bottom: 1px solid var(--hair); overflow-wrap: anywhere; }
+.ppl .nm { font-weight: 700; }
+.ppl .em, .ppl .rl { color: var(--ink2); }
+@media (min-width: 900px) {
+  .ppl li { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 190px; gap: 16px; }
+}
+.qv { white-space: pre-line; overflow-wrap: anywhere; }
+.pg a.edit { display: inline-flex; align-items: center; min-height: 44px; margin-top: 8px; font-weight: 700; font-size: 17px; }
+.review .tbl { margin-bottom: 0; }
+
+/* Confirmation: the reference code line under the heading. */
+.refl { margin-top: 16px; font-weight: 700; }
+.refl strong { font-weight: 800; letter-spacing: .08em; }
+.pg .state-h { font-size: clamp(2.5rem, 1.943rem + 2.286vw, 4rem); line-height: 1; letter-spacing: -0.035em; }
+.state + .state { margin-top: 0; }
+.state .lede, .state .btn { margin-top: 16px; }
+@media (min-width: 900px) {
+  .top.plain .state, .top.plain .refl { grid-column: 1 / 12; }
+}
+
+/* ---------- Print (03 For your board must fit one US Letter page) ----------
+   Black on white, no accent, no nav or buttons; the footer and its honesty line stay. */
+@media print {
+  @page { size: letter; margin: 0.5in; }
+  html, .pg { background: var(--ground); }
+  .pg { min-height: 0; border-top-width: 4px; font-size: 10.5pt; line-height: 1.35; }
+  .pg .nav, .pg .menu, .pg .btn, .pg button, .pg .hcta, .pg .tact { display: none !important; }
+  .pg a { color: var(--ink); text-decoration: none; }
+
+  .pg-board .hd .g { grid-template-rows: auto; padding-top: 6pt; padding-bottom: 6pt; }
+  .pg-board .hd .mark { min-height: 0; font-size: 11pt; }
+  .pg-board .top .g { padding-top: 10pt; padding-bottom: 8pt; }
+  .pg-board .pg .top h1, .pg-board.pg .top h1 { font-size: 26pt; margin-bottom: 4pt; }
+  .pg-board .top .lede { font-size: 11pt; }
+  .pg-board .s .g { display: grid; grid-template-columns: 1.45in 1fr; column-gap: 12pt; padding-top: 5pt; padding-bottom: 6pt; }
+  .pg-board .pg h2.lab, .pg-board.pg h2.lab { grid-column: 1; margin: 0; font-size: 8.5pt; }
+  .pg-board .ct { grid-column: 2; }
+  .pg-board .big { font-size: 11pt; font-weight: 400; letter-spacing: 0; }
+  .pg-board .facts div { padding: 2pt 0; }
+  .pg-board .dl .facts div { grid-template-columns: 0.9in 1fr; gap: 8pt; }
+  .pg-board .dl .facts dt { font-size: 8.5pt; line-height: 1.6; }
+  .pg-board .tbl { margin-bottom: 0; }
+  .pg-board .tbl .r { display: grid; grid-template-columns: 1fr auto; gap: 12pt; align-items: center; padding: 3pt 0; }
+  .pg-board .tbl h3 { font-size: 11pt; }
+  .pg-board .tbl p { font-size: 10pt; }
+  .pg-board .tbl .price { font-size: 13pt; margin: 0; }
+  .pg-board .sq { gap: 2pt; }
+  .pg-board .sq li { font-size: 10.5pt; gap: 8pt; }
+  .pg-board .sq li::before { width: 6pt; height: 6pt; margin-top: 5pt; }
+  .pg-board .more { margin-top: 3pt; font-size: 9.5pt; }
+  .pg-board .ft { break-inside: avoid; }
+  .pg-board .ft .g { padding-top: 6pt; padding-bottom: 0; font-size: 9pt; }
 }

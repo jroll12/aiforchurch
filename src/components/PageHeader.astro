@@ -1,6 +1,7 @@
 ---
 /*
  * PageHeader: wordmark, nav, optional Reserve seats button (Home only).
+ * The link to the current page carries aria-current="page" (derived, invisible).
  * Below 900px the nav sits behind a 44px menu button. The open state has no
  * artboard (derived; qa/questions.md). The menu button comes before the nav
  * in the DOM so keyboard order matches the panel opening below it.
@@ -8,6 +9,7 @@
 import Icon from './Icon.astro';
 import Button from './Button.astro';
 import { NAV, ROUTES, SITE_NAME, SOLD_OUT } from '../config';
+import { DESIGN } from '../copy';
 import { url } from '../lib/url';
 
 interface Props {
@@ -17,9 +19,10 @@ interface Props {
 
 const { cta = false, markHref } = Astro.props;
 const items = NAV.filter((item) => item.built);
+const here = Astro.url.pathname;
 const action = SOLD_OUT
-  ? { label: 'Join the waitlist', href: url(ROUTES.questions.path) }
-  : { label: 'Reserve seats', href: url(ROUTES.register.path) };
+  ? { label: DESIGN.waitlist, href: url(ROUTES.questions.path) }
+  : { label: DESIGN.reserve, href: url(ROUTES.register.path) };
 ---
 <header class:list={['hd', { 'hd--cta': cta }]} data-component="PageHeader">
 <div class="g">
@@ -28,7 +31,7 @@ const action = SOLD_OUT
   <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><Icon name="menu" size={22} class="i-menu" /><Icon name="x" size={22} class="i-x" /></button>
 )}
 {items.length > 0 && (
-  <nav class="nav" id="site-nav" aria-label="Main">{items.map((item) => <a href={url(item.path)}>{item.label}</a>)}</nav>
+  <nav class="nav" id="site-nav" aria-label="Main">{items.map((item) => <a href={url(item.path)} aria-current={url(item.path) === here ? 'page' : undefined}>{item.label}</a>)}</nav>
 )}
 {cta && <Button href={action.href} class="hcta">{action.label}</Button>}
 </div>

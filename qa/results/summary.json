@@ -1,6 +1,6 @@
 {
   "target": "built",
-  "ranAt": "2026-11-10T22:35:58.923Z",
+  "ranAt": "2026-11-12T03:25:47.659Z",
   "summary": [
     {
       "check": "text-diff",
@@ -43,14 +43,34 @@
       "summary": "4 page loads; hosts seen: 127.0.0.1, fonts.googleapis.com, fonts.gstatic.com"
     },
     {
-      "check": "guards",
+      "check": "headerfit",
       "status": "pass",
-      "summary": "0 findings; 68 repo files scanned for dashes"
+      "summary": "32 headers at 900, 960, 1024, 1100 px; 0 with wrapping or touching items; smallest gap 34px (minimum 8)"
+    },
+    {
+      "check": "guards",
+      "status": "fail",
+      "summary": "48 findings; 97 repo files scanned for dashes"
     },
     {
       "check": "behavior",
       "status": "pass",
       "summary": "25 of 25 behavior assertions hold"
+    },
+    {
+      "check": "flow",
+      "status": "pass",
+      "summary": "31 of 31 flow assertions hold on dist-mock/"
+    },
+    {
+      "check": "provenance",
+      "status": "fail",
+      "summary": "482 strings on 6 derived pages at 390 and 1440; 0 with no allowed source, 48 placeholders missing from PLACEHOLDERS.md, 23 taken from spec wording (listed for confirmation)"
+    },
+    {
+      "check": "print",
+      "status": "pass",
+      "summary": "/board/ prints on 1 Letter page; content fills about 70% of the printable height with placeholders in place; 0 problems"
     }
   ]
 }

@@ -1,9 +1,23 @@
 ---
-/* ProgressSteps: three cells, as designed: Seats done, Attendees current, Review to do. */
+/*
+ * ProgressSteps: three cells, as designed for Register (Seats done, Attendees
+ * current, Review to do). Review order sets current to 3 (derived): Seats and
+ * Attendees show the designed done check, Review is current.
+ */
 import Icon from './Icon.astro';
+
+interface Props {
+  current?: 2 | 3;
+}
+
+const { current = 2 } = Astro.props;
+const steps = ['Seats', 'Attendees', 'Review'];
 ---
 <ol class="prog" role="list" aria-label="Progress" data-component="ProgressSteps">
-<li class="done"><span class="sn"><Icon name="check" size={16} strokeWidth={3} /></span>Seats</li>
-<li class="cur" aria-current="step"><span class="sn">2</span>Attendees</li>
-<li><span class="sn">3</span>Review</li>
+{steps.map((label, k) => {
+  const n = k + 1;
+  if (n < current) return <li class="done"><span class="sn"><Icon name="check" size={16} strokeWidth={3} /></span>{label}</li>;
+  if (n === current) return <li class="cur" aria-current="step"><span class="sn">{n}</span>{label}</li>;
+  return <li><span class="sn">{n}</span>{label}</li>;
+})}
 </ol>

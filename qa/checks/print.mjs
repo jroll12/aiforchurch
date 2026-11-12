@@ -15,7 +15,8 @@ const accents = [parseColor(tokens.accent), parseColor(tokens['accent-hover'])];
 const pathFor = TARGET === 'design' ? '/__fixtures/print-proof.html' : '/board/';
 const srv = await server();
 const br = await browser();
-const context = await br.newContext({ viewport: { width: LETTER.width - MARGIN * 2, height: LETTER.height } });
+// A short viewport, so the document height measured below is the content's own height.
+const context = await br.newContext({ viewport: { width: LETTER.width - MARGIN * 2, height: 200 } });
 const page = await context.newPage();
 await page.goto(srv.url + pathFor, { waitUntil: 'networkidle' });
 await page.evaluate(() => document.fonts.ready);

@@ -1,0 +1,409 @@
+{
+  "check": "flow",
+  "target": "built",
+  "ranAt": "2026-11-12T03:25:09.347Z",
+  "status": "pass",
+  "summary": "31 of 31 flow assertions hold on dist-mock/",
+  "failed": [],
+  "steps": [
+    {
+      "name": "Register: valid Continue opens Review",
+      "ok": true,
+      "actual": "/register/review/",
+      "wanted": "/register/review/"
+    },
+    {
+      "name": "Review: shows organization, contact, every attendee and the question",
+      "ok": true,
+      "actual": true,
+      "wanted": true
+    },
+    {
+      "name": "Review: seats and total from the chosen option",
+      "ok": true,
+      "actual": [
+        "Three seats for your office",
+        "[3-SEAT PRICE]"
+      ],
+      "wanted": [
+        "Three seats for your office",
+        "[3-SEAT PRICE]"
+      ]
+    },
+    {
+      "name": "Review: date, venue and refund policy",
+      "ok": true,
+      "actual": true,
+      "wanted": true
+    },
+    {
+      "name": "Review: one Edit link per Register section",
+      "ok": true,
+      "actual": [
+        "/register/#s1",
+        "/register/#s2",
+        "/register/#s3",
+        "/register/#s4"
+      ],
+      "wanted": [
+        "/register/#s1",
+        "/register/#s2",
+        "/register/#s3",
+        "/register/#s4"
+      ]
+    },
+    {
+      "name": "Review: no offline payment button while OFFLINE_PAYMENT is off",
+      "ok": true,
+      "actual": 0,
+      "wanted": 0
+    },
+    {
+      "name": "Edit: Register restores the saved values",
+      "ok": true,
+      "actual": [
+        "3",
+        "Test Church",
+        "Second Person"
+      ],
+      "wanted": [
+        "3",
+        "Test Church",
+        "Second Person"
+      ]
+    },
+    {
+      "name": "Edit: total updated after a seat change",
+      "ok": true,
+      "actual": [
+        "One seat",
+        "[SEAT PRICE]",
+        1
+      ],
+      "wanted": [
+        "One seat",
+        "[SEAT PRICE]",
+        1
+      ]
+    },
+    {
+      "name": "Edit: the reference code survives editing",
+      "ok": true,
+      "actual": "HJX323",
+      "wanted": "HJX323"
+    },
+    {
+      "name": "Pay: failed send shows the error state and stays on Review",
+      "ok": true,
+      "actual": [
+        [
+          "send-error"
+        ],
+        "/register/review/",
+        true
+      ],
+      "wanted": [
+        [
+          "send-error"
+        ],
+        "/register/review/",
+        true
+      ]
+    },
+    {
+      "name": "Pay: nothing recorded on failure",
+      "ok": true,
+      "actual": 0,
+      "wanted": 0
+    },
+    {
+      "name": "Pay: goes to the chosen option's payment link with the reference code",
+      "ok": true,
+      "actual": [
+        "/__mock/pay/one",
+        "HJX323"
+      ],
+      "wanted": [
+        "/__mock/pay/one",
+        "HJX323"
+      ]
+    },
+    {
+      "name": "Pay: registration sent before payment, URL-encoded, asking for JSON",
+      "ok": true,
+      "actual": [
+        "registration",
+        true,
+        true
+      ],
+      "wanted": [
+        "registration",
+        true,
+        true
+      ]
+    },
+    {
+      "name": "Pay: payload carries the reference code and the registration",
+      "ok": true,
+      "actual": {
+        "ref": "HJX323",
+        "seats": "1",
+        "option": "One seat",
+        "price": "[SEAT PRICE]",
+        "organization": "Test Church",
+        "contact": "Test Contact",
+        "a1": [
+          "Test Person",
+          "test.person@church.org",
+          "Finance"
+        ],
+        "a2": null,
+        "question": "Bulletins",
+        "consent": "yes",
+        "payment": "online",
+        "honeypot": ""
+      },
+      "wanted": {
+        "ref": "HJX323",
+        "seats": "1",
+        "option": "One seat",
+        "price": "[SEAT PRICE]",
+        "organization": "Test Church",
+        "contact": "Test Contact",
+        "a1": [
+          "Test Person",
+          "test.person@church.org",
+          "Finance"
+        ],
+        "a2": null,
+        "question": "Bulletins",
+        "consent": "yes",
+        "payment": "online",
+        "honeypot": ""
+      }
+    },
+    {
+      "name": "Review: with nothing saved, goes back to Register",
+      "ok": true,
+      "actual": "/register/",
+      "wanted": "/register/"
+    },
+    {
+      "name": "Confirmation paid: one state, reference code shown",
+      "ok": true,
+      "actual": [
+        [
+          "paid"
+        ],
+        "K7M2Q9"
+      ],
+      "wanted": [
+        [
+          "paid"
+        ],
+        "K7M2Q9"
+      ]
+    },
+    {
+      "name": "Confirmation paid: attendee details cleared, reference code kept",
+      "ok": true,
+      "actual": [
+        "K7M2Q9",
+        0,
+        ""
+      ],
+      "wanted": [
+        "K7M2Q9",
+        0,
+        ""
+      ]
+    },
+    {
+      "name": "Confirmation: no calendar link while the date is a placeholder",
+      "ok": true,
+      "actual": 0,
+      "wanted": 0
+    },
+    {
+      "name": "Confirmation: forward link is an email holding the board page address",
+      "ok": true,
+      "actual": true,
+      "wanted": true
+    },
+    {
+      "name": "Confirmation with no payment status: pending",
+      "ok": true,
+      "actual": [
+        "pending"
+      ],
+      "wanted": [
+        "pending"
+      ]
+    },
+    {
+      "name": "Confirmation failed: one state with a retry button",
+      "ok": true,
+      "actual": [
+        [
+          "failed"
+        ],
+        true
+      ],
+      "wanted": [
+        [
+          "failed"
+        ],
+        true
+      ]
+    },
+    {
+      "name": "Confirmation retry: back to the payment link with the reference code",
+      "ok": true,
+      "actual": [
+        "/__mock/pay/three",
+        "K7M2Q9"
+      ],
+      "wanted": [
+        "/__mock/pay/three",
+        "K7M2Q9"
+      ]
+    },
+    {
+      "name": "Confirmation with nothing saved: still renders, no reference code",
+      "ok": true,
+      "actual": [
+        [
+          "paid"
+        ],
+        false
+      ],
+      "wanted": [
+        [
+          "paid"
+        ],
+        false
+      ]
+    },
+    {
+      "name": "Questions: name and email required, errors linked, focus on the first",
+      "ok": true,
+      "actual": [
+        "Add a name.",
+        "Enter a valid email.",
+        "q-name"
+      ],
+      "wanted": [
+        "Add a name.",
+        "Enter a valid email.",
+        "q-name"
+      ]
+    },
+    {
+      "name": "Questions: typing clears the error",
+      "ok": true,
+      "actual": null,
+      "wanted": null
+    },
+    {
+      "name": "Questions: malformed email",
+      "ok": true,
+      "actual": "Enter a valid email.",
+      "wanted": "Enter a valid email."
+    },
+    {
+      "name": "Questions: failed send shows the error state and keeps the values",
+      "ok": true,
+      "actual": [
+        [
+          "send-error"
+        ],
+        "Bulletins"
+      ],
+      "wanted": [
+        [
+          "send-error"
+        ],
+        "Bulletins"
+      ]
+    },
+    {
+      "name": "Questions: sent with every field",
+      "ok": true,
+      "actual": {
+        "form": "questions",
+        "name": "Test Person",
+        "church": "Test Church",
+        "email": "test.person@church.org",
+        "question": "Bulletins",
+        "future_dates": "yes",
+        "_gotcha": ""
+      },
+      "wanted": {
+        "form": "questions",
+        "name": "Test Person",
+        "church": "Test Church",
+        "email": "test.person@church.org",
+        "question": "Bulletins",
+        "future_dates": "yes",
+        "_gotcha": ""
+      }
+    },
+    {
+      "name": "Questions: success state replaces the error",
+      "ok": true,
+      "actual": [
+        "sent"
+      ],
+      "wanted": [
+        "sent"
+      ]
+    },
+    {
+      "name": "Questions: a filled honeypot shows success but sends nothing",
+      "ok": true,
+      "actual": 2,
+      "wanted": 2
+    },
+    {
+      "name": "Network: only this server and Google Fonts during the whole flow",
+      "ok": true,
+      "actual": [],
+      "wanted": []
+    }
+  ],
+  "submissions": [
+    {
+      "form": "registration",
+      "accept": "application/json",
+      "contentType": "application/x-www-form-urlencoded;charset=UTF-8",
+      "fields": {
+        "ref": "HJX323",
+        "seats": "1",
+        "option": "One seat",
+        "price": "[SEAT PRICE]",
+        "organization": "Test Church",
+        "contact": "Test Contact",
+        "attendee_1_name": "Test Person",
+        "attendee_1_email": "test.person@church.org",
+        "attendee_1_role": "Finance",
+        "question": "Bulletins",
+        "consent": "yes",
+        "payment": "online",
+        "_gotcha": ""
+      }
+    },
+    {
+      "form": "questions",
+      "accept": "application/json",
+      "contentType": "application/x-www-form-urlencoded;charset=UTF-8",
+      "fields": {
+        "name": "Test Person",
+        "church": "Test Church",
+        "email": "test.person@church.org",
+        "question": "Bulletins",
+        "future_dates": "yes",
+        "_gotcha": ""
+      }
+    }
+  ]
+}

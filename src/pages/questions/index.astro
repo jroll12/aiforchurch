@@ -1,0 +1,61 @@
+---
+/*
+ * 08 Questions and interest list. Derived, not designed: no artboard exists.
+ * A short form (name, church, email, question, a checkbox to hear about
+ * future dates) and plain answers to the three most common questions, with
+ * success and error states (HANDOFF-SPEC.md section 7). Field labels, the
+ * checkbox and the answers are design copy from Register and Home.
+ * The submit button stays disabled while the form endpoint is a placeholder.
+ * Behavior: src/scripts/questions.js.
+ */
+import Base from '../../layouts/Base.astro';
+import Button from '../../components/Button.astro';
+import FormField from '../../components/FormField.astro';
+import FormStatus from '../../components/FormStatus.astro';
+import FaqItem from '../../components/FaqItem.astro';
+import FaqAnswer from '../../components/FaqAnswer.astro';
+import { FORM_ENDPOINTS, MESSAGES, ROUTES, isLive } from '../../config';
+import { DESIGN, QUESTIONS } from '../../copy';
+import { url } from '../../lib/url';
+
+const endpoint = isLive(FORM_ENDPOINTS.questions) ? FORM_ENDPOINTS.questions : '';
+---
+<Base page="questions" title={QUESTIONS.title} markHref={url(ROUTES.home.path)}>
+<main>
+<section class="top plain" aria-labelledby="h1"><div class="g">
+<h1 id="h1">{QUESTIONS.title}</h1>
+<p class="lede">{QUESTIONS.lede}</p>
+</div></section>
+
+<section class="s" aria-labelledby="q1"><div class="g">
+<h2 class="lab" id="q1">{QUESTIONS.formLabel}</h2>
+<div class="ct">
+<form id="ask" method="post" novalidate data-endpoint={endpoint} data-messages={JSON.stringify({ name: MESSAGES.name, email: MESSAGES.emailInvalid })}>
+<div class="two">
+<FormField id="q-name" name="name" label={QUESTIONS.name} placeholder={QUESTIONS.namePlaceholder} autocomplete="name" required />
+<FormField id="q-church" name="church" label={QUESTIONS.church} autocomplete="organization" />
+</div>
+<div class="two q-row">
+<FormField id="q-email" name="email" label={QUESTIONS.email} type="email" placeholder={QUESTIONS.emailPlaceholder} autocomplete="email" required />
+</div>
+<div class="q-row"><FormField id="q-question" name="question" label={QUESTIONS.question} type="textarea" rows={4} optional /></div>
+<div class="chkrow"><input type="checkbox" id="q-future" name="future_dates" value="yes"><label for="q-future">{QUESTIONS.future}</label></div>
+<input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+<div class="acts"><Button type="submit" arrow disabled={!endpoint}>{QUESTIONS.send}</Button></div>
+<FormStatus state="sent" tone="ok">{QUESTIONS.sent}</FormStatus>
+<FormStatus state="send-error" tone="error">{QUESTIONS.sendError}</FormStatus>
+</form>
+</div>
+</div></section>
+
+<section class="s faq" aria-labelledby="q2"><div class="g">
+<h2 class="lab" id="q2">{QUESTIONS.answersLabel}</h2>
+<div class="ct">
+{DESIGN.faq.slice(0, 3).map((f) => <FaqItem question={f.q}><FaqAnswer item={f} /></FaqItem>)}
+</div>
+</div></section>
+</main>
+<script>
+  import '../../scripts/questions.js';
+</script>
+</Base>

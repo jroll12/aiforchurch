@@ -1,0 +1,97 @@
+---
+/*
+ * 06 Review order. Derived, not designed: no artboard exists. Seats,
+ * attendees, total, date and venue, refund policy, Edit links back to
+ * Register, and a button to the hosted payment page (HANDOFF-SPEC.md
+ * section 7). The page reads the registration Register saved; with none
+ * saved it goes back to Register. Section labels and order follow Register.
+ * The pay button stays disabled while the payment link or form endpoint is a
+ * placeholder. Behavior: src/scripts/review.js.
+ */
+import Base from '../../../layouts/Base.astro';
+import Button from '../../../components/Button.astro';
+import ProgressSteps from '../../../components/ProgressSteps.astro';
+import SummaryPanel from '../../../components/SummaryPanel.astro';
+import FormStatus from '../../../components/FormStatus.astro';
+import { FORM_ENDPOINTS, OFFLINE_PAYMENT, PAYMENT_LINKS, PAYMENT_REF_PARAM, ROUTES, SEAT_OPTIONS, isLive } from '../../../config';
+import { DESIGN, REVIEW } from '../../../copy';
+import { url } from '../../../lib/url';
+
+const register = url(ROUTES.register.path);
+const live = isLive(FORM_ENDPOINTS.registration) && Object.values(PAYMENT_LINKS).every(isLive);
+const config = {
+  endpoint: live ? FORM_ENDPOINTS.registration : '',
+  links: live ? PAYMENT_LINKS : {},
+  refParam: PAYMENT_REF_PARAM,
+  register,
+  confirmation: url(ROUTES.confirmation.path),
+  options: SEAT_OPTIONS,
+};
+const sections = [
+  { id: 'r1', label: 'Your seats', edit: 's1' },
+  { id: 'r2', label: 'Your church or ministry', edit: 's2' },
+  { id: 'r3', label: 'Who is coming', edit: 's3' },
+  { id: 'r4', label: 'One question for us', edit: 's4' },
+];
+---
+<Base page="review" title={REVIEW.title} markHref={url(ROUTES.home.path)}>
+<main class="review" data-review-config={JSON.stringify(config)}>
+<section class="top" aria-labelledby="h1"><div class="g">
+<p class="k">{REVIEW.step}</p>
+<h1 id="h1">{REVIEW.title}</h1>
+<p class="lede">{REVIEW.lede}</p>
+<ProgressSteps current={3} />
+</div></section>
+
+<section class="s" aria-labelledby="r1"><div class="g">
+<h2 class="lab" id="r1">{sections[0].label}</h2>
+<div class="ct">
+<div class="tbl"><div class="r" data-component="SeatOption"><div><h3 data-review="option"></h3><p data-review="description"></p></div><p class="price" data-review="price"></p></div></div>
+<a class="edit" href={`${register}#${sections[0].edit}`} aria-describedby={sections[0].id} data-edit>{REVIEW.edit}</a>
+</div>
+</div></section>
+
+<section class="s" aria-labelledby="r2"><div class="g">
+<h2 class="lab" id="r2">{sections[1].label}</h2>
+<div class="ct vals">
+<dl class="facts">
+<div><dt>Organization name</dt><dd data-review="org"></dd></div>
+<div><dt>Contact person</dt><dd data-review="contact"></dd></div>
+</dl>
+<a class="edit" href={`${register}#${sections[1].edit}`} aria-describedby={sections[1].id} data-edit>{REVIEW.edit}</a>
+</div>
+</div></section>
+
+<section class="s" aria-labelledby="r3"><div class="g">
+<h2 class="lab" id="r3">{sections[2].label}</h2>
+<div class="ct">
+<ul class="ppl" role="list" data-review="attendees"></ul>
+<template data-review="attendee"><li><span class="nm"></span><span class="em"></span><span class="rl"></span></li></template>
+<a class="edit" href={`${register}#${sections[2].edit}`} aria-describedby={sections[2].id} data-edit>{REVIEW.edit}</a>
+</div>
+</div></section>
+
+<section class="s" aria-labelledby="r4" data-review="question-section"><div class="g">
+<h2 class="lab" id="r4">{sections[3].label}</h2>
+<div class="ct">
+<p class="qv" data-review="question"></p>
+<a class="edit" href={`${register}#${sections[3].edit}`} aria-describedby={sections[3].id} data-edit>{REVIEW.edit}</a>
+</div>
+</div></section>
+
+<section class="s" aria-labelledby="r5"><div class="g">
+<h2 class="lab" id="r5">Your order</h2>
+<SummaryPanel mode="review">
+<div class="acts">
+<Button variant="alt" href={register}>{DESIGN.back}</Button>
+{OFFLINE_PAYMENT && <Button variant="alt" disabled={!live} data-pay-offline>{REVIEW.payOffline}</Button>}
+<Button arrow disabled={!live} data-pay>{REVIEW.pay}</Button>
+</div>
+<FormStatus state="send-error" tone="error">{REVIEW.sendError}</FormStatus>
+</SummaryPanel>
+</div></section>
+</main>
+<script>
+  import '../../../scripts/review.js';
+</script>
+</Base>

@@ -1,0 +1,10 @@
+---
+/* AgendaRow (derived, no artboard): one timed row of the half-day agenda, in the SummaryPanel list style. */
+interface Props {
+  time: string;
+  item: string;
+}
+
+const { time, item } = Astro.props;
+---
+<div data-component="AgendaRow"><dt>{time}</dt><dd>{item}</dd></div>

@@ -1,0 +1,12 @@
+---
+/*
+ * PhotoBlock (derived, no artboard): the labeled [PHOTO] block HANDOFF-SPEC.md
+ * section 7 asks for on About. Flat --tint, no image, no rounded corners.
+ */
+interface Props {
+  label: string;
+}
+
+const { label } = Astro.props;
+---
+<div class="photo" data-component="PhotoBlock"><span>{label}</span></div>

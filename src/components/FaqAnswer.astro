@@ -1,0 +1,17 @@
+---
+/*
+ * FaqAnswer: the answer text of a FaqItem. Answer 6 names "For your board";
+ * once /board/ exists those words become a link to it. The text is unchanged
+ * (a Stage 2 deviation from the artboard, listed in qa/stage2-report.md).
+ */
+import { ROUTES } from '../config';
+import { url } from '../lib/url';
+
+interface Props {
+  item: { a: string; link?: string };
+}
+
+const { item } = Astro.props;
+const parts = item.link && ROUTES.board.built ? item.a.split(item.link) : null;
+---
+{parts && parts.length === 2 ? <Fragment>{parts[0]}<a href={url(ROUTES.board.path)}>{item.link}</a>{parts[1]}</Fragment> : item.a}

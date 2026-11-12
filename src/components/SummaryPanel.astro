@@ -1,15 +1,24 @@
 ---
 /*
- * SummaryPanel: the order as a definition list. The Seats and Price rows stay
- * hidden until a seat option is chosen (derived); register.js fills them from
- * the chosen option. The slot holds the Back and Continue buttons.
+ * SummaryPanel: the order as a definition list. On Register the Seats and
+ * Price rows stay hidden until a seat option is chosen (derived); register.js
+ * fills them. On Review order (derived) the rows are Seats and Total, filled
+ * by review.js from the saved registration; the total is the chosen option's
+ * price. The slot holds the action buttons.
  */
 import { PH } from '../config';
+import { REVIEW } from '../copy';
+
+interface Props {
+  mode?: 'register' | 'review';
+}
+
+const { mode = 'register' } = Astro.props;
 ---
 <div class="ct sum" data-component="SummaryPanel">
 <dl class="facts">
 <div data-sum="seats" hidden><dt>Seats</dt><dd></dd></div>
-<div data-sum="price" hidden><dt>Price</dt><dd></dd></div>
+{mode === 'register' ? <div data-sum="price" hidden><dt>Price</dt><dd></dd></div> : <div data-sum="total" hidden><dt>{REVIEW.total}</dt><dd></dd></div>}
 <div><dt>When</dt><dd>{PH.date}, {PH.startTime}</dd></div>
 <div><dt>Where</dt><dd>{PH.venue}</dd></div>
 <div><dt>Refunds</dt><dd>{PH.refundPolicy}</dd></div>

@@ -1,0 +1,874 @@
+{
+  "check": "headerfit",
+  "target": "built",
+  "ranAt": "2026-11-12T03:25:18.821Z",
+  "status": "pass",
+  "summary": "32 headers at 900, 960, 1024, 1100 px; 0 with wrapping or touching items; smallest gap 34px (minimum 8)",
+  "failures": [],
+  "rows": [
+    {
+      "screen": "home",
+      "width": 900,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 34,
+      "gapNavCta": 42,
+      "navRight": 649,
+      "viewport": 900,
+      "problems": []
+    },
+    {
+      "screen": "home",
+      "width": 960,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 79,
+      "gapNavCta": 57,
+      "navRight": 694,
+      "viewport": 960,
+      "problems": []
+    },
+    {
+      "screen": "home",
+      "width": 1024,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 127,
+      "gapNavCta": 73,
+      "navRight": 742,
+      "viewport": 1024,
+      "problems": []
+    },
+    {
+      "screen": "home",
+      "width": 1100,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 68,
+      "gapNavCta": 92,
+      "navRight": 799,
+      "viewport": 1100,
+      "problems": []
+    },
+    {
+      "screen": "register",
+      "width": 900,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 221,
+      "gapNavCta": null,
+      "navRight": 860,
+      "viewport": 900,
+      "problems": []
+    },
+    {
+      "screen": "register",
+      "width": 960,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 281,
+      "gapNavCta": null,
+      "navRight": 920,
+      "viewport": 960,
+      "problems": []
+    },
+    {
+      "screen": "register",
+      "width": 1024,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 345,
+      "gapNavCta": null,
+      "navRight": 984,
+      "viewport": 1024,
+      "problems": []
+    },
+    {
+      "screen": "register",
+      "width": 1100,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 329,
+      "gapNavCta": null,
+      "navRight": 1060,
+      "viewport": 1100,
+      "problems": []
+    },
+    {
+      "screen": "workshop",
+      "width": 900,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 221,
+      "gapNavCta": null,
+      "navRight": 860,
+      "viewport": 900,
+      "problems": []
+    },
+    {
+      "screen": "workshop",
+      "width": 960,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 281,
+      "gapNavCta": null,
+      "navRight": 920,
+      "viewport": 960,
+      "problems": []
+    },
+    {
+      "screen": "workshop",
+      "width": 1024,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 345,
+      "gapNavCta": null,
+      "navRight": 984,
+      "viewport": 1024,
+      "problems": []
+    },
+    {
+      "screen": "workshop",
+      "width": 1100,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 329,
+      "gapNavCta": null,
+      "navRight": 1060,
+      "viewport": 1100,
+      "problems": []
+    },
+    {
+      "screen": "board",
+      "width": 900,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 221,
+      "gapNavCta": null,
+      "navRight": 860,
+      "viewport": 900,
+      "problems": []
+    },
+    {
+      "screen": "board",
+      "width": 960,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 281,
+      "gapNavCta": null,
+      "navRight": 920,
+      "viewport": 960,
+      "problems": []
+    },
+    {
+      "screen": "board",
+      "width": 1024,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 345,
+      "gapNavCta": null,
+      "navRight": 984,
+      "viewport": 1024,
+      "problems": []
+    },
+    {
+      "screen": "board",
+      "width": 1100,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 329,
+      "gapNavCta": null,
+      "navRight": 1060,
+      "viewport": 1100,
+      "problems": []
+    },
+    {
+      "screen": "about",
+      "width": 900,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 221,
+      "gapNavCta": null,
+      "navRight": 860,
+      "viewport": 900,
+      "problems": []
+    },
+    {
+      "screen": "about",
+      "width": 960,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 281,
+      "gapNavCta": null,
+      "navRight": 920,
+      "viewport": 960,
+      "problems": []
+    },
+    {
+      "screen": "about",
+      "width": 1024,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 345,
+      "gapNavCta": null,
+      "navRight": 984,
+      "viewport": 1024,
+      "problems": []
+    },
+    {
+      "screen": "about",
+      "width": 1100,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 329,
+      "gapNavCta": null,
+      "navRight": 1060,
+      "viewport": 1100,
+      "problems": []
+    },
+    {
+      "screen": "questions",
+      "width": 900,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 221,
+      "gapNavCta": null,
+      "navRight": 860,
+      "viewport": 900,
+      "problems": []
+    },
+    {
+      "screen": "questions",
+      "width": 960,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 281,
+      "gapNavCta": null,
+      "navRight": 920,
+      "viewport": 960,
+      "problems": []
+    },
+    {
+      "screen": "questions",
+      "width": 1024,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 345,
+      "gapNavCta": null,
+      "navRight": 984,
+      "viewport": 1024,
+      "problems": []
+    },
+    {
+      "screen": "questions",
+      "width": 1100,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 329,
+      "gapNavCta": null,
+      "navRight": 1060,
+      "viewport": 1100,
+      "problems": []
+    },
+    {
+      "screen": "review",
+      "width": 900,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 221,
+      "gapNavCta": null,
+      "navRight": 860,
+      "viewport": 900,
+      "problems": []
+    },
+    {
+      "screen": "review",
+      "width": 960,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 281,
+      "gapNavCta": null,
+      "navRight": 920,
+      "viewport": 960,
+      "problems": []
+    },
+    {
+      "screen": "review",
+      "width": 1024,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 345,
+      "gapNavCta": null,
+      "navRight": 984,
+      "viewport": 1024,
+      "problems": []
+    },
+    {
+      "screen": "review",
+      "width": 1100,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 329,
+      "gapNavCta": null,
+      "navRight": 1060,
+      "viewport": 1100,
+      "problems": []
+    },
+    {
+      "screen": "confirmation",
+      "width": 900,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 221,
+      "gapNavCta": null,
+      "navRight": 860,
+      "viewport": 900,
+      "problems": []
+    },
+    {
+      "screen": "confirmation",
+      "width": 960,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 281,
+      "gapNavCta": null,
+      "navRight": 920,
+      "viewport": 960,
+      "problems": []
+    },
+    {
+      "screen": "confirmation",
+      "width": 1024,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 345,
+      "gapNavCta": null,
+      "navRight": 984,
+      "viewport": 1024,
+      "problems": []
+    },
+    {
+      "screen": "confirmation",
+      "width": 1100,
+      "links": [
+        {
+          "text": "Workshop",
+          "lines": 1
+        },
+        {
+          "text": "For your board",
+          "lines": 1
+        },
+        {
+          "text": "About",
+          "lines": 1
+        },
+        {
+          "text": "Questions",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 329,
+      "gapNavCta": null,
+      "navRight": 1060,
+      "viewport": 1100,
+      "problems": []
+    }
+  ]
+}

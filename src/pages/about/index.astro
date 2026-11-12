@@ -1,0 +1,37 @@
+---
+/*
+ * 04 About. Derived, not designed: no artboard exists. Jarret's story
+ * [JARRET BIO], why a local workshop, how the materials are made (the
+ * honesty line) and what the workshop will not do, with a labeled [PHOTO]
+ * block, flat, no image (HANDOFF-SPEC.md section 7).
+ */
+import Base from '../../layouts/Base.astro';
+import PhotoBlock from '../../components/PhotoBlock.astro';
+import { ROUTES } from '../../config';
+import { ABOUT, DESIGN } from '../../copy';
+import { url } from '../../lib/url';
+---
+<Base page="about" title={ABOUT.title} markHref={url(ROUTES.home.path)}>
+<main>
+<section class="top plain" aria-labelledby="h1"><div class="g">
+<h1 id="h1">{ABOUT.title}</h1>
+<div class="bio"><p class="big">{ABOUT.bio}</p></div>
+<PhotoBlock label={ABOUT.photo} />
+</div></section>
+
+<section class="s" aria-labelledby="a1"><div class="g">
+<h2 class="lab" id="a1">{ABOUT.whyLabel}</h2>
+<div class="ct"><p>{ABOUT.why}</p></div>
+</div></section>
+
+<section class="s" aria-labelledby="a2"><div class="g">
+<h2 class="lab" id="a2">{ABOUT.madeLabel}</h2>
+<div class="ct"><p>{DESIGN.honesty}</p></div>
+</div></section>
+
+<section class="s" aria-labelledby="a3"><div class="g">
+<h2 class="lab" id="a3">{ABOUT.notLabel}</h2>
+<div class="ct"><p>{DESIGN.scope.text}</p></div>
+</div></section>
+</main>
+</Base>

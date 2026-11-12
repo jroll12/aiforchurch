@@ -1,8 +1,8 @@
 // Register page behavior (HANDOFF-SPEC.md section 7).
 // Parts not drawn in the design are marked "derived" and listed in qa/questions.md.
 // State reaches the next page through sessionStorage (section 9 default).
+import { readState, writeState, showError, clearError, errorFor, clearFieldError, isEmail } from './shared.js';
 
-const STORAGE_KEY = 'cfco:registration';
 // Reference code alphabet: no 0, O, 1, I or L, so people can read it aloud or type it into a payment note.
 const REF_ALPHABET = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
 
@@ -43,8 +43,9 @@ function setUp(form) {
   let ref = null; // registration reference code, made on the first save
 
   /* ---------- restore ---------- */
+  // A paid registration is finished (Confirmation marks it), so Register starts fresh with a new code.
   const saved = readState();
-  if (saved) {
+  if (saved && !saved.paid) {
     ref = saved.ref || null;
     const radio = radios.find((r) => Number(r.value) === saved.seats);
     if (radio) radio.checked = true;
@@ -135,26 +136,6 @@ function setUp(form) {
   }
 
   /* ---------- errors ---------- */
-  const errorFor = (field) => document.getElementById(`${field.id}-err`);
-
-  function showError(target, errorEl, message) {
-    errorEl.querySelector('.err-msg').textContent = message;
-    errorEl.hidden = false;
-    target.setAttribute('aria-invalid', 'true');
-    target.setAttribute('aria-describedby', errorEl.id);
-  }
-
-  function clearError(target, errorEl) {
-    errorEl.hidden = true;
-    errorEl.querySelector('.err-msg').textContent = '';
-    target.removeAttribute('aria-invalid');
-    target.removeAttribute('aria-describedby');
-  }
-
-  const clearFieldError = (field) => {
-    const el = errorFor(field);
-    if (el) clearError(field, el);
-  };
   const clearRowErrors = (row) => Object.values(fieldsOf(row)).forEach(clearFieldError);
 
   // derived: a field's error clears as soon as it changes
@@ -164,9 +145,6 @@ function setUp(form) {
   });
 
   /* ---------- validate on Continue ---------- */
-  // Browser email syntax plus a dot in the domain (derived), so "name@church" is caught.
-  const isEmail = (input) => !input.validity.typeMismatch && /@[^@\s]+\.[^@\s]+$/.test(input.value.trim());
-
   function validate() {
     const problems = [];
     const add = (field, message) => problems.push({ target: field, error: errorFor(field), message, focus: field });
@@ -219,7 +197,7 @@ function setUp(form) {
     };
     writeState(state);
     form.dataset.saved = state.ref;
-    // Stage 1: the review page does not exist yet, so reviewUrl is empty and nothing navigates.
+    // Continue goes to Review order. reviewUrl is empty only if that route is switched off in config.
     if (reviewUrl) window.location.assign(reviewUrl);
   });
 }
@@ -236,21 +214,3 @@ function makeRef(length = 6) {
   return out.join('');
 }
 
-function readState() {
-  try {
-    const raw = sessionStorage.getItem(STORAGE_KEY);
-    const state = raw ? JSON.parse(raw) : null;
-    return state && state.v === 1 ? state : null;
-  } catch {
-    return null;
-  }
-}
-
-function writeState(state) {
-  try {
-    sessionStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-    return true;
-  } catch {
-    return false;
-  }
-}

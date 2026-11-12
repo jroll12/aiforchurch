@@ -74,7 +74,8 @@ function classify(raw) {
   const unlisted = placeholders.filter((p) => !listed.has(p));
   const sources = placeholders.length ? ['placeholder'] : [];
   const orphans = [];
-  const fragments = text.split(PLACEHOLDER).map((f) => f.replace(/^[\s,.:;|()]+|[\s,:;|()]+$/g, '')).filter((f) => f && !/^[\d\s.,:;|()/-]+$/.test(f));
+  // " | " joins the page name and the site name in titles (Stage 1, D14).
+  const fragments = text.split(PLACEHOLDER).flatMap((f) => f.split(' | ')).map((f) => f.replace(/^[\s,.:;|()]+|[\s,:;|()]+$/g, '')).filter((f) => f && !/^[\d\s.,:;|()/-]+$/.test(f));
   for (const f of fragments) {
     const src = sourceOf(f) ?? sentences(f);
     if (src) sources.push(src);

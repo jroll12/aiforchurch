@@ -1,0 +1,87 @@
+---
+/*
+ * 03 For your board. Derived, not designed: no artboard exists. A one-page
+ * summary a pastor or board can approve in two minutes (HANDOFF-SPEC.md
+ * section 7), built almost entirely from Home copy. Prints on one US Letter
+ * page: the print styles in src/styles/site.css hide the nav and buttons and
+ * drop the accent. Download PDF when BOARD_PDF_URL is set, else a print button.
+ */
+import Base from '../../layouts/Base.astro';
+import Button from '../../components/Button.astro';
+import ChecklistItem from '../../components/ChecklistItem.astro';
+import SeatOption from '../../components/SeatOption.astro';
+import { BOARD_PDF_URL, PH, ROUTES, SEAT_OPTIONS, SOLD_OUT } from '../../config';
+import { BOARD, DESIGN } from '../../copy';
+import { url } from '../../lib/url';
+
+const action = SOLD_OUT
+  ? { label: DESIGN.waitlist, href: url(ROUTES.questions.path) }
+  : { label: DESIGN.reserve, href: url(ROUTES.register.path) };
+---
+<Base page="board" title={BOARD.title} markHref={url(ROUTES.home.path)}>
+<main>
+<section class="top plain" aria-labelledby="h1"><div class="g">
+<h1 id="h1">{BOARD.title}</h1>
+<p class="lede">{BOARD.lede}</p>
+<div class="tact">
+{BOARD_PDF_URL
+  ? <Button href={BOARD_PDF_URL} variant="alt" data-pdf>{BOARD.pdf}</Button>
+  : <Button variant="alt" data-print>{BOARD.print}</Button>}
+</div>
+</div></section>
+
+<section class="s" aria-labelledby="b1"><div class="g">
+<h2 class="lab" id="b1">{BOARD.whatLabel}</h2>
+<div class="ct"><p>{DESIGN.lede}</p></div>
+</div></section>
+
+<section class="s" aria-labelledby="b2"><div class="g">
+<h2 class="lab" id="b2">{BOARD.whoLabel}</h2>
+<div class="ct"><p class="big">{DESIGN.who}</p></div>
+</div></section>
+
+<section class="s" aria-labelledby="b3"><div class="g">
+<h2 class="lab" id="b3">{BOARD.whenLabel}</h2>
+<div class="ct dl">
+<dl class="facts">
+<div><dt>When</dt><dd>{PH.date}, {PH.startTime}</dd></div>
+<div><dt>Where</dt><dd>{PH.venue}</dd></div>
+</dl>
+</div>
+</div></section>
+
+<section class="s" aria-labelledby="b4"><div class="g">
+<h2 class="lab" id="b4">{BOARD.costLabel}</h2>
+<div class="ct">
+<div class="tbl">{SEAT_OPTIONS.map((o) => <SeatOption title={o.title} description={o.description} price={o.price} />)}</div>
+<Button href={action.href} arrow>{action.label}</Button>
+</div>
+</div></section>
+
+<section class="s" aria-labelledby="b5"><div class="g">
+<h2 class="lab" id="b5">{BOARD.doLabel}</h2>
+<div class="ct">
+<ul class="sq" role="list">{DESIGN.topics.map((t) => <ChecklistItem>{t.title}</ChecklistItem>)}</ul>
+<p class="more">{DESIGN.more}</p>
+</div>
+</div></section>
+
+<section class="s" aria-labelledby="b6"><div class="g">
+<h2 class="lab" id="b6">{BOARD.infoLabel}</h2>
+<div class="ct"><p>{DESIGN.safe.text}</p></div>
+</div></section>
+
+<section class="s" aria-labelledby="b7"><div class="g">
+<h2 class="lab" id="b7">{BOARD.scopeLabel}</h2>
+<div class="ct"><p>{DESIGN.scope.text}</p></div>
+</div></section>
+
+<section class="s" aria-labelledby="b8"><div class="g">
+<h2 class="lab" id="b8">{BOARD.contactLabel}</h2>
+<div class="ct"><p>{DESIGN.contact}</p></div>
+</div></section>
+</main>
+<script>
+  for (const button of document.querySelectorAll('[data-print]')) button.addEventListener('click', () => window.print());
+</script>
+</Base>

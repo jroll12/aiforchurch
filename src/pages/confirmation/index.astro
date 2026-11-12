@@ -1,0 +1,75 @@
+---
+/*
+ * 07 Confirmation. Derived, not designed: no artboard exists. "You are in."
+ * What happens next, add to calendar, a prep checklist, what to bring,
+ * contact, and a link to forward the board page; states: payment pending,
+ * payment failed with retry (HANDOFF-SPEC.md section 7).
+ * The state comes from ?payment=paid|pending|failed, which the payment
+ * provider's redirect sets. Anyone can type that address, so the page claims
+ * no more than it knows; the provider's dashboard is the record of payment.
+ * No status means pending. Behavior: src/scripts/confirmation.js.
+ */
+import Base from '../../layouts/Base.astro';
+import Button from '../../components/Button.astro';
+import ChecklistItem from '../../components/ChecklistItem.astro';
+import { EVENT, PAYMENT_LINKS, PAYMENT_REF_PARAM, PH, ROUTES, isLive } from '../../config';
+import { BRING, CONFIRMATION, DESIGN } from '../../copy';
+import { url } from '../../lib/url';
+
+const config = {
+  links: Object.values(PAYMENT_LINKS).every(isLive) ? PAYMENT_LINKS : {},
+  refParam: PAYMENT_REF_PARAM,
+  board: url(ROUTES.board.path),
+  subject: CONFIRMATION.forwardSubject,
+  body: CONFIRMATION.forwardBody,
+};
+---
+<Base page="confirmation" title={CONFIRMATION.title} markHref={url(ROUTES.home.path)}>
+<main data-confirmation-config={JSON.stringify(config)}>
+<section class="top plain" aria-label={CONFIRMATION.title}><div class="g">
+<div class="state" data-state="paid" hidden><h1 class="state-h">{CONFIRMATION.paid}</h1></div>
+<div class="state" data-state="pending"><h1 class="state-h">{CONFIRMATION.pendingHeading}</h1><p class="lede">{CONFIRMATION.pending}</p></div>
+<div class="state" data-state="failed" hidden><h1 class="state-h">{CONFIRMATION.failedHeading}</h1><p class="lede">{CONFIRMATION.failed}</p><Button arrow data-retry>{CONFIRMATION.retry}</Button></div>
+<p class="refl" data-refline hidden>{CONFIRMATION.refLabel} <strong data-ref></strong></p>
+</div></section>
+
+<section class="s" aria-labelledby="c1"><div class="g">
+<h2 class="lab" id="c1">{CONFIRMATION.nextLabel}</h2>
+<div class="ct"><p>{CONFIRMATION.next}</p></div>
+</div></section>
+
+<section class="s" aria-labelledby="c2"><div class="g">
+<h2 class="lab" id="c2">{CONFIRMATION.whenLabel}</h2>
+<div class="ct dl">
+<dl class="facts">
+<div><dt>When</dt><dd>{PH.date}, {PH.startTime}</dd></div>
+<div><dt>Where</dt><dd>{PH.venue}</dd></div>
+</dl>
+{EVENT.start && <Button variant="alt" href={url('/workshop.ics')} download data-ics>{CONFIRMATION.calendar}</Button>}
+</div>
+</div></section>
+
+<section class="s" aria-labelledby="c3"><div class="g">
+<h2 class="lab" id="c3">{CONFIRMATION.prepLabel}</h2>
+<div class="ct"><ul class="sq" role="list">{CONFIRMATION.prep.map((item) => <ChecklistItem>{item}</ChecklistItem>)}</ul></div>
+</div></section>
+
+<section class="s" aria-labelledby="c4"><div class="g">
+<h2 class="lab" id="c4">{BRING.label}</h2>
+<div class="ct"><ul class="sq" role="list">{BRING.items.map((item) => <ChecklistItem>{item}</ChecklistItem>)}</ul></div>
+</div></section>
+
+<section class="s" aria-labelledby="c5"><div class="g">
+<h2 class="lab" id="c5">{CONFIRMATION.boardLabel}</h2>
+<div class="ct"><p><a href={url(ROUTES.board.path)} data-forward>{CONFIRMATION.forward}</a></p></div>
+</div></section>
+
+<section class="s" aria-labelledby="c6"><div class="g">
+<h2 class="lab" id="c6">{CONFIRMATION.contactLabel}</h2>
+<div class="ct"><p>{DESIGN.contact}</p></div>
+</div></section>
+</main>
+<script>
+  import '../../scripts/confirmation.js';
+</script>
+</Base>

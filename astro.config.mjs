@@ -3,8 +3,13 @@
 // goes through src/lib/url.ts, so nothing else needs to change.
 import { defineConfig } from 'astro/config';
 
+// `npm run build:mock` (CFCO_MOCK=1) builds a test-only copy with mock form and
+// payment URLs into dist-mock/ for qa/checks/flow.mjs. Only dist/ is deployed.
+const mock = process.env.CFCO_MOCK === '1';
+
 export default defineConfig({
   output: 'static',
+  outDir: mock ? './dist-mock' : './dist',
   base: '/',
   trailingSlash: 'always',
   build: {

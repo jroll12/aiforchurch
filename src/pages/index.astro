@@ -9,12 +9,14 @@ import ChecklistItem from '../components/ChecklistItem.astro';
 import SeatOption from '../components/SeatOption.astro';
 import FaqItem from '../components/FaqItem.astro';
 import { PH, ROUTES, SEAT_OPTIONS, SOLD_OUT } from '../config';
+import { DESIGN } from '../copy';
 import { url } from '../lib/url';
+import FaqAnswer from '../components/FaqAnswer.astro';
 
 // Sold out (HANDOFF-SPEC.md section 7): Reserve seats becomes "Join the waitlist" to /questions/.
 const action = SOLD_OUT
-  ? { label: 'Join the waitlist', href: url(ROUTES.questions.path) }
-  : { label: 'Reserve seats', href: url(ROUTES.register.path) };
+  ? { label: DESIGN.waitlist, href: url(ROUTES.questions.path) }
+  : { label: DESIGN.reserve, href: url(ROUTES.register.path) };
 ---
 <Base page="home" headerCta markHref="#top">
 <main id="top">
@@ -22,7 +24,7 @@ const action = SOLD_OUT
 <p class="eyebrow">A half-day workshop for church and ministry office staff</p>
 <h1 id="h1">Turn a week of staff notes into a newsletter draft in your church’s voice.</h1>
 <div class="l">
-<p class="lede">A hands-on, in-person workshop on using Claude for real office work. Every date, time and room checked against a source.</p>
+<p class="lede">{DESIGN.lede}</p>
 <div class="cta"><Button href={action.href} arrow>{action.label}</Button><a class="ghost" href="#topics">See what we cover</a></div>
 </div>
 <div class="r">
@@ -37,16 +39,14 @@ const action = SOLD_OUT
 
 <section class="s" aria-labelledby="who"><div class="g">
 <h2 class="lab" id="who">Who it is for</h2>
-<div class="ct"><p class="big">Church administrators, communications staff, executive pastors and financial administrators. No technical background needed.</p></div>
+<div class="ct"><p class="big">{DESIGN.who}</p></div>
 </div></section>
 
 <section class="s" id="topics" aria-labelledby="do"><div class="g">
 <h2 class="lab" id="do">What you will do</h2>
 <div class="ct">
-<ModuleCard num="01" title="Weekly newsletter from staff notes">Turn a week of notes into a draft in your church’s voice, with every date, time and room traced to a source.</ModuleCard>
-<ModuleCard num="02" title="A church AI use policy">Write a one-page policy your pastor and board can review.</ModuleCard>
-<ModuleCard num="03" title="Prayer chain and care messages, privacy first">Format messages without exposing private details.</ModuleCard>
-<p class="more">Seven topics in all. Topics are subject to change.</p>
+{DESIGN.topics.map((t) => <ModuleCard num={t.num} title={t.title}>{t.outcome}</ModuleCard>)}
+<p class="more">{DESIGN.more}</p>
 </div>
 </div></section>
 
@@ -81,20 +81,15 @@ const action = SOLD_OUT
 <section class="s" aria-label="Safety and scope"><div class="g">
 <h2 class="lab">Our promises</h2>
 <div class="ct pair">
-<Notice variant="box" label="Safe by design">Workshops use invented sample data only. Bring no real names, giving, prayer or child information.</Notice>
-<Notice variant="box" label="Our scope">This covers office administration, not sermons or pastoral care.</Notice>
+<Notice variant="box" label={DESIGN.safe.label}>{DESIGN.safe.text}</Notice>
+<Notice variant="box" label={DESIGN.scope.label}>{DESIGN.scope.text}</Notice>
 </div>
 </div></section>
 
 <section class="s faq" id="faq" aria-labelledby="q"><div class="g">
 <h2 class="lab" id="q">Questions</h2>
 <div class="ct">
-<FaqItem question="Do we need a paid Claude account?" open>The newsletter topic works on a free account. We will list what each topic needs before you register. [CONFIRM]</FaqItem>
-<FaqItem question="Can our whole office come?">Yes. The three-seat option is built for a small office, and you can register more people. [CONFIRM maximum per church]</FaqItem>
-<FaqItem question="Is our information safe?">Nothing from your church is needed. We use invented sample data, and one topic shows how to keep private information out of AI tools.</FaqItem>
-<FaqItem question="Is this about sermons?">No. This covers office administration, not sermons or pastoral care.</FaqItem>
-<FaqItem question="What if we are new to AI?">That is who this is for. Every exercise is step by step, and no technical background is needed.</FaqItem>
-<FaqItem question="What if our board must approve it?">We made a one-page summary for exactly that. See For your board.</FaqItem>
+{DESIGN.faq.map((f, k) => <FaqItem question={f.q} open={k === 0}><FaqAnswer item={f} /></FaqItem>)}
 </div>
 </div></section>
 </main>

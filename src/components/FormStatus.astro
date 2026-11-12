@@ -1,0 +1,17 @@
+---
+/*
+ * FormStatus (derived, no artboard): the success or error message after a form
+ * sends, hidden until a script shows it. Error uses the err color and the
+ * circle-alert icon, like a field error; success uses ink and the check icon.
+ * tabindex -1 lets the script move focus to it so the result is announced.
+ */
+import Icon from './Icon.astro';
+
+interface Props {
+  state: string;
+  tone: 'ok' | 'error';
+}
+
+const { state, tone } = Astro.props;
+---
+<div class:list={['fst', { 'is-err': tone === 'error' }]} data-component="FormStatus" data-state={state} role={tone === 'error' ? 'alert' : 'status'} tabindex="-1" hidden><Icon name={tone === 'error' ? 'circle-alert' : 'check'} size={20} /><p><slot /></p></div>
