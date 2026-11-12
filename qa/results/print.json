@@ -1,17 +1,21 @@
 {
   "check": "print",
   "target": "built",
-  "ranAt": "2026-11-12T03:43:03.249Z",
+  "ranAt": "2026-11-12T04:08:11.196Z",
   "status": "pass",
-  "summary": "/board/ prints on 1 Letter page; content fills about 70% of the printable height with placeholders in place; 0 problems",
+  "summary": "/board/ prints on 1 Letter page; content fills about 71% of the printable height with placeholders in place; 0 problems",
   "pages": 1,
-  "fillPercent": 70,
+  "fillPercent": 71,
   "problems": [],
   "styles": {
     "accentUses": [],
     "navShown": [],
     "buttonsShown": [],
     "honesty": true,
-    "contentHeight": 676
+    "textColors": [
+      "rgb(17, 17, 17)"
+    ],
+    "topRule": "6px",
+    "contentHeight": 678
   }
 }

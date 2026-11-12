@@ -67,7 +67,9 @@ function setUp(form) {
   }
   render();
   // Continue ships disabled so the form cannot post before this script runs, or without JavaScript.
-  form.querySelector('button[type="submit"]').disabled = false;
+  form.querySelectorAll('button[type="submit"]').forEach((b) => {
+    b.disabled = false;
+  });
 
   /* ---------- render ---------- */
   function render() {

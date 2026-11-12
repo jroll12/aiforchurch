@@ -1,7 +1,7 @@
 {
   "check": "provenance",
   "target": "built",
-  "ranAt": "2026-11-12T04:02:08.087Z",
+  "ranAt": "2026-11-12T04:07:31.436Z",
   "status": "pass",
   "summary": "482 strings on 6 derived pages at 390 and 1440; 0 with no allowed source, 0 placeholders missing from PLACEHOLDERS.md, 23 taken from spec wording (listed for confirmation)",
   "orphans": [],
@@ -431,8 +431,8 @@
         "placeholder | visible | [VENUE]",
         "design | visible | Refunds",
         "placeholder | visible | [REFUND POLICY]",
-        "design | visible | Back",
         "approved | visible | Continue to payment",
+        "design | visible | Back",
         "design | visible | Course materials are drafted with AI, then taught and checked by Jarret Roloff.",
         "placeholder+design | visible | Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]",
         "approved | state send-error | We could not send this. Check your connection and try again.",

@@ -1,9 +1,9 @@
 {
   "check": "contrast",
   "target": "built",
-  "ranAt": "2026-11-12T03:34:23.707Z",
+  "ranAt": "2026-11-12T04:07:46.405Z",
   "status": "pass",
-  "summary": "12 token pairs (0 off), 12 rendered color pairs, 0 text below minimum, 0 accent misuses",
+  "summary": "12 token pairs (0 off), 11 rendered color pairs, 0 text below minimum, 0 accent misuses",
   "tokenPairs": [
     {
       "pair": "ink on white",
@@ -104,21 +104,12 @@
   ],
   "renderedPairs": [
     {
-      "pair": "#757575 on #ffffff (min 4.5)",
-      "fg": "#757575",
-      "bg": "#ffffff",
-      "min": 4.5,
-      "ratio": 4.61,
-      "count": 28,
-      "example": "register@390: input#n1.inp"
-    },
-    {
       "pair": "#ffffff on #c2410c (min 4.5)",
       "fg": "#ffffff",
       "bg": "#c2410c",
       "min": 4.5,
       "ratio": 5.18,
-      "count": 17,
+      "count": 16,
       "example": "home@390: a.btn \"Reserve seats\""
     },
     {
@@ -154,8 +145,8 @@
       "bg": "#9a3412",
       "min": 4.5,
       "ratio": 7.31,
-      "count": 1,
-      "example": "register@1440: button.btn \"Continue to review\""
+      "count": 2,
+      "example": "register@390: button.btn.m-only \"Continue to review\""
     },
     {
       "pair": "#4a4a4a on #f4f4f2 (min 4.5)",
@@ -172,7 +163,7 @@
       "bg": "#ffffff",
       "min": 4.5,
       "ratio": 8.86,
-      "count": 224,
+      "count": 252,
       "example": "home@390: p \"Turn a week of notes into a draft in you\""
     },
     {

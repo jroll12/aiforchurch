@@ -1,13 +1,14 @@
 {
   "check": "headerfit",
   "target": "design",
-  "ranAt": "2026-11-12T03:17:44.618Z",
+  "ranAt": "2026-11-12T04:06:18.961Z",
   "status": "pass",
   "summary": "artboard at 900, 960, 1024, 1100 px: 900: \"For your board\" wraps to 3 lines | 960: \"For your board\" wraps to 2 lines | 1024: \"For your board\" wraps to 2 lines; the wrap at 900 px was detected",
   "rows": [
     {
       "screen": "home artboard",
       "width": 900,
+      "markLines": 2,
       "links": [
         {
           "text": "Workshop",
@@ -26,7 +27,7 @@
           "lines": 1
         }
       ],
-      "gapMarkNav": 63,
+      "gapMarkNav": 24,
       "gapNavCta": 42,
       "navRight": 649,
       "viewport": 900,
@@ -37,6 +38,7 @@
     {
       "screen": "home artboard",
       "width": 960,
+      "markLines": 2,
       "links": [
         {
           "text": "Workshop",
@@ -55,7 +57,7 @@
           "lines": 1
         }
       ],
-      "gapMarkNav": 83,
+      "gapMarkNav": 24,
       "gapNavCta": 57,
       "navRight": 694,
       "viewport": 960,
@@ -66,6 +68,7 @@
     {
       "screen": "home artboard",
       "width": 1024,
+      "markLines": 2,
       "links": [
         {
           "text": "Workshop",
@@ -84,7 +87,7 @@
           "lines": 1
         }
       ],
-      "gapMarkNav": 104,
+      "gapMarkNav": 24,
       "gapNavCta": 73,
       "navRight": 742,
       "viewport": 1024,
@@ -95,6 +98,7 @@
     {
       "screen": "home artboard",
       "width": 1100,
+      "markLines": 1,
       "links": [
         {
           "text": "Workshop",
@@ -113,7 +117,7 @@
           "lines": 1
         }
       ],
-      "gapMarkNav": 68,
+      "gapMarkNav": 54,
       "gapNavCta": 92,
       "navRight": 799,
       "viewport": 1100,

@@ -1,7 +1,7 @@
 {
   "check": "keyboard",
   "target": "built",
-  "ranAt": "2026-11-12T04:02:13.383Z",
+  "ranAt": "2026-11-12T04:09:16.810Z",
   "status": "pass",
   "summary": "16 page layouts walked, all stops visible, FAQ, errors and menu OK",
   "problems": [],
@@ -13,6 +13,7 @@
         "stops": [
           {
             "el": "a.mark \"Claude for Church Offices\"",
+            "top": 16,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -21,6 +22,7 @@
           },
           {
             "el": "button.menu[aria-label=\"Open menu\"]",
+            "top": 16,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -29,6 +31,7 @@
           },
           {
             "el": "a.btn \"Reserve seats\"",
+            "top": 480,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -37,6 +40,7 @@
           },
           {
             "el": "a.ghost \"See what we cover\"",
+            "top": 544,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -45,6 +49,7 @@
           },
           {
             "el": "a.btn \"Reserve seats\"",
+            "top": 3060,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -53,6 +58,7 @@
           },
           {
             "el": "summary \"Do we need a paid Claude account?\"",
+            "top": 3636,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -61,6 +67,7 @@
           },
           {
             "el": "summary \"Can our whole office come?\"",
+            "top": 3810,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -69,6 +76,7 @@
           },
           {
             "el": "summary \"Is our information safe?\"",
+            "top": 3875,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -77,6 +85,7 @@
           },
           {
             "el": "summary \"Is this about sermons?\"",
+            "top": 3940,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -85,6 +94,7 @@
           },
           {
             "el": "summary \"What if we are new to AI?\"",
+            "top": 4005,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -93,6 +103,7 @@
           },
           {
             "el": "summary \"What if our board must approve it?\"",
+            "top": 4070,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -184,6 +195,7 @@
         "stops": [
           {
             "el": "a.mark \"Claude for Church Offices\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -192,6 +204,7 @@
           },
           {
             "el": "a \"Workshop\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -200,6 +213,7 @@
           },
           {
             "el": "a \"For your board\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -208,6 +222,7 @@
           },
           {
             "el": "a \"About\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -216,6 +231,7 @@
           },
           {
             "el": "a \"Questions\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -224,6 +240,7 @@
           },
           {
             "el": "a.btn.hcta \"Reserve seats\"",
+            "top": 20,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -232,6 +249,7 @@
           },
           {
             "el": "a.btn \"Reserve seats\"",
+            "top": 534,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -240,6 +258,7 @@
           },
           {
             "el": "a.ghost \"See what we cover\"",
+            "top": 538,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -248,6 +267,7 @@
           },
           {
             "el": "a.btn \"Reserve seats\"",
+            "top": 2135,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -256,6 +276,7 @@
           },
           {
             "el": "summary \"Do we need a paid Claude account?\"",
+            "top": 2558,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -264,6 +285,7 @@
           },
           {
             "el": "summary \"Can our whole office come?\"",
+            "top": 2701,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -272,6 +294,7 @@
           },
           {
             "el": "summary \"Is our information safe?\"",
+            "top": 2766,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -280,6 +303,7 @@
           },
           {
             "el": "summary \"Is this about sermons?\"",
+            "top": 2831,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -288,6 +312,7 @@
           },
           {
             "el": "summary \"What if we are new to AI?\"",
+            "top": 2896,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -296,6 +321,7 @@
           },
           {
             "el": "summary \"What if our board must approve it?\"",
+            "top": 2961,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -375,6 +401,7 @@
         "stops": [
           {
             "el": "a.mark \"Claude for Church Offices\"",
+            "top": 16,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -383,6 +410,7 @@
           },
           {
             "el": "button.menu[aria-label=\"Open menu\"]",
+            "top": 16,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -391,6 +419,7 @@
           },
           {
             "el": "input#seat-1",
+            "top": 413,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -399,6 +428,7 @@
           },
           {
             "el": "input#org.inp",
+            "top": 825,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -407,6 +437,7 @@
           },
           {
             "el": "input#contact.inp",
+            "top": 926,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -415,6 +446,7 @@
           },
           {
             "el": "input#n1.inp",
+            "top": 1205,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -423,6 +455,7 @@
           },
           {
             "el": "input#e1.inp",
+            "top": 1303,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -431,6 +464,7 @@
           },
           {
             "el": "select#r1.inp \"Choose a roleAdministratorCommunications\"",
+            "top": 1402,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -439,6 +473,7 @@
           },
           {
             "el": "textarea#task.inp",
+            "top": 1704,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -447,6 +482,16 @@
           },
           {
             "el": "input#consent",
+            "top": 1855,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.btn.m-only \"Continue to review\"",
+            "top": 2189,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -455,14 +500,7 @@
           },
           {
             "el": "a.btn.alt \"Back\"",
-            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
-            "outlineStyle": "solid",
-            "outlineWidth": 2,
-            "outlineColor": "rgb(17, 17, 17)",
-            "visible": true
-          },
-          {
-            "el": "button.btn \"Continue to review\"",
+            "top": 2257,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -483,8 +521,8 @@
           "select#r1.inp \"Choose a roleAdministratorCommunications\"",
           "textarea#task.inp",
           "input#consent",
-          "a.btn.alt \"Back\"",
-          "button.btn \"Continue to review\""
+          "button.btn.m-only \"Continue to review\"",
+          "a.btn.alt \"Back\""
         ]
       },
       "faq": [],
@@ -565,6 +603,7 @@
         "stops": [
           {
             "el": "a.mark \"Claude for Church Offices\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -573,6 +612,7 @@
           },
           {
             "el": "a \"Workshop\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -581,6 +621,7 @@
           },
           {
             "el": "a \"For your board\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -589,6 +630,7 @@
           },
           {
             "el": "a \"About\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -597,6 +639,7 @@
           },
           {
             "el": "a \"Questions\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -605,6 +648,7 @@
           },
           {
             "el": "input#seat-1",
+            "top": 465,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -613,6 +657,7 @@
           },
           {
             "el": "input#org.inp",
+            "top": 749,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -621,6 +666,7 @@
           },
           {
             "el": "input#contact.inp",
+            "top": 749,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -629,6 +675,7 @@
           },
           {
             "el": "input#n1.inp",
+            "top": 1010,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -637,6 +684,7 @@
           },
           {
             "el": "input#e1.inp",
+            "top": 1010,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -645,6 +693,7 @@
           },
           {
             "el": "select#r1.inp \"Choose a roleAdministratorCommunications\"",
+            "top": 1010,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -653,6 +702,7 @@
           },
           {
             "el": "textarea#task.inp",
+            "top": 1266,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -661,6 +711,7 @@
           },
           {
             "el": "input#consent",
+            "top": 1416,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -669,6 +720,7 @@
           },
           {
             "el": "a.btn.alt \"Back\"",
+            "top": 1735,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -676,7 +728,8 @@
             "visible": true
           },
           {
-            "el": "button.btn \"Continue to review\"",
+            "el": "button.btn.d-only \"Continue to review\"",
+            "top": 1735,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -701,7 +754,7 @@
           "textarea#task.inp",
           "input#consent",
           "a.btn.alt \"Back\"",
-          "button.btn \"Continue to review\""
+          "button.btn.d-only \"Continue to review\""
         ]
       },
       "faq": [],
@@ -766,6 +819,7 @@
         "stops": [
           {
             "el": "a.mark \"Claude for Church Offices\"",
+            "top": 16,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -774,6 +828,7 @@
           },
           {
             "el": "button.menu[aria-label=\"Open menu\"]",
+            "top": 16,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -782,6 +837,7 @@
           },
           {
             "el": "a.btn \"Reserve seats\"",
+            "top": 3664,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -822,6 +878,7 @@
         "stops": [
           {
             "el": "a.mark \"Claude for Church Offices\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -830,6 +887,7 @@
           },
           {
             "el": "a \"Workshop\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -838,6 +896,7 @@
           },
           {
             "el": "a \"For your board\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -846,6 +905,7 @@
           },
           {
             "el": "a \"About\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -854,6 +914,7 @@
           },
           {
             "el": "a \"Questions\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -862,6 +923,7 @@
           },
           {
             "el": "a.btn \"Reserve seats\"",
+            "top": 2835,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -889,6 +951,7 @@
         "stops": [
           {
             "el": "a.mark \"Claude for Church Offices\"",
+            "top": 16,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -897,6 +960,7 @@
           },
           {
             "el": "button.menu[aria-label=\"Open menu\"]",
+            "top": 16,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -905,6 +969,7 @@
           },
           {
             "el": "button.btn.alt \"Print this page\"",
+            "top": 239,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -913,6 +978,7 @@
           },
           {
             "el": "a.btn \"Reserve seats\"",
+            "top": 1446,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -954,6 +1020,7 @@
         "stops": [
           {
             "el": "a.mark \"Claude for Church Offices\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -962,6 +1029,7 @@
           },
           {
             "el": "a \"Workshop\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -970,6 +1038,7 @@
           },
           {
             "el": "a \"For your board\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -978,6 +1047,7 @@
           },
           {
             "el": "a \"About\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -986,6 +1056,7 @@
           },
           {
             "el": "a \"Questions\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -994,6 +1065,7 @@
           },
           {
             "el": "button.btn.alt \"Print this page\"",
+            "top": 306,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1002,6 +1074,7 @@
           },
           {
             "el": "a.btn \"Reserve seats\"",
+            "top": 1218,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1030,6 +1103,7 @@
         "stops": [
           {
             "el": "a.mark \"Claude for Church Offices\"",
+            "top": 16,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1038,6 +1112,7 @@
           },
           {
             "el": "button.menu[aria-label=\"Open menu\"]",
+            "top": 16,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1077,6 +1152,7 @@
         "stops": [
           {
             "el": "a.mark \"Claude for Church Offices\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1085,6 +1161,7 @@
           },
           {
             "el": "a \"Workshop\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1093,6 +1170,7 @@
           },
           {
             "el": "a \"For your board\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1101,6 +1179,7 @@
           },
           {
             "el": "a \"About\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1109,6 +1188,7 @@
           },
           {
             "el": "a \"Questions\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1135,6 +1215,7 @@
         "stops": [
           {
             "el": "a.mark \"Claude for Church Offices\"",
+            "top": 16,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1143,6 +1224,7 @@
           },
           {
             "el": "button.menu[aria-label=\"Open menu\"]",
+            "top": 16,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1151,6 +1233,7 @@
           },
           {
             "el": "input#q-name.inp",
+            "top": 348,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1159,6 +1242,7 @@
           },
           {
             "el": "input#q-church.inp",
+            "top": 449,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1167,6 +1251,7 @@
           },
           {
             "el": "input#q-email.inp",
+            "top": 550,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1175,6 +1260,7 @@
           },
           {
             "el": "textarea#q-question.inp",
+            "top": 651,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1183,6 +1269,7 @@
           },
           {
             "el": "input#q-future",
+            "top": 801,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1191,6 +1278,7 @@
           },
           {
             "el": "summary \"Do we need a paid Claude account?\"",
+            "top": 1036,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1199,6 +1287,7 @@
           },
           {
             "el": "summary \"Can our whole office come?\"",
+            "top": 1109,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1207,6 +1296,7 @@
           },
           {
             "el": "summary \"Is our information safe?\"",
+            "top": 1174,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1276,6 +1366,7 @@
         "stops": [
           {
             "el": "a.mark \"Claude for Church Offices\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1284,6 +1375,7 @@
           },
           {
             "el": "a \"Workshop\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1292,6 +1384,7 @@
           },
           {
             "el": "a \"For your board\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1300,6 +1393,7 @@
           },
           {
             "el": "a \"About\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1308,6 +1402,7 @@
           },
           {
             "el": "a \"Questions\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1316,6 +1411,7 @@
           },
           {
             "el": "input#q-name.inp",
+            "top": 404,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1324,6 +1420,7 @@
           },
           {
             "el": "input#q-church.inp",
+            "top": 404,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1332,6 +1429,7 @@
           },
           {
             "el": "input#q-email.inp",
+            "top": 509,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1340,6 +1438,7 @@
           },
           {
             "el": "textarea#q-question.inp",
+            "top": 613,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1348,6 +1447,7 @@
           },
           {
             "el": "input#q-future",
+            "top": 763,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1356,6 +1456,7 @@
           },
           {
             "el": "summary \"Do we need a paid Claude account?\"",
+            "top": 982,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1364,6 +1465,7 @@
           },
           {
             "el": "summary \"Can our whole office come?\"",
+            "top": 1047,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1372,6 +1474,7 @@
           },
           {
             "el": "summary \"Is our information safe?\"",
+            "top": 1112,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1428,6 +1531,7 @@
         "stops": [
           {
             "el": "a.mark \"Claude for Church Offices\"",
+            "top": 16,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1436,6 +1540,7 @@
           },
           {
             "el": "button.menu[aria-label=\"Open menu\"]",
+            "top": 16,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1444,6 +1549,7 @@
           },
           {
             "el": "a.edit \"Edit\"",
+            "top": 588,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1452,6 +1558,7 @@
           },
           {
             "el": "a.edit \"Edit\"",
+            "top": 914,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1460,6 +1567,7 @@
           },
           {
             "el": "a.edit \"Edit\"",
+            "top": 1308,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1468,6 +1576,7 @@
           },
           {
             "el": "a.edit \"Edit\"",
+            "top": 1503,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1476,6 +1585,7 @@
           },
           {
             "el": "a.btn.alt \"Back\"",
+            "top": 2013,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1520,6 +1630,7 @@
         "stops": [
           {
             "el": "a.mark \"Claude for Church Offices\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1528,6 +1639,7 @@
           },
           {
             "el": "a \"Workshop\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1536,6 +1648,7 @@
           },
           {
             "el": "a \"For your board\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1544,6 +1657,7 @@
           },
           {
             "el": "a \"About\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1552,6 +1666,7 @@
           },
           {
             "el": "a \"Questions\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1560,6 +1675,7 @@
           },
           {
             "el": "a.edit \"Edit\"",
+            "top": 535,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1568,6 +1684,7 @@
           },
           {
             "el": "a.edit \"Edit\"",
+            "top": 799,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1576,6 +1693,7 @@
           },
           {
             "el": "a.edit \"Edit\"",
+            "top": 1071,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1584,6 +1702,7 @@
           },
           {
             "el": "a.edit \"Edit\"",
+            "top": 1256,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1592,6 +1711,7 @@
           },
           {
             "el": "a.btn.alt \"Back\"",
+            "top": 1698,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1623,6 +1743,7 @@
         "stops": [
           {
             "el": "a.mark \"Claude for Church Offices\"",
+            "top": 16,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1631,6 +1752,7 @@
           },
           {
             "el": "button.menu[aria-label=\"Open menu\"]",
+            "top": 16,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1639,6 +1761,7 @@
           },
           {
             "el": "a.lnk \"Email the one-page summary to your board\"",
+            "top": 1442,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1679,6 +1802,7 @@
         "stops": [
           {
             "el": "a.mark \"Claude for Church Offices\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1687,6 +1811,7 @@
           },
           {
             "el": "a \"Workshop\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1695,6 +1820,7 @@
           },
           {
             "el": "a \"For your board\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1703,6 +1829,7 @@
           },
           {
             "el": "a \"About\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1711,6 +1838,7 @@
           },
           {
             "el": "a \"Questions\"",
+            "top": 24,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1719,6 +1847,7 @@
           },
           {
             "el": "a.lnk \"Email the one-page summary to your board\"",
+            "top": 1172,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,

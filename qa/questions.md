@@ -33,6 +33,9 @@ In the order I would ask them, one at a time. None blocks the build; every item 
 14. **A real photo on About?** Section 7 asks for a labeled [PHOTO] block, flat, no image, and CLAUDE.md rule 3 says no images. A real photo needs that rule changed.
 15. **Working title.** Kept as "Claude for Church Offices" for now (your call, 2026-11-09). It is one constant, src/config.ts:16.
 
+16. **Where do people tell you about access needs?** The approved accessibility line says "Tell us about any other need when you register", but Register has no field for it (audit, qa/audit-report.md row 3). Options: an optional field on Register (new copy and one more column for the form service), or change the line to "email [CONTACT EMAIL]". The line carries [CONFIRM] until you decide.
+17. **Should the menu button say "Close menu" while open?** It keeps its designed name "Open menu"; screen readers also hear that it is expanded. "Close menu" would be new copy (audit row 12).
+
 Resolved in Stage 2: the nav lists all four pages and Questions goes to /questions/ (kickoff: "update the nav to include them"; was question 8). FAQ answer 6 links "For your board" to /board/ (D36).
 
 ## Derived: built with a default, no artboard
@@ -107,7 +110,7 @@ Questions (src/pages/questions/index.astro, src/scripts/questions.js)
 Shared
 
 - **D34 Nav:** Workshop, For your board, About, Questions (to /questions/). The current page's link carries `aria-current="page"`.
-- **D35 Header at 900 to 1099px:** the Home artboard's own header wraps "For your board" at 900 to 1024px (measured). There, the links stay on one line, and the Home nav extends left into the unused width of the wordmark columns with a 16px gap instead of 24px. Smallest measured gap: 34px. qa/checks/headerfit.mjs.
+- **D35 Header at 900 to 1099px:** the Home artboard's own header wraps "For your board" at 900 to 1024px (measured). There, the Home header lays out as one row instead of the grid: the nav (24px gaps, as designed) and the button keep their natural width, and the wordmark takes what is left. Below about 1024px the wordmark wraps to two lines, as in the artboards. Revised after the audit: the first version let the nav overflow left, and its box overlapped the wordmark's by 6px at 900px. qa/checks/headerfit.mjs now measures element boxes; smallest gap 24px.
 - **D36 FAQ answer 6:** "For your board" links to /board/. The text is unchanged.
 - **D37 For your board in print:** US Letter, 0.5in margins, a label column and a content column. Nav, menu and buttons are hidden, links print in ink, and the footer and honesty line stay. The print button calls the browser's print; `BOARD_PDF_URL` swaps it for "Download PDF".
 - **D38 PhotoBlock:** flat --tint, 4:5, the label in ink2 (8.05:1, a spec pair).
@@ -124,6 +127,17 @@ Shared
 - **D46 Order pages are never indexed:** Review order and Confirmation keep robots noindex after launch, because they show a visitor's own order.
 - **D47 Page descriptions:** Base.astro emits a meta description once its text is approved (src/copy.ts `DESCRIPTIONS`). The drafts are in qa/stage2-copy-draft.md (question 10).
 
+- **D48 Placeholder color:** input placeholders use ink2 (8.86:1). The artboards leave it to the browser, where Chromium passes at 4.61:1 but Safari's light grey would not (audit row 7).
+- **D49 Primary button in both orders:** on Register and Review, Continue (or the pay button) is rendered first and last. Mobile shows the first (above Back, as the mobile artboard), desktop the last (after Back, as the desktop artboard); the other is `display:none`. Keyboard order now matches the screen in both layouts (audit row 6).
+- **D50 Audit fixes in behavior:**
+  - Review reloads when restored from the back/forward cache.
+  - A saved seat count with no matching option goes back to Register.
+  - Continue stays on Register if storage is blocked.
+  - Continue and Send ship disabled until their scripts run.
+  - Every registration sent carries `sent_at`.
+  - `PAYMENT_REF_PARAM` null blocks launch.
+  - qa/audit-report.md rows 1, 2, 14 and 18 to 20.
+
 ## Design file issues (design/ is read-only, so they are logged here)
 
 - **Mobile artboards render without side padding** in a browser. `.in{padding:0 20px}` is declared before `.hero`, `.s` and `.ft`, whose padding shorthands reset left and right to 0. HANDOFF-SPEC.md section 4 says 20px, so the build uses 20px. This is why the mobile pages run taller than the artboards in qa/screenshots/.
@@ -134,4 +148,5 @@ Shared
 - **Register artboard, Attendee 2 email** has no placeholder; section 7 sets "name@church.org" on every email field.
 - **Register desktop artboard** lacks the nav hover underline that Home has. The shared header uses Home's rule on both pages.
 - **Home "Our promises" section** has the accessible name "Safety and scope", different from its visible label. Kept as designed.
+- **Check icon stroke:** the artboards draw the done-step check with stroke-width 3; HANDOFF-SPEC.md section 2 says 2.5 for icons. Built as the artboard draws it (audit row 11).
 - **The "done" step in ProgressSteps** is marked only by a check icon, with no text for screen readers. Kept as designed; worth a word in a later pass.

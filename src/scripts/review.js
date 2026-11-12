@@ -84,8 +84,9 @@ function setUp(main) {
     showState(errors, 'send-error')?.focus();
   }
 
-  main.querySelector('[data-pay]')?.addEventListener('click', () => pay('online'));
-  main.querySelector('[data-pay-offline]')?.addEventListener('click', () => pay('offline'));
+  // The pay button is in the page twice (mobile and desktop order); only one shows at a time.
+  main.querySelectorAll('[data-pay]').forEach((b) => b.addEventListener('click', () => pay('online')));
+  main.querySelectorAll('[data-pay-offline]').forEach((b) => b.addEventListener('click', () => pay('offline')));
 }
 
 /** Flat, URL-encoded fields any hosted form service can store as columns. */

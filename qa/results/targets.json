@@ -1,9 +1,9 @@
 {
   "check": "targets",
   "target": "built",
-  "ranAt": "2026-11-12T03:34:43.171Z",
+  "ranAt": "2026-11-12T04:08:05.802Z",
   "status": "pass",
-  "summary": "293 targets measured, 0 below 44px",
+  "summary": "341 targets measured, 0 below 44px",
   "failures": [],
   "samples": [
     {
@@ -50,6 +50,104 @@
           "group": "link",
           "el": "a.ghost \"See what we cover\"",
           "w": 350,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Do we need a paid Claude account?\"",
+          "w": 350,
+          "h": 72,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Can our whole office come?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Is our information safe?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Is this about sermons?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"What if we are new to AI?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"What if our board must approve it?\"",
+          "w": 350,
+          "h": 72,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "home",
+      "width": 390,
+      "state": "every FAQ open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn \"Reserve seats\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn \"Reserve seats\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.ghost \"See what we cover\"",
+          "w": 350,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 114.2,
           "h": 44,
           "ok": true
         },
@@ -169,6 +267,13 @@
           "group": "link",
           "el": "a.ghost \"See what we cover\"",
           "w": 350,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 114.2,
           "h": 44,
           "ok": true
         },
@@ -329,6 +434,125 @@
       ]
     },
     {
+      "screen": "home",
+      "width": 1440,
+      "state": "every FAQ open",
+      "items": [
+        {
+          "group": "button",
+          "el": "a.btn.hcta \"Reserve seats\"",
+          "w": 169.3,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn \"Reserve seats\"",
+          "w": 199.3,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn \"Reserve seats\"",
+          "w": 199.3,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 77.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 108.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 46.8,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 76.6,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.ghost \"See what we cover\"",
+          "w": 151.2,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 120.9,
+          "h": 45,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Do we need a paid Claude account?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Can our whole office come?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Is our information safe?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Is this about sermons?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"What if we are new to AI?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"What if our board must approve it?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        }
+      ]
+    },
+    {
       "screen": "register",
       "width": 390,
       "state": "default",
@@ -356,14 +580,14 @@
         },
         {
           "group": "button",
-          "el": "a.btn.alt \"Back\"",
+          "el": "button.btn.m-only \"Continue to review\"",
           "w": 350,
           "h": 56,
           "ok": true
         },
         {
           "group": "button",
-          "el": "button.btn \"Continue to review\"",
+          "el": "a.btn.alt \"Back\"",
           "w": 350,
           "h": 56,
           "ok": true
@@ -447,14 +671,14 @@
         },
         {
           "group": "button",
-          "el": "a.btn.alt \"Back\"",
+          "el": "button.btn.m-only \"Continue to review\"",
           "w": 350,
           "h": 56,
           "ok": true
         },
         {
           "group": "button",
-          "el": "button.btn \"Continue to review\"",
+          "el": "a.btn.alt \"Back\"",
           "w": 350,
           "h": 56,
           "ok": true
@@ -538,14 +762,14 @@
         },
         {
           "group": "button",
-          "el": "a.btn.alt \"Back\"",
+          "el": "button.btn.m-only \"Continue to review\"",
           "w": 350,
           "h": 56,
           "ok": true
         },
         {
           "group": "button",
-          "el": "button.btn \"Continue to review\"",
+          "el": "a.btn.alt \"Back\"",
           "w": 350,
           "h": 56,
           "ok": true
@@ -630,7 +854,7 @@
         {
           "group": "button",
           "el": "button.btn.alt \"Add another attendee\"",
-          "w": 234.1,
+          "w": 234.2,
           "h": 52,
           "ok": true
         },
@@ -643,7 +867,7 @@
         },
         {
           "group": "button",
-          "el": "button.btn \"Continue to review\"",
+          "el": "button.btn.d-only \"Continue to review\"",
           "w": 238,
           "h": 52,
           "ok": true
@@ -735,7 +959,7 @@
         {
           "group": "button",
           "el": "button.btn.alt \"Add another attendee\"",
-          "w": 234.1,
+          "w": 234.2,
           "h": 52,
           "ok": true
         },
@@ -748,7 +972,7 @@
         },
         {
           "group": "button",
-          "el": "button.btn \"Continue to review\"",
+          "el": "button.btn.d-only \"Continue to review\"",
           "w": 238,
           "h": 52,
           "ok": true
@@ -972,7 +1196,7 @@
         },
         {
           "group": "button",
-          "el": "button.btn.alt \"[PRINT BUTTON]\"",
+          "el": "button.btn.alt \"Print this page\"",
           "w": 350,
           "h": 56,
           "ok": true
@@ -1014,7 +1238,7 @@
         },
         {
           "group": "button",
-          "el": "button.btn.alt \"[PRINT BUTTON]\"",
+          "el": "button.btn.alt \"Print this page\"",
           "w": 350,
           "h": 56,
           "ok": true
@@ -1077,8 +1301,8 @@
       "items": [
         {
           "group": "button",
-          "el": "button.btn.alt \"[PRINT BUTTON]\"",
-          "w": 197.9,
+          "el": "button.btn.alt \"Print this page\"",
+          "w": 175.8,
           "h": 52,
           "ok": true
         },
@@ -1266,7 +1490,70 @@
         },
         {
           "group": "button",
-          "el": "button.btn \"[SEND BUTTON]\"",
+          "el": "button.btn \"Send\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "checkbox label",
+          "el": "label \"Email me about this workshop and future \"",
+          "w": 312,
+          "h": 52.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Do we need a paid Claude account?\"",
+          "w": 350,
+          "h": 72,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Can our whole office come?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Is our information safe?\"",
+          "w": 350,
+          "h": 64,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "questions",
+      "width": 390,
+      "state": "every FAQ open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "button.btn \"Send\"",
           "w": 350,
           "h": 56,
           "ok": true
@@ -1329,7 +1616,7 @@
         },
         {
           "group": "button",
-          "el": "button.btn \"[SEND BUTTON]\"",
+          "el": "button.btn \"Send\"",
           "w": 350,
           "h": 56,
           "ok": true
@@ -1392,7 +1679,7 @@
         },
         {
           "group": "button",
-          "el": "button.btn \"[SEND BUTTON]\"",
+          "el": "button.btn \"Send\"",
           "w": 350,
           "h": 56,
           "ok": true
@@ -1476,8 +1763,85 @@
       "items": [
         {
           "group": "button",
-          "el": "button.btn \"[SEND BUTTON]\"",
-          "w": 219.8,
+          "el": "button.btn \"Send\"",
+          "w": 124.6,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "checkbox label",
+          "el": "label \"Email me about this workshop and future \"",
+          "w": 395.6,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Workshop\"",
+          "w": 77.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"For your board\"",
+          "w": 108.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"About\"",
+          "w": 46.8,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Questions\"",
+          "w": 76.6,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Do we need a paid Claude account?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Can our whole office come?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        },
+        {
+          "group": "FAQ summary",
+          "el": "summary \"Is our information safe?\"",
+          "w": 834,
+          "h": 64,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "questions",
+      "width": 1440,
+      "state": "every FAQ open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.btn \"Send\"",
+          "w": 124.6,
           "h": 52,
           "ok": true
         },
@@ -1553,8 +1917,8 @@
       "items": [
         {
           "group": "button",
-          "el": "button.btn \"[SEND BUTTON]\"",
-          "w": 219.8,
+          "el": "button.btn \"Send\"",
+          "w": 124.6,
           "h": 52,
           "ok": true
         },
@@ -1637,14 +2001,14 @@
         },
         {
           "group": "button",
-          "el": "a.btn.alt \"Back\"",
+          "el": "button.btn.m-only \"Continue to payment\"",
           "w": 350,
           "h": 56,
           "ok": true
         },
         {
           "group": "button",
-          "el": "button.btn \"[PAY BUTTON]\"",
+          "el": "a.btn.alt \"Back\"",
           "w": 350,
           "h": 56,
           "ok": true
@@ -1707,14 +2071,14 @@
         },
         {
           "group": "button",
-          "el": "a.btn.alt \"Back\"",
+          "el": "button.btn.m-only \"Continue to payment\"",
           "w": 350,
           "h": 56,
           "ok": true
         },
         {
           "group": "button",
-          "el": "button.btn \"[PAY BUTTON]\"",
+          "el": "a.btn.alt \"Back\"",
           "w": 350,
           "h": 56,
           "ok": true
@@ -1777,14 +2141,14 @@
         },
         {
           "group": "button",
-          "el": "a.btn.alt \"Back\"",
+          "el": "button.btn.m-only \"Continue to payment\"",
           "w": 350,
           "h": 56,
           "ok": true
         },
         {
           "group": "button",
-          "el": "button.btn \"[PAY BUTTON]\"",
+          "el": "a.btn.alt \"Back\"",
           "w": 350,
           "h": 56,
           "ok": true
@@ -1875,8 +2239,8 @@
         },
         {
           "group": "button",
-          "el": "button.btn \"[PAY BUTTON]\"",
-          "w": 205.2,
+          "el": "button.btn.d-only \"Continue to payment\"",
+          "w": 256,
           "h": 52,
           "ok": true
         },
@@ -1959,8 +2323,8 @@
         },
         {
           "group": "button",
-          "el": "button.btn \"[PAY BUTTON]\"",
-          "w": 205.2,
+          "el": "button.btn.d-only \"Continue to payment\"",
+          "w": 256,
           "h": 52,
           "ok": true
         },
@@ -2057,8 +2421,8 @@
         },
         {
           "group": "link",
-          "el": "a.lnk \"[FORWARD LINK]\"",
-          "w": 145.5,
+          "el": "a.lnk \"Email the one-page summary to your board\"",
+          "w": 348.7,
           "h": 44,
           "ok": true
         }
@@ -2078,7 +2442,7 @@
         },
         {
           "group": "button",
-          "el": "button.btn \"[RETRY BUTTON]\"",
+          "el": "button.btn \"Try payment again\"",
           "w": 350,
           "h": 56,
           "ok": true
@@ -2099,8 +2463,8 @@
         },
         {
           "group": "link",
-          "el": "a.lnk \"[FORWARD LINK]\"",
-          "w": 145.5,
+          "el": "a.lnk \"Email the one-page summary to your board\"",
+          "w": 348.7,
           "h": 44,
           "ok": true
         }
@@ -2120,7 +2484,7 @@
         },
         {
           "group": "button",
-          "el": "button.btn \"[RETRY BUTTON]\"",
+          "el": "button.btn \"Try payment again\"",
           "w": 350,
           "h": 56,
           "ok": true
@@ -2169,8 +2533,8 @@
         },
         {
           "group": "link",
-          "el": "a.lnk \"[FORWARD LINK]\"",
-          "w": 145.5,
+          "el": "a.lnk \"Email the one-page summary to your board\"",
+          "w": 348.7,
           "h": 44,
           "ok": true
         }
@@ -2218,8 +2582,8 @@
         },
         {
           "group": "link",
-          "el": "a.lnk \"[FORWARD LINK]\"",
-          "w": 154.1,
+          "el": "a.lnk \"Email the one-page summary to your board\"",
+          "w": 369.2,
           "h": 44,
           "ok": true
         }
@@ -2232,8 +2596,8 @@
       "items": [
         {
           "group": "button",
-          "el": "button.btn \"[RETRY BUTTON]\"",
-          "w": 230.8,
+          "el": "button.btn \"Try payment again\"",
+          "w": 235.3,
           "h": 52,
           "ok": true
         },
@@ -2274,8 +2638,8 @@
         },
         {
           "group": "link",
-          "el": "a.lnk \"[FORWARD LINK]\"",
-          "w": 154.1,
+          "el": "a.lnk \"Email the one-page summary to your board\"",
+          "w": 369.2,
           "h": 44,
           "ok": true
         }

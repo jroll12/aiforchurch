@@ -43,6 +43,8 @@ const shownStates = (page) => page.evaluate(() => [...document.querySelectorAll(
 const stored = (page) => page.evaluate((key) => JSON.parse(sessionStorage.getItem(key) || 'null'), STORAGE_KEY);
 const text = (page, sel) => page.evaluate((s) => document.querySelector(s)?.textContent.replace(/\s+/g, ' ').trim() ?? null, sel);
 const failNext = () => fetch(`${base}/__mock/fail`, { method: 'POST' });
+// The pay button is in the page twice (mobile and desktop order); only the visible one is used.
+const PAY = 'button[data-pay]:visible';
 
 /* ---------- 1. Register to Review ---------- */
 {
@@ -82,11 +84,11 @@ const failNext = () => fetch(`${base}/__mock/fail`, { method: 'POST' });
 
   // Payment: a failed send shows the error and keeps everything; the retry goes through.
   await failNext();
-  await page.click('button[data-pay]');
+  await page.click(PAY);
   await page.locator('[data-state="send-error"]').waitFor({ state: 'visible' });
-  expect('Pay: failed send shows the error state and stays on Review', [await shownStates(page), new URL(page.url()).pathname, await page.locator('button[data-pay]').isEnabled()], [['send-error'], '/register/review/', true]);
+  expect('Pay: failed send shows the error state and stays on Review', [await shownStates(page), new URL(page.url()).pathname, await page.locator(PAY).isEnabled()], [['send-error'], '/register/review/', true]);
   expect('Pay: nothing recorded on failure', mock.submissions.length, 0);
-  await page.click('button[data-pay]');
+  await page.click(PAY);
   await page.waitForURL('**/__mock/pay/**');
   const payUrl = new URL(page.url());
   expect('Pay: goes to the chosen option\'s payment link with the reference code', [payUrl.pathname, payUrl.searchParams.get('client_reference_id')], ['/__mock/pay/one', saved.ref]);
@@ -230,7 +232,7 @@ const failNext = () => fetch(`${base}/__mock/fail`, { method: 'POST' });
   const context = await br.newContext({ viewport: { width: 1440, height: 900 }, javaScriptEnabled: false });
   const page = await context.newPage();
   await go(page, '/register/');
-  const reg = await page.locator('button[type="submit"]').isDisabled();
+  const reg = await page.$$eval('button[type="submit"]', (bs) => bs.length > 0 && bs.every((b) => b.disabled));
   await go(page, '/questions/');
   const ask = await page.locator('form#ask button[type="submit"]').isDisabled();
   expect('No JavaScript: Continue and Send are disabled, so nothing posts', [reg, ask], [true, true]);
@@ -245,7 +247,7 @@ const failNext = () => fetch(`${base}/__mock/fail`, { method: 'POST' });
   await seed(context, STATE);
   const page = await context.newPage();
   await page.goto(`${cached.url}/register/review/`, { waitUntil: 'networkidle' });
-  await page.click('button[data-pay]');
+  await page.click(PAY);
   await page.waitForURL('**/__mock/pay/**');
   // While away, the saved registration changes (as an edit in another visit to Register would).
   await page.evaluate((key) => {
@@ -255,7 +257,7 @@ const failNext = () => fetch(`${base}/__mock/fail`, { method: 'POST' });
   await page.goBack({ waitUntil: 'commit' });
   await page.waitForLoadState('networkidle');
   await page.waitForTimeout(300);
-  expect('Back from payment: Review is current and the pay button works', [await text(page, '[data-sum="seats"] dd'), await page.locator('button[data-pay]').isEnabled()], ['One seat', true]);
+  expect('Back from payment: Review is current and the pay button works', [await text(page, '[data-sum="seats"] dd'), await page.locator(PAY).isEnabled()], ['One seat', true]);
   await full.close();
   cached.server.close();
 }

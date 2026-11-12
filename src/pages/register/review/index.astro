@@ -83,9 +83,10 @@ const sections = [
 <h2 class="lab" id="r5">Your order</h2>
 <SummaryPanel mode="review">
 <div class="acts">
+<Button arrow disabled={!live} data-pay class="m-only">{REVIEW.pay}</Button>
 <Button variant="alt" href={register}>{DESIGN.back}</Button>
 {OFFLINE_PAYMENT && <Button variant="alt" disabled={!live} data-pay-offline>{REVIEW.payOffline}</Button>}
-<Button arrow disabled={!live} data-pay>{REVIEW.pay}</Button>
+<Button arrow disabled={!live} data-pay class="d-only">{REVIEW.pay}</Button>
 </div>
 <FormStatus state="send-error" tone="error">{REVIEW.sendError}</FormStatus>
 </SummaryPanel>

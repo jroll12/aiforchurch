@@ -1,9 +1,9 @@
 {
   "check": "text-diff",
   "target": "built",
-  "ranAt": "2026-11-12T04:02:00.079Z",
+  "ranAt": "2026-11-12T04:09:01.871Z",
   "status": "pass",
-  "summary": "10 differences, 0 unexplained, 0 stale expectations",
+  "summary": "8 differences, 0 unexplained, 0 stale expectations",
   "unexplained": [],
   "stale": [],
   "results": [
@@ -54,20 +54,6 @@
           "at": 42,
           "explained": true,
           "reason": "Attendee 2 role as intended (see the design-only entry above). Test fixture value only; the shipped select starts on \"Choose a role\"."
-        },
-        {
-          "side": "design-only",
-          "text": "Continue to review",
-          "at": 69,
-          "explained": true,
-          "reason": "Button order: the mobile artboard puts Continue before Back; the desktop artboard puts Back first. One responsive page has one DOM, so it keeps the desktop order and CSS shows Continue first on mobile (SITE-KICKOFF-PROMPT.md Stage 1 step 2). Visual order matches both artboards; mobile keyboard order is Back then Continue. Logged in qa/stage1-report.md."
-        },
-        {
-          "side": "built-only",
-          "text": "Continue to review",
-          "at": 70,
-          "explained": true,
-          "reason": "Same button, read after Back because of the shared DOM order (see the design-only entry above)."
         }
       ]
     },

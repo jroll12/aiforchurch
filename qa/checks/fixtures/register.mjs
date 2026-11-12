@@ -14,7 +14,8 @@ export const COMPOSITE = {
   ],
 };
 
-const continueButton = 'button:has-text("Continue to review")';
+// :visible because the page holds Continue twice (mobile and desktop order); one is display:none.
+const continueButton = 'button:visible:has-text("Continue to review")';
 
 /**
  * The state the artboards show: three seats, two rows filled, the second

@@ -124,12 +124,16 @@ html:not(.js) .menu { display: none; }
   .pg .hd .hcta { display: inline-flex; grid-column: 10 / 13; grid-row: 1; justify-self: end; }
 }
 
-/* Derived (Stage 2): with four items, the nav does not fit columns 5 to 9 beside the Home header
-   button below about 1100px; the Home artboard itself wraps "For your board" at 900 to 1024px.
-   Here the links stay on one line and the nav extends left into the unused width of the wordmark
-   columns, with a 16px gap instead of 24px. Checked by qa/checks/headerfit.mjs. */
+/* Derived (Stage 2, revised after the audit): with four items, the nav does not fit columns 5 to 9
+   beside the Home header button below about 1100px; the Home artboard itself wraps "For your board"
+   at 900 to 1024px. Here the Home header lays out as one row instead of the grid: the nav and button
+   keep their natural width and the wordmark takes what is left, wrapping to two lines as it does in
+   the artboards at these widths. No box overlaps another. Checked by qa/checks/headerfit.mjs. */
 @media (min-width: 900px) and (max-width: 1099.98px) {
-  .hd--cta .nav { justify-self: end; width: max-content; gap: 16px; }
+  .hd--cta .g { display: flex; align-items: center; column-gap: var(--col-gap); min-height: 80px; }
+  .hd--cta a.mark { flex: 0 1 auto; min-width: 0; }
+  .hd--cta .nav { flex: none; margin-left: auto; }
+  .pg .hd--cta .hcta { flex: none; }
 }
 
 /* ---------- Button ---------- */
@@ -292,6 +296,9 @@ html:not(.js) .menu { display: none; }
 .faq details:not([open]) .i-minus,
 .faq details[open] .i-plus { display: none; }
 .faq details p { padding: 0 0 22px; color: var(--ink2); }
+/* Derived: a link inside an answer gets a 44px tall hit area; vertical padding on an inline element
+   does not change the line layout. */
+.faq details p a { padding-block: 12px; }
 
 @media (min-width: 900px) {
   .faq summary { gap: 20px; padding: 12px 0; font-size: 21px; }
@@ -404,6 +411,9 @@ html:not(.js) .menu { display: none; }
   background: var(--ground);
 }
 textarea.inp { height: 120px; padding: 12px 14px; line-height: 1.5; resize: none; }
+/* Derived: the artboards leave placeholder color to the browser. Chromium's default passes at 4.61:1,
+   but Safari's light grey does not, so placeholders use ink2 (8.86:1) everywhere (qa/questions.md D48). */
+.inp::placeholder { color: var(--ink2); opacity: 1; }
 .inp[aria-invalid="true"] { border: 3px solid var(--err); }
 .err { display: flex; align-items: flex-start; gap: 8px; color: var(--err); font-weight: 700; font-size: 16px; }
 .err svg { margin-top: 3px; }
@@ -455,7 +465,17 @@ textarea.inp { height: 120px; padding: 12px 14px; line-height: 1.5; resize: none
 /* ---------- SummaryPanel ---------- */
 .sum .facts div { grid-template-columns: 84px 1fr; padding: 12px 0; }
 .sum .facts dt { font: 700 14px/1.7 var(--sans); letter-spacing: .08em; text-transform: uppercase; }
-.acts { display: flex; flex-direction: column-reverse; gap: 12px; margin-top: 24px; } /* mobile shows Continue first; the DOM keeps desktop order */
+.acts { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+/* The primary button is rendered twice: first for the mobile order (Continue above Back, as the
+   mobile artboard) and last for the desktop order (Back, then Continue). The one not in use is
+   display:none, so it is out of the tab order and the accessibility tree, and keyboard order
+   matches what is on screen in both layouts (audit finding, qa/audit-report.md). */
+@media (max-width: 899.98px) {
+  .pg .btn.d-only { display: none; }
+}
+@media (min-width: 900px) {
+  .pg .btn.m-only { display: none; }
+}
 
 @media (min-width: 900px) {
   .sum .facts div { grid-template-columns: 140px 1fr; }
@@ -540,7 +560,7 @@ textarea.inp { height: 120px; padding: 12px 14px; line-height: 1.5; resize: none
 .review .tbl { margin-bottom: 0; }
 
 /* Confirmation: the reference code line under the heading. */
-.refl { margin-top: 16px; font-weight: 700; }
+.pg .refl { margin-top: 16px; font-weight: 700; } /* .pg p resets margins; this needs the higher specificity */
 .refl strong { font-weight: 800; letter-spacing: .08em; }
 .pg .state-h { font-size: clamp(2.5rem, 1.943rem + 2.286vw, 4rem); line-height: 1; letter-spacing: -0.035em; }
 .state + .state { margin-top: 0; }
@@ -554,7 +574,8 @@ textarea.inp { height: 120px; padding: 12px 14px; line-height: 1.5; resize: none
 @media print {
   @page { size: letter; margin: 0.5in; }
   html, .pg { background: var(--ground); }
-  .pg { min-height: 0; border-top-width: 4px; font-size: 10.5pt; line-height: 1.35; }
+  .pg { min-height: 0; font-size: 10.5pt; line-height: 1.35; }
+  .pg, .pg * { color: var(--ink) !important; } /* section 7: black on white, so ink2 text prints in ink */
   .pg .nav, .pg .menu, .pg .btn, .pg button, .pg .hcta, .pg .tact { display: none !important; }
   .pg a { color: var(--ink); text-decoration: none; }
 

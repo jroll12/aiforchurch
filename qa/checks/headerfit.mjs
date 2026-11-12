@@ -1,7 +1,9 @@
 // Header fit at the narrow end of the desktop layout (900 to 1100 px), where
 // the four-item nav is tightest (HANDOFF-SPEC.md section 4: header cols 1 to 4
 // mark, 5 to 9 nav, 10 to 12 button on Home). Pass means every nav link sits
-// on one line, and the wordmark, nav and Reserve seats button do not touch.
+// on one line, and the boxes of the wordmark, nav links and Reserve seats
+// button (their hit areas and focus rings, not just their text) do not touch.
+// The wordmark may wrap to two lines here, as it does in the artboards.
 import { TARGET, HEADER_WIDTHS, targets, server, browser, open, save } from './lib/common.mjs';
 
 const MIN_GAP = 8; // px of clear space between wordmark, nav and button
@@ -18,11 +20,13 @@ const measure = (page) =>
     const links = [...document.querySelectorAll('header .nav a')].filter((a) => a.checkVisibility());
     const cta = document.querySelector('header .hcta');
     if (!mark || !links.length) return null;
-    const markRight = textBox(mark).getBoundingClientRect().right;
-    const navLeft = Math.min(...links.map((a) => textBox(a).getBoundingClientRect().left));
-    const navRight = Math.max(...links.map((a) => textBox(a).getBoundingClientRect().right));
+    // Element boxes: the hit area and where the focus ring is drawn.
+    const markRight = mark.getBoundingClientRect().right;
+    const navLeft = Math.min(...links.map((a) => a.getBoundingClientRect().left));
+    const navRight = Math.max(...links.map((a) => a.getBoundingClientRect().right));
     const ctaLeft = cta && cta.checkVisibility() ? cta.getBoundingClientRect().left : null;
     return {
+      markLines: lines(mark),
       links: links.map((a) => ({ text: a.textContent.trim(), lines: lines(a) })),
       gapMarkNav: Math.round(navLeft - markRight),
       gapNavCta: ctaLeft === null ? null : Math.round(ctaLeft - navRight),

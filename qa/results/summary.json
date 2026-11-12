@@ -1,21 +1,31 @@
 {
   "target": "built",
-  "ranAt": "2026-11-12T04:02:16.348Z",
+  "ranAt": "2026-11-12T04:09:16.865Z",
   "summary": [
+    {
+      "check": "provenance",
+      "status": "pass",
+      "summary": "482 strings on 6 derived pages at 390 and 1440; 0 with no allowed source, 0 placeholders missing from PLACEHOLDERS.md, 23 taken from spec wording (listed for confirmation)"
+    },
+    {
+      "check": "overflow",
+      "status": "pass",
+      "summary": "108 page states measured, 0 with horizontal scroll"
+    },
     {
       "check": "headerfit",
       "status": "pass",
-      "summary": "32 headers at 900, 960, 1024, 1100 px; 0 with wrapping or touching items; smallest gap 34px (minimum 8)"
+      "summary": "32 headers at 900, 960, 1024, 1100 px; 0 with wrapping or touching items; smallest gap 24px (minimum 8)"
     },
     {
       "check": "contrast",
       "status": "pass",
-      "summary": "12 token pairs (0 off), 12 rendered color pairs, 0 text below minimum, 0 accent misuses"
+      "summary": "12 token pairs (0 off), 11 rendered color pairs, 0 text below minimum, 0 accent misuses"
     },
     {
       "check": "targets",
       "status": "pass",
-      "summary": "293 targets measured, 0 below 44px"
+      "summary": "341 targets measured, 0 below 44px"
     },
     {
       "check": "zoom",
@@ -25,7 +35,12 @@
     {
       "check": "visual",
       "status": "review",
-      "summary": "substitute reference (artboards rendered in Chromium; design/screenshots/ not provided). home@390: heights 4193/4383px, 20% pixels changed; home@1440: heights 3232/3232px, 0% pixels changed; register@390: heights 3499/3549px, 12% pixels changed; register@1440: heights 2574/2574px, 0% pixels changed. Derived pages, no reference: 12 screenshots for review"
+      "summary": "substitute reference (artboards rendered in Chromium; design/screenshots/ not provided). home@390: heights 4193/4383px, 20% pixels changed; home@1440: heights 3232/3232px, 0% pixels changed; register@390: heights 3499/3549px, 12% pixels changed; register@1440: heights 2574/2574px, 0.1% pixels changed. Derived pages, no reference: 12 screenshots for review"
+    },
+    {
+      "check": "print",
+      "status": "pass",
+      "summary": "/board/ prints on 1 Letter page; content fills about 71% of the printable height with placeholders in place; 0 problems"
     },
     {
       "check": "network",
@@ -33,34 +48,9 @@
       "summary": "16 page loads; hosts seen: 127.0.0.1, fonts.googleapis.com, fonts.gstatic.com"
     },
     {
-      "check": "overflow",
-      "status": "pass",
-      "summary": "108 page states measured, 0 with horizontal scroll"
-    },
-    {
-      "check": "print",
-      "status": "pass",
-      "summary": "/board/ prints on 1 Letter page; content fills about 70% of the printable height with placeholders in place; 0 problems"
-    },
-    {
-      "check": "text-diff",
-      "status": "pass",
-      "summary": "10 differences, 0 unexplained, 0 stale expectations"
-    },
-    {
-      "check": "provenance",
-      "status": "pass",
-      "summary": "482 strings on 6 derived pages at 390 and 1440; 0 with no allowed source, 0 placeholders missing from PLACEHOLDERS.md, 23 taken from spec wording (listed for confirmation)"
-    },
-    {
-      "check": "keyboard",
-      "status": "pass",
-      "summary": "16 page layouts walked, all stops visible, FAQ, errors and menu OK"
-    },
-    {
       "check": "guards",
       "status": "pass",
-      "summary": "0 findings; 114 repo files scanned for dashes"
+      "summary": "0 findings; 115 repo files scanned for dashes"
     },
     {
       "check": "behavior",
@@ -71,6 +61,16 @@
       "check": "flow",
       "status": "pass",
       "summary": "35 of 35 flow assertions hold on dist-mock/"
+    },
+    {
+      "check": "text-diff",
+      "status": "pass",
+      "summary": "8 differences, 0 unexplained, 0 stale expectations"
+    },
+    {
+      "check": "keyboard",
+      "status": "pass",
+      "summary": "16 page layouts walked, all stops visible, FAQ, errors and menu OK"
     }
   ]
 }

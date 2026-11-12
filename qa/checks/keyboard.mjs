@@ -24,8 +24,10 @@ async function tabWalk(page) {
       if (el.dataset.kbdSeen) return { wrapped: true };
       el.dataset.kbdSeen = '1';
       const cs = getComputedStyle(el);
+      const r = el.getBoundingClientRect();
       return {
         el: window.__describe(el),
+        top: Math.round(r.top + window.scrollY),
         outline: `${cs.outlineStyle} ${cs.outlineWidth} ${cs.outlineColor} offset ${cs.outlineOffset}`,
         outlineStyle: cs.outlineStyle,
         outlineWidth: parseFloat(cs.outlineWidth),
@@ -156,6 +158,9 @@ for (const p of pages) {
   const invisible = p.tab.stops.filter((s) => !s.visible);
   if (invisible.length) problems.push(`${where}: ${invisible.length} of ${p.tab.stops.length} focus stops without a 2px ink outline (first: ${invisible[0].el}, ${invisible[0].outline})`);
   if (p.tab.missed) problems.push(`${where}: Tab reached ${p.tab.stops.length} of ${p.tab.expectedCount} focusable elements`);
+  // Focus order should follow what is on screen (WCAG 2.4.3): Tab never jumps back up the page.
+  const upward = p.tab.stops.slice(1).map((s, k) => [p.tab.stops[k], s]).filter(([a, b]) => b.top < a.top - 20);
+  if (upward.length) problems.push(`${where}: Tab moves up the page ${upward.length} time(s), first ${upward[0][0].el} (y ${upward[0][0].top}) to ${upward[0][1].el} (y ${upward[0][1].top})`);
   const badFaq = p.faq.filter((f) => !f.ok);
   if (badFaq.length) problems.push(`${where}: FAQ items not toggling from the keyboard: ${badFaq.map((f) => f.item).join(', ')}`);
   if (p.errors && !p.errors.ok) problems.push(`${where}: error linkage or focus on first invalid field failed`);

@@ -35,6 +35,10 @@ for (const t of targets()) {
   const { context, page } = await open(br, srv.url, t);
   await installDescribe(page);
   samples.push({ screen: t.screen, width: t.width, state: 'default', items: await measure(page) });
+  // Links inside FAQ answers only exist on screen when their item is open.
+  if (await page.evaluate(() => [...document.querySelectorAll('details:not([open])')].map((d) => (d.open = true)).length)) {
+    samples.push({ screen: t.screen, width: t.width, state: 'every FAQ open', items: await measure(page) });
+  }
   if (t.derived && (await revealStates(page))) {
     samples.push({ screen: t.screen, width: t.width, state: 'all states shown', items: await measure(page) });
   }

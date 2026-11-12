@@ -47,6 +47,9 @@ const styles = await page.evaluate((accentList) => {
     navShown: visible('header nav, header .menu'),
     buttonsShown: visible('button, .btn'),
     honesty: Boolean([...document.querySelectorAll('footer p')].find((p) => shown(p) && p.textContent.includes('drafted with AI'))),
+    // Every text color in print, and the top rule (HANDOFF-SPEC.md section 2: 6px ink).
+    textColors: [...new Set([...document.querySelectorAll('body *')].filter((el) => shown(el) && [...el.childNodes].some((n) => n.nodeType === 3 && n.data.trim())).map((el) => getComputedStyle(el).color))],
+    topRule: getComputedStyle(document.querySelector('.pg')).borderTopWidth,
     contentHeight: Math.ceil(document.documentElement.scrollHeight),
   };
 }, accents);
@@ -75,6 +78,13 @@ if (TARGET === 'design') {
   if (styles.navShown.length) problems.push(`header nav shown in print: ${styles.navShown.join(', ')}`);
   if (styles.buttonsShown.length) problems.push(`buttons shown in print: ${styles.buttonsShown.join(', ')}`);
   if (!styles.honesty) problems.push('footer honesty line missing in print');
+  const ink = parseColor(tokens.ink);
+  const notInk = styles.textColors.filter((c) => {
+    const p = parseColor(c);
+    return !(p && p.r === ink.r && p.g === ink.g && p.b === ink.b);
+  });
+  if (notInk.length) problems.push(`text not printed in ink (black on white): ${notInk.join(', ')}`);
+  if (styles.topRule !== '6px') problems.push(`top rule is ${styles.topRule} in print, not 6px`);
   save('print', {
     status: problems.length ? 'fail' : 'pass',
     summary: `/board/ prints on ${pages} Letter page${pages === 1 ? '' : 's'}; content fills about ${fill}% of the printable height with placeholders in place; ${problems.length} problems`,
