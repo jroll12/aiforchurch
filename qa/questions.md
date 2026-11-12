@@ -6,7 +6,13 @@ CLAUDE.md: ask Jarret at most one question at a time. The open questions are in 
 
 In the order I would ask them, one at a time. None blocks the build; every item has a built default.
 
-1. **Stage 2 copy.** Six pages ship with 48 placeholders. Suggested text for each is in qa/stage2-copy-draft.md; mark rows approved and they get copied in. The same file lists 21 spec phrases now used as labels, for you to confirm.
+1. **Facts only you can supply.** `npm run check:launch` lists them with the line to edit:
+   - **workshop facts:** date, time, venue, seats left, prices, refund policy, contact email
+   - **[CONFIRM] tags:** accessibility, agenda times, topics 4 to 7, what happens next, two FAQ answers
+   - **About page:** your background sentences
+   - **the [PHOTO] decision** (question 14)
+
+   (The Stage 2 copy was approved on 2026-11-12.)
 2. **Payments.** You named Stripe, PayPal, Venmo, Apple Pay and cash. A US Stripe account covers cards and Apple Pay, not PayPal or Venmo. PayPal's no-code Payment Links cover PayPal, Venmo, Apple Pay and cards on one page. Recommendation: one online provider plus one offline path (cash or check; church finance offices often pay by check or church card and need a receipt). Still open:
    - Which provider.
    - Whether it can carry the reference code on the payment. Stripe Payment Links take `client_reference_id`; PayPal's is unverified.
@@ -20,7 +26,7 @@ In the order I would ask them, one at a time. None blocks the build; every item 
 7. **Is the total ever more than the option price?** Review order shows the chosen option's price as the total (D24). If tax or card fees apply, the total needs its own value.
 8. **Which three questions on 08 Questions?** Built: the first three Home FAQ items, copied exactly (D33).
 9. **Should "Step 2 of 3" change?** Section 9 asks. Built as designed; Review shows "Step 3 of 3".
-10. **Page titles, description and link preview.** None are designed. Built: the page heading followed by " | Claude for Church Offices" (Home shows the site name alone), no meta description, no preview image. Church staff forward links, so a description is worth writing.
+10. **Page titles, description and link preview.** None are designed. Built: the page heading followed by " | Claude for Church Offices" (Home shows the site name alone), and no preview image. Draft descriptions for six pages are in qa/stage2-copy-draft.md; approve them and they go in (D47).
 11. **Sold out on Register.** Section 7 defines sold out for Home only. What should Register and Review show, and what does the seat notice say at zero? Built: the `SOLD_OUT` flag swaps every Reserve seats button (Home, Workshop, For your board) to "Join the waitlist", pointing at /questions/.
 12. **"Add another attendee" is disabled in almost every state.** Rows start equal to seats, so it only enables after Remove. Keep it, or drop Remove and Add (empty rows are already allowed)? Built as designed.
 13. **Do you want the gaps the artboard CSS declares but never shows?** The artboards reset every paragraph margin with a rule that outranks the declared spacing, so these render with no gap: under the Home lede (declared 28px desktop, 20px mobile), under the eyebrow (20/16px), under the Register lede on mobile (20px), above the seat notice (16px), above "Seven topics in all" (20px), under the status line (8px), above the helper text (10px) and under "Step 2 of 3" on mobile (12px). Built: as the artboards render. Each is a one-line CSS change if you want them.
@@ -110,6 +116,13 @@ Shared
 - **D41 Cash or check:** built behind `OFFLINE_PAYMENT` (off). When on, Review shows an alt button that sends the registration with `payment=offline` and opens Confirmation in the pending state.
 - **D42 Test build:** `npm run build:mock` builds dist-mock/ with mock form and payment URLs for qa/checks/flow.mjs. It is never deployed, and a guard fails if a mock URL reaches dist/.
 - **D43 JavaScript:** Review, Confirmation and both forms need it, because the registration lives in sessionStorage. Without it, Confirmation shows the pending state and Review shows empty values.
+
+## Derived in Stage 3
+
+- **D44 Approved copy:** every row of qa/stage2-copy-draft.md was approved on 2026-11-12. Topics 4 to 7 and the agenda times were suggestions, so each carries [CONFIRM] (your choice).
+- **D45 Launch gate:** `npm run check:launch` lists every blocker to a public launch from what would ship (qa/checks/launch.mjs). It is separate from `npm run check` because it is meant to fail until the launch facts are in.
+- **D46 Order pages are never indexed:** Review order and Confirmation keep robots noindex after launch, because they show a visitor's own order.
+- **D47 Page descriptions:** Base.astro emits a meta description once its text is approved (src/copy.ts `DESCRIPTIONS`). The drafts are in qa/stage2-copy-draft.md (question 10).
 
 ## Design file issues (design/ is read-only, so they are logged here)
 
