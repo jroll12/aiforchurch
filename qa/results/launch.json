@@ -1,0 +1,192 @@
+{
+  "check": "launch",
+  "target": "built",
+  "ranAt": "2026-11-12T03:46:28.993Z",
+  "status": "fail",
+  "summary": "not ready to launch: 17 blockers (12 placeholder, 3 service, 1 indexing, 1 audit), 3 warnings",
+  "blockers": [
+    {
+      "kind": "placeholder",
+      "item": "[3-SEAT PRICE]",
+      "pages": [
+        "/board/",
+        "/",
+        "/register/",
+        "/register/review/",
+        "/workshop/"
+      ],
+      "count": 5,
+      "fix": "src/config.ts:25"
+    },
+    {
+      "kind": "placeholder",
+      "item": "[CONFIRM maximum per church]",
+      "pages": [
+        "/",
+        "/questions/"
+      ],
+      "count": 2,
+      "fix": "src/copy.ts:30"
+    },
+    {
+      "kind": "placeholder",
+      "item": "[CONFIRM]",
+      "pages": [
+        "/confirmation/",
+        "/",
+        "/questions/",
+        "/workshop/"
+      ],
+      "count": 15,
+      "fix": "src/copy.ts:29, src/copy.ts:49, src/copy.ts:52, src/copy.ts:53"
+    },
+    {
+      "kind": "placeholder",
+      "item": "[CONTACT EMAIL]",
+      "pages": [
+        "/about/",
+        "/board/",
+        "/confirmation/",
+        "/",
+        "/questions/",
+        "/register/",
+        "/register/review/",
+        "/workshop/"
+      ],
+      "count": 10,
+      "fix": "src/config.ts:27"
+    },
+    {
+      "kind": "placeholder",
+      "item": "[DATE]",
+      "pages": [
+        "/board/",
+        "/confirmation/",
+        "/",
+        "/register/",
+        "/register/review/",
+        "/workshop/"
+      ],
+      "count": 7,
+      "fix": "src/config.ts:20"
+    },
+    {
+      "kind": "placeholder",
+      "item": "[ONE OR TWO SENTENCES ON YOUR BACKGROUND]",
+      "pages": [
+        "/about/"
+      ],
+      "count": 1,
+      "fix": "src/copy.ts:93"
+    },
+    {
+      "kind": "placeholder",
+      "item": "[PHOTO]",
+      "pages": [
+        "/about/"
+      ],
+      "count": 1,
+      "fix": "src/copy.ts:94"
+    },
+    {
+      "kind": "placeholder",
+      "item": "[REFUND POLICY]",
+      "pages": [
+        "/register/",
+        "/register/review/"
+      ],
+      "count": 2,
+      "fix": "src/config.ts:26"
+    },
+    {
+      "kind": "placeholder",
+      "item": "[SEAT PRICE]",
+      "pages": [
+        "/board/",
+        "/",
+        "/register/",
+        "/register/review/",
+        "/workshop/"
+      ],
+      "count": 5,
+      "fix": "src/config.ts:24"
+    },
+    {
+      "kind": "placeholder",
+      "item": "[SEATS LEFT]",
+      "pages": [
+        "/",
+        "/workshop/"
+      ],
+      "count": 3,
+      "fix": "src/config.ts:23"
+    },
+    {
+      "kind": "placeholder",
+      "item": "[START TIME]",
+      "pages": [
+        "/board/",
+        "/confirmation/",
+        "/",
+        "/register/",
+        "/register/review/",
+        "/workshop/"
+      ],
+      "count": 6,
+      "fix": "src/config.ts:21"
+    },
+    {
+      "kind": "placeholder",
+      "item": "[VENUE]",
+      "pages": [
+        "/board/",
+        "/confirmation/",
+        "/",
+        "/register/",
+        "/register/review/",
+        "/workshop/"
+      ],
+      "count": 7,
+      "fix": "src/config.ts:22"
+    },
+    {
+      "kind": "service",
+      "item": "Registration form endpoint not set; the pay button is disabled",
+      "fix": "src/config.ts FORM_ENDPOINTS"
+    },
+    {
+      "kind": "service",
+      "item": "Payment links not set",
+      "fix": "src/config.ts PAYMENT_LINKS"
+    },
+    {
+      "kind": "service",
+      "item": "Questions form endpoint not set; the send button is disabled",
+      "fix": "src/config.ts FORM_ENDPOINTS"
+    },
+    {
+      "kind": "indexing",
+      "item": "Search engines are blocked (robots noindex) on 8 pages",
+      "fix": "src/config.ts NOINDEX"
+    },
+    {
+      "kind": "audit",
+      "item": "No audit report",
+      "fix": "qa/audit-report.md"
+    }
+  ],
+  "warnings": [
+    {
+      "item": "Payment links will not carry the reference code (PAYMENT_REF_PARAM is null)",
+      "fix": "src/config.ts PAYMENT_REF_PARAM"
+    },
+    {
+      "item": "No Add to calendar file (EVENT start and end are not set)",
+      "fix": "src/config.ts EVENT"
+    },
+    {
+      "item": "For your board shows a print button; no PDF is set",
+      "fix": "src/config.ts BOARD_PDF_URL"
+    }
+  ]
+}

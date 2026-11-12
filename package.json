@@ -14,7 +14,9 @@
     "preview": "astro preview",
     "serve": "node qa/checks/lib/server.mjs dist 4321",
     "check": "node qa/checks/run-all.mjs",
-    "verify": "npm run build && npm run build:mock && npm run check"
+    "verify": "npm run build && npm run build:mock && npm run check",
+    "check:launch": "node qa/checks/launch.mjs",
+    "preview:lan": "astro build && astro preview --host"
   },
   "dependencies": {
     "astro": "7.4.2"
