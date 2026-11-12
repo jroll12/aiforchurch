@@ -1,7 +1,7 @@
 {
   "check": "flow",
   "target": "built",
-  "ranAt": "2026-11-12T03:32:01.197Z",
+  "ranAt": "2026-11-12T03:35:10.710Z",
   "status": "pass",
   "summary": "31 of 31 flow assertions hold on dist-mock/",
   "failed": [],
@@ -89,8 +89,8 @@
     {
       "name": "Edit: the reference code survives editing",
       "ok": true,
-      "actual": "PEE3M8",
-      "wanted": "PEE3M8"
+      "actual": "QB48Y9",
+      "wanted": "QB48Y9"
     },
     {
       "name": "Pay: failed send shows the error state and stays on Review",
@@ -121,11 +121,11 @@
       "ok": true,
       "actual": [
         "/__mock/pay/one",
-        "PEE3M8"
+        "QB48Y9"
       ],
       "wanted": [
         "/__mock/pay/one",
-        "PEE3M8"
+        "QB48Y9"
       ]
     },
     {
@@ -146,7 +146,7 @@
       "name": "Pay: payload carries the reference code and the registration",
       "ok": true,
       "actual": {
-        "ref": "PEE3M8",
+        "ref": "QB48Y9",
         "seats": "1",
         "option": "One seat",
         "price": "[SEAT PRICE]",
@@ -164,7 +164,7 @@
         "honeypot": ""
       },
       "wanted": {
-        "ref": "PEE3M8",
+        "ref": "QB48Y9",
         "seats": "1",
         "option": "One seat",
         "price": "[SEAT PRICE]",
@@ -377,7 +377,7 @@
       "accept": "application/json",
       "contentType": "application/x-www-form-urlencoded;charset=UTF-8",
       "fields": {
-        "ref": "PEE3M8",
+        "ref": "QB48Y9",
         "seats": "1",
         "option": "One seat",
         "price": "[SEAT PRICE]",

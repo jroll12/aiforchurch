@@ -1,7 +1,7 @@
 {
   "check": "zoom",
   "target": "built",
-  "ranAt": "2026-11-12T03:31:53.821Z",
+  "ranAt": "2026-11-12T03:35:02.816Z",
   "status": "pass",
   "summary": "40 states at 720 and 640 px (device scale 2), 0 with scroll, clipping or overlap",
   "failures": [],

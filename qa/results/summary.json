@@ -1,6 +1,6 @@
 {
   "target": "built",
-  "ranAt": "2026-11-12T03:32:01.214Z",
+  "ranAt": "2026-11-12T03:35:10.730Z",
   "summary": [
     {
       "check": "text-diff",
@@ -60,7 +60,7 @@
     {
       "check": "guards",
       "status": "pass",
-      "summary": "0 findings; 101 repo files scanned for dashes"
+      "summary": "0 findings; 103 repo files scanned for dashes"
     },
     {
       "check": "behavior",

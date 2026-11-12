@@ -1,7 +1,7 @@
 {
   "check": "headerfit",
   "target": "built",
-  "ranAt": "2026-11-12T03:31:23.198Z",
+  "ranAt": "2026-11-12T03:34:27.442Z",
   "status": "pass",
   "summary": "32 headers at 900, 960, 1024, 1100 px; 0 with wrapping or touching items; smallest gap 34px (minimum 8)",
   "failures": [],

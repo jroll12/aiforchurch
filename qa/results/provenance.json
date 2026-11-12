@@ -1,7 +1,7 @@
 {
   "check": "provenance",
   "target": "built",
-  "ranAt": "2026-11-12T03:31:03.125Z",
+  "ranAt": "2026-11-12T03:34:07.870Z",
   "status": "pass",
   "summary": "482 strings on 6 derived pages at 390 and 1440; 0 with no allowed source, 0 placeholders missing from PLACEHOLDERS.md, 23 taken from spec wording (listed for confirmation)",
   "orphans": [],

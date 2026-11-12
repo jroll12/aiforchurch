@@ -578,6 +578,8 @@ textarea.inp { height: 120px; padding: 12px 14px; line-height: 1.5; resize: none
   .pg-board .sq { gap: 2pt; }
   .pg-board .sq li { font-size: 10.5pt; gap: 8pt; }
   .pg-board .sq li::before { width: 6pt; height: 6pt; margin-top: 5pt; }
+  /* Browsers drop background colors when printing; the square bullets are backgrounds, so keep them. */
+  .pg .sq li::before { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   .pg-board .more { margin-top: 3pt; font-size: 9.5pt; }
   .pg-board .ft { break-inside: avoid; }
   .pg-board .ft .g { padding-top: 6pt; padding-bottom: 0; font-size: 9pt; }

@@ -1,7 +1,7 @@
 {
   "check": "contrast",
   "target": "built",
-  "ranAt": "2026-11-12T03:31:18.264Z",
+  "ranAt": "2026-11-12T03:34:23.707Z",
   "status": "pass",
   "summary": "12 token pairs (0 off), 12 rendered color pairs, 0 text below minimum, 0 accent misuses",
   "tokenPairs": [
@@ -118,7 +118,7 @@
       "bg": "#c2410c",
       "min": 4.5,
       "ratio": 5.18,
-      "count": 16,
+      "count": 17,
       "example": "home@390: a.btn \"Reserve seats\""
     },
     {
@@ -154,8 +154,8 @@
       "bg": "#9a3412",
       "min": 4.5,
       "ratio": 7.31,
-      "count": 2,
-      "example": "register@390: button.btn \"Continue to review\""
+      "count": 1,
+      "example": "register@1440: button.btn \"Continue to review\""
     },
     {
       "pair": "#4a4a4a on #f4f4f2 (min 4.5)",

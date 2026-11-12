@@ -1,7 +1,7 @@
 {
   "check": "targets",
   "target": "built",
-  "ranAt": "2026-11-12T03:31:35.619Z",
+  "ranAt": "2026-11-12T03:34:43.171Z",
   "status": "pass",
   "summary": "293 targets measured, 0 below 44px",
   "failures": [],
@@ -2058,7 +2058,7 @@
         {
           "group": "link",
           "el": "a.lnk \"[FORWARD LINK]\"",
-          "w": 145.6,
+          "w": 145.5,
           "h": 44,
           "ok": true
         }
@@ -2100,7 +2100,7 @@
         {
           "group": "link",
           "el": "a.lnk \"[FORWARD LINK]\"",
-          "w": 145.6,
+          "w": 145.5,
           "h": 44,
           "ok": true
         }
@@ -2170,7 +2170,7 @@
         {
           "group": "link",
           "el": "a.lnk \"[FORWARD LINK]\"",
-          "w": 145.6,
+          "w": 145.5,
           "h": 44,
           "ok": true
         }

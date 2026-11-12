@@ -1,7 +1,7 @@
 {
   "check": "visual",
   "target": "built",
-  "ranAt": "2026-11-12T03:31:56.719Z",
+  "ranAt": "2026-11-12T03:35:04.789Z",
   "status": "review",
   "summary": "substitute reference (artboards rendered in Chromium; design/screenshots/ not provided). home@390: heights 4193/4383px, 20% pixels changed; home@1440: heights 3232/3232px, 0% pixels changed; register@390: heights 3499/3549px, 12% pixels changed; register@1440: heights 2574/2574px, 0% pixels changed. Derived pages, no reference: 12 screenshots for review",
   "rows": [
