@@ -1,6 +1,6 @@
 {
   "target": "built",
-  "ranAt": "2026-11-12T03:47:54.287Z",
+  "ranAt": "2026-11-12T04:02:16.348Z",
   "summary": [
     {
       "check": "headerfit",
@@ -11,11 +11,6 @@
       "check": "contrast",
       "status": "pass",
       "summary": "12 token pairs (0 off), 12 rendered color pairs, 0 text below minimum, 0 accent misuses"
-    },
-    {
-      "check": "keyboard",
-      "status": "pass",
-      "summary": "16 page layouts walked, all stops visible, FAQ, errors and menu OK"
     },
     {
       "check": "targets",
@@ -58,9 +53,14 @@
       "summary": "482 strings on 6 derived pages at 390 and 1440; 0 with no allowed source, 0 placeholders missing from PLACEHOLDERS.md, 23 taken from spec wording (listed for confirmation)"
     },
     {
+      "check": "keyboard",
+      "status": "pass",
+      "summary": "16 page layouts walked, all stops visible, FAQ, errors and menu OK"
+    },
+    {
       "check": "guards",
       "status": "pass",
-      "summary": "0 findings; 112 repo files scanned for dashes"
+      "summary": "0 findings; 114 repo files scanned for dashes"
     },
     {
       "check": "behavior",
@@ -70,7 +70,7 @@
     {
       "check": "flow",
       "status": "pass",
-      "summary": "31 of 31 flow assertions hold on dist-mock/"
+      "summary": "35 of 35 flow assertions hold on dist-mock/"
     }
   ]
 }

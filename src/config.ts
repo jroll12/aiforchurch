@@ -54,16 +54,20 @@ export const ROLES = ['Administrator', 'Communications', 'Pastor', 'Finance', 'O
  * Payment links: one hosted payment page per seat option, keyed by seat count.
  * PAYMENT_REF_PARAM: the URL parameter the provider copies onto the payment
  * record, so a payment can be matched to its registration by reference code.
- * Stripe Payment Links accept 'client_reference_id'. Leave null if the
- * provider takes no such parameter.
+ * Stripe Payment Links accept 'client_reference_id'. null means not decided
+ * yet, which blocks launch (npm run check:launch); set false if the chosen
+ * provider takes no such parameter, so payments are matched by name instead.
  *
- * Form endpoints: any hosted form service that accepts a URL-encoded POST and
- * answers 2xx (Formspree, Basin, Getform and similar). No provider script loads.
+ * Form endpoints: any hosted form service that accepts a URL-encoded POST,
+ * answers 2xx and allows cross-origin requests from the site's domain (CORS),
+ * for example Formspree, Basin or Getform. Without CORS the service stores the
+ * entry but the page cannot see the answer and shows the error. No provider
+ * script loads.
  */
 export const PAYMENT_LINKS: Record<number, string> = MOCK
   ? { 1: '/__mock/pay/one', 3: '/__mock/pay/three' }
   : { 1: '[PAYMENT LINK URL]', 3: '[PAYMENT LINK URL]' };
-export const PAYMENT_REF_PARAM: string | null = MOCK ? 'client_reference_id' : null;
+export const PAYMENT_REF_PARAM: string | false | null = MOCK ? 'client_reference_id' : null;
 export const FORM_ENDPOINTS = MOCK
   ? { registration: '/__mock/form/registration', questions: '/__mock/form/questions' }
   : { registration: '[FORM ENDPOINT]', questions: '[FORM ENDPOINT]' };

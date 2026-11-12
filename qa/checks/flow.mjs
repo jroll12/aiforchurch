@@ -10,6 +10,7 @@ import { TARGET, MOCK_DIST, MOUNTS, STATE, STORAGE_KEY, browser, save, seed } fr
 import { startServer } from './lib/server.mjs';
 import { createMock } from './lib/mock.mjs';
 import { CONTINUE } from './fixtures/register.mjs';
+import { chromium } from 'playwright';
 
 if (TARGET === 'design') {
   save('flow', { status: 'not run', summary: 'the artboards have no behavior' });
@@ -95,10 +96,12 @@ const failNext = () => fetch(`${base}/__mock/fail`, { method: 'POST' });
     ref: sub.fields.ref, seats: sub.fields.seats, option: sub.fields.option, price: sub.fields.price, organization: sub.fields.organization, contact: sub.fields.contact,
     a1: [sub.fields.attendee_1_name, sub.fields.attendee_1_email, sub.fields.attendee_1_role], a2: sub.fields.attendee_2_name ?? null,
     question: sub.fields.question, consent: sub.fields.consent, payment: sub.fields.payment, honeypot: sub.fields._gotcha,
+    sentAt: /^\d{4}-\d{2}-\d{2}T/.test(sub.fields.sent_at ?? ''),
   }, {
     ref: saved.ref, seats: '1', option: 'One seat', price: '[SEAT PRICE]', organization: STATE.org, contact: STATE.contact,
     a1: [STATE.attendees[0].name, STATE.attendees[0].email, STATE.attendees[0].role], a2: null,
     question: STATE.question, consent: 'yes', payment: 'online', honeypot: '',
+    sentAt: true,
   });
   await context.close();
 }
@@ -191,6 +194,70 @@ const failNext = () => fetch(`${base}/__mock/fail`, { method: 'POST' });
   await page.locator('[data-state="sent"]').waitFor({ state: 'visible' });
   expect('Questions: a filled honeypot shows success but sends nothing', mock.submissions.length, before);
   await context.close();
+}
+
+/* ---------- 5. Audit fixes (qa/audit-report.md) ---------- */
+{
+  // Seat count with no matching option: back to Register instead of a broken page.
+  const { context, page } = await fresh({ ...STATE, seats: 2 });
+  await go(page, '/register/review/');
+  await page.waitForURL('**/register/');
+  expect('Review: a saved seat count with no matching option goes back to Register', new URL(page.url()).pathname, '/register/');
+  await context.close();
+}
+{
+  // Storage blocked: Continue stays on Register and keeps what was typed.
+  const { context, page } = await fresh();
+  await context.addInitScript(() => {
+    Storage.prototype.setItem = () => {
+      throw new Error('blocked');
+    };
+  });
+  await go(page, '/register/');
+  await page.check('#seat-1');
+  await page.fill('#org', STATE.org);
+  await page.fill('#contact', STATE.contact);
+  await page.fill('#n1', STATE.attendees[0].name);
+  await page.fill('#e1', STATE.attendees[0].email);
+  await page.selectOption('#r1', STATE.attendees[0].role);
+  await page.click(CONTINUE);
+  await page.waitForTimeout(500);
+  expect('Register: with storage blocked, Continue stays and keeps the values', [new URL(page.url()).pathname, await page.inputValue('#org'), await page.inputValue('#n1')], ['/register/', STATE.org, STATE.attendees[0].name]);
+  await context.close();
+}
+{
+  // Without JavaScript, neither form can post the visitor's details to the site's own address.
+  const context = await br.newContext({ viewport: { width: 1440, height: 900 }, javaScriptEnabled: false });
+  const page = await context.newPage();
+  await go(page, '/register/');
+  const reg = await page.locator('button[type="submit"]').isDisabled();
+  await go(page, '/questions/');
+  const ask = await page.locator('form#ask button[type="submit"]').isDisabled();
+  expect('No JavaScript: Continue and Send are disabled, so nothing posts', [reg, ask], [true, true]);
+  await context.close();
+}
+{
+  // Back from the payment page: the back/forward cache must not leave Review stale or disabled.
+  // Needs full Chromium with that cache on, and a server that allows caching.
+  const cached = await startServer([['/__mock/', mock.handler], ...MOUNTS(MOCK_DIST)], 0, { noStore: false });
+  const full = await chromium.launch({ channel: 'chromium', ignoreDefaultArgs: ['--disable-back-forward-cache'] });
+  const context = await full.newContext({ viewport: { width: 1440, height: 900 } });
+  await seed(context, STATE);
+  const page = await context.newPage();
+  await page.goto(`${cached.url}/register/review/`, { waitUntil: 'networkidle' });
+  await page.click('button[data-pay]');
+  await page.waitForURL('**/__mock/pay/**');
+  // While away, the saved registration changes (as an edit in another visit to Register would).
+  await page.evaluate((key) => {
+    const st = JSON.parse(sessionStorage.getItem(key));
+    sessionStorage.setItem(key, JSON.stringify({ ...st, seats: 1 }));
+  }, STORAGE_KEY);
+  await page.goBack({ waitUntil: 'commit' });
+  await page.waitForLoadState('networkidle');
+  await page.waitForTimeout(300);
+  expect('Back from payment: Review is current and the pay button works', [await text(page, '[data-sum="seats"] dd'), await page.locator('button[data-pay]').isEnabled()], ['One seat', true]);
+  await full.close();
+  cached.server.close();
 }
 
 expect('Network: only this server and Google Fonts during the whole flow', [...hosts].filter((h) => !['127.0.0.1', 'fonts.googleapis.com', 'fonts.gstatic.com'].includes(h)), []);

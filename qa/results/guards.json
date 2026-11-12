@@ -1,9 +1,9 @@
 {
   "check": "guards",
   "target": "built",
-  "ranAt": "2026-11-12T03:47:37.952Z",
+  "ranAt": "2026-11-12T04:02:00.494Z",
   "status": "pass",
-  "summary": "0 findings; 112 repo files scanned for dashes",
+  "summary": "0 findings; 114 repo files scanned for dashes",
   "findings": [],
   "notes": [
     "placeholders checked: [SEATS LEFT] [DATE] [START TIME] [VENUE] [SEAT PRICE] [3-SEAT PRICE] [REFUND POLICY] [CONTACT EMAIL] [CONFIRM] [CONFIRM maximum per church]"

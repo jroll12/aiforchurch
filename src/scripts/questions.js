@@ -13,6 +13,9 @@ function setUp(form) {
   const email = form.querySelector('#q-email');
   const states = [...form.querySelectorAll('[data-state]')];
   const submit = form.querySelector('button[type="submit"]');
+  // Send ships disabled so the form cannot post before this script runs, or without JavaScript.
+  // It is enabled only once the form endpoint is a real address.
+  submit.disabled = !endpoint;
 
   form.addEventListener('input', (event) => {
     if (event.target.classList?.contains('inp')) clearFieldError(event.target);

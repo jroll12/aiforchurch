@@ -20,7 +20,7 @@ How to add new copy:
 
 | Placeholder | Page | Draft | Notes | Status |
 | --- | --- | --- | --- | --- |
-| [ACCESSIBILITY] | 02 Workshop details | Step-free entrance [CONFIRM]. Accessible restroom [CONFIRM]. Parking [CONFIRM]. Tell us about any other need when you register. | Depends on the venue. | approved |
+| [ACCESSIBILITY] | 02 Workshop details | Step-free entrance [CONFIRM]. Accessible restroom [CONFIRM]. Parking [CONFIRM]. Tell us about any other need when you register. [CONFIRM] | Depends on the venue. | approved |
 | [AGENDA TIME 1] | 02 Workshop details | 9:00 [CONFIRM] | Times assume a 9:00 to 12:30 half-day. Replace with the real times. | approved |
 | [AGENDA ITEM 1] | 02 Workshop details | Arrive, sign in, set up your laptop | | approved |
 | [AGENDA TIME 2] | 02 Workshop details | 9:15 [CONFIRM] | | approved |
@@ -37,20 +37,20 @@ How to add new copy:
 | [TOPIC 6 OUTCOME] | 02 Workshop details | Turn rough notes into minutes your board can approve. | Suggestion only. | approved |
 | [TOPIC 7 TITLE] | 02 Workshop details | Bulletin and slide text from one source [CONFIRM] | Suggestion only. | approved |
 | [TOPIC 7 OUTCOME] | 02 Workshop details | Write the bulletin once and reuse it for slides and the website. | Suggestion only. | approved |
-| [BRING ITEM 1] | 02 Workshop details, 07 Confirmation | A laptop and its charger | Tablets and phones make the exercises hard. [CONFIRM] | approved |
-| [BRING ITEM 2] | 02 Workshop details, 07 Confirmation | A Claude account. The newsletter topic works on a free account. | Matches Home FAQ answer 1, which is still [CONFIRM]. | approved |
+| [BRING ITEM 1] | 02 Workshop details, 07 Confirmation | A laptop and its charger [CONFIRM] | Tablets and phones make the exercises hard. [CONFIRM] | approved |
+| [BRING ITEM 2] | 02 Workshop details, 07 Confirmation | A Claude account. The newsletter topic works on a free account. [CONFIRM] | Matches Home FAQ answer 1, which is still [CONFIRM]. | approved |
 | [BRING ITEM 3] | 02 Workshop details, 07 Confirmation | Nothing from your church. We bring invented sample files. | Matches "Safe by design". | approved |
 | [BOARD LEDE] | 03 For your board | A one-page summary for your pastor or board. | The page must still print on one page; the print check reports the fill. | approved |
 | [PRINT BUTTON] | 03 For your board | Print this page | Replaced by "Download PDF" if you set BOARD_PDF_URL. | approved |
 | [JARRET BIO] | 04 About | Jarret Roloff runs Roloff AI in Hendricks County, Indiana. [ONE OR TWO SENTENCES ON YOUR BACKGROUND] | Your story: only you can write it. | approved |
 | [PHOTO] | 04 About | [PHOTO] | Keep as is. A real photo needs a change to CLAUDE.md rule 3 (no images). | approved |
-| [WHY LOCAL] | 04 About | Church office work is local: your calendar, your rooms, your people. A half-day in the room means you can ask as you go and leave with drafts you can use the next week. | | approved |
+| [WHY LOCAL] | 04 About | Church office work is local: your calendar, your rooms, your people. A half-day in the room means you can ask as you go and leave with drafts you can use the next week. [CONFIRM] | | approved |
 | [REVIEW LEDE] | 06 Review order | Check your order. You can edit anything before you pay. | Register says "You will review everything before you pay." | approved |
 | [PAY BUTTON] | 06 Review order | Continue to payment | Mirrors "Continue to review" on Register. | approved |
 | [OFFLINE PAY BUTTON] | 06 Review order | Pay by check or cash | Only shown if OFFLINE_PAYMENT is turned on. | approved |
 | [SEND ERROR] | 06 Review order, 08 Questions | We could not send this. Check your connection and try again. | Used on both pages. | approved |
 | [PENDING HEADING] | 07 Confirmation | We have your registration. | Shown when payment is not confirmed, including cash or check. | approved |
-| [PENDING MESSAGE] | 07 Confirmation | Your seats are confirmed when payment arrives. Use your reference code with any payment. | Depends on whether an unpaid registration holds a seat (qa/questions.md). | approved |
+| [PENDING MESSAGE] | 07 Confirmation | Your seats are confirmed when payment arrives. Use your reference code with any payment. [CONFIRM] | Depends on whether an unpaid registration holds a seat (qa/questions.md). | approved |
 | [FAILED HEADING] | 07 Confirmation | Payment did not go through. | | approved |
 | [FAILED MESSAGE] | 07 Confirmation | Your registration is saved. Try the payment again, or email us for help. | | approved |
 | [RETRY BUTTON] | 07 Confirmation | Try payment again | | approved |

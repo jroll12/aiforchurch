@@ -25,7 +25,7 @@ const TYPES = {
  * A mount may be a function (req, res, rest) instead of a directory; the
  * checks use one for the mock form and payment services.
  */
-export function startServer(mounts, port = 0) {
+export function startServer(mounts, port = 0, { noStore = true } = {}) {
   const table = mounts
     .map(([prefix, dir]) => [prefix, typeof dir === 'function' ? dir : path.resolve(dir)])
     .sort((a, b) => b[0].length - a[0].length);
@@ -48,7 +48,9 @@ export function startServer(mounts, port = 0) {
       const body = fs.readFileSync(file);
       res.writeHead(200, {
         'content-type': TYPES[path.extname(file)] ?? 'application/octet-stream',
-        'cache-control': 'no-store',
+        // no-store keeps every check run fresh; it also turns off the back/forward cache,
+        // so the flow check starts one server without it to test that cache.
+        ...(noStore ? { 'cache-control': 'no-store' } : {}),
       });
       res.end(body);
     } catch {

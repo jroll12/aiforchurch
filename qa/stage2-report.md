@@ -1,5 +1,7 @@
 # Stage 2 report: 02, 03, 04, 06, 07, 08
 
+> **Superseded in part by qa/stage3-report.md.** The copy counts and placeholder notes below are as of Stage 2. Jarret approved the copy on 2026-11-12, so the 48 placeholders are now text, and [BOARD LEDE] is filled.
+
 Built 2026-11-12 on branch `claude/upbeat-cray-ehwzda`, after your go on the plan. Stage 1 is in qa/stage1-report.md. The member area has not started.
 
 ## What was built

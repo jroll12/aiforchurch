@@ -1,9 +1,9 @@
 {
   "check": "launch.proof",
   "target": "built",
-  "ranAt": "2026-11-12T03:46:28.497Z",
+  "ranAt": "2026-11-12T04:01:51.147Z",
   "status": "pass",
-  "summary": "proof fixture: found {\"placeholder\":3,\"service\":3,\"indexing\":1,\"audit\":1} and 3 warnings; expected {\"placeholder\":3,\"service\":3,\"indexing\":1,\"audit\":1} and 3",
+  "summary": "proof fixture: found {\"placeholder\":3,\"service\":4,\"indexing\":1,\"audit\":1} and 2 warnings; expected {\"placeholder\":3,\"service\":4,\"indexing\":1,\"audit\":1} and 2",
   "blockers": [
     {
       "kind": "placeholder",
@@ -44,6 +44,11 @@
     },
     {
       "kind": "service",
+      "item": "Not decided whether payment links carry the reference code (PAYMENT_REF_PARAM is null; set the parameter name, or false)",
+      "fix": "src/config.ts PAYMENT_REF_PARAM"
+    },
+    {
+      "kind": "service",
       "item": "Questions form endpoint not set; the send button is disabled",
       "fix": "src/config.ts FORM_ENDPOINTS"
     },
@@ -59,10 +64,6 @@
     }
   ],
   "warnings": [
-    {
-      "item": "Payment links will not carry the reference code (PAYMENT_REF_PARAM is null)",
-      "fix": "src/config.ts PAYMENT_REF_PARAM"
-    },
     {
       "item": "No Add to calendar file (EVENT start and end are not set)",
       "fix": "src/config.ts EVENT"

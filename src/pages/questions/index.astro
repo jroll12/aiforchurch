@@ -41,7 +41,7 @@ const endpoint = isLive(FORM_ENDPOINTS.questions) ? FORM_ENDPOINTS.questions : '
 <div class="q-row"><FormField id="q-question" name="question" label={QUESTIONS.question} type="textarea" rows={4} optional /></div>
 <div class="chkrow"><input type="checkbox" id="q-future" name="future_dates" value="yes"><label for="q-future">{QUESTIONS.future}</label></div>
 <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
-<div class="acts"><Button type="submit" arrow disabled={!endpoint}>{QUESTIONS.send}</Button></div>
+<div class="acts"><Button type="submit" arrow disabled>{QUESTIONS.send}</Button></div>
 <FormStatus state="sent" tone="ok">{QUESTIONS.sent}</FormStatus>
 <FormStatus state="send-error" tone="error">{QUESTIONS.sendError}</FormStatus>
 </form>

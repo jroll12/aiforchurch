@@ -1,9 +1,9 @@
 {
   "check": "flow",
   "target": "built",
-  "ranAt": "2026-11-12T03:47:49.269Z",
+  "ranAt": "2026-11-12T04:02:16.328Z",
   "status": "pass",
-  "summary": "31 of 31 flow assertions hold on dist-mock/",
+  "summary": "35 of 35 flow assertions hold on dist-mock/",
   "failed": [],
   "steps": [
     {
@@ -89,8 +89,8 @@
     {
       "name": "Edit: the reference code survives editing",
       "ok": true,
-      "actual": "B5MJCN",
-      "wanted": "B5MJCN"
+      "actual": "3NT236",
+      "wanted": "3NT236"
     },
     {
       "name": "Pay: failed send shows the error state and stays on Review",
@@ -121,11 +121,11 @@
       "ok": true,
       "actual": [
         "/__mock/pay/one",
-        "B5MJCN"
+        "3NT236"
       ],
       "wanted": [
         "/__mock/pay/one",
-        "B5MJCN"
+        "3NT236"
       ]
     },
     {
@@ -146,7 +146,7 @@
       "name": "Pay: payload carries the reference code and the registration",
       "ok": true,
       "actual": {
-        "ref": "B5MJCN",
+        "ref": "3NT236",
         "seats": "1",
         "option": "One seat",
         "price": "[SEAT PRICE]",
@@ -161,10 +161,11 @@
         "question": "Bulletins",
         "consent": "yes",
         "payment": "online",
-        "honeypot": ""
+        "honeypot": "",
+        "sentAt": true
       },
       "wanted": {
-        "ref": "B5MJCN",
+        "ref": "3NT236",
         "seats": "1",
         "option": "One seat",
         "price": "[SEAT PRICE]",
@@ -179,7 +180,8 @@
         "question": "Bulletins",
         "consent": "yes",
         "payment": "online",
-        "honeypot": ""
+        "honeypot": "",
+        "sentAt": true
       }
     },
     {
@@ -365,6 +367,50 @@
       "wanted": 2
     },
     {
+      "name": "Review: a saved seat count with no matching option goes back to Register",
+      "ok": true,
+      "actual": "/register/",
+      "wanted": "/register/"
+    },
+    {
+      "name": "Register: with storage blocked, Continue stays and keeps the values",
+      "ok": true,
+      "actual": [
+        "/register/",
+        "Test Church",
+        "Test Person"
+      ],
+      "wanted": [
+        "/register/",
+        "Test Church",
+        "Test Person"
+      ]
+    },
+    {
+      "name": "No JavaScript: Continue and Send are disabled, so nothing posts",
+      "ok": true,
+      "actual": [
+        true,
+        true
+      ],
+      "wanted": [
+        true,
+        true
+      ]
+    },
+    {
+      "name": "Back from payment: Review is current and the pay button works",
+      "ok": true,
+      "actual": [
+        "One seat",
+        true
+      ],
+      "wanted": [
+        "One seat",
+        true
+      ]
+    },
+    {
       "name": "Network: only this server and Google Fonts during the whole flow",
       "ok": true,
       "actual": [],
@@ -377,7 +423,7 @@
       "accept": "application/json",
       "contentType": "application/x-www-form-urlencoded;charset=UTF-8",
       "fields": {
-        "ref": "B5MJCN",
+        "ref": "3NT236",
         "seats": "1",
         "option": "One seat",
         "price": "[SEAT PRICE]",
@@ -389,6 +435,7 @@
         "question": "Bulletins",
         "consent": "yes",
         "payment": "online",
+        "sent_at": "2026-11-12T04:02:05.351Z",
         "_gotcha": ""
       }
     },
@@ -402,6 +449,30 @@
         "email": "test.person@church.org",
         "question": "Bulletins",
         "future_dates": "yes",
+        "_gotcha": ""
+      }
+    },
+    {
+      "form": "registration",
+      "accept": "application/json",
+      "contentType": "application/x-www-form-urlencoded;charset=UTF-8",
+      "fields": {
+        "ref": "K7M2Q9",
+        "seats": "3",
+        "option": "Three seats for your office",
+        "price": "[3-SEAT PRICE]",
+        "organization": "Test Church",
+        "contact": "Test Contact",
+        "attendee_1_name": "Test Person",
+        "attendee_1_email": "test.person@church.org",
+        "attendee_1_role": "Finance",
+        "attendee_2_name": "Second Person",
+        "attendee_2_email": "second.person@church.org",
+        "attendee_2_role": "Pastor",
+        "question": "Bulletins",
+        "consent": "yes",
+        "payment": "online",
+        "sent_at": "2026-11-12T04:02:15.302Z",
         "_gotcha": ""
       }
     }

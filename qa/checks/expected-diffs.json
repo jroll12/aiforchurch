@@ -32,7 +32,7 @@
     "width": 390,
     "side": "design-only",
     "text": "[select] Administrator",
-    "reason": "Attendee 2 role: the static artboard shows the select's first option because its value comes from the canvas runtime (design/README.md). HANDOFF-SPEC.md section 7 and the artboard markup (value=\"Communications\") give Communications, which the test fixture selects."
+    "reason": "Attendee 2 role: the static artboard shows the select's first option because its value comes from the canvas runtime (design/README.md). The artboard markup (value=\"Communications\") and design/README.md (\"for example a select showing \\\"Communications\\\"\") give Communications, which the test fixture selects. HANDOFF-SPEC.md section 7 names no role value; it calls the chosen roles demo data."
   },
   {
     "screen": "register",
@@ -46,7 +46,7 @@
     "width": 1440,
     "side": "design-only",
     "text": "[select] Administrator",
-    "reason": "Attendee 2 role: the static artboard shows the select's first option because its value comes from the canvas runtime (design/README.md). HANDOFF-SPEC.md section 7 and the artboard markup (value=\"Communications\") give Communications, which the test fixture selects."
+    "reason": "Attendee 2 role: the static artboard shows the select's first option because its value comes from the canvas runtime (design/README.md). The artboard markup (value=\"Communications\") and design/README.md (\"for example a select showing \\\"Communications\\\"\") give Communications, which the test fixture selects. HANDOFF-SPEC.md section 7 names no role value; it calls the chosen roles demo data."
   },
   {
     "screen": "register",

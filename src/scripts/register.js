@@ -66,6 +66,8 @@ function setUp(form) {
     count = seats;
   }
   render();
+  // Continue ships disabled so the form cannot post before this script runs, or without JavaScript.
+  form.querySelector('button[type="submit"]').disabled = false;
 
   /* ---------- render ---------- */
   function render() {
@@ -195,7 +197,8 @@ function setUp(form) {
       consent: consent.checked,
       savedAt: new Date().toISOString(),
     };
-    writeState(state);
+    // If the browser will not store the registration (storage blocked), stay here so nothing typed is lost.
+    if (!writeState(state)) return;
     form.dataset.saved = state.ref;
     // Continue goes to Review order. reviewUrl is empty only if that route is switched off in config.
     if (reviewUrl) window.location.assign(reviewUrl);

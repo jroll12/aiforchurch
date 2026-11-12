@@ -61,7 +61,7 @@ export const WORKSHOP = {
   title: 'Workshop details', // spec: screen name
   whenLabel: 'When and where', // spec
   accessibilityLabel: 'Accessibility', // spec: "accessibility information"
-  accessibility: 'Step-free entrance [CONFIRM]. Accessible restroom [CONFIRM]. Parking [CONFIRM]. Tell us about any other need when you register.',
+  accessibility: 'Step-free entrance [CONFIRM]. Accessible restroom [CONFIRM]. Parking [CONFIRM]. Tell us about any other need when you register. [CONFIRM]',
   agendaLabel: 'Half-day agenda', // spec
   agenda: [
     { time: '9:00 [CONFIRM]', item: 'Arrive, sign in, set up your laptop' },
@@ -83,7 +83,7 @@ export const WORKSHOP = {
 /** Shared by Workshop details and Confirmation. */
 export const BRING = {
   label: 'What to bring', // spec
-  items: ['A laptop and its charger', 'A Claude account. The newsletter topic works on a free account.', 'Nothing from your church. We bring invented sample files.'],
+  items: ['A laptop and its charger [CONFIRM]', 'A Claude account. The newsletter topic works on a free account. [CONFIRM]', 'Nothing from your church. We bring invented sample files.'],
 } as const;
 
 /* ---------- 03 For your board ---------- */
@@ -108,7 +108,7 @@ export const ABOUT = {
   bio: 'Jarret Roloff runs Roloff AI in Hendricks County, Indiana. [ONE OR TWO SENTENCES ON YOUR BACKGROUND]',
   photo: '[PHOTO]',
   whyLabel: 'Why a local workshop', // spec
-  why: 'Church office work is local: your calendar, your rooms, your people. A half-day in the room means you can ask as you go and leave with drafts you can use the next week.',
+  why: 'Church office work is local: your calendar, your rooms, your people. A half-day in the room means you can ask as you go and leave with drafts you can use the next week. [CONFIRM]',
   madeLabel: 'How the materials are made', // spec
   notLabel: 'What the workshop will not do', // spec
 } as const;
@@ -130,7 +130,7 @@ export const CONFIRMATION = {
   title: 'Confirmation', // spec: screen name (page title only)
   paid: 'You are in.', // spec
   pendingHeading: 'We have your registration.',
-  pending: 'Your seats are confirmed when payment arrives. Use your reference code with any payment.',
+  pending: 'Your seats are confirmed when payment arrives. Use your reference code with any payment. [CONFIRM]',
   failedHeading: 'Payment did not go through.',
   failed: 'Your registration is saved. Try the payment again, or email us for help.',
   retry: 'Try payment again',

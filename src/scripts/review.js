@@ -8,6 +8,13 @@ import { readState, send, paymentUrl, showState } from './shared.js';
 const main = document.querySelector('[data-review-config]');
 if (main) setUp(main);
 
+// Coming back from the payment page with the browser's Back button can restore this page from the
+// back/forward cache with its buttons still disabled, or show an older seat choice. Reload so the
+// page always reflects what is saved now (audit finding, qa/audit-report.md).
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) window.location.reload();
+});
+
 function setUp(main) {
   const config = JSON.parse(main.dataset.reviewConfig);
   const state = readState();
@@ -17,8 +24,13 @@ function setUp(main) {
     return;
   }
 
-  const $ = (key) => main.querySelector(`[data-review="${key}"]`);
   const option = config.options.find((o) => o.seats === state.seats);
+  // A seat count with no matching option (options changed between deploys, or edited storage).
+  if (!option) {
+    window.location.replace(config.register);
+    return;
+  }
+  const $ = (key) => main.querySelector(`[data-review="${key}"]`);
   $('option').textContent = option.title;
   $('description').textContent = option.description;
   $('price').textContent = option.price;
@@ -94,6 +106,7 @@ function fields(state, option, payment) {
   out.question = state.question || '';
   out.consent = state.consent ? 'yes' : 'no';
   out.payment = payment;
+  out.sent_at = new Date().toISOString(); // when a code was sent twice, the latest send is the one paid for
   out._gotcha = ''; // honeypot field name some services use; always empty from a person
   return out;
 }

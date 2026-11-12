@@ -25,12 +25,15 @@ Jarret approved every suggested line on 2026-11-12 (qa/stage2-copy-draft.md), an
 
 | Placeholder | Page | What to check or supply | Set in |
 | --- | --- | --- | --- |
-| [CONFIRM] x3 in the accessibility line | 02 Workshop details | step-free entrance, accessible restroom, parking at the venue | src/copy.ts:49 |
-| [CONFIRM] x4 on the agenda times | 02 Workshop details | the real times (drafts assume 9:00 to 12:30) | src/copy.ts:52 to 55 |
-| [CONFIRM] x4 on topics 4 to 7 | 02 Workshop details | that the titles and outcomes match the course | src/copy.ts:59 to 62 |
-| [ONE OR TWO SENTENCES ON YOUR BACKGROUND] | 04 About | your background, in one or two sentences | src/copy.ts:93 |
-| [PHOTO] | 04 About | stays: a real photo needs CLAUDE.md rule 3 (no images) changed | src/copy.ts:94 |
-| [CONFIRM] in What happens next | 07 Confirmation | who sends the pre-workshop email, and when | src/copy.ts:124 |
+| [CONFIRM] x4 in the accessibility line | 02 Workshop details | step-free entrance, accessible restroom, parking; and where people tell you about other needs (Register has no field for it) | src/copy.ts:64 |
+| [CONFIRM] x4 on the agenda times | 02 Workshop details | the real times (drafts assume 9:00 to 12:30) | src/copy.ts:67 to 70 |
+| [CONFIRM] x4 on topics 4 to 7 | 02 Workshop details | that each title AND its outcome line match the course; the one tag covers both | src/copy.ts:74 to 77 |
+| [CONFIRM] x2 in What to bring | 02 Workshop details, 07 Confirmation | a laptop (not a tablet or phone); that the newsletter topic works on a free Claude account (same claim as Home FAQ answer 1) | src/copy.ts:86 |
+| [ONE OR TWO SENTENCES ON YOUR BACKGROUND] | 04 About | your background, in one or two sentences | src/copy.ts:108 |
+| [PHOTO] | 04 About | stays: a real photo needs CLAUDE.md rule 3 (no images) changed | src/copy.ts:109 |
+| [CONFIRM] in Why a local workshop | 04 About | "leave with drafts you can use the next week": the exercises use invented sample data | src/copy.ts:111 |
+| [CONFIRM] in the pending message | 07 Confirmation | whether an unpaid registration holds a seat, and whether payers can quote the reference code (open question 2) | src/copy.ts:133 |
+| [CONFIRM] in What happens next | 07 Confirmation | who sends the pre-workshop email, and when | src/copy.ts:139 |
 
 To clear a [CONFIRM]:
 1. Delete the tag in src/copy.ts.
@@ -43,12 +46,12 @@ To clear a [CONFIRM]:
 
 | Value | Set in | Used from |
 | --- | --- | --- |
-| [PAYMENT LINK URL], one per seat option | src/config.ts:65 (one seat and three seats) | Review order pay button, Confirmation retry |
-| `PAYMENT_REF_PARAM` (null; `client_reference_id` for Stripe) | src/config.ts:66 | appends the reference code to the payment link |
-| [FORM ENDPOINT], registration and questions | src/config.ts:69 | Review order, Questions |
-| `OFFLINE_PAYMENT` (off) | src/config.ts:79 | Review order cash or check button |
-| `EVENT` start and end (null) | src/config.ts:86 | Confirmation Add to calendar, /workshop.ics |
-| `BOARD_PDF_URL` (null) | src/config.ts:89 | For your board: Download PDF instead of the print button |
+| [PAYMENT LINK URL], one per seat option | src/config.ts:69 (one seat and three seats) | Review order pay button, Confirmation retry |
+| `PAYMENT_REF_PARAM` (null = not decided, blocks launch; `client_reference_id` for Stripe; false if the provider takes none) | src/config.ts:70 | appends the reference code to the payment link |
+| [FORM ENDPOINT], registration and questions | src/config.ts:73 | Review order, Questions |
+| `OFFLINE_PAYMENT` (off) | src/config.ts:83 | Review order cash or check button |
+| `EVENT` start and end (null) | src/config.ts:90 | Confirmation Add to calendar, /workshop.ics |
+| `BOARD_PDF_URL` (null) | src/config.ts:93 | For your board: Download PDF instead of the print button |
 | Working title "Claude for Church Offices" | src/config.ts:16 | src/components/PageHeader.astro; page titles in src/layouts/Base.astro; /workshop.ics |
 | Launch switches: `NOINDEX` (on), `SOLD_OUT` (off) | src/config.ts | Base.astro, PageHeader.astro, Home, Workshop, For your board |
 

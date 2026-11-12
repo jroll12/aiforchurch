@@ -3,10 +3,11 @@
 // actually ship (dist/), plus the audit report. It is expected to fail until
 // every launch fact is in, so it is not part of `npm run check`.
 //   Blockers (fail):  any [PLACEHOLDER] or [CONFIRM] in page text, form or
-//                     payment URLs not set, robots noindex still on, an open
+//                     payment URLs not set, no decision on the payment
+//                     reference parameter, robots noindex still on, an open
 //                     blocker or major finding in qa/audit-report.md
-//   Warnings:         no reference code on payment links, no calendar file,
-//                     no board PDF
+//   Warnings:         payment links set to carry no reference code, no
+//                     calendar file, no board PDF, pages without a description
 //   node qa/checks/launch.mjs --proof   runs on a fixture that holds every
 //                                       blocker and must find each one
 import fs from 'node:fs';
@@ -71,7 +72,8 @@ const attrJson = (html, attr) => {
 const review = attrJson(read('register/review'), 'data-review-config');
 if (!review || !review.endpoint) blockers.push({ kind: 'service', item: 'Registration form endpoint not set; the pay button is disabled', fix: 'src/config.ts FORM_ENDPOINTS' });
 if (!review || !Object.keys(review.links ?? {}).length) blockers.push({ kind: 'service', item: 'Payment links not set', fix: 'src/config.ts PAYMENT_LINKS' });
-if (review && !review.refParam) warnings.push({ item: 'Payment links will not carry the reference code (PAYMENT_REF_PARAM is null)', fix: 'src/config.ts PAYMENT_REF_PARAM' });
+if (review && review.refParam === null) blockers.push({ kind: 'service', item: 'Not decided whether payment links carry the reference code (PAYMENT_REF_PARAM is null; set the parameter name, or false)', fix: 'src/config.ts PAYMENT_REF_PARAM' });
+if (review && review.refParam === false) warnings.push({ item: 'Payment links will not carry the reference code (PAYMENT_REF_PARAM is false); payments are matched by name', fix: 'src/config.ts PAYMENT_REF_PARAM' });
 const ask = read('questions').match(/data-endpoint="([^"]*)"/);
 if (!ask || !ask[1]) blockers.push({ kind: 'service', item: 'Questions form endpoint not set; the send button is disabled', fix: 'src/config.ts FORM_ENDPOINTS' });
 
@@ -104,9 +106,9 @@ for (const w of warnings) console.log(`WARNING  ${w.item}  (fix: ${w.fix})`);
 
 if (proof) {
   // The fixture holds one of each: two placeholders, a [CONFIRM], unset services, noindex, an open major finding.
-  const want = { placeholder: 3, service: 3, indexing: 1, audit: 1 };
-  const ok = Object.entries(want).every(([k, n]) => byKind[k] === n) && warnings.length === 3;
-  save(name, { status: ok ? 'pass' : 'fail', summary: `proof fixture: found ${JSON.stringify(byKind)} and ${warnings.length} warnings; expected ${JSON.stringify(want)} and 3`, blockers, warnings });
+  const want = { placeholder: 3, service: 4, indexing: 1, audit: 1 };
+  const ok = Object.entries(want).every(([k, n]) => byKind[k] === n) && warnings.length === 2;
+  save(name, { status: ok ? 'pass' : 'fail', summary: `proof fixture: found ${JSON.stringify(byKind)} and ${warnings.length} warnings; expected ${JSON.stringify(want)} and 2`, blockers, warnings });
 } else {
   save(name, {
     status: blockers.length ? 'fail' : 'pass',

@@ -1,7 +1,7 @@
 {
   "check": "keyboard",
   "target": "built",
-  "ranAt": "2026-11-12T03:34:46.208Z",
+  "ranAt": "2026-11-12T04:02:13.383Z",
   "status": "pass",
   "summary": "16 page layouts walked, all stops visible, FAQ, errors and menu OK",
   "problems": [],
@@ -904,7 +904,7 @@
             "visible": true
           },
           {
-            "el": "button.btn.alt \"[PRINT BUTTON]\"",
+            "el": "button.btn.alt \"Print this page\"",
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -925,7 +925,7 @@
         "expected": [
           "a.mark \"Claude for Church Offices\"",
           "button.menu[aria-label=\"Open menu\"]",
-          "button.btn.alt \"[PRINT BUTTON]\"",
+          "button.btn.alt \"Print this page\"",
           "a.btn \"Reserve seats\""
         ]
       },
@@ -993,7 +993,7 @@
             "visible": true
           },
           {
-            "el": "button.btn.alt \"[PRINT BUTTON]\"",
+            "el": "button.btn.alt \"Print this page\"",
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1017,7 +1017,7 @@
           "a \"For your board\"",
           "a \"About\"",
           "a \"Questions\"",
-          "button.btn.alt \"[PRINT BUTTON]\"",
+          "button.btn.alt \"Print this page\"",
           "a.btn \"Reserve seats\""
         ]
       },
@@ -1638,7 +1638,7 @@
             "visible": true
           },
           {
-            "el": "a.lnk \"[FORWARD LINK]\"",
+            "el": "a.lnk \"Email the one-page summary to your board\"",
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1651,7 +1651,7 @@
         "expected": [
           "a.mark \"Claude for Church Offices\"",
           "button.menu[aria-label=\"Open menu\"]",
-          "a.lnk \"[FORWARD LINK]\""
+          "a.lnk \"Email the one-page summary to your board\""
         ]
       },
       "faq": [],
@@ -1718,7 +1718,7 @@
             "visible": true
           },
           {
-            "el": "a.lnk \"[FORWARD LINK]\"",
+            "el": "a.lnk \"Email the one-page summary to your board\"",
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -1734,7 +1734,7 @@
           "a \"For your board\"",
           "a \"About\"",
           "a \"Questions\"",
-          "a.lnk \"[FORWARD LINK]\""
+          "a.lnk \"Email the one-page summary to your board\""
         ]
       },
       "faq": []
