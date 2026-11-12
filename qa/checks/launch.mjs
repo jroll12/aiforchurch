@@ -75,10 +75,14 @@ if (review && !review.refParam) warnings.push({ item: 'Payment links will not ca
 const ask = read('questions').match(/data-endpoint="([^"]*)"/);
 if (!ask || !ask[1]) blockers.push({ kind: 'service', item: 'Questions form endpoint not set; the send button is disabled', fix: 'src/config.ts FORM_ENDPOINTS' });
 
-const noindex = pages.filter((f) => /<meta name="robots" content="[^"]*noindex/.test(fs.readFileSync(f, 'utf8'))).map(route);
+// Review order and Confirmation stay noindex on purpose; any other page with it blocks launch.
+const ALWAYS_NOINDEX = new Set(['/register/review/', '/confirmation/']);
+const noindex = pages.filter((f) => /<meta name="robots" content="[^"]*noindex/.test(fs.readFileSync(f, 'utf8'))).map(route).filter((r) => !ALWAYS_NOINDEX.has(r));
 if (noindex.length) blockers.push({ kind: 'indexing', item: `Search engines are blocked (robots noindex) on ${noindex.length} page${noindex.length === 1 ? "" : "s"}`, fix: 'src/config.ts NOINDEX' });
 
 if (!fs.existsSync(path.join(SITE, 'workshop.ics'))) warnings.push({ item: 'No Add to calendar file (EVENT start and end are not set)', fix: 'src/config.ts EVENT' });
+const described = pages.filter((f) => /<meta name="description"/.test(fs.readFileSync(f, 'utf8'))).length;
+if (!proof && described < pages.length - ALWAYS_NOINDEX.size) warnings.push({ item: `${pages.length - ALWAYS_NOINDEX.size - described} pages have no description for search results and link previews`, fix: 'qa/stage2-copy-draft.md description rows, then src/copy.ts DESCRIPTIONS' });
 if (/data-print/.test(read('board'))) warnings.push({ item: 'For your board shows a print button; no PDF is set', fix: 'src/config.ts BOARD_PDF_URL' });
 
 /* ---------- independent audit ---------- */

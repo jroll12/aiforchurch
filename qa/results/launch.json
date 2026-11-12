@@ -1,9 +1,9 @@
 {
   "check": "launch",
   "target": "built",
-  "ranAt": "2026-11-12T03:46:28.993Z",
+  "ranAt": "2026-11-12T03:47:13.133Z",
   "status": "fail",
-  "summary": "not ready to launch: 17 blockers (12 placeholder, 3 service, 1 indexing, 1 audit), 3 warnings",
+  "summary": "not ready to launch: 17 blockers (12 placeholder, 3 service, 1 indexing, 1 audit), 4 warnings",
   "blockers": [
     {
       "kind": "placeholder",
@@ -38,7 +38,7 @@
         "/workshop/"
       ],
       "count": 15,
-      "fix": "src/copy.ts:29, src/copy.ts:49, src/copy.ts:52, src/copy.ts:53"
+      "fix": "src/copy.ts:29, src/copy.ts:64, src/copy.ts:67, src/copy.ts:68"
     },
     {
       "kind": "placeholder",
@@ -77,7 +77,7 @@
         "/about/"
       ],
       "count": 1,
-      "fix": "src/copy.ts:93"
+      "fix": "src/copy.ts:108"
     },
     {
       "kind": "placeholder",
@@ -86,7 +86,7 @@
         "/about/"
       ],
       "count": 1,
-      "fix": "src/copy.ts:94"
+      "fix": "src/copy.ts:109"
     },
     {
       "kind": "placeholder",
@@ -166,7 +166,7 @@
     },
     {
       "kind": "indexing",
-      "item": "Search engines are blocked (robots noindex) on 8 pages",
+      "item": "Search engines are blocked (robots noindex) on 6 pages",
       "fix": "src/config.ts NOINDEX"
     },
     {
@@ -183,6 +183,10 @@
     {
       "item": "No Add to calendar file (EVENT start and end are not set)",
       "fix": "src/config.ts EVENT"
+    },
+    {
+      "item": "6 pages have no description for search results and link previews",
+      "fix": "qa/stage2-copy-draft.md description rows, then src/copy.ts DESCRIPTIONS"
     },
     {
       "item": "For your board shows a print button; no PDF is set",

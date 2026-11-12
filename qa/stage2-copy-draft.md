@@ -69,6 +69,19 @@ How to add new copy:
 | [SENT MESSAGE] | 08 Questions | Thank you. We got your message and will reply by email. | | approved |
 | [COMMON QUESTIONS LABEL] | 08 Questions | Common questions | | approved |
 
+## Page descriptions (drafts, not on the site)
+
+Open question 10. Each is the short text search engines and link previews show for a page. None is emitted until its row is approved and copied into `DESCRIPTIONS` in src/copy.ts. Review order and Confirmation get none; they are never indexed.
+
+| Description for | Page | Draft | Notes | Status |
+| --- | --- | --- | --- | --- |
+| home | 01 Home | A hands-on, half-day workshop for church and ministry office staff on using Claude for real office work, with invented sample data only. | About 140 characters; search results show about 155. | draft |
+| workshop | 02 Workshop details | When and where, the half-day agenda, the seven topics and what to bring for the Claude workshop for church office staff. | | draft |
+| board | 03 For your board | A one-page summary of the workshop for a pastor or board: what it is, who it is for, cost, scope and how information is handled. | | draft |
+| about | 04 About | Who runs the workshop, why it is local, and how the course materials are made. | | draft |
+| register | 05 Register | Reserve seats for the half-day Claude workshop for church office staff. You review everything before you pay. | Second sentence echoes the Register lede. | draft |
+| questions | 08 Questions | Ask a question about the workshop, or ask to hear about future dates. | | draft |
+
 ## Spec wording used as copy (please confirm)
 
 These come straight from HANDOFF-SPEC.md sections 1 and 7, where the spec names a thing. Jarret confirmed them on 2026-11-12. The copy check lists each one in qa/results/provenance.json. Change any here and in src/copy.ts.

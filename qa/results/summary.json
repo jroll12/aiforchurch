@@ -1,12 +1,7 @@
 {
   "target": "built",
-  "ranAt": "2026-11-12T03:44:16.135Z",
+  "ranAt": "2026-11-12T03:47:54.287Z",
   "summary": [
-    {
-      "check": "text-diff",
-      "status": "pass",
-      "summary": "10 differences, 0 unexplained, 0 stale expectations"
-    },
     {
       "check": "headerfit",
       "status": "pass",
@@ -43,11 +38,6 @@
       "summary": "16 page loads; hosts seen: 127.0.0.1, fonts.googleapis.com, fonts.gstatic.com"
     },
     {
-      "check": "behavior",
-      "status": "pass",
-      "summary": "25 of 25 behavior assertions hold"
-    },
-    {
       "check": "overflow",
       "status": "pass",
       "summary": "108 page states measured, 0 with horizontal scroll"
@@ -58,19 +48,29 @@
       "summary": "/board/ prints on 1 Letter page; content fills about 70% of the printable height with placeholders in place; 0 problems"
     },
     {
-      "check": "guards",
+      "check": "text-diff",
       "status": "pass",
-      "summary": "0 findings; 103 repo files scanned for dashes"
-    },
-    {
-      "check": "flow",
-      "status": "pass",
-      "summary": "31 of 31 flow assertions hold on dist-mock/"
+      "summary": "10 differences, 0 unexplained, 0 stale expectations"
     },
     {
       "check": "provenance",
       "status": "pass",
       "summary": "482 strings on 6 derived pages at 390 and 1440; 0 with no allowed source, 0 placeholders missing from PLACEHOLDERS.md, 23 taken from spec wording (listed for confirmation)"
+    },
+    {
+      "check": "guards",
+      "status": "pass",
+      "summary": "0 findings; 112 repo files scanned for dashes"
+    },
+    {
+      "check": "behavior",
+      "status": "pass",
+      "summary": "25 of 25 behavior assertions hold"
+    },
+    {
+      "check": "flow",
+      "status": "pass",
+      "summary": "31 of 31 flow assertions hold on dist-mock/"
     }
   ]
 }

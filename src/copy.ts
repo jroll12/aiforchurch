@@ -41,6 +41,21 @@ export const DESIGN = {
   back: 'Back',
 } as const;
 
+/**
+ * Search and link-preview descriptions, one per page (open question 10).
+ * null means no description is emitted. Drafts are in qa/stage2-copy-draft.md;
+ * a page gets its description once its row is approved and copied here.
+ * Review order and Confirmation have none: they are never indexed.
+ */
+export const DESCRIPTIONS: Record<string, string | null> = {
+  home: null,
+  workshop: null,
+  board: null,
+  about: null,
+  register: null,
+  questions: null,
+};
+
 /* ---------- 02 Workshop details ---------- */
 export const WORKSHOP = {
   title: 'Workshop details', // spec: screen name

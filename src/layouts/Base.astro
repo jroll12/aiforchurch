@@ -8,6 +8,7 @@ import '../styles/site.css';
 import PageHeader from '../components/PageHeader.astro';
 import Footer from '../components/Footer.astro';
 import { NOINDEX, SITE_NAME } from '../config';
+import { DESCRIPTIONS } from '../copy';
 
 interface Props {
   page: 'home' | 'register' | 'workshop' | 'board' | 'about' | 'review' | 'confirmation' | 'questions';
@@ -18,6 +19,9 @@ interface Props {
 
 const { page, title, headerCta = false, markHref } = Astro.props;
 const fullTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
+const description = DESCRIPTIONS[page] ?? null;
+// Review order and Confirmation hold a visitor's own order: never indexed, even after launch (derived).
+const noindex = NOINDEX || page === 'review' || page === 'confirmation';
 ---
 <!doctype html>
 <html lang="en">
@@ -25,7 +29,8 @@ const fullTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{fullTitle}</title>
-{NOINDEX && <meta name="robots" content="noindex, nofollow">}
+{description && <meta name="description" content={description}>}
+{noindex && <meta name="robots" content="noindex, nofollow">}
 <link rel="icon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
