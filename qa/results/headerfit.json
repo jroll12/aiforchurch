@@ -1,7 +1,7 @@
 {
   "check": "headerfit",
   "target": "built",
-  "ranAt": "2026-11-12T04:07:50.897Z",
+  "ranAt": "2026-11-12T04:11:22.084Z",
   "status": "pass",
   "summary": "32 headers at 900, 960, 1024, 1100 px; 0 with wrapping or touching items; smallest gap 24px (minimum 8)",
   "failures": [],
@@ -140,7 +140,7 @@
           "lines": 1
         }
       ],
-      "gapMarkNav": 181,
+      "gapMarkNav": 182,
       "gapNavCta": null,
       "navRight": 860,
       "viewport": 900,
@@ -280,7 +280,7 @@
           "lines": 1
         }
       ],
-      "gapMarkNav": 222,
+      "gapMarkNav": 221,
       "gapNavCta": null,
       "navRight": 920,
       "viewport": 960,
@@ -504,7 +504,7 @@
           "lines": 1
         }
       ],
-      "gapMarkNav": 222,
+      "gapMarkNav": 221,
       "gapNavCta": null,
       "navRight": 920,
       "viewport": 960,
@@ -588,7 +588,7 @@
           "lines": 1
         }
       ],
-      "gapMarkNav": 181,
+      "gapMarkNav": 182,
       "gapNavCta": null,
       "navRight": 860,
       "viewport": 900,

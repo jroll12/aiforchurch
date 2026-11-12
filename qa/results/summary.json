@@ -1,7 +1,12 @@
 {
   "target": "built",
-  "ranAt": "2026-11-12T04:09:16.865Z",
+  "ranAt": "2026-11-12T04:12:10.059Z",
   "summary": [
+    {
+      "check": "text-diff",
+      "status": "pass",
+      "summary": "8 differences, 0 unexplained, 0 stale expectations"
+    },
     {
       "check": "provenance",
       "status": "pass",
@@ -21,6 +26,11 @@
       "check": "contrast",
       "status": "pass",
       "summary": "12 token pairs (0 off), 11 rendered color pairs, 0 text below minimum, 0 accent misuses"
+    },
+    {
+      "check": "keyboard",
+      "status": "pass",
+      "summary": "16 page layouts walked, all stops visible, FAQ, errors and menu OK"
     },
     {
       "check": "targets",
@@ -50,7 +60,7 @@
     {
       "check": "guards",
       "status": "pass",
-      "summary": "0 findings; 115 repo files scanned for dashes"
+      "summary": "0 findings; 116 repo files scanned for dashes"
     },
     {
       "check": "behavior",
@@ -61,16 +71,6 @@
       "check": "flow",
       "status": "pass",
       "summary": "35 of 35 flow assertions hold on dist-mock/"
-    },
-    {
-      "check": "text-diff",
-      "status": "pass",
-      "summary": "8 differences, 0 unexplained, 0 stale expectations"
-    },
-    {
-      "check": "keyboard",
-      "status": "pass",
-      "summary": "16 page layouts walked, all stops visible, FAQ, errors and menu OK"
     }
   ]
 }

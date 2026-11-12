@@ -1,7 +1,7 @@
 {
   "check": "targets",
   "target": "built",
-  "ranAt": "2026-11-12T04:08:05.802Z",
+  "ranAt": "2026-11-12T04:11:37.341Z",
   "status": "pass",
   "summary": "341 targets measured, 0 below 44px",
   "failures": [],
@@ -854,7 +854,7 @@
         {
           "group": "button",
           "el": "button.btn.alt \"Add another attendee\"",
-          "w": 234.2,
+          "w": 234.1,
           "h": 52,
           "ok": true
         },
@@ -959,7 +959,7 @@
         {
           "group": "button",
           "el": "button.btn.alt \"Add another attendee\"",
-          "w": 234.2,
+          "w": 234.1,
           "h": 52,
           "ok": true
         },
