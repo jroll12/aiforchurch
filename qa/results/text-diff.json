@@ -1,7 +1,7 @@
 {
   "check": "text-diff",
   "target": "built",
-  "ranAt": "2026-11-12T04:10:53.633Z",
+  "ranAt": "2026-11-19T18:26:43.833Z",
   "status": "pass",
   "summary": "8 differences, 0 unexplained, 0 stale expectations",
   "unexplained": [],

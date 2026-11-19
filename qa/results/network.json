@@ -1,7 +1,7 @@
 {
   "check": "network",
   "target": "built",
-  "ranAt": "2026-11-12T04:11:57.655Z",
+  "ranAt": "2026-11-19T18:27:34.841Z",
   "status": "pass",
   "summary": "16 page loads; hosts seen: 127.0.0.1, fonts.googleapis.com, fonts.gstatic.com",
   "allowed": [

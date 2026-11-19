@@ -32,8 +32,19 @@ START-HERE.md says the course content lives in its own repo, roloff-course-kit, 
 | `handout.md` | One printable page: the steps, the exact prompts to paste, the habit as a checklist |
 | `samples/` | The practice files, every one invented and labeled FAKE |
 | `examples/flawed-draft.md` | A prepared draft with the mistake in it, so the "catch the mistake" step works even if Claude gets it right live |
+| `examples/answer-key.md` | What is wrong in the flawed draft, for the facilitator only, never projected |
 
 The rules every module follows are in STYLE.md, and `node qa/checks/course.mjs` enforces them. That check also runs inside `npm run check`.
+
+## Placeholders in the course
+
+- **[FILES LINK]:** every handout says where to get the practice files. Until it's decided how the workshop shares them (a download page, a shared folder, printed copies), the handouts say [FILES LINK].
+- **[CONFIRM]:** marks a fact Jarret still has to check, for example topics 4 to 7, laptop or tablet, and who sends the pre-workshop email. Run `grep -rn "\[CONFIRM\]" course/modules` to list them. Inside lessons, [CONFIRM] is also what attendees are taught to type, so those are not all open items.
+
+## Review so far
+
+- **Testing:** seven blind testers worked through one lesson each, and their findings are fixed or explained in course/review-report.md.
+- **Status:** every module is still `status: draft`.
 
 ## How to approve a module
 

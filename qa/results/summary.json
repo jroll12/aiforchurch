@@ -1,6 +1,6 @@
 {
   "target": "built",
-  "ranAt": "2026-11-12T04:12:10.059Z",
+  "ranAt": "2026-11-19T18:27:47.007Z",
   "summary": [
     {
       "check": "text-diff",
@@ -60,7 +60,7 @@
     {
       "check": "guards",
       "status": "pass",
-      "summary": "0 findings; 116 repo files scanned for dashes"
+      "summary": "0 findings; 176 repo files scanned for dashes"
     },
     {
       "check": "behavior",
@@ -71,6 +71,11 @@
       "check": "flow",
       "status": "pass",
       "summary": "35 of 35 flow assertions hold on dist-mock/"
+    },
+    {
+      "check": "course",
+      "status": "pass",
+      "summary": "7 modules checked; 0 findings; topics 1 to 3 take 90 of 90 minutes, topics 4 to 7 take 80 of 80"
     }
   ]
 }

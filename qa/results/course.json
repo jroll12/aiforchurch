@@ -1,31 +1,10 @@
 {
   "check": "course",
   "target": "built",
-  "ranAt": "2026-11-19T18:22:42.247Z",
-  "status": "fail",
-  "summary": "7 modules checked; 4 findings; topics 1 to 3 take 90 of 90 minutes, topics 4 to 7 take 80 of 80",
-  "findings": [
-    {
-      "module": "01-newsletter",
-      "rule": "handout",
-      "detail": "529 words; one page is 450 at most"
-    },
-    {
-      "module": "02-ai-use-policy",
-      "rule": "handout",
-      "detail": "639 words; one page is 450 at most"
-    },
-    {
-      "module": "03-prayer-care-messages",
-      "rule": "handout",
-      "detail": "needs the \"Practice files (all FAKE):\" line with [FILES LINK]"
-    },
-    {
-      "module": "03-prayer-care-messages",
-      "rule": "handout",
-      "detail": "needs \"Do every step in the same chat.\""
-    }
-  ],
+  "ranAt": "2026-11-19T18:27:36.257Z",
+  "status": "pass",
+  "summary": "7 modules checked; 0 findings; topics 1 to 3 take 90 of 90 minutes, topics 4 to 7 take 80 of 80",
+  "findings": [],
   "modules": [
     {
       "module": "01-newsletter",

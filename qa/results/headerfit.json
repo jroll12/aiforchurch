@@ -1,7 +1,7 @@
 {
   "check": "headerfit",
   "target": "built",
-  "ranAt": "2026-11-12T04:11:22.084Z",
+  "ranAt": "2026-11-19T18:27:04.451Z",
   "status": "pass",
   "summary": "32 headers at 900, 960, 1024, 1100 px; 0 with wrapping or touching items; smallest gap 24px (minimum 8)",
   "failures": [],
@@ -140,7 +140,7 @@
           "lines": 1
         }
       ],
-      "gapMarkNav": 182,
+      "gapMarkNav": 181,
       "gapNavCta": null,
       "navRight": 860,
       "viewport": 900,
@@ -588,7 +588,7 @@
           "lines": 1
         }
       ],
-      "gapMarkNav": 182,
+      "gapMarkNav": 181,
       "gapNavCta": null,
       "navRight": 860,
       "viewport": 900,

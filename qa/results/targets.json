@@ -1,7 +1,7 @@
 {
   "check": "targets",
   "target": "built",
-  "ranAt": "2026-11-12T04:11:37.341Z",
+  "ranAt": "2026-11-19T18:27:15.845Z",
   "status": "pass",
   "summary": "341 targets measured, 0 below 44px",
   "failures": [],
