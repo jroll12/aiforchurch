@@ -1,0 +1,84 @@
+{
+  "check": "course.proof",
+  "target": "built",
+  "ranAt": "2026-11-19T17:46:06.587Z",
+  "status": "pass",
+  "summary": "proof fixture: caught 11 of 11 rules (all caught)",
+  "findings": [
+    {
+      "module": "02-bad",
+      "rule": "front matter",
+      "detail": "missing flaw"
+    },
+    {
+      "module": "02-bad",
+      "rule": "matches the site",
+      "detail": "title \"Not the title on the site\" is not the site's \"A church AI use policy\""
+    },
+    {
+      "module": "02-bad",
+      "rule": "matches the site",
+      "detail": "outcome \"By the end, you can do something else.\" is not \"By the end, you can write a one-page policy your pastor and board can review.\""
+    },
+    {
+      "module": "02-bad",
+      "rule": "duration",
+      "detail": "45 minutes; the agenda allows 30"
+    },
+    {
+      "module": "02-bad",
+      "rule": "sections",
+      "detail": "found [The idea, 5 minutes | The exercise | Watch for this | The habit | Downloads | Next], want [The idea, 5 minutes | The exercise | Watch for this | The habit | Data safety | Downloads | Next]"
+    },
+    {
+      "module": "02-bad",
+      "rule": "exercise",
+      "detail": "3 numbered steps; want exactly 4"
+    },
+    {
+      "module": "02-bad",
+      "rule": "data safety",
+      "detail": "empty"
+    },
+    {
+      "module": "02-bad",
+      "rule": "links",
+      "detail": "missing.md does not exist"
+    },
+    {
+      "module": "02-bad",
+      "rule": "next",
+      "detail": "no next in front matter"
+    },
+    {
+      "module": "02-bad",
+      "rule": "FAKE label",
+      "detail": "samples/notes.md does not start with a FAKE line"
+    },
+    {
+      "module": "02-bad",
+      "rule": "trap",
+      "detail": "samples/notes.md does not contain \"text that is not in the file\""
+    },
+    {
+      "module": "02-bad",
+      "rule": "flawed draft",
+      "detail": "no examples/flawed-draft.md"
+    },
+    {
+      "module": "02-bad",
+      "rule": "contact data",
+      "detail": "samples/notes.md: email at gmail.com"
+    },
+    {
+      "module": "02-bad",
+      "rule": "contact data",
+      "detail": "samples/notes.md: phone 555-1234 is not 555-01xx"
+    },
+    {
+      "module": "02-bad",
+      "rule": "handout",
+      "detail": "no \"## Prompts to paste\" section"
+    }
+  ]
+}
