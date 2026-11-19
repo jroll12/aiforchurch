@@ -1,7 +1,7 @@
 {
   "check": "course",
   "target": "built",
-  "ranAt": "2026-11-19T18:17:26.008Z",
+  "ranAt": "2026-11-19T18:18:16.254Z",
   "status": "fail",
   "summary": "7 modules checked; 30 findings; topics 1 to 3 take 90 of 90 minutes, topics 4 to 7 take 80 of 80",
   "findings": [
