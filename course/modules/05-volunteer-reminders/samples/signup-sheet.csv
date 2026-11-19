@@ -1,0 +1,18 @@
+FAKE SAMPLE FILE. Invented for training. Maple Street Church (FAKE) volunteers do not exist. Sunday volunteers, April 2026, 10:30 service.
+date,role,name,email
+2026-04-05,Greeter,Ann Brooks,ann.brooks@example.org
+2026-04-05,Usher,Tom Reyes,tom.reyes@example.org
+2026-04-05,Nursery,Maria Chen,maria.chen@example.org
+2026-04-05,Coffee,Joan Miller,joan.miller@example.org
+2026-04-12,Greeter,Paul Hart,paul.hart@example.org
+2026-04-12,Usher,Greg Olsen,greg.olsen@example.org
+2026-04-12,Nursery,Beth Ward,beth.ward@example.org
+2026-04-12,Coffee,Sam Ellis,sam.ellis@example.org
+2026-04-19,Greeter,Ann Brooks,ann.brooks@example.org
+2026-04-19,Usher,Tom Reyes,tom.reyes@example.org
+2026-04-19,Nursery,Maria Chen,maria.chen@example.org
+2026-04-19,Coffee,,
+2026-04-26,Greeter,Paul Hart,paul.hart@example.org
+2026-04-26,Usher,Nora Quinn,nora.quinn@example.org
+2026-04-26,Nursery,Beth Ward,beth.ward@example.org
+2026-04-26,Coffee,Joan Miller,joan.miller@example.org
