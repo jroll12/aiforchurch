@@ -64,6 +64,5 @@ Next topic: [A church AI use policy](../02-ai-use-policy/lesson.md)
   - The staff notes give no time for the youth car wash (“Time still to be set”), so a careful draft marks it [CONFIRM] rather than inventing one.
   - The calendar puts the volunteer lunch in Room 2, while the notes say Room 3. Only step 4 catches that.
 - **If Claude gets it right live:** open `examples/flawed-draft.md` and ask the room to find what’s wrong. It has the stale Tuesday time and an invented car wash time.
-- **Before class [CONFIRM]:**
-  - Check that Projects are available on the plan attendees will use. The site says the newsletter topic works on a free account, and that line is still [CONFIRM].
-  - If Projects are not available, steps 1 and 2 work as one long first message instead: paste the instructions, the voice guide and both past newsletters, then the notes.
+- **Projects on a free account:** Claude’s help center says “Projects are available to all users, including those with free Claude accounts” and that free users can create at most five (support.claude.com, “What are projects?”, checked 2026-11-19). Plans change, so check again before each workshop.
+- **If an attendee has no Project room left,** or the Project will not open, steps 1 and 2 work as one long first message instead: paste the instructions, the voice guide and both past newsletters, then the notes.
