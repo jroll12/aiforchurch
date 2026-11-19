@@ -1,11 +1,11 @@
 FAKE SAMPLE FILE. Invented for training. Maple Street Church (FAKE) calendar does not exist.
 date,day,start,end,event,room,contact
-2026-03-08,Sunday,9:00,10:00,Worship,Sanctuary,Pastor Dan Hale
-2026-03-08,Sunday,10:30,11:30,Worship,Sanctuary,Pastor Dan Hale
+2026-03-08,Sunday,9:00 a.m.,10:00 a.m.,Worship,Sanctuary,Pastor Dan Hale
+2026-03-08,Sunday,10:30 a.m.,11:30 a.m.,Worship,Sanctuary,Pastor Dan Hale
 2026-03-09,Monday,,,Office closed (staff training),Office,Rita Gomez
-2026-03-11,Wednesday,19:00,20:30,Choir rehearsal,Music Room,Lena Ortiz
-2026-03-12,Thursday,18:30,19:45,Bible study,Room 4,Pastor Dan Hale
+2026-03-11,Wednesday,7:00 p.m.,8:30 p.m.,Choir rehearsal,Music Room,Lena Ortiz
+2026-03-12,Thursday,6:30 p.m.,7:45 p.m.,Bible study,Room 4,Pastor Dan Hale
 2026-03-14,Saturday,,,Youth car wash,Parking lot,Jamie Park
-2026-03-15,Sunday,9:00,10:00,Worship,Sanctuary,Pastor Dan Hale
-2026-03-15,Sunday,10:30,11:30,Worship,Sanctuary,Pastor Dan Hale
-2026-03-15,Sunday,12:00,13:30,Volunteer appreciation lunch,Room 2,Rita Gomez
+2026-03-15,Sunday,9:00 a.m.,10:00 a.m.,Worship,Sanctuary,Pastor Dan Hale
+2026-03-15,Sunday,10:30 a.m.,11:30 a.m.,Worship,Sanctuary,Pastor Dan Hale
+2026-03-15,Sunday,12:00 p.m.,1:30 p.m.,Volunteer appreciation lunch,Room 2,Rita Gomez

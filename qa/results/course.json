@@ -1,64 +1,19 @@
 {
   "check": "course",
   "target": "built",
-  "ranAt": "2026-11-19T18:18:26.008Z",
+  "ranAt": "2026-11-19T18:22:42.247Z",
   "status": "fail",
-  "summary": "7 modules checked; 30 findings; topics 1 to 3 take 90 of 90 minutes, topics 4 to 7 take 80 of 80",
+  "summary": "7 modules checked; 4 findings; topics 1 to 3 take 90 of 90 minutes, topics 4 to 7 take 80 of 80",
   "findings": [
     {
       "module": "01-newsletter",
-      "rule": "times",
-      "detail": "samples/calendar.csv uses 24-hour times"
-    },
-    {
-      "module": "01-newsletter",
-      "rule": "flawed draft",
-      "detail": "gives its answers away (\"What to find\", \"(none;\" or an answer key); put them in examples/answer-key.md"
-    },
-    {
-      "module": "01-newsletter",
-      "rule": "answer key",
-      "detail": "no examples/answer-key.md for the facilitator"
-    },
-    {
-      "module": "01-newsletter",
       "rule": "handout",
-      "detail": "needs the \"Practice files (all FAKE):\" line with [FILES LINK]"
-    },
-    {
-      "module": "01-newsletter",
-      "rule": "handout",
-      "detail": "needs \"Do every step in the same chat.\""
-    },
-    {
-      "module": "02-ai-use-policy",
-      "rule": "flawed draft",
-      "detail": "gives its answers away (\"What to find\", \"(none;\" or an answer key); put them in examples/answer-key.md"
-    },
-    {
-      "module": "02-ai-use-policy",
-      "rule": "answer key",
-      "detail": "no examples/answer-key.md for the facilitator"
+      "detail": "529 words; one page is 450 at most"
     },
     {
       "module": "02-ai-use-policy",
       "rule": "handout",
-      "detail": "needs the \"Practice files (all FAKE):\" line with [FILES LINK]"
-    },
-    {
-      "module": "02-ai-use-policy",
-      "rule": "handout",
-      "detail": "needs \"Do every step in the same chat.\""
-    },
-    {
-      "module": "03-prayer-care-messages",
-      "rule": "flawed draft",
-      "detail": "gives its answers away (\"What to find\", \"(none;\" or an answer key); put them in examples/answer-key.md"
-    },
-    {
-      "module": "03-prayer-care-messages",
-      "rule": "answer key",
-      "detail": "no examples/answer-key.md for the facilitator"
+      "detail": "639 words; one page is 450 at most"
     },
     {
       "module": "03-prayer-care-messages",
@@ -67,91 +22,6 @@
     },
     {
       "module": "03-prayer-care-messages",
-      "rule": "handout",
-      "detail": "needs \"Do every step in the same chat.\""
-    },
-    {
-      "module": "04-event-announcements",
-      "rule": "times",
-      "detail": "samples/ministry-calendar.csv uses 24-hour times"
-    },
-    {
-      "module": "04-event-announcements",
-      "rule": "flawed draft",
-      "detail": "gives its answers away (\"What to find\", \"(none;\" or an answer key); put them in examples/answer-key.md"
-    },
-    {
-      "module": "04-event-announcements",
-      "rule": "answer key",
-      "detail": "no examples/answer-key.md for the facilitator"
-    },
-    {
-      "module": "04-event-announcements",
-      "rule": "handout",
-      "detail": "needs the \"Practice files (all FAKE):\" line with [FILES LINK]"
-    },
-    {
-      "module": "04-event-announcements",
-      "rule": "handout",
-      "detail": "needs \"Do every step in the same chat.\""
-    },
-    {
-      "module": "05-volunteer-reminders",
-      "rule": "flawed draft",
-      "detail": "gives its answers away (\"What to find\", \"(none;\" or an answer key); put them in examples/answer-key.md"
-    },
-    {
-      "module": "05-volunteer-reminders",
-      "rule": "answer key",
-      "detail": "no examples/answer-key.md for the facilitator"
-    },
-    {
-      "module": "05-volunteer-reminders",
-      "rule": "handout",
-      "detail": "needs the \"Practice files (all FAKE):\" line with [FILES LINK]"
-    },
-    {
-      "module": "05-volunteer-reminders",
-      "rule": "handout",
-      "detail": "needs \"Do every step in the same chat.\""
-    },
-    {
-      "module": "06-meeting-minutes",
-      "rule": "flawed draft",
-      "detail": "gives its answers away (\"What to find\", \"(none;\" or an answer key); put them in examples/answer-key.md"
-    },
-    {
-      "module": "06-meeting-minutes",
-      "rule": "answer key",
-      "detail": "no examples/answer-key.md for the facilitator"
-    },
-    {
-      "module": "06-meeting-minutes",
-      "rule": "handout",
-      "detail": "needs the \"Practice files (all FAKE):\" line with [FILES LINK]"
-    },
-    {
-      "module": "06-meeting-minutes",
-      "rule": "handout",
-      "detail": "needs \"Do every step in the same chat.\""
-    },
-    {
-      "module": "07-bulletin-slides",
-      "rule": "flawed draft",
-      "detail": "gives its answers away (\"What to find\", \"(none;\" or an answer key); put them in examples/answer-key.md"
-    },
-    {
-      "module": "07-bulletin-slides",
-      "rule": "answer key",
-      "detail": "no examples/answer-key.md for the facilitator"
-    },
-    {
-      "module": "07-bulletin-slides",
-      "rule": "handout",
-      "detail": "needs the \"Practice files (all FAKE):\" line with [FILES LINK]"
-    },
-    {
-      "module": "07-bulletin-slides",
       "rule": "handout",
       "detail": "needs \"Do every step in the same chat.\""
     }

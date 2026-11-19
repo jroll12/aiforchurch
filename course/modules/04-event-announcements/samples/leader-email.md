@@ -9,7 +9,7 @@ Subject: Spring tea has moved
 
 Hi Rita,
 
-Our speaker can’t come on April 18, so we are moving the spring tea to Saturday, April 25. Same time, 10:00 to 11:30, and still in Fellowship Hall. Please make the RSVP date April 20 instead of April 13.
+Our speaker can’t come on April 18, so we are moving the spring tea to Saturday, April 25. Same time, 10:00 to 11:30 a.m., and still in Fellowship Hall. Please make the RSVP date April 20 instead of April 13.
 
 I haven’t changed the calendar yet. Sorry about that.
 

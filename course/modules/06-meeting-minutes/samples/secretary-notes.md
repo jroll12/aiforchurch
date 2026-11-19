@@ -1,9 +1,9 @@
 FAKE SAMPLE FILE. Invented for training. Maple Street Church (FAKE) does not exist. A council secretary’s rough notes, typed up the night of the meeting.
 
-# Council mtg notes, Tues April 7
+# Council mtg notes, Tues April 7, 2026
 
-Room 2, started 7:05. Mark taking notes.
-Here: Carol (chair), Pastor Dan, Tom, Linda, Ruth, Mark. Greg absent. Rita sat in for the office.
+Room 2, started 7:05 p.m. Mark Ellis (secretary) taking notes.
+Here: Carol Bennett (chair), Pastor Dan Hale, Tom Reyes, Linda Shaw (treasurer), Ruth Adams, Mark Ellis. Greg Moore absent. Rita Gomez (office manager) sat in for the office.
 
 Opening prayer, Pastor Dan.
 
@@ -19,15 +19,15 @@ Roof (Tom):
 - Someone to call for the 3rd quote, didn’t settle who.
 
 Spring cleanup:
-- Sat April 18, 9 to noon. Rain date Sat April 25.
+- Sat April 18, 9 a.m. to noon. Rain date Sat April 25.
 - Ruth moved, Tom 2nd. Passed, count not taken, hands went up fast.
 - Rita to put it in the April 12 bulletin and on the website.
 
-Youth summer trip (Jamie Park sent a note, Pastor Dan read it):
+Youth summer trip (Jamie Park, youth leader, sent a note, Pastor Dan read it):
 - Budget asked for: $2,400. Camp fee $1,800, van $600.
 - Linda moved to approve $2,400, Pastor Dan 2nd. Passed 5 yes, 1 no.
 - Jamie to send permission forms to families by Mon April 20.
 - Linda to set up a youth trip line in the budget.
 
 Next mtg in May, Carol will send the date.
-Closing prayer, Ruth. Done 8:20.
+Closing prayer, Ruth. Done 8:20 p.m.

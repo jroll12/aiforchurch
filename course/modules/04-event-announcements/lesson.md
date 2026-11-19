@@ -6,7 +6,7 @@ duration: About 20 minutes
 outcome: By the end, you can turn calendar entries into announcements, with every date and room checked.
 status: draft
 next: 05-volunteer-reminders
-trap: samples/ministry-calendar.csv :: 2026-04-18,Saturday,10:00,11:30,Spring tea,Fellowship Hall
+trap: samples/ministry-calendar.csv :: 2026-04-18,Saturday,10:00 a.m.,11:30 a.m.,Spring tea,Fellowship Hall
 trap: samples/leader-email.md :: moving the spring tea to Saturday, April 25
 trap: samples/ministry-calendar.csv :: First Tuesday of each month
 trap: samples/ministry-calendar.csv :: Room not set yet
@@ -29,7 +29,7 @@ Claude writes announcements quickly, but it can trust an old calendar entry over
 1. Open a new chat. Paste the announcement guide, the ministry calendar and the latest email from a ministry leader.
 2. Ask for a bulletin announcement and a short social post for each event, plus a check table: every date, time and room, and where it came from.
 3. Tell Claude to give the real date for any repeating event, and to mark [CONFIRM] anything missing or anything where the calendar and the email disagree.
-4. Check every row of the table against the calendar and the email. Count any “first Tuesday” on a printed calendar.
+4. Check every row of the table against the calendar and the email. A newer email from the ministry leader wins over the calendar, so a row that still matches an old calendar entry is a mismatch: use the email and mark it [CONFIRM] until the calendar is fixed. Count any “first Tuesday” from the April dates in the guide.
 
 ## Watch for this
 
@@ -41,7 +41,7 @@ The calendar lists the spring tea on Saturday, April 18. Carol Diaz’s email of
 
 ### Date-and-room check.
 
-Every date, time and room in an announcement must match the calendar or a newer email from the ministry leader. Where the two disagree, or a detail is missing, mark it [CONFIRM] and ask the leader instead of guessing. Then count every repeating date on a real calendar before anything goes out.
+Every date, time and room in an announcement must match its newest source, and a newer email from the ministry leader wins over the calendar. Where the two disagree, use the email and mark the detail [CONFIRM] until the calendar is fixed. Where a detail is missing, mark it [CONFIRM] and ask the leader instead of guessing. Then count every repeating date on a real calendar before anything goes out.
 
 ## Data safety
 
@@ -65,5 +65,8 @@ Next topic: [Volunteer schedules and reminder emails [CONFIRM]](../05-volunteer-
   - The grief support group row has no date, only “First Tuesday of each month.” In April 2026 that is Tuesday, April 7. April 1 is a Wednesday.
   - The youth game night has no room (“Room not set yet”), so a careful draft marks it [CONFIRM] rather than inventing one.
   - The spring cleanup day matches everywhere. It shows that the check is for every line, not only the suspicious ones.
-- **If Claude gets it right live:** open `examples/flawed-draft.md` and ask the room to find what’s wrong. It has the stale tea date, a Tuesday on April 1 and an invented room for game night.
-- **Before class:** print a one-page April 2026 calendar for each table, for step 4.
+  - The guide lists April 2026’s Tuesdays (7, 14, 21 and 28), so attendees can count “first Tuesday” without a printed calendar.
+  - The guide’s 40-word limit counts everything in the announcement, including the office contact.
+- **Expect Claude to get it right.** The prompts steer it away from the mistake: step 1 says to use the newer email, and step 3 asks for real dates and [CONFIRM] on anything missing. That is the point of teaching them, so the prepared flawed draft is the planned fallback, not a backup you may never need.
+- **If Claude gets it right live:** project `examples/flawed-draft.md` and ask the room to find what’s wrong, using the handout checklist. The answers are in `examples/answer-key.md`; keep that file off the screen.
+- **If time is short:** ask for the bulletin announcements and the check table only, and skip the social posts. The table still holds every date, time and room to check.

@@ -28,8 +28,8 @@ Claude can turn a sign-up sheet into a month of personal reminders in minutes. B
 
 1. Open a new chat. Paste the reminder guide, the April sign-up sheet and the swap email.
 2. Ask for a reminder list, one row for every Sunday and role, and a short personal email for each filled slot.
-3. Tell Claude to apply the swap, and to leave the empty slot empty, marked [CONFIRM] to recruit someone.
-4. Check every row of the list against the sign-up sheet and the swap email, name by name. Make sure the empty slot has no email.
+3. Tell Claude to check that each person in the swap is on the Sunday they took, to mark the empty slot [CONFIRM] to recruit someone without filling it, and to write the emails again.
+4. Check every row of the list against the sign-up sheet and the swap email, name by name. The later swap email wins over the sheet, so a row that still shows the sheet’s old name for a swapped Sunday is a mismatch. Make sure the empty slot has no email.
 
 ## Watch for this
 
@@ -41,7 +41,7 @@ The sheet has Greg Olsen ushering on April 12 and Nora Quinn on April 26. Greg�
 
 ### Name-to-slot check.
 
-Every reminder needs a matching row on the sign-up sheet, with the same name, date and role, after any swap from a later email. An empty slot gets no reminder: mark it [CONFIRM] and recruit someone yourself. Then compare the reminder list with the sheet, line by line, before you send.
+Every reminder needs a matching row on the sign-up sheet, with the same name, date and role, after any swap from a later email: the later email wins over the sheet. An empty slot gets no reminder: mark it [CONFIRM] and recruit someone yourself. Then compare the reminder list with the sheet, line by line, before you send.
 
 ## Data safety
 
@@ -65,5 +65,6 @@ Next topic: [Meeting notes into minutes and action items [CONFIRM]](../06-meetin
   - Coffee on April 19 is blank. Joan Miller and Sam Ellis cover the other Sundays, so either looks like a natural guess. A careful draft writes no email for that slot and marks it [CONFIRM].
   - April 5 is Easter Sunday. The guide says it keeps the usual times, so the room does not get stuck on it.
   - The sheet has adults only. Nursery reminders name the room, never a child.
-- **If Claude gets it right live:** open `examples/flawed-draft.md` and ask the room to find what’s wrong. It reminds Greg for April 12 and Nora for April 26, and gives Sam Ellis the empty coffee slot.
-- **If time is short:** ask Claude for the reminder list and the April 12 emails only. The swap still shows up there.
+- **Expect Claude to get it right.** The prompts steer it away from the mistake: step 1 mentions the later swap email and says never to add a name, and step 3 checks the swap and the empty slot again. That is the point of teaching them, so the prepared flawed draft is the planned fallback, not a backup you may never need.
+- **If Claude gets it right live:** project `examples/flawed-draft.md` and ask the room to find what’s wrong, using the handout checklist. It is the reminder list and four sample emails, short enough for one screen. The answers are in `examples/answer-key.md`; keep that file off the screen.
+- **If time is short:** the exercise is tight at 10 minutes. Ask Claude for the reminder list and the April 12 emails only, and have the room check the 16 list rows rather than every email. The swap still shows up there.

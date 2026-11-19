@@ -26,10 +26,6 @@ FAKE SAMPLE FILE. A prepared draft with mistakes in it, for the "catch the mista
 | Spring cleanup day | Saturday, April 11 | 9:00 a.m. to noon | Church grounds | Calendar |
 | Grief support group | Tuesday, April 1 | 7:00 to 8:30 p.m. | Room 2 | Calendar ("First Tuesday of each month") |
 | Spring tea | Saturday, April 18 | 10:00 to 11:30 a.m. | Fellowship Hall | Calendar |
-| Youth game night | Friday, April 24 | 6:30 to 9:00 p.m. | Youth Room | (none; the calendar says "Room not set yet") |
+| Youth game night | Friday, April 24 | 6:30 to 9:00 p.m. | Youth Room | Calendar |
 
-What to find:
-- **Spring tea:** the date is stale. Carol Diaz’s email of March 26 moves it to Saturday, April 25, with RSVPs by April 20. Use the email, mark it [CONFIRM], and ask Carol to update the calendar.
-- **Grief support group:** April 1, 2026 is a Wednesday. The first Tuesday of April is April 7. Only counting it on a real calendar catches this.
-- **Youth game night:** the room is invented. It should be marked [CONFIRM]. Ask Jamie Park.
-- **Spring cleanup day:** right everywhere. Not every line is wrong, so check them all.
+Nothing to [CONFIRM].

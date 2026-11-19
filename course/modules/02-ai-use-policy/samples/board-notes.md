@@ -1,12 +1,12 @@
 FAKE SAMPLE FILE. Invented for training. Maple Street Church (FAKE) and its board do not exist.
 
-# Board meeting notes, Tuesday, March 10
+# Board meeting notes, Tuesday, March 10, 2026
 
 Maple Street Church (FAKE), Riverton (FAKE). Present: Ellen Marsh (chair), Pastor Dan Hale, Carol Lin, Tom Becker, Ben Adler (finance). Notes by Rita Gomez.
 
 ## Item 3: Staff use of AI tools
 
-Pastor Dan shared the staff survey. Four of six staff already use AI tools for some office work. He asked the board for a short written policy.
+Pastor Dan shared the staff survey. Three of six staff already use AI tools for some office work, and one more has tried them once. He asked the board for a short written policy.
 
 Concerns raised:
 - Carol Lin, on member privacy: “What does the law require before we put member information into an AI tool?” No one knew. No answer was recorded.

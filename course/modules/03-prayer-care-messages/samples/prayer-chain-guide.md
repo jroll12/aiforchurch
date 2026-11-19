@@ -4,17 +4,20 @@ FAKE SAMPLE FILE. Invented for training. Maple Street Church (FAKE) and its pray
 
 ## Who sees what
 
-| share_with | Who sees it | Where it goes |
+The prayer log is an office file. The office staff who keep it see every row. The share level says who else may hear each request.
+
+| share_with | Who else may hear it | Where it goes |
 | --- | --- | --- |
 | whole church | Everyone on the church email list | The Sunday prayer chain email |
 | prayer team only | The prayer team | The Wednesday prayer team email |
 | pastor only | Pastor Dan Hale | Never on a list |
-| do not share | The person who took the request | Never written into any message |
+| do not share | No one outside the office | Never written into any message |
 
 ## Rules
 
 - Share only the words in the request column. The private column is never shared, with anyone.
-- Use the name as the person gave it.
+- The office_note column is for the office: who asked, follow-up, whether there is news. It is never shared either.
+- Use the name as the person gave it. Words in brackets after a name, such as who asked, are an office note, not part of the name.
 - Do not add updates. If the log has no update, the message has none.
 - If you are not sure the person agreed to share something, leave it out and ask them first.
 
