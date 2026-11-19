@@ -1,21 +1,10 @@
 {
   "check": "course",
   "target": "built",
-  "ranAt": "2026-11-19T18:12:37.590Z",
-  "status": "fail",
-  "summary": "7 modules checked; 2 findings; topics 1 to 3 take 90 of 90 minutes, topics 4 to 7 take 60 of 80",
-  "findings": [
-    {
-      "module": "04-event-announcements",
-      "rule": "links",
-      "detail": "../05-volunteer-reminders/lesson.md does not exist"
-    },
-    {
-      "module": "05-volunteer-reminders",
-      "rule": "lesson exists",
-      "detail": "no lesson.md"
-    }
-  ],
+  "ranAt": "2026-11-19T18:13:27.718Z",
+  "status": "pass",
+  "summary": "7 modules checked; 0 findings; topics 1 to 3 take 90 of 90 minutes, topics 4 to 7 take 80 of 80",
+  "findings": [],
   "modules": [
     {
       "module": "01-newsletter",
@@ -38,6 +27,12 @@
     {
       "module": "04-event-announcements",
       "topic": 4,
+      "minutes": 20,
+      "status": "draft"
+    },
+    {
+      "module": "05-volunteer-reminders",
+      "topic": 5,
       "minutes": 20,
       "status": "draft"
     },
