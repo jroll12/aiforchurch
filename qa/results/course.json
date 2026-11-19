@@ -1,24 +1,29 @@
 {
   "check": "course",
   "target": "built",
-  "ranAt": "2026-11-19T17:47:08.609Z",
+  "ranAt": "2026-11-19T18:12:10.324Z",
   "status": "fail",
-  "summary": "1 modules checked; 3 findings; topics 1 to 3 take 30 of 90 minutes, topics 4 to 7 take 0 of 80",
+  "summary": "7 modules checked; 4 findings; topics 1 to 3 take 60 of 90 minutes, topics 4 to 7 take 40 of 80",
   "findings": [
     {
-      "module": "01-newsletter",
+      "module": "02-ai-use-policy",
       "rule": "links",
-      "detail": "../02-ai-use-policy/lesson.md does not exist"
+      "detail": "../03-prayer-care-messages/lesson.md does not exist"
     },
     {
-      "module": "01-newsletter",
-      "rule": "next",
-      "detail": "next is 02-ai-use-policy, but the next module is none"
+      "module": "03-prayer-care-messages",
+      "rule": "lesson exists",
+      "detail": "no lesson.md"
     },
     {
-      "module": "01-newsletter",
-      "rule": "trap",
-      "detail": "samples/staff-notes.md does not contain \"time still to be set\""
+      "module": "04-event-announcements",
+      "rule": "lesson exists",
+      "detail": "no lesson.md"
+    },
+    {
+      "module": "05-volunteer-reminders",
+      "rule": "lesson exists",
+      "detail": "no lesson.md"
     }
   ],
   "modules": [
@@ -26,6 +31,24 @@
       "module": "01-newsletter",
       "topic": 1,
       "minutes": 30,
+      "status": "draft"
+    },
+    {
+      "module": "02-ai-use-policy",
+      "topic": 2,
+      "minutes": 30,
+      "status": "draft"
+    },
+    {
+      "module": "06-meeting-minutes",
+      "topic": 6,
+      "minutes": 20,
+      "status": "draft"
+    },
+    {
+      "module": "07-bulletin-slides",
+      "topic": 7,
+      "minutes": 20,
       "status": "draft"
     }
   ]
