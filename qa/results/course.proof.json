@@ -1,9 +1,9 @@
 {
   "check": "course.proof",
   "target": "built",
-  "ranAt": "2026-11-19T17:46:06.587Z",
+  "ranAt": "2026-11-19T18:17:36.572Z",
   "status": "pass",
-  "summary": "proof fixture: caught 11 of 11 rules (all caught)",
+  "summary": "proof fixture: caught 12 of 12 rules (all caught)",
   "findings": [
     {
       "module": "02-bad",
@@ -67,6 +67,11 @@
     },
     {
       "module": "02-bad",
+      "rule": "answer key",
+      "detail": "no examples/answer-key.md for the facilitator"
+    },
+    {
+      "module": "02-bad",
       "rule": "contact data",
       "detail": "samples/notes.md: email at gmail.com"
     },
@@ -79,6 +84,16 @@
       "module": "02-bad",
       "rule": "handout",
       "detail": "no \"## Prompts to paste\" section"
+    },
+    {
+      "module": "02-bad",
+      "rule": "handout",
+      "detail": "needs the \"Practice files (all FAKE):\" line with [FILES LINK]"
+    },
+    {
+      "module": "02-bad",
+      "rule": "handout",
+      "detail": "needs \"Do every step in the same chat.\""
     }
   ]
 }

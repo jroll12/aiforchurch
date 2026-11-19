@@ -11,7 +11,10 @@
 //   - every file in samples/ and examples/ starts with a FAKE line
 //   - each declared trap appears in its sample file; the flaw appears in the flawed draft
 //   - emails only at example.org; phone numbers only 555-01xx
-//   - handout: one page (450 words at most), a "Prompts to paste" section with fenced prompts
+//   - handout: one page (450 words at most), a "Prompts to paste" section with fenced prompts,
+//     the practice files line with [FILES LINK], and "same chat"
+//   - the flawed draft does not give its answers away; examples/answer-key.md exists
+//   - CSV samples use 12-hour times
 import fs from 'node:fs';
 import path from 'node:path';
 import { ROOT, save } from './lib/common.mjs';
@@ -152,6 +155,7 @@ for (const dir of dirs) {
   for (const f of files) {
     const first = read(f).split('\n')[0];
     if (!/FAKE/.test(first)) add(dir, 'FAKE label', `${path.relative(base, f)} does not start with a FAKE line`);
+    if (f.endsWith('.csv') && /(^|,)([01]?\d|2[0-3]):[0-5]\d(,|$)/m.test(read(f)) && /(^|,)(1[3-9]|2[0-3]):[0-5]\d(,|$)/m.test(read(f))) add(dir, 'times', `${path.relative(base, f)} uses 24-hour times`);
   }
   for (const t of meta.trap) {
     const [file, needle] = t.split(' :: ').map((s) => s?.trim());
@@ -162,7 +166,13 @@ for (const dir of dirs) {
   }
   const flawed = path.join(base, 'examples/flawed-draft.md');
   if (!fs.existsSync(flawed)) add(dir, 'flawed draft', 'no examples/flawed-draft.md');
-  else if (meta.flaw && !read(flawed).includes(meta.flaw)) add(dir, 'flawed draft', `does not contain the flaw "${meta.flaw}"`);
+  else {
+    const fd = read(flawed);
+    if (meta.flaw && !fd.includes(meta.flaw)) add(dir, 'flawed draft', `does not contain the flaw "${meta.flaw}"`);
+    // It gets projected, so it must not carry its own answers (blind test finding, course/review-report.md).
+    if (/what to find|\(none;|answer key/i.test(fd)) add(dir, 'flawed draft', 'gives its answers away ("What to find", "(none;" or an answer key); put them in examples/answer-key.md');
+  }
+  if (!fs.existsSync(path.join(base, 'examples/answer-key.md'))) add(dir, 'answer key', 'no examples/answer-key.md for the facilitator');
   for (const f of [lessonFile, ...files, path.join(base, 'handout.md')].filter((x) => fs.existsSync(x))) {
     const t = read(f);
     for (const m of t.matchAll(/[\w.+-]+@([\w-]+(?:\.[\w-]+)+)/g)) if (m[1].toLowerCase() !== 'example.org') add(dir, 'contact data', `${path.relative(base, f)}: email at ${m[1]}`);
@@ -180,6 +190,8 @@ for (const dir of dirs) {
     const prompts = h.split(/^## /m).find((s) => s.startsWith('Prompts to paste'));
     if (!prompts) add(dir, 'handout', 'no "## Prompts to paste" section');
     else if (!/```[\s\S]+?```/.test(prompts)) add(dir, 'handout', 'Prompts to paste has no fenced prompt');
+    if (!/\*\*Practice files \(all FAKE\):\*\*/.test(h) || !/\[FILES LINK\]/.test(h)) add(dir, 'handout', 'needs the "Practice files (all FAKE):" line with [FILES LINK]');
+    if (!/same chat/i.test(h)) add(dir, 'handout', 'needs "Do every step in the same chat."');
   }
 }
 
@@ -190,7 +202,7 @@ if (total(4, 7) > 80) add('(all)', 'agenda', `topics 4 to 7 take ${total(4, 7)} 
 
 if (proof) {
   // The fixture module breaks one of each rule; every rule must be caught.
-  const want = ['front matter', 'matches the site', 'duration', 'sections', 'exercise', 'links', 'FAKE label', 'trap', 'flawed draft', 'contact data', 'handout'];
+  const want = ['front matter', 'matches the site', 'duration', 'sections', 'exercise', 'links', 'FAKE label', 'trap', 'flawed draft', 'answer key', 'contact data', 'handout'];
   const caught = want.filter((r) => findings.some((f) => f.rule === r));
   save(name, {
     status: caught.length === want.length ? 'pass' : 'fail',

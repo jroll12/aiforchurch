@@ -61,7 +61,11 @@ Each 30-minute topic is a 5-minute idea, a 15 to 20 minute exercise, then the mi
 - One printed page: 450 words at most.
 - It starts with the title and the outcome.
 - It has a `## Prompts to paste` section: one fenced block per prompt, in plain words, using straight quotes. The prompts must work on their own when pasted.
-- It ends with the habit as a short checklist.
+- Right under the outcome, it has two lines:
+  - "**Practice files (all FAKE):**" with the file names, then where to get them: [FILES LINK] until the workshop decides how files are shared.
+  - "**Do every step in the same chat.**" Later prompts refer back to earlier ones.
+- It ends with the habit as a short checklist. Each box must be true of a correct result and false of the prepared mistake, so test every box against both.
+- Step 4 says which source wins when two disagree (for example, a later email over the calendar).
 
 ## Sample files (checked)
 
@@ -72,6 +76,7 @@ Each 30-minute topic is a 5-minute idea, a 15 to 20 minute exercise, then the mi
 - **Emails** only at example.org (checked).
 - **Phone numbers** only in the 555-01xx range, for example 555-0142 (checked).
 - **Formats:** Markdown (`.md`) for notes, letters and drafts; CSV (`.csv`) for calendars and lists. No Word files, so everything stays readable in the repo.
+- **Times:** written the way people write them ("6:30 p.m."), never 24-hour, so attendees don't convert while checking.
 
 ## The trap and the prepared mistake
 
@@ -79,4 +84,7 @@ Each module teaches one mistake Claude can make on this task. The mistake has to
 
 - **A trap in the samples:** a conflict between files (an old time against a new one), or a gap (a detail the notes don't give), that tempts a guess.
 - **A prepared mistake:** `examples/flawed-draft.md` is the output with that mistake in it. Facilitators show it when Claude gets it right live. It still starts with a FAKE line.
+  - **It must look like a real draft, because it gets projected.** No "What to find" list and no notes. Any table in it must not admit the errors: a wrong row shows a plausible but wrong source line, or the row is simply missing, the way a real draft would fail. (checked)
+  - **The answers go in `examples/answer-key.md`,** for the facilitator only, also starting with a FAKE line. (checked)
+- **The prompts usually prevent the mistake.** That is the point of teaching them, so expect to use the prepared mistake most of the time. Say so in the facilitator notes.
 - **The fix in the habit:** run as written, the habit catches the mistake.
