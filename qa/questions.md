@@ -138,6 +138,21 @@ Shared
   - `PAYMENT_REF_PARAM` null blocks launch.
   - qa/audit-report.md rows 1, 2, 14 and 18 to 20.
 
+## Calls made on Jarret's behalf (Stage 5, 2026-11-20: "Do what you think is best")
+
+Each call is easy to reverse and is listed again in qa/stage5-report.md for the review pass.
+
+- **C1 Topics 4 to 7:** kept as drafted, with [CONFIRM]. Only Jarret can name the real topics.
+- **C2 Habit names:** Topic 6's habit is now "Record check." (was "Decision check."), so it doesn't blur with Topic 2's "Decision-line check."
+- **C3 Governing body:** "board" everywhere, matching the site ("your pastor and board"). Topic 6 no longer says "church council".
+- **C4 Real prayer requests:** Topic 3 keeps its safe-use rule on the handout.
+- **C5 Ray's request** (made by his wife) stays as a discussion point.
+- **C6 Easter** stays in Topic 5's sheet.
+- **C7 Topic 4:** the newer email wins, and the row stays [CONFIRM] until the calendar is fixed.
+- **C8 Lyrics:** titles only. The facilitator line says lyrics need the church's song license.
+- **C9** Topics 6 and 7 keep the shared April 18 spring cleanup.
+- **C10 Laptop:** stays [CONFIRM].
+
 ## Design file issues (design/ is read-only, so they are logged here)
 
 - **Mobile artboards render without side padding** in a browser. `.in{padding:0 20px}` is declared before `.hero`, `.s` and `.ft`, whose padding shorthands reset left and right to 0. HANDOFF-SPEC.md section 4 says 20px, so the build uses 20px. This is why the mobile pages run taller than the artboards in qa/screenshots/.

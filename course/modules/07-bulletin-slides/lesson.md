@@ -64,4 +64,4 @@ Public worship and announcement text only. Keep prayer requests, health details 
   - Hymn numbers in both files are invented and match no real hymnal. The files use hymn titles only, never lyrics.
 - **Expect to use the prepared draft.** The prompts steer Claude away from these mistakes, which is the point of teaching them, so Claude usually gets this right live. That is why `examples/flawed-draft.md` exists. Don’t weaken the prompts to make Claude fail.
 - **If Claude gets it right live:** open `examples/flawed-draft.md` and ask the room to find what’s wrong. The answers are in `examples/answer-key.md`; keep that file off the screen. In short: last week’s hymn line, last week’s room, a time change with its start date dropped, no slide for office hours, and an invented “Lunch provided” in the website post.
-- **Lyrics:** if someone asks about putting lyrics on slides, say that depends on the church’s own licensing and is outside this topic.
+- **Lyrics:** if someone asks about putting lyrics on slides, say that lyrics need your church’s song license, and that licensing is outside this topic.

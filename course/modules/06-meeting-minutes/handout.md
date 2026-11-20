@@ -18,7 +18,7 @@ By the end, you can turn rough notes into minutes your board can approve.
 Steps 1 and 2, with both files pasted below it:
 
 ```
-Below are the secretary's rough notes from our church council meeting, then last month's approved minutes. Use last month's minutes for layout only, never as a source of facts. Write draft minutes from the notes. Then write the action items as a table: who, what, by when. Then add a decision table with one row per motion and one row per action item. For a motion, give its outcome and vote count. For an action item, give its owner and date. In every row, quote the exact line from the notes it came from.
+Below are the secretary's rough notes from our church board meeting, then last month's approved minutes. Use last month's minutes for layout only, never as a source of facts. Write draft minutes from the notes. Then write the action items as a table: who, what, by when. Then add a decision table with one row per motion and one row per action item. For a motion, give its outcome and vote count. For an action item, give its owner and date. In every row, quote the exact line from the notes it came from.
 ```
 
 Step 3:
@@ -29,7 +29,7 @@ Check the minutes, the action items and the decision table you just wrote agains
 
 Step 4 is yours. Open the notes and tick each row of the decision table that matches.
 
-## Decision check
+## Record check
 
 - [ ] Each motion’s outcome (passed, failed, tabled) is the one the notes give.
 - [ ] Every vote count is in the notes. No count in the notes means [CONFIRM].

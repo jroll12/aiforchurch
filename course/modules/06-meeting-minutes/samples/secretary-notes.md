@@ -1,6 +1,6 @@
-FAKE SAMPLE FILE. Invented for training. Maple Street Church (FAKE) does not exist. A council secretary’s rough notes, typed up the night of the meeting.
+FAKE SAMPLE FILE. Invented for training. Maple Street Church (FAKE) does not exist. A board secretary’s rough notes, typed up the night of the meeting.
 
-# Council mtg notes, Tues April 7, 2026
+# Board mtg notes, Tues April 7, 2026
 
 Room 2, started 7:05 p.m. Mark Ellis (secretary) taking notes.
 Here: Carol Bennett (chair), Pastor Dan Hale, Tom Reyes, Linda Shaw (treasurer), Ruth Adams, Mark Ellis. Greg Moore absent. Rita Gomez (office manager) sat in for the office.

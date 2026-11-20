@@ -40,7 +40,7 @@ The notes say the roof motion was tabled to the May meeting, and no one was name
 
 ## The habit
 
-### Decision check.
+### Record check.
 
 Every motion, outcome, vote count, owner and date in the minutes needs a line in the notes, and every action item in the notes needs a row. If the notes don’t say it, mark it [CONFIRM] and ask the secretary. Last month’s minutes are for layout only, so the notes win. Minutes are a record, so nothing is improved or guessed. Then read each motion and date against the notes once more before the board sees it.
 
@@ -51,7 +51,7 @@ Open business only. Keep personnel matters, pastoral care, member giving and any
 ## Downloads
 
 - [Handout (PDF)](handout.md): One page to print or keep.
-- [Sample files, all labeled FAKE](samples/): The secretary’s rough notes from a council meeting and last month’s approved minutes, for layout only.
+- [Sample files, all labeled FAKE](samples/): The secretary’s rough notes from a board meeting and last month’s approved minutes, for layout only.
 
 ## Next
 

@@ -1,6 +1,6 @@
 FAKE SAMPLE FILE. Invented for training. Maple Street Church (FAKE) does not exist. Last month’s approved minutes, for layout only.
 
-# Maple Street Church (FAKE) Council: Minutes of Tuesday, March 10, 2026
+# Maple Street Church (FAKE) Board: Minutes of Tuesday, March 10, 2026
 
 **Present:** Carol Bennett (chair), Pastor Dan Hale, Tom Reyes, Linda Shaw, Ruth Adams, Greg Moore, Mark Ellis (secretary).
 **Also present:** Rita Gomez (office manager).
