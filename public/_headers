@@ -1,0 +1,11 @@
+# Response headers, read by Netlify and Cloudflare Pages (other hosts ignore it).
+# The member area is unlisted: pages carry a robots meta tag, and these headers
+# keep search engines off the downloads too, which cannot carry one (qa/questions.md D51).
+/course/*
+  X-Robots-Tag: noindex, nofollow
+/topics/*
+  X-Robots-Tag: noindex, nofollow
+/resources/*
+  X-Robots-Tag: noindex, nofollow
+/downloads/*
+  X-Robots-Tag: noindex, nofollow

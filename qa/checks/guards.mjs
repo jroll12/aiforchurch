@@ -4,6 +4,8 @@
 // and only allowed external hosts (rule 5).
 // Repo: no em dashes in docs, comments or commit messages (rule 8), and no
 // color literals in the site stylesheet (tokens.css is the only color source).
+// Hosting: dist/_headers sends noindex for every member route (D51).
+//   node qa/checks/guards.mjs --proof   runs the headers rule on a fixture missing /topics/
 import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
@@ -15,6 +17,30 @@ const notes = [];
 const read = (f) => fs.readFileSync(f, 'utf8');
 const walk = (dir) =>
   fs.readdirSync(dir, { withFileTypes: true }).flatMap((d) => (d.isDirectory() ? walk(path.join(dir, d.name)) : [path.join(dir, d.name)]));
+
+// Every member route prefix must get X-Robots-Tag noindex from _headers (D51).
+const MEMBER_PREFIXES = ['/course/', '/topics/', '/resources/', '/downloads/'];
+function headersFindings(text, where) {
+  const out = [];
+  const blocks = text.split('\n').reduce((acc, line) => {
+    if (/^\//.test(line)) acc.push({ path: line.trim(), lines: [] });
+    else if (acc.length && /^\s+\S/.test(line)) acc[acc.length - 1].lines.push(line.trim());
+    return acc;
+  }, []);
+  for (const pre of MEMBER_PREFIXES) {
+    const b = blocks.find((x) => x.path === `${pre}*`);
+    if (!b || !b.lines.some((l) => /^X-Robots-Tag:\s*noindex/i.test(l))) out.push(`${where}: no X-Robots-Tag noindex for ${pre}*`);
+  }
+  return out;
+}
+
+if (process.argv.includes('--proof')) {
+  // The fixture leaves out /topics/ on purpose; the check must find exactly that.
+  const got = headersFindings(read(path.join(ROOT, 'qa/checks/fixtures/headers/_headers')), 'fixture _headers');
+  const ok = got.length === 1 && got[0].includes('/topics/');
+  save('guards.proof', { status: ok ? 'pass' : 'fail', summary: `headers fixture: ${got.length} findings (${got.join('; ')}); expected 1 for /topics/`, findings: got });
+  process.exit(0);
+}
 
 /* ---------- dist/ ---------- */
 if (TARGET === 'design' || !fs.existsSync(DIST)) {
@@ -56,6 +82,10 @@ if (TARGET === 'design' || !fs.existsSync(DIST)) {
     if (isMember && !/<meta name="robots" content="[^"]*noindex/.test(text)) findings.push(`member page not noindex: ${route}`);
     if (!isMember) for (const m of text.matchAll(/\shref="([^"]*)"/g)) if (MEMBER_ROUTES.some((r) => m[1].startsWith(r))) findings.push(`public page ${route} links into the member area: ${m[1]}`);
   }
+
+  const headersFile = path.join(DIST, '_headers');
+  if (!fs.existsSync(headersFile)) findings.push('dist/_headers missing: downloads would have no noindex header');
+  else findings.push(...headersFindings(read(headersFile), 'dist/_headers'));
 
   // The mock build's service URLs must never reach the real build.
   for (const { f, text } of all) if (text.includes('/__mock/')) findings.push(`mock service URL in ${f}`);

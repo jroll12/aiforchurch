@@ -148,6 +148,8 @@ Shared
 - **D56 Draft lessons on the pages:** all seven lessons are `status: draft` but show as course content. The member area is not public until D51 is settled; approve each lesson before then (course/README.md).
 - **D57 Handout PDF footer:** the honesty line only, exactly as on the site.
 
+- **D58 Hosting config:** `netlify.toml` (build `npm run build`, publish `dist`, Node 22) and `public/_headers` (X-Robots-Tag noindex on /course/, /topics/, /resources/, /downloads/; read by Netlify and Cloudflare Pages, ignored elsewhere). The build stays host-agnostic. qa/checks/guards.mjs fails if dist/_headers misses a member prefix (`--proof` shows it). An empty Netlify project, claude-for-church-offices-preview, exists; it is not deployed because Netlify refused the password lock (422), likely a plan limit.
+
 ## Calls made on Jarret's behalf (Stage 5, 2026-11-20: "Do what you think is best")
 
 Each call is easy to reverse and is listed again in qa/stage5-report.md for the review pass.

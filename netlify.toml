@@ -1,0 +1,10 @@
+# Netlify build settings. Other hosts ignore this file; the build itself stays
+# host-agnostic (HANDOFF-SPEC.md section 9): `npm run build` writes dist/.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22.23.4"
+  # Playwright is only for the local checks; the host never needs a browser.
+  PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD = "1"
