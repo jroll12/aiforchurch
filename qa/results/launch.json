@@ -1,9 +1,9 @@
 {
   "check": "launch",
   "target": "built",
-  "ranAt": "2026-11-12T04:12:10.530Z",
+  "ranAt": "2026-11-20T01:55:51.478Z",
   "status": "fail",
-  "summary": "not ready to launch: 17 blockers (12 placeholder, 4 service, 1 indexing), 3 warnings",
+  "summary": "not ready to launch: 20 blockers (14 placeholder, 4 service, 1 indexing, 1 member access), 3 warnings",
   "blockers": [
     {
       "kind": "placeholder",
@@ -34,11 +34,21 @@
       "pages": [
         "/about/",
         "/confirmation/",
+        "/course/",
         "/",
         "/questions/",
+        "/resources/",
+        "/topics/ai-use-policy/",
+        "/topics/bulletin-slides/",
+        "/topics/event-announcements/",
+        "/topics/",
+        "/topics/meeting-minutes/",
+        "/topics/newsletter/",
+        "/topics/prayer-care-messages/",
+        "/topics/volunteer-reminders/",
         "/workshop/"
       ],
-      "count": 22,
+      "count": 67,
       "fix": "src/copy.ts:29, src/copy.ts:64, src/copy.ts:67, src/copy.ts:68"
     },
     {
@@ -48,13 +58,23 @@
         "/about/",
         "/board/",
         "/confirmation/",
+        "/course/",
         "/",
         "/questions/",
         "/register/",
         "/register/review/",
+        "/resources/",
+        "/topics/ai-use-policy/",
+        "/topics/bulletin-slides/",
+        "/topics/event-announcements/",
+        "/topics/",
+        "/topics/meeting-minutes/",
+        "/topics/newsletter/",
+        "/topics/prayer-care-messages/",
+        "/topics/volunteer-reminders/",
         "/workshop/"
       ],
-      "count": 10,
+      "count": 20,
       "fix": "src/config.ts:27"
     },
     {
@@ -70,6 +90,24 @@
       ],
       "count": 7,
       "fix": "src/config.ts:20"
+    },
+    {
+      "kind": "placeholder",
+      "item": "[NAME 1]",
+      "pages": [
+        "/topics/prayer-care-messages/"
+      ],
+      "count": 1,
+      "fix": "not found in src/"
+    },
+    {
+      "kind": "placeholder",
+      "item": "[NAME 2]",
+      "pages": [
+        "/topics/prayer-care-messages/"
+      ],
+      "count": 1,
+      "fix": "not found in src/"
     },
     {
       "kind": "placeholder",
@@ -172,8 +210,13 @@
     },
     {
       "kind": "indexing",
-      "item": "Search engines are blocked (robots noindex) on 6 pages",
+      "item": "Search engines are blocked (robots noindex) on 16 pages",
       "fix": "src/config.ts NOINDEX"
+    },
+    {
+      "kind": "member access",
+      "item": "Member access not set: the member pages are unlisted but open to anyone with the address",
+      "fix": "src/config.ts MEMBER_ACCESS (host password protection or a login service)"
     }
   ],
   "warnings": [
@@ -182,7 +225,7 @@
       "fix": "src/config.ts EVENT"
     },
     {
-      "item": "6 pages have no description for search results and link previews",
+      "item": "16 pages have no description for search results and link previews",
       "fix": "qa/stage2-copy-draft.md description rows, then src/copy.ts DESCRIPTIONS"
     },
     {

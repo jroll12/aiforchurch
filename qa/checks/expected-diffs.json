@@ -54,5 +54,40 @@
     "side": "built-only",
     "text": "[select] Communications",
     "reason": "Attendee 2 role as intended (see the design-only entry above). Test fixture value only; the shipped select starts on \"Choose a role\"."
+  },
+  {
+    "screen": "topic",
+    "width": 390,
+    "side": "design-only",
+    "text": "Church AI use policy",
+    "reason": "Next topic title: the Topic artboard's Next button says \"Church AI use policy\"; the site and the lesson use the Home design's title \"A church AI use policy\" (design/home-c-*). One title for one topic."
+  },
+  {
+    "screen": "topic",
+    "width": 390,
+    "side": "built-only",
+    "text": "A church AI use policy",
+    "reason": "Next topic title: the Topic artboard's Next button says \"Church AI use policy\"; the site and the lesson use the Home design's title \"A church AI use policy\" (design/home-c-*). One title for one topic."
+  },
+  {
+    "screen": "topic",
+    "width": 1440,
+    "side": "design-only",
+    "text": "Church AI use policy",
+    "reason": "Next topic title: the Topic artboard's Next button says \"Church AI use policy\"; the site and the lesson use the Home design's title \"A church AI use policy\" (design/home-c-*). One title for one topic."
+  },
+  {
+    "screen": "topic",
+    "width": 1440,
+    "side": "built-only",
+    "text": "A church AI use policy",
+    "reason": "Next topic title: the Topic artboard's Next button says \"Church AI use policy\"; the site and the lesson use the Home design's title \"A church AI use policy\" (design/home-c-*). One title for one topic."
+  },
+  {
+    "screen": "topic",
+    "width": 1440,
+    "side": "design-only",
+    "text": "Account",
+    "reason": "Member nav item Account omitted: it needs a login service, which does not exist yet, and nav links only to pages that exist (CLAUDE.md hard rule 6; qa/stage5-report.md)."
   }
 ]

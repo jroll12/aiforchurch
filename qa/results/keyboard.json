@@ -1,9 +1,9 @@
 {
   "check": "keyboard",
   "target": "built",
-  "ranAt": "2026-11-19T18:27:20.244Z",
+  "ranAt": "2026-11-20T01:54:11.886Z",
   "status": "pass",
-  "summary": "16 page layouts walked, all stops visible, FAQ, errors and menu OK",
+  "summary": "36 page layouts walked, all stops visible, FAQ, errors and menu OK",
   "problems": [],
   "pages": [
     {
@@ -811,6 +811,248 @@
         },
         "ok": true
       }
+    },
+    {
+      "screen": "topic",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st1",
+            "top": 858,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st2",
+            "top": 1068,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st3",
+            "top": 1267,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st4",
+            "top": 1413,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 2548,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEStaff note\"",
+            "top": 2692,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.nx \"Next topicA church AI use policy\"",
+            "top": 2979,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 9,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]",
+          "input#st1",
+          "input#st2",
+          "input#st3",
+          "input#st4",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEStaff note\"",
+          "a.nx \"Next topicA church AI use policy\""
+        ]
+      },
+      "faq": [],
+      "menu": {
+        "opened": {
+          "expanded": "true",
+          "navVisible": true
+        },
+        "next": {
+          "el": "a \"Course home\"",
+          "inNav": true
+        },
+        "closed": {
+          "expanded": "false",
+          "navVisible": false,
+          "focusOnButton": true
+        },
+        "ok": true
+      }
+    },
+    {
+      "screen": "topic",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Course home\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Topics\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Resources\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st1",
+            "top": 774,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st2",
+            "top": 913,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st3",
+            "top": 1044,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st4",
+            "top": 1145,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 2087,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEStaff note\"",
+            "top": 2189,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.nx \"Next topicA church AI use policy\"",
+            "top": 2402,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 11,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Course home\"",
+          "a \"Topics\"",
+          "a \"Resources\"",
+          "input#st1",
+          "input#st2",
+          "input#st3",
+          "input#st4",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEStaff note\"",
+          "a.nx \"Next topicA church AI use policy\""
+        ]
+      },
+      "faq": []
     },
     {
       "screen": "workshop",
@@ -1864,6 +2106,2324 @@
           "a \"About\"",
           "a \"Questions\"",
           "a.lnk \"Email the one-page summary to your board\""
+        ]
+      },
+      "faq": []
+    },
+    {
+      "screen": "course",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"01Weekly newsletter from staff notesBy t\"",
+            "top": 344,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"02A church AI use policyBy the end, you \"",
+            "top": 572,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"03Prayer chain and care messages, privac\"",
+            "top": 722,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"04Event announcements from a ministry ca\"",
+            "top": 897,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"05Volunteer schedules and reminder email\"",
+            "top": 1097,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"06Meeting notes into minutes and action \"",
+            "top": 1246,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"07Bulletin and slide text from one sourc\"",
+            "top": 1421,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.btn.alt \"Resources\"",
+            "top": 2593,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 10,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]",
+          "a \"01Weekly newsletter from staff notesBy t\"",
+          "a \"02A church AI use policyBy the end, you \"",
+          "a \"03Prayer chain and care messages, privac\"",
+          "a \"04Event announcements from a ministry ca\"",
+          "a \"05Volunteer schedules and reminder email\"",
+          "a \"06Meeting notes into minutes and action \"",
+          "a \"07Bulletin and slide text from one sourc\"",
+          "a.btn.alt \"Resources\""
+        ]
+      },
+      "faq": [],
+      "menu": {
+        "opened": {
+          "expanded": "true",
+          "navVisible": true
+        },
+        "next": {
+          "el": "a \"Course home\"",
+          "inNav": true
+        },
+        "closed": {
+          "expanded": "false",
+          "navVisible": false,
+          "focusOnButton": true
+        },
+        "ok": true
+      }
+    },
+    {
+      "screen": "course",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Course home\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Topics\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Resources\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"01Weekly newsletter from staff notesBy t\"",
+            "top": 403,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"02A church AI use policyBy the end, you \"",
+            "top": 549,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"03Prayer chain and care messages, privac\"",
+            "top": 668,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"04Event announcements from a ministry ca\"",
+            "top": 787,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"05Volunteer schedules and reminder email\"",
+            "top": 933,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"06Meeting notes into minutes and action \"",
+            "top": 1052,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"07Bulletin and slide text from one sourc\"",
+            "top": 1172,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.btn.alt \"Resources\"",
+            "top": 1908,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 12,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Course home\"",
+          "a \"Topics\"",
+          "a \"Resources\"",
+          "a \"01Weekly newsletter from staff notesBy t\"",
+          "a \"02A church AI use policyBy the end, you \"",
+          "a \"03Prayer chain and care messages, privac\"",
+          "a \"04Event announcements from a ministry ca\"",
+          "a \"05Volunteer schedules and reminder email\"",
+          "a \"06Meeting notes into minutes and action \"",
+          "a \"07Bulletin and slide text from one sourc\"",
+          "a.btn.alt \"Resources\""
+        ]
+      },
+      "faq": []
+    },
+    {
+      "screen": "topics",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"01Weekly newsletter from staff notesAbou\"",
+            "top": 316,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"02A church AI use policyAbout 30 minutes\"",
+            "top": 439,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"03Prayer chain and care messages, privac\"",
+            "top": 536,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"04Event announcements from a ministry ca\"",
+            "top": 658,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"05Volunteer schedules and reminder email\"",
+            "top": 806,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"06Meeting notes into minutes and action \"",
+            "top": 928,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"07Bulletin and slide text from one sourc\"",
+            "top": 1050,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 9,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]",
+          "a \"01Weekly newsletter from staff notesAbou\"",
+          "a \"02A church AI use policyAbout 30 minutes\"",
+          "a \"03Prayer chain and care messages, privac\"",
+          "a \"04Event announcements from a ministry ca\"",
+          "a \"05Volunteer schedules and reminder email\"",
+          "a \"06Meeting notes into minutes and action \"",
+          "a \"07Bulletin and slide text from one sourc\""
+        ]
+      },
+      "faq": [],
+      "menu": {
+        "opened": {
+          "expanded": "true",
+          "navVisible": true
+        },
+        "next": {
+          "el": "a \"Course home\"",
+          "inNav": true
+        },
+        "closed": {
+          "expanded": "false",
+          "navVisible": false,
+          "focusOnButton": true
+        },
+        "ok": true
+      }
+    },
+    {
+      "screen": "topics",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Course home\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Topics\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Resources\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"01Weekly newsletter from staff notesAbou\"",
+            "top": 372,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"02A church AI use policyAbout 30 minutes\"",
+            "top": 491,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"03Prayer chain and care messages, privac\"",
+            "top": 611,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"04Event announcements from a ministry ca\"",
+            "top": 730,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"05Volunteer schedules and reminder email\"",
+            "top": 849,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"06Meeting notes into minutes and action \"",
+            "top": 969,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"07Bulletin and slide text from one sourc\"",
+            "top": 1088,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 11,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Course home\"",
+          "a \"Topics\"",
+          "a \"Resources\"",
+          "a \"01Weekly newsletter from staff notesAbou\"",
+          "a \"02A church AI use policyAbout 30 minutes\"",
+          "a \"03Prayer chain and care messages, privac\"",
+          "a \"04Event announcements from a ministry ca\"",
+          "a \"05Volunteer schedules and reminder email\"",
+          "a \"06Meeting notes into minutes and action \"",
+          "a \"07Bulletin and slide text from one sourc\""
+        ]
+      },
+      "faq": []
+    },
+    {
+      "screen": "resources",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 279,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEStaff note\"",
+            "top": 423,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 711,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEBoard meet\"",
+            "top": 854,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 1161,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEA prayer r\"",
+            "top": 1305,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 1612,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEMinistry c\"",
+            "top": 1756,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 2063,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKESign-up sh\"",
+            "top": 2207,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 2488,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEThe secret\"",
+            "top": 2631,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 2965,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEThis Sunda\"",
+            "top": 3109,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 16,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEStaff note\"",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEBoard meet\"",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEA prayer r\"",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEMinistry c\"",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKESign-up sh\"",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEThe secret\"",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEThis Sunda\""
+        ]
+      },
+      "faq": [],
+      "menu": {
+        "opened": {
+          "expanded": "true",
+          "navVisible": true
+        },
+        "next": {
+          "el": "a \"Course home\"",
+          "inNav": true
+        },
+        "closed": {
+          "expanded": "false",
+          "navVisible": false,
+          "focusOnButton": true
+        },
+        "ok": true
+      }
+    },
+    {
+      "screen": "resources",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Course home\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Topics\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Resources\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 312,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEStaff note\"",
+            "top": 414,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 622,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEBoard meet\"",
+            "top": 723,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 931,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEA prayer r\"",
+            "top": 1033,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 1241,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEMinistry c\"",
+            "top": 1342,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 1550,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKESign-up sh\"",
+            "top": 1652,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 1860,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEThe secret\"",
+            "top": 1962,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 2197,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEThis Sunda\"",
+            "top": 2299,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 18,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Course home\"",
+          "a \"Topics\"",
+          "a \"Resources\"",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEStaff note\"",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEBoard meet\"",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEA prayer r\"",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEMinistry c\"",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKESign-up sh\"",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEThe secret\"",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEThis Sunda\""
+        ]
+      },
+      "faq": []
+    },
+    {
+      "screen": "topic-ai-use-policy",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st1",
+            "top": 944,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st2",
+            "top": 1208,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st3",
+            "top": 1461,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st4",
+            "top": 1715,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 3505,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEBoard meet\"",
+            "top": 3649,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.nx \"Next topicPrayer chain and care messages\"",
+            "top": 3937,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 9,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]",
+          "input#st1",
+          "input#st2",
+          "input#st3",
+          "input#st4",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEBoard meet\"",
+          "a.nx \"Next topicPrayer chain and care messages\""
+        ]
+      },
+      "faq": [],
+      "menu": {
+        "opened": {
+          "expanded": "true",
+          "navVisible": true
+        },
+        "next": {
+          "el": "a \"Course home\"",
+          "inNav": true
+        },
+        "closed": {
+          "expanded": "false",
+          "navVisible": false,
+          "focusOnButton": true
+        },
+        "ok": true
+      }
+    },
+    {
+      "screen": "topic-ai-use-policy",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Course home\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Topics\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Resources\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st1",
+            "top": 739,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st2",
+            "top": 908,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st3",
+            "top": 1039,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st4",
+            "top": 1170,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 2420,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEBoard meet\"",
+            "top": 2522,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.nx \"Next topicPrayer chain and care messages\"",
+            "top": 2735,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 11,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Course home\"",
+          "a \"Topics\"",
+          "a \"Resources\"",
+          "input#st1",
+          "input#st2",
+          "input#st3",
+          "input#st4",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEBoard meet\"",
+          "a.nx \"Next topicPrayer chain and care messages\""
+        ]
+      },
+      "faq": []
+    },
+    {
+      "screen": "topic-prayer-care-messages",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st1",
+            "top": 923,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st2",
+            "top": 1241,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st3",
+            "top": 1467,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st4",
+            "top": 1667,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 3427,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEA prayer r\"",
+            "top": 3571,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.nx \"Next topicEvent announcements from a min\"",
+            "top": 3858,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 9,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]",
+          "input#st1",
+          "input#st2",
+          "input#st3",
+          "input#st4",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEA prayer r\"",
+          "a.nx \"Next topicEvent announcements from a min\""
+        ]
+      },
+      "faq": [],
+      "menu": {
+        "opened": {
+          "expanded": "true",
+          "navVisible": true
+        },
+        "next": {
+          "el": "a \"Course home\"",
+          "inNav": true
+        },
+        "closed": {
+          "expanded": "false",
+          "navVisible": false,
+          "focusOnButton": true
+        },
+        "ok": true
+      }
+    },
+    {
+      "screen": "topic-prayer-care-messages",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Course home\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Topics\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Resources\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st1",
+            "top": 771,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st2",
+            "top": 970,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st3",
+            "top": 1101,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st4",
+            "top": 1202,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 2420,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEA prayer r\"",
+            "top": 2522,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.nx \"Next topicEvent announcements from a min\"",
+            "top": 2735,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 11,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Course home\"",
+          "a \"Topics\"",
+          "a \"Resources\"",
+          "input#st1",
+          "input#st2",
+          "input#st3",
+          "input#st4",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEA prayer r\"",
+          "a.nx \"Next topicEvent announcements from a min\""
+        ]
+      },
+      "faq": []
+    },
+    {
+      "screen": "topic-event-announcements",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st1",
+            "top": 959,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st2",
+            "top": 1169,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st3",
+            "top": 1368,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st4",
+            "top": 1595,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 3249,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEMinistry c\"",
+            "top": 3393,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.nx \"Next topicVolunteer schedules and remind\"",
+            "top": 3680,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 9,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]",
+          "input#st1",
+          "input#st2",
+          "input#st3",
+          "input#st4",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEMinistry c\"",
+          "a.nx \"Next topicVolunteer schedules and remind\""
+        ]
+      },
+      "faq": [],
+      "menu": {
+        "opened": {
+          "expanded": "true",
+          "navVisible": true
+        },
+        "next": {
+          "el": "a \"Course home\"",
+          "inNav": true
+        },
+        "closed": {
+          "expanded": "false",
+          "navVisible": false,
+          "focusOnButton": true
+        },
+        "ok": true
+      }
+    },
+    {
+      "screen": "topic-event-announcements",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Course home\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Topics\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Resources\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st1",
+            "top": 867,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st2",
+            "top": 1006,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st3",
+            "top": 1107,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st4",
+            "top": 1238,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 2393,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEMinistry c\"",
+            "top": 2495,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.nx \"Next topicVolunteer schedules and remind\"",
+            "top": 2708,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 11,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Course home\"",
+          "a \"Topics\"",
+          "a \"Resources\"",
+          "input#st1",
+          "input#st2",
+          "input#st3",
+          "input#st4",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEMinistry c\"",
+          "a.nx \"Next topicVolunteer schedules and remind\""
+        ]
+      },
+      "faq": []
+    },
+    {
+      "screen": "topic-volunteer-reminders",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st1",
+            "top": 923,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st2",
+            "top": 1106,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st3",
+            "top": 1251,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st4",
+            "top": 1505,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 3048,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKESign-up sh\"",
+            "top": 3191,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.nx \"Next topicMeeting notes into minutes and\"",
+            "top": 3453,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 9,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]",
+          "input#st1",
+          "input#st2",
+          "input#st3",
+          "input#st4",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKESign-up sh\"",
+          "a.nx \"Next topicMeeting notes into minutes and\""
+        ]
+      },
+      "faq": [],
+      "menu": {
+        "opened": {
+          "expanded": "true",
+          "navVisible": true
+        },
+        "next": {
+          "el": "a \"Course home\"",
+          "inNav": true
+        },
+        "closed": {
+          "expanded": "false",
+          "navVisible": false,
+          "focusOnButton": true
+        },
+        "ok": true
+      }
+    },
+    {
+      "screen": "topic-volunteer-reminders",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Course home\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Topics\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Resources\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st1",
+            "top": 768,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st2",
+            "top": 907,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st3",
+            "top": 1008,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st4",
+            "top": 1139,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 2263,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKESign-up sh\"",
+            "top": 2365,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.nx \"Next topicMeeting notes into minutes and\"",
+            "top": 2578,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 11,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Course home\"",
+          "a \"Topics\"",
+          "a \"Resources\"",
+          "input#st1",
+          "input#st2",
+          "input#st3",
+          "input#st4",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKESign-up sh\"",
+          "a.nx \"Next topicMeeting notes into minutes and\""
+        ]
+      },
+      "faq": []
+    },
+    {
+      "screen": "topic-meeting-minutes",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st1",
+            "top": 894,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st2",
+            "top": 1104,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st3",
+            "top": 1412,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st4",
+            "top": 1638,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 3184,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEThe secret\"",
+            "top": 3328,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.nx \"Next topicBulletin and slide text from o\"",
+            "top": 3642,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 9,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]",
+          "input#st1",
+          "input#st2",
+          "input#st3",
+          "input#st4",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEThe secret\"",
+          "a.nx \"Next topicBulletin and slide text from o\""
+        ]
+      },
+      "faq": [],
+      "menu": {
+        "opened": {
+          "expanded": "true",
+          "navVisible": true
+        },
+        "next": {
+          "el": "a \"Course home\"",
+          "inNav": true
+        },
+        "closed": {
+          "expanded": "false",
+          "navVisible": false,
+          "focusOnButton": true
+        },
+        "ok": true
+      }
+    },
+    {
+      "screen": "topic-meeting-minutes",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Course home\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Topics\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Resources\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st1",
+            "top": 771,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st2",
+            "top": 910,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st3",
+            "top": 1071,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st4",
+            "top": 1202,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 2297,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEThe secret\"",
+            "top": 2399,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.nx \"Next topicBulletin and slide text from o\"",
+            "top": 2640,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 11,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Course home\"",
+          "a \"Topics\"",
+          "a \"Resources\"",
+          "input#st1",
+          "input#st2",
+          "input#st3",
+          "input#st4",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEThe secret\"",
+          "a.nx \"Next topicBulletin and slide text from o\""
+        ]
+      },
+      "faq": []
+    },
+    {
+      "screen": "topic-bulletin-slides",
+      "width": 390,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "button.menu[aria-label=\"Open menu\"]",
+            "top": 16,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st1",
+            "top": 866,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st2",
+            "top": 1049,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st3",
+            "top": 1248,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st4",
+            "top": 1448,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 3159,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEThis Sunda\"",
+            "top": 3303,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 8,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "button.menu[aria-label=\"Open menu\"]",
+          "input#st1",
+          "input#st2",
+          "input#st3",
+          "input#st4",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEThis Sunda\""
+        ]
+      },
+      "faq": [],
+      "menu": {
+        "opened": {
+          "expanded": "true",
+          "navVisible": true
+        },
+        "next": {
+          "el": "a \"Course home\"",
+          "inNav": true
+        },
+        "closed": {
+          "expanded": "false",
+          "navVisible": false,
+          "focusOnButton": true
+        },
+        "ok": true
+      }
+    },
+    {
+      "screen": "topic-bulletin-slides",
+      "width": 1440,
+      "tab": {
+        "stops": [
+          {
+            "el": "a.mark \"Claude for Church Offices\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Course home\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Topics\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a \"Resources\"",
+            "top": 24,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st1",
+            "top": 771,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st2",
+            "top": 910,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st3",
+            "top": 1011,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "input#st4",
+            "top": 1142,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+            "top": 2357,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          },
+          {
+            "el": "a.dl \"Sample files, all labeled FAKEThis Sunda\"",
+            "top": 2459,
+            "outline": "solid 2px rgb(17, 17, 17) offset 2px",
+            "outlineStyle": "solid",
+            "outlineWidth": 2,
+            "outlineColor": "rgb(17, 17, 17)",
+            "visible": true
+          }
+        ],
+        "expectedCount": 10,
+        "missed": 0,
+        "expected": [
+          "a.mark \"Claude for Church Offices\"",
+          "a \"Course home\"",
+          "a \"Topics\"",
+          "a \"Resources\"",
+          "input#st1",
+          "input#st2",
+          "input#st3",
+          "input#st4",
+          "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "a.dl \"Sample files, all labeled FAKEThis Sunda\""
         ]
       },
       "faq": []

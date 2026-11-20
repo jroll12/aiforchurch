@@ -14,7 +14,7 @@ import { startServer } from './lib/server.mjs';
 const design = process.argv.includes('--design');
 const only = process.argv.find((a) => a.startsWith('--only='))?.slice(7).split(',');
 const CHECKS = [
-  'text-diff', 'provenance', 'overflow', 'headerfit', 'contrast', 'keyboard', 'targets', 'zoom', 'visual', 'print', 'network', 'guards', 'behavior', 'flow', 'course',
+  'text-diff', 'provenance', 'overflow', 'headerfit', 'contrast', 'keyboard', 'targets', 'zoom', 'visual', 'print', 'network', 'guards', 'behavior', 'flow', 'course', 'downloads',
 ].filter(
   (c) => !only || only.includes(c),
 );

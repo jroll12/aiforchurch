@@ -1,9 +1,9 @@
 {
   "check": "headerfit",
   "target": "built",
-  "ranAt": "2026-11-19T18:27:04.451Z",
+  "ranAt": "2026-11-20T01:53:38.216Z",
   "status": "pass",
-  "summary": "32 headers at 900, 960, 1024, 1100 px; 0 with wrapping or touching items; smallest gap 24px (minimum 8)",
+  "summary": "72 headers at 900, 960, 1024, 1100 px; 0 with wrapping or touching items; smallest gap 24px (minimum 8)",
   "failures": [],
   "rows": [
     {
@@ -231,6 +231,102 @@
       "problems": []
     },
     {
+      "screen": "topic",
+      "width": 900,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 278,
+      "gapNavCta": null,
+      "navRight": 860,
+      "viewport": 900,
+      "problems": []
+    },
+    {
+      "screen": "topic",
+      "width": 960,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 318,
+      "gapNavCta": null,
+      "navRight": 920,
+      "viewport": 960,
+      "problems": []
+    },
+    {
+      "screen": "topic",
+      "width": 1024,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 361,
+      "gapNavCta": null,
+      "navRight": 984,
+      "viewport": 1024,
+      "problems": []
+    },
+    {
+      "screen": "topic",
+      "width": 1100,
+      "markLines": 1,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 425,
+      "gapNavCta": null,
+      "navRight": 1060,
+      "viewport": 1100,
+      "problems": []
+    },
+    {
       "screen": "workshop",
       "width": 900,
       "markLines": 2,
@@ -728,7 +824,7 @@
           "lines": 1
         }
       ],
-      "gapMarkNav": 221,
+      "gapMarkNav": 222,
       "gapNavCta": null,
       "navRight": 920,
       "viewport": 960,
@@ -897,6 +993,870 @@
         }
       ],
       "gapMarkNav": 329,
+      "gapNavCta": null,
+      "navRight": 1060,
+      "viewport": 1100,
+      "problems": []
+    },
+    {
+      "screen": "course",
+      "width": 900,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 278,
+      "gapNavCta": null,
+      "navRight": 860,
+      "viewport": 900,
+      "problems": []
+    },
+    {
+      "screen": "course",
+      "width": 960,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 318,
+      "gapNavCta": null,
+      "navRight": 920,
+      "viewport": 960,
+      "problems": []
+    },
+    {
+      "screen": "course",
+      "width": 1024,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 361,
+      "gapNavCta": null,
+      "navRight": 984,
+      "viewport": 1024,
+      "problems": []
+    },
+    {
+      "screen": "course",
+      "width": 1100,
+      "markLines": 1,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 425,
+      "gapNavCta": null,
+      "navRight": 1060,
+      "viewport": 1100,
+      "problems": []
+    },
+    {
+      "screen": "topics",
+      "width": 900,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 278,
+      "gapNavCta": null,
+      "navRight": 860,
+      "viewport": 900,
+      "problems": []
+    },
+    {
+      "screen": "topics",
+      "width": 960,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 318,
+      "gapNavCta": null,
+      "navRight": 920,
+      "viewport": 960,
+      "problems": []
+    },
+    {
+      "screen": "topics",
+      "width": 1024,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 361,
+      "gapNavCta": null,
+      "navRight": 984,
+      "viewport": 1024,
+      "problems": []
+    },
+    {
+      "screen": "topics",
+      "width": 1100,
+      "markLines": 1,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 425,
+      "gapNavCta": null,
+      "navRight": 1060,
+      "viewport": 1100,
+      "problems": []
+    },
+    {
+      "screen": "resources",
+      "width": 900,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 278,
+      "gapNavCta": null,
+      "navRight": 860,
+      "viewport": 900,
+      "problems": []
+    },
+    {
+      "screen": "resources",
+      "width": 960,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 318,
+      "gapNavCta": null,
+      "navRight": 920,
+      "viewport": 960,
+      "problems": []
+    },
+    {
+      "screen": "resources",
+      "width": 1024,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 361,
+      "gapNavCta": null,
+      "navRight": 984,
+      "viewport": 1024,
+      "problems": []
+    },
+    {
+      "screen": "resources",
+      "width": 1100,
+      "markLines": 1,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 425,
+      "gapNavCta": null,
+      "navRight": 1060,
+      "viewport": 1100,
+      "problems": []
+    },
+    {
+      "screen": "topic-ai-use-policy",
+      "width": 900,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 278,
+      "gapNavCta": null,
+      "navRight": 860,
+      "viewport": 900,
+      "problems": []
+    },
+    {
+      "screen": "topic-ai-use-policy",
+      "width": 960,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 318,
+      "gapNavCta": null,
+      "navRight": 920,
+      "viewport": 960,
+      "problems": []
+    },
+    {
+      "screen": "topic-ai-use-policy",
+      "width": 1024,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 361,
+      "gapNavCta": null,
+      "navRight": 984,
+      "viewport": 1024,
+      "problems": []
+    },
+    {
+      "screen": "topic-ai-use-policy",
+      "width": 1100,
+      "markLines": 1,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 425,
+      "gapNavCta": null,
+      "navRight": 1060,
+      "viewport": 1100,
+      "problems": []
+    },
+    {
+      "screen": "topic-prayer-care-messages",
+      "width": 900,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 278,
+      "gapNavCta": null,
+      "navRight": 860,
+      "viewport": 900,
+      "problems": []
+    },
+    {
+      "screen": "topic-prayer-care-messages",
+      "width": 960,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 318,
+      "gapNavCta": null,
+      "navRight": 920,
+      "viewport": 960,
+      "problems": []
+    },
+    {
+      "screen": "topic-prayer-care-messages",
+      "width": 1024,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 361,
+      "gapNavCta": null,
+      "navRight": 984,
+      "viewport": 1024,
+      "problems": []
+    },
+    {
+      "screen": "topic-prayer-care-messages",
+      "width": 1100,
+      "markLines": 1,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 425,
+      "gapNavCta": null,
+      "navRight": 1060,
+      "viewport": 1100,
+      "problems": []
+    },
+    {
+      "screen": "topic-event-announcements",
+      "width": 900,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 278,
+      "gapNavCta": null,
+      "navRight": 860,
+      "viewport": 900,
+      "problems": []
+    },
+    {
+      "screen": "topic-event-announcements",
+      "width": 960,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 318,
+      "gapNavCta": null,
+      "navRight": 920,
+      "viewport": 960,
+      "problems": []
+    },
+    {
+      "screen": "topic-event-announcements",
+      "width": 1024,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 361,
+      "gapNavCta": null,
+      "navRight": 984,
+      "viewport": 1024,
+      "problems": []
+    },
+    {
+      "screen": "topic-event-announcements",
+      "width": 1100,
+      "markLines": 1,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 425,
+      "gapNavCta": null,
+      "navRight": 1060,
+      "viewport": 1100,
+      "problems": []
+    },
+    {
+      "screen": "topic-volunteer-reminders",
+      "width": 900,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 278,
+      "gapNavCta": null,
+      "navRight": 860,
+      "viewport": 900,
+      "problems": []
+    },
+    {
+      "screen": "topic-volunteer-reminders",
+      "width": 960,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 318,
+      "gapNavCta": null,
+      "navRight": 920,
+      "viewport": 960,
+      "problems": []
+    },
+    {
+      "screen": "topic-volunteer-reminders",
+      "width": 1024,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 361,
+      "gapNavCta": null,
+      "navRight": 984,
+      "viewport": 1024,
+      "problems": []
+    },
+    {
+      "screen": "topic-volunteer-reminders",
+      "width": 1100,
+      "markLines": 1,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 425,
+      "gapNavCta": null,
+      "navRight": 1060,
+      "viewport": 1100,
+      "problems": []
+    },
+    {
+      "screen": "topic-meeting-minutes",
+      "width": 900,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 278,
+      "gapNavCta": null,
+      "navRight": 860,
+      "viewport": 900,
+      "problems": []
+    },
+    {
+      "screen": "topic-meeting-minutes",
+      "width": 960,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 318,
+      "gapNavCta": null,
+      "navRight": 920,
+      "viewport": 960,
+      "problems": []
+    },
+    {
+      "screen": "topic-meeting-minutes",
+      "width": 1024,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 361,
+      "gapNavCta": null,
+      "navRight": 984,
+      "viewport": 1024,
+      "problems": []
+    },
+    {
+      "screen": "topic-meeting-minutes",
+      "width": 1100,
+      "markLines": 1,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 425,
+      "gapNavCta": null,
+      "navRight": 1060,
+      "viewport": 1100,
+      "problems": []
+    },
+    {
+      "screen": "topic-bulletin-slides",
+      "width": 900,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 278,
+      "gapNavCta": null,
+      "navRight": 860,
+      "viewport": 900,
+      "problems": []
+    },
+    {
+      "screen": "topic-bulletin-slides",
+      "width": 960,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 318,
+      "gapNavCta": null,
+      "navRight": 920,
+      "viewport": 960,
+      "problems": []
+    },
+    {
+      "screen": "topic-bulletin-slides",
+      "width": 1024,
+      "markLines": 2,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 361,
+      "gapNavCta": null,
+      "navRight": 984,
+      "viewport": 1024,
+      "problems": []
+    },
+    {
+      "screen": "topic-bulletin-slides",
+      "width": 1100,
+      "markLines": 1,
+      "links": [
+        {
+          "text": "Course home",
+          "lines": 1
+        },
+        {
+          "text": "Topics",
+          "lines": 1
+        },
+        {
+          "text": "Resources",
+          "lines": 1
+        }
+      ],
+      "gapMarkNav": 425,
       "gapNavCta": null,
       "navRight": 1060,
       "viewport": 1100,

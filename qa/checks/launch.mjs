@@ -87,6 +87,11 @@ const described = pages.filter((f) => /<meta name="description"/.test(fs.readFil
 if (!proof && described < pages.length - ALWAYS_NOINDEX.size) warnings.push({ item: `${pages.length - ALWAYS_NOINDEX.size - described} pages have no description for search results and link previews`, fix: 'qa/stage2-copy-draft.md description rows, then src/copy.ts DESCRIPTIONS' });
 if (/data-print/.test(read('board'))) warnings.push({ item: 'For your board shows a print button; no PDF is set', fix: 'src/config.ts BOARD_PDF_URL' });
 
+/* ---------- member area access (src/config.ts MEMBER_ACCESS) ---------- */
+if (!proof && /export const MEMBER_ACCESS: string \| null = null;/.test(fs.readFileSync(path.join(ROOT, 'src/config.ts'), 'utf8'))) {
+  blockers.push({ kind: 'member access', item: 'Member access not set: the member pages are unlisted but open to anyone with the address', fix: 'src/config.ts MEMBER_ACCESS (host password protection or a login service)' });
+}
+
 /* ---------- independent audit ---------- */
 if (!fs.existsSync(AUDIT)) {
   blockers.push({ kind: 'audit', item: 'No audit report', fix: 'qa/audit-report.md' });

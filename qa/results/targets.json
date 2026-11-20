@@ -1,9 +1,9 @@
 {
   "check": "targets",
   "target": "built",
-  "ranAt": "2026-11-19T18:27:15.845Z",
+  "ranAt": "2026-11-20T01:54:03.038Z",
   "status": "pass",
-  "summary": "341 targets measured, 0 below 44px",
+  "summary": "618 targets measured, 0 below 44px",
   "failures": [],
   "samples": [
     {
@@ -1031,6 +1031,181 @@
           "el": "a \"Questions\"",
           "w": 76.6,
           "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic",
+      "width": 390,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEStaff note\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.nx \"Next topicA church AI use policy\"",
+          "w": 350,
+          "h": 57.6,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic",
+      "width": 390,
+      "state": "menu open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEStaff note\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.nx \"Next topicA church AI use policy\"",
+          "w": 350,
+          "h": 57.6,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic",
+      "width": 1440,
+      "state": "default",
+      "items": [
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 100.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 48.9,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 79.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEStaff note\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.nx \"Next topicA church AI use policy\"",
+          "w": 444.7,
+          "h": 69.6,
           "ok": true
         }
       ]
@@ -2422,7 +2597,7 @@
         {
           "group": "link",
           "el": "a.lnk \"Email the one-page summary to your board\"",
-          "w": 348.7,
+          "w": 348.8,
           "h": 44,
           "ok": true
         }
@@ -2464,7 +2639,7 @@
         {
           "group": "link",
           "el": "a.lnk \"Email the one-page summary to your board\"",
-          "w": 348.7,
+          "w": 348.8,
           "h": 44,
           "ok": true
         }
@@ -2534,7 +2709,7 @@
         {
           "group": "link",
           "el": "a.lnk \"Email the one-page summary to your board\"",
-          "w": 348.7,
+          "w": 348.8,
           "h": 44,
           "ok": true
         }
@@ -2641,6 +2816,1980 @@
           "el": "a.lnk \"Email the one-page summary to your board\"",
           "w": 369.2,
           "h": 44,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "course",
+      "width": 390,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn.alt \"Resources\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"01Weekly newsletter from staff notesBy t\"",
+          "w": 350,
+          "h": 226.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"02A church AI use policyBy the end, you \"",
+          "w": 350,
+          "h": 149,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"03Prayer chain and care messages, privac\"",
+          "w": 350,
+          "h": 174,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"04Event announcements from a ministry ca\"",
+          "w": 350,
+          "h": 199,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"05Volunteer schedules and reminder email\"",
+          "w": 350,
+          "h": 147.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"06Meeting notes into minutes and action \"",
+          "w": 350,
+          "h": 174,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"07Bulletin and slide text from one sourc\"",
+          "w": 350,
+          "h": 174,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "course",
+      "width": 390,
+      "state": "menu open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "button",
+          "el": "a.btn.alt \"Resources\"",
+          "w": 350,
+          "h": 56,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"01Weekly newsletter from staff notesBy t\"",
+          "w": 350,
+          "h": 226.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"02A church AI use policyBy the end, you \"",
+          "w": 350,
+          "h": 149,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"03Prayer chain and care messages, privac\"",
+          "w": 350,
+          "h": 174,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"04Event announcements from a ministry ca\"",
+          "w": 350,
+          "h": 199,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"05Volunteer schedules and reminder email\"",
+          "w": 350,
+          "h": 147.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"06Meeting notes into minutes and action \"",
+          "w": 350,
+          "h": 174,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"07Bulletin and slide text from one sourc\"",
+          "w": 350,
+          "h": 174,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "course",
+      "width": 1440,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "a.btn.alt \"Resources\"",
+          "w": 171.7,
+          "h": 52,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 100.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 48.9,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 79.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"01Weekly newsletter from staff notesBy t\"",
+          "w": 834,
+          "h": 144.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"02A church AI use policyBy the end, you \"",
+          "w": 834,
+          "h": 118.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"03Prayer chain and care messages, privac\"",
+          "w": 834,
+          "h": 118.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"04Event announcements from a ministry ca\"",
+          "w": 834,
+          "h": 144.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"05Volunteer schedules and reminder email\"",
+          "w": 834,
+          "h": 118.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"06Meeting notes into minutes and action \"",
+          "w": 834,
+          "h": 118.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"07Bulletin and slide text from one sourc\"",
+          "w": 834,
+          "h": 118.3,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topics",
+      "width": 390,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"01Weekly newsletter from staff notesAbou\"",
+          "w": 350,
+          "h": 121.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"02A church AI use policyAbout 30 minutes\"",
+          "w": 350,
+          "h": 96.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"03Prayer chain and care messages, privac\"",
+          "w": 350,
+          "h": 121.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"04Event announcements from a ministry ca\"",
+          "w": 350,
+          "h": 146.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"05Volunteer schedules and reminder email\"",
+          "w": 350,
+          "h": 121.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"06Meeting notes into minutes and action \"",
+          "w": 350,
+          "h": 121.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"07Bulletin and slide text from one sourc\"",
+          "w": 350,
+          "h": 121.3,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topics",
+      "width": 390,
+      "state": "menu open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"01Weekly newsletter from staff notesAbou\"",
+          "w": 350,
+          "h": 121.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"02A church AI use policyAbout 30 minutes\"",
+          "w": 350,
+          "h": 96.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"03Prayer chain and care messages, privac\"",
+          "w": 350,
+          "h": 121.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"04Event announcements from a ministry ca\"",
+          "w": 350,
+          "h": 146.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"05Volunteer schedules and reminder email\"",
+          "w": 350,
+          "h": 121.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"06Meeting notes into minutes and action \"",
+          "w": 350,
+          "h": 121.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"07Bulletin and slide text from one sourc\"",
+          "w": 350,
+          "h": 121.3,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topics",
+      "width": 1440,
+      "state": "default",
+      "items": [
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 100.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 48.9,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 79.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"01Weekly newsletter from staff notesAbou\"",
+          "w": 834,
+          "h": 118.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"02A church AI use policyAbout 30 minutes\"",
+          "w": 834,
+          "h": 118.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"03Prayer chain and care messages, privac\"",
+          "w": 834,
+          "h": 118.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"04Event announcements from a ministry ca\"",
+          "w": 834,
+          "h": 118.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"05Volunteer schedules and reminder email\"",
+          "w": 834,
+          "h": 118.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"06Meeting notes into minutes and action \"",
+          "w": 834,
+          "h": 118.3,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"07Bulletin and slide text from one sourc\"",
+          "w": 834,
+          "h": 118.3,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "resources",
+      "width": 390,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEStaff note\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEBoard meet\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEA prayer r\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEMinistry c\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKESign-up sh\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEThe secret\"",
+          "w": 350,
+          "h": 196.4,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEThis Sunda\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "resources",
+      "width": 390,
+      "state": "menu open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEStaff note\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEBoard meet\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEA prayer r\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEMinistry c\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKESign-up sh\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEThe secret\"",
+          "w": 350,
+          "h": 196.4,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEThis Sunda\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "resources",
+      "width": 1440,
+      "state": "default",
+      "items": [
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 100.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 48.9,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 79.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEStaff note\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEBoard meet\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEA prayer r\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEMinistry c\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKESign-up sh\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEThe secret\"",
+          "w": 834,
+          "h": 129.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEThis Sunda\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic-ai-use-policy",
+      "width": 390,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEBoard meet\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.nx \"Next topicPrayer chain and care messages\"",
+          "w": 350,
+          "h": 87.2,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic-ai-use-policy",
+      "width": 390,
+      "state": "menu open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEBoard meet\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.nx \"Next topicPrayer chain and care messages\"",
+          "w": 350,
+          "h": 87.2,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic-ai-use-policy",
+      "width": 1440,
+      "state": "default",
+      "items": [
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 100.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 48.9,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 79.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEBoard meet\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.nx \"Next topicPrayer chain and care messages\"",
+          "w": 834,
+          "h": 113.6,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic-prayer-care-messages",
+      "width": 390,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEA prayer r\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.nx \"Next topicEvent announcements from a min\"",
+          "w": 350,
+          "h": 118,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic-prayer-care-messages",
+      "width": 390,
+      "state": "menu open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEA prayer r\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.nx \"Next topicEvent announcements from a min\"",
+          "w": 350,
+          "h": 118,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic-prayer-care-messages",
+      "width": 1440,
+      "state": "default",
+      "items": [
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 100.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 48.9,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 79.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEA prayer r\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.nx \"Next topicEvent announcements from a min\"",
+          "w": 834,
+          "h": 113.6,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic-event-announcements",
+      "width": 390,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEMinistry c\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.nx \"Next topicVolunteer schedules and remind\"",
+          "w": 350,
+          "h": 118,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic-event-announcements",
+      "width": 390,
+      "state": "menu open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEMinistry c\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.nx \"Next topicVolunteer schedules and remind\"",
+          "w": 350,
+          "h": 118,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic-event-announcements",
+      "width": 1440,
+      "state": "default",
+      "items": [
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 100.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 48.9,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 79.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEMinistry c\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.nx \"Next topicVolunteer schedules and remind\"",
+          "w": 834,
+          "h": 113.6,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic-volunteer-reminders",
+      "width": 390,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKESign-up sh\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.nx \"Next topicMeeting notes into minutes and\"",
+          "w": 350,
+          "h": 118,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic-volunteer-reminders",
+      "width": 390,
+      "state": "menu open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKESign-up sh\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.nx \"Next topicMeeting notes into minutes and\"",
+          "w": 350,
+          "h": 118,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic-volunteer-reminders",
+      "width": 1440,
+      "state": "default",
+      "items": [
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 100.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 48.9,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 79.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKESign-up sh\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.nx \"Next topicMeeting notes into minutes and\"",
+          "w": 834,
+          "h": 113.6,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic-meeting-minutes",
+      "width": 390,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEThe secret\"",
+          "w": 350,
+          "h": 196.4,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.nx \"Next topicBulletin and slide text from o\"",
+          "w": 350,
+          "h": 118,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic-meeting-minutes",
+      "width": 390,
+      "state": "menu open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEThe secret\"",
+          "w": 350,
+          "h": 196.4,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.nx \"Next topicBulletin and slide text from o\"",
+          "w": 350,
+          "h": 118,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic-meeting-minutes",
+      "width": 1440,
+      "state": "default",
+      "items": [
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 100.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 48.9,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 79.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEThe secret\"",
+          "w": 834,
+          "h": 129.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.nx \"Next topicBulletin and slide text from o\"",
+          "w": 834,
+          "h": 113.6,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic-bulletin-slides",
+      "width": 390,
+      "state": "default",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEThis Sunda\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic-bulletin-slides",
+      "width": 390,
+      "state": "menu open",
+      "items": [
+        {
+          "group": "button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "menu button",
+          "el": "button.menu[aria-label=\"Open menu\"]",
+          "w": 44,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 261,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 350,
+          "h": 48,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 350,
+          "h": 143.7,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEThis Sunda\"",
+          "w": 350,
+          "h": 170,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "screen": "topic-bulletin-slides",
+      "width": 1440,
+      "state": "default",
+      "items": [
+        {
+          "group": "link",
+          "el": "a.mark \"Claude for Church Offices\"",
+          "w": 310,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Course home\"",
+          "w": 100.3,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Topics\"",
+          "w": 48.9,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a \"Resources\"",
+          "w": 79.5,
+          "h": 44,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
+          "w": 834,
+          "h": 101.8,
+          "ok": true
+        },
+        {
+          "group": "link",
+          "el": "a.dl \"Sample files, all labeled FAKEThis Sunda\"",
+          "w": 834,
+          "h": 101.8,
           "ok": true
         }
       ]

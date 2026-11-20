@@ -12,9 +12,10 @@
 // Spec-sourced strings are listed in the result so Jarret can confirm them.
 import fs from 'node:fs';
 import path from 'node:path';
-import { ROOT, TARGET, SCREENS, DERIVED, STATE, LAYOUT_WIDTHS, designPath, server, browser, open, save, extractLines } from './lib/common.mjs';
+import { ROOT, TARGET, SCREENS, DERIVED, MEMBER, STATE, LAYOUT_WIDTHS, designPath, server, browser, open, save, extractLines } from './lib/common.mjs';
 
 const PATTERNS = [
+  { re: /^\d+ of \d+ steps done$/, reason: 'the designed ProgressBar label "2 of 4 steps done" with the visitor\'s own count' },
   { re: /^Step 3 of 3$/, reason: 'Review is the third step; the pattern of the designed "Step 2 of 3" (qa/questions.md D20)' },
 ];
 const CONTROL = /^\[(radio|checkbox)(: checked)?\]$/;
@@ -46,6 +47,12 @@ const APPROVED = fs.existsSync(draftFile)
 
 const DATA_VALUES = [STATE.org, STATE.contact, STATE.question, STATE.ref, ...STATE.attendees.flatMap((a) => [a.name, a.email, a.role])];
 const DATA = DATA_VALUES.map((s) => s.toLowerCase());
+
+// Member pages show the course lessons (course/modules, status draft): their text is course content.
+const walkFiles = (d) => (fs.existsSync(d) ? fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => (e.isDirectory() ? walkFiles(path.join(d, e.name)) : [path.join(d, e.name)])) : []);
+const COURSE = norm(walkFiles(path.join(ROOT, 'course/modules')).filter((f) => f.endsWith('lesson.md')).map((f) => read(path.relative(ROOT, f))).join('\n'))
+  .replace(/\*\*|`/g, '')
+  .toLowerCase();
 const DATA_SPLIT = new RegExp(`(?:${DATA_VALUES.map((v) => v.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`);
 
 /** Collect text inside the page: visible lines, hidden state blocks, accessible names, the title. */
@@ -82,7 +89,7 @@ function classify(raw) {
   // The visitor's own data (seeded test values) also splits a line: "Your reference code: K7M2Q9".
   const fragments = text.split(PLACEHOLDER).flatMap((f) => f.split(' | ')).flatMap((f) => f.split(DATA_SPLIT)).map((f) => f.replace(/^[\s,.:;|()]+|[\s,:;|()]+$/g, '')).filter((f) => f && !/^[\d\s.,:;|()/-]+$/.test(f));
   for (const f of fragments) {
-    const src = sourceOf(f) ?? sentences(f);
+    const src = sourceOf(f) ?? sentences(f) ?? joined(f);
     if (src) sources.push(src);
     else orphans.push(f);
   }
@@ -98,8 +105,22 @@ function sourceOf(fragment) {
   if (APPROVED.some((a) => a.includes(f))) return 'approved';
   if (DATA.some((d) => d === f)) return 'data';
   if (SPEC.includes(f)) return 'spec';
+  if (COURSE.includes(f)) return 'course';
   return null;
 }
+/** A line made of two allowed pieces, such as a download name followed by its description. */
+function joined(fragment) {
+  const words = fragment.split(' ');
+  for (let k = words.length - 1; k >= 2; k -= 1) {
+    const head = words.slice(0, k).join(' ');
+    const tail = words.slice(k).join(' ');
+    const a = sourceOf(head);
+    const b = sourceOf(tail) ?? sentences(tail);
+    if (a && b) return a === 'spec' || b === 'spec' ? 'spec' : a === 'course' || b === 'course' ? 'course' : a;
+  }
+  return null;
+}
+
 function sentences(fragment) {
   const parts = fragment.split(/(?<=[.!?])\s+/).filter(Boolean);
   if (parts.length < 2) return null;
@@ -125,7 +146,7 @@ DESIGN = designLines.join('\n').toLowerCase();
 const pages =
   TARGET === 'design'
     ? [{ id: 'proof', built: '/__fixtures/provenance-proof.html' }]
-    : DERIVED;
+    : [...DERIVED, ...MEMBER];
 const results = [];
 for (const p of pages) {
   for (const width of TARGET === 'design' ? [1440] : LAYOUT_WIDTHS) {
@@ -169,7 +190,7 @@ if (TARGET === 'design') {
 } else {
   save('provenance', {
     status: orphanList.length || unlistedList.length ? 'fail' : 'pass',
-    summary: `${results.reduce((n, r) => n + r.lines, 0)} strings on ${pages.length} derived pages at 390 and 1440; ${orphanList.length} with no allowed source, ${unlistedList.length} placeholders missing from PLACEHOLDERS.md, ${specSourced.size} taken from spec wording (listed for confirmation)`,
+    summary: `${results.reduce((n, r) => n + r.lines, 0)} strings on ${pages.length} derived and member pages at 390 and 1440; ${orphanList.length} with no allowed source, ${unlistedList.length} placeholders missing from PLACEHOLDERS.md, ${specSourced.size} taken from spec wording (listed for confirmation)`,
     orphans: orphanList,
     unlisted: unlistedList,
     specSourced: [...specSourced],

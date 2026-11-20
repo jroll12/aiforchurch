@@ -5,7 +5,7 @@
 // and no listed difference has gone stale.
 import fs from 'node:fs';
 import path from 'node:path';
-import { ROOT, RAW, SCREENS, TARGET, LAYOUT_WIDTHS, designPath, server, browser, open, save, extractLines, diffLines } from './lib/common.mjs';
+import { ROOT, RAW, SCREENS, TARGET, LAYOUT_WIDTHS, designPath, server, browser, open, save, extractLines, diffLines, prepareScreen } from './lib/common.mjs';
 import { driveComposite } from './fixtures/register.mjs';
 
 const srv = await server();
@@ -39,7 +39,7 @@ if (TARGET === 'design') {
   for (const s of SCREENS) {
     for (const width of LAYOUT_WIDTHS) {
       const design = await linesOf({ width, path: designPath(s.id, width) });
-      const built = await linesOf({ width, path: s.built }, s.id === 'register' ? driveComposite : null);
+      const built = await linesOf({ width, path: s.built }, (page) => prepareScreen(page, s.id, driveComposite));
       const diffs = diffLines(design, built).map((d) => {
         const hit = expected.find((e) => e.screen === s.id && e.width === width && e.side === d.side && e.text === d.text);
         return { ...d, explained: Boolean(hit), reason: hit?.reason ?? null };

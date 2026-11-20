@@ -42,6 +42,11 @@ To clear a [CONFIRM]:
 
 `npm run check:launch` lists every one still on a page.
 
+## Not placeholders
+
+- **[NAME 1], [NAME 2]:** on the member Topic page for prayer chain messages. They are what attendees are taught to type in place of real names, so they are never filled in.
+- **[CONFIRM] inside lesson steps:** in the member area this is the marker the lessons teach, not an open item.
+
 ## Config values (not shown on any page)
 
 | Value | Set in | Used from |

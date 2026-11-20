@@ -1,7 +1,7 @@
 {
   "check": "provenance",
   "target": "design",
-  "ranAt": "2026-11-12T03:44:22.285Z",
+  "ranAt": "2026-11-20T01:55:44.723Z",
   "status": "pass",
   "summary": "proof fixture: 2 orphan strings found (Bring a sack lunch and a smile. / Thanks, we will be in touch soon.), 1 unlisted placeholder; expected 2 and 1",
   "orphans": [

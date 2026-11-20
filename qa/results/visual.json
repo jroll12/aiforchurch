@@ -1,9 +1,9 @@
 {
   "check": "visual",
   "target": "built",
-  "ranAt": "2026-11-19T18:27:35.815Z",
+  "ranAt": "2026-11-20T01:54:36.702Z",
   "status": "review",
-  "summary": "substitute reference (artboards rendered in Chromium; design/screenshots/ not provided). home@390: heights 4193/4383px, 20% pixels changed; home@1440: heights 3232/3232px, 0% pixels changed; register@390: heights 3499/3549px, 12% pixels changed; register@1440: heights 2574/2574px, 0.1% pixels changed. Derived pages, no reference: 12 screenshots for review",
+  "summary": "substitute reference (artboards rendered in Chromium; design/screenshots/ not provided). home@390: heights 4193/4383px, 20% pixels changed; home@1440: heights 3232/3232px, 0% pixels changed; register@390: heights 3499/3549px, 12% pixels changed; register@1440: heights 2574/2574px, 0.1% pixels changed; topic@390: heights 3196/3278px, 12.7% pixels changed; topic@1440: heights 2623/2679px, 5.5% pixels changed. Derived pages, no reference: 18 screenshots for review",
   "rows": [
     {
       "screen": "home",
@@ -36,6 +36,22 @@
       "designHeight": 2574,
       "builtHeight": 2574,
       "changedPercent": 0.1
+    },
+    {
+      "screen": "topic",
+      "width": 390,
+      "image": "qa/screenshots/topic-390.jpg",
+      "designHeight": 3196,
+      "builtHeight": 3278,
+      "changedPercent": 12.7
+    },
+    {
+      "screen": "topic",
+      "width": 1440,
+      "image": "qa/screenshots/topic-1440.jpg",
+      "designHeight": 2623,
+      "builtHeight": 2679,
+      "changedPercent": 5.5
     }
   ],
   "derived": [
@@ -110,6 +126,42 @@
       "width": 1440,
       "image": "qa/screenshots/confirmation-1440.jpg",
       "height": 1557
+    },
+    {
+      "screen": "course",
+      "width": 390,
+      "image": "qa/screenshots/course-390.jpg",
+      "height": 2890
+    },
+    {
+      "screen": "course",
+      "width": 1440,
+      "image": "qa/screenshots/course-1440.jpg",
+      "height": 2168
+    },
+    {
+      "screen": "topics",
+      "width": 390,
+      "image": "qa/screenshots/topics-390.jpg",
+      "height": 1414
+    },
+    {
+      "screen": "topics",
+      "width": 1440,
+      "image": "qa/screenshots/topics-1440.jpg",
+      "height": 1415
+    },
+    {
+      "screen": "resources",
+      "width": 390,
+      "image": "qa/screenshots/resources-390.jpg",
+      "height": 3521
+    },
+    {
+      "screen": "resources",
+      "width": 1440,
+      "image": "qa/screenshots/resources-1440.jpg",
+      "height": 2609
     }
   ]
 }

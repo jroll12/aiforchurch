@@ -1,9 +1,9 @@
 {
   "check": "network",
   "target": "built",
-  "ranAt": "2026-11-19T18:27:34.841Z",
+  "ranAt": "2026-11-20T01:54:40.453Z",
   "status": "pass",
-  "summary": "16 page loads; hosts seen: 127.0.0.1, fonts.googleapis.com, fonts.gstatic.com",
+  "summary": "36 page loads; hosts seen: 127.0.0.1, fonts.googleapis.com, fonts.gstatic.com",
   "allowed": [
     "127.0.0.1",
     "localhost",
@@ -56,6 +56,28 @@
       "disallowed": []
     },
     {
+      "screen": "topic",
+      "width": 390,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "topic",
+      "width": 1440,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
       "screen": "workshop",
       "width": 390,
       "requests": 4,
@@ -180,6 +202,204 @@
       "screen": "confirmation",
       "width": 1440,
       "requests": 6,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "course",
+      "width": 390,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "course",
+      "width": 1440,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "topics",
+      "width": 390,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "topics",
+      "width": 1440,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "resources",
+      "width": 390,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "resources",
+      "width": 1440,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "topic-ai-use-policy",
+      "width": 390,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "topic-ai-use-policy",
+      "width": 1440,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "topic-prayer-care-messages",
+      "width": 390,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "topic-prayer-care-messages",
+      "width": 1440,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "topic-event-announcements",
+      "width": 390,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "topic-event-announcements",
+      "width": 1440,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "topic-volunteer-reminders",
+      "width": 390,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "topic-volunteer-reminders",
+      "width": 1440,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "topic-meeting-minutes",
+      "width": 390,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "topic-meeting-minutes",
+      "width": 1440,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "topic-bulletin-slides",
+      "width": 390,
+      "requests": 4,
+      "hosts": [
+        "127.0.0.1",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "disallowed": []
+    },
+    {
+      "screen": "topic-bulletin-slides",
+      "width": 1440,
+      "requests": 4,
       "hosts": [
         "127.0.0.1",
         "fonts.googleapis.com",

@@ -47,6 +47,16 @@ if (TARGET === 'design' || !fs.existsSync(DIST)) {
   const shipped = new Set(pageText.flatMap((text) => text.match(/\[[A-Z0-9][^[\]<>"]*\]/g) ?? []));
   for (const p of shipped) if (!listed.has(p)) findings.push(`placeholder in dist/ not listed in PLACEHOLDERS.md: ${p}`);
 
+  // Member area: unlisted and never indexed (src/config.ts MEMBER_NAV).
+  const MEMBER_ROUTES = ['/course/', '/topics/', '/resources/', '/downloads/'];
+  for (const file of html) {
+    const route = `/${path.relative(DIST, path.dirname(file)).split(path.sep).filter(Boolean).join('/')}${path.dirname(file) === DIST ? '' : '/'}`;
+    const text = read(file);
+    const isMember = MEMBER_ROUTES.some((r) => route.startsWith(r));
+    if (isMember && !/<meta name="robots" content="[^"]*noindex/.test(text)) findings.push(`member page not noindex: ${route}`);
+    if (!isMember) for (const m of text.matchAll(/\shref="([^"]*)"/g)) if (MEMBER_ROUTES.some((r) => m[1].startsWith(r))) findings.push(`public page ${route} links into the member area: ${m[1]}`);
+  }
+
   // The mock build's service URLs must never reach the real build.
   for (const { f, text } of all) if (text.includes('/__mock/')) findings.push(`mock service URL in ${f}`);
 

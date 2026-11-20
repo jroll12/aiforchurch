@@ -1,0 +1,11 @@
+{
+  "check": "downloads.proof",
+  "target": "built",
+  "ranAt": "2026-11-20T01:52:37.913Z",
+  "status": "pass",
+  "summary": "tampered manifest and a missing zip: 2 findings (newsletter: handout PDF is older than handout.md (run npm run build:downloads); ai-use-policy: no sample-file zip)",
+  "findings": [
+    "newsletter: handout PDF is older than handout.md (run npm run build:downloads)",
+    "ai-use-policy: no sample-file zip"
+  ]
+}

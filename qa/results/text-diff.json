@@ -1,9 +1,9 @@
 {
   "check": "text-diff",
   "target": "built",
-  "ranAt": "2026-11-19T18:26:43.833Z",
+  "ranAt": "2026-11-20T01:55:22.478Z",
   "status": "pass",
-  "summary": "8 differences, 0 unexplained, 0 stale expectations",
+  "summary": "13 differences, 0 unexplained, 0 stale expectations",
   "unexplained": [],
   "stale": [],
   "results": [
@@ -90,6 +90,57 @@
           "at": 45,
           "explained": true,
           "reason": "Attendee 2 role as intended (see the design-only entry above). Test fixture value only; the shipped select starts on \"Choose a role\"."
+        }
+      ]
+    },
+    {
+      "screen": "topic",
+      "width": 390,
+      "designLines": 42,
+      "builtLines": 42,
+      "diffs": [
+        {
+          "side": "design-only",
+          "text": "Church AI use policy",
+          "at": 39,
+          "explained": true,
+          "reason": "Next topic title: the Topic artboard's Next button says \"Church AI use policy\"; the site and the lesson use the Home design's title \"A church AI use policy\" (design/home-c-*). One title for one topic."
+        },
+        {
+          "side": "built-only",
+          "text": "A church AI use policy",
+          "at": 39,
+          "explained": true,
+          "reason": "Next topic title: the Topic artboard's Next button says \"Church AI use policy\"; the site and the lesson use the Home design's title \"A church AI use policy\" (design/home-c-*). One title for one topic."
+        }
+      ]
+    },
+    {
+      "screen": "topic",
+      "width": 1440,
+      "designLines": 45,
+      "builtLines": 44,
+      "diffs": [
+        {
+          "side": "design-only",
+          "text": "Account",
+          "at": 4,
+          "explained": true,
+          "reason": "Member nav item Account omitted: it needs a login service, which does not exist yet, and nav links only to pages that exist (CLAUDE.md hard rule 6; qa/stage5-report.md)."
+        },
+        {
+          "side": "design-only",
+          "text": "Church AI use policy",
+          "at": 42,
+          "explained": true,
+          "reason": "Next topic title: the Topic artboard's Next button says \"Church AI use policy\"; the site and the lesson use the Home design's title \"A church AI use policy\" (design/home-c-*). One title for one topic."
+        },
+        {
+          "side": "built-only",
+          "text": "A church AI use policy",
+          "at": 41,
+          "explained": true,
+          "reason": "Next topic title: the Topic artboard's Next button says \"Church AI use policy\"; the site and the lesson use the Home design's title \"A church AI use policy\" (design/home-c-*). One title for one topic."
         }
       ]
     }

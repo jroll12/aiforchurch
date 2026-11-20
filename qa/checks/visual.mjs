@@ -7,7 +7,7 @@
 // each (qa/screenshots/<page>-<width>.jpg) for review, with nothing to compare.
 import fs from 'node:fs';
 import path from 'node:path';
-import { RAW, SHOTS, SCREENS, DERIVED, TARGET, LAYOUT_WIDTHS, designPath, server, browser, open, save } from './lib/common.mjs';
+import { RAW, SHOTS, SCREENS, DERIVED, MEMBER, TARGET, LAYOUT_WIDTHS, designPath, server, browser, open, save, prepareScreen } from './lib/common.mjs';
 import { driveComposite } from './fixtures/register.mjs';
 
 if (TARGET === 'design') {
@@ -96,7 +96,7 @@ for (const s of SCREENS) {
     const designPng = path.join(RAW, `visual-${s.id}-${width}-design.png`);
     const builtPng = path.join(RAW, `visual-${s.id}-${width}-built.png`);
     await capture({ width, path: designPath(s.id, width) }, designPng, (page) => page.addStyleTag({ content: '.pg{min-height:0 !important}' }));
-    await capture({ width, path: s.built }, builtPng, s.id === 'register' ? driveComposite : null);
+    await capture({ width, path: s.built }, builtPng, (page) => prepareScreen(page, s.id, driveComposite));
     const out = path.join(SHOTS, `${s.id}-${width}.jpg`);
     const metrics = await compose(designPng, builtPng, out, width > 900 ? 0.35 : 0.6);
     rows.push({ screen: s.id, width, image: path.relative(path.resolve(SHOTS, '../..'), out), ...metrics });
@@ -104,7 +104,7 @@ for (const s of SCREENS) {
 }
 
 const derived = [];
-for (const s of DERIVED) {
+for (const s of [...DERIVED, ...MEMBER.filter((m) => !m.id.startsWith('topic-'))]) {
   for (const width of LAYOUT_WIDTHS) {
     const { context, page } = await open(br, srv.url, { width, path: s.built, seed: s.seed });
     await page.evaluate(() => document.activeElement?.blur());

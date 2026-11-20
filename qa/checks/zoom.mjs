@@ -4,7 +4,7 @@
 // horizontal scroll, clipped text and text boxes that overlap each other.
 import fs from 'node:fs';
 import path from 'node:path';
-import { RAW, SCREENS, DERIVED, TARGET, server, browser, open, save, installDescribe, revealStates } from './lib/common.mjs';
+import { RAW, SCREENS, DERIVED, MEMBER, TARGET, server, browser, open, save, installDescribe, revealStates } from './lib/common.mjs';
 import { driveComposite } from './fixtures/register.mjs';
 
 if (TARGET === 'design') {
@@ -48,7 +48,7 @@ const br = await browser();
 fs.mkdirSync(RAW, { recursive: true });
 const rows = [];
 
-for (const s of [...SCREENS, ...DERIVED]) {
+for (const s of [...SCREENS, ...DERIVED, ...MEMBER]) {
   for (const width of [720, 640]) {
     const { context, page } = await open(br, srv.url, { width, path: s.built, seed: s.seed }, { deviceScaleFactor: 2 });
     await installDescribe(page);

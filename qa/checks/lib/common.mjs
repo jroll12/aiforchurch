@@ -24,6 +24,30 @@ export const TARGET = process.env.CHECK_TARGET === 'design' ? 'design' : 'built'
 export const SCREENS = [
   { id: 'home', built: '/', design: { 390: 'home-c-mobile.dc.html', 1440: 'home-c-desktop.dc.html' } },
   { id: 'register', built: '/register/', design: { 390: 'register-c-mobile.dc.html', 1440: 'register-c-desktop.dc.html' } },
+  // Member area, Topic 1: the designed Topic page, compared in its artboard state (steps 1 and 2 ticked).
+  { id: 'topic', built: '/topics/newsletter/', design: { 390: 'topic-c-mobile.dc.html', 1440: 'topic-c-desktop.dc.html' }, member: true },
+];
+
+/** Put a designed screen into the state its artboards show. */
+export async function prepareScreen(page, id, driveComposite) {
+  if (id === 'register') await driveComposite(page);
+  if (id === 'topic') {
+    await page.check('#st1');
+    await page.check('#st2');
+  }
+}
+
+/** Member area pages besides Topic 1 (derived, not designed; src/config.ts MEMBER_NAV). */
+export const MEMBER = [
+  { id: 'course', built: '/course/' },
+  { id: 'topics', built: '/topics/' },
+  { id: 'resources', built: '/resources/' },
+  { id: 'topic-ai-use-policy', built: '/topics/ai-use-policy/' },
+  { id: 'topic-prayer-care-messages', built: '/topics/prayer-care-messages/' },
+  { id: 'topic-event-announcements', built: '/topics/event-announcements/' },
+  { id: 'topic-volunteer-reminders', built: '/topics/volunteer-reminders/' },
+  { id: 'topic-meeting-minutes', built: '/topics/meeting-minutes/' },
+  { id: 'topic-bulletin-slides', built: '/topics/bulletin-slides/' },
 ];
 
 /**
@@ -87,7 +111,7 @@ export function targets(widths = LAYOUT_WIDTHS, { derived = true } = {}) {
       Object.keys(s.design).map((w) => ({ screen: s.id, width: Number(w), path: designPath(s.id, Number(w)), kind: 'design' })),
     );
   }
-  const pages = [...SCREENS, ...(derived ? DERIVED : [])];
+  const pages = [...SCREENS, ...(derived ? [...DERIVED, ...MEMBER] : [])];
   return pages.flatMap((s) => widths.map((width) => ({ screen: s.id, width, path: s.built, kind: 'built', seed: s.seed, derived: !s.design })));
 }
 

@@ -1,9 +1,9 @@
 {
   "check": "zoom",
   "target": "built",
-  "ranAt": "2026-11-19T18:27:33.140Z",
+  "ranAt": "2026-11-20T01:54:41.687Z",
   "status": "pass",
-  "summary": "40 states at 720 and 640 px (device scale 2), 0 with scroll, clipping or overlap",
+  "summary": "80 states at 720 and 640 px (device scale 2), 0 with scroll, clipping or overlap",
   "failures": [],
   "rows": [
     {
@@ -97,6 +97,42 @@
       "overlaps": []
     },
     {
+      "screen": "topic",
+      "width": 720,
+      "state": "default",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic",
+      "width": 720,
+      "state": "menu open",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic",
+      "width": 640,
+      "state": "default",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic",
+      "width": 640,
+      "state": "menu open",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
       "screen": "workshop",
       "width": 720,
       "state": "default",
@@ -361,6 +397,330 @@
       "screen": "confirmation",
       "width": 640,
       "state": "all states shown",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "course",
+      "width": 720,
+      "state": "default",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "course",
+      "width": 720,
+      "state": "menu open",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "course",
+      "width": 640,
+      "state": "default",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "course",
+      "width": 640,
+      "state": "menu open",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topics",
+      "width": 720,
+      "state": "default",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topics",
+      "width": 720,
+      "state": "menu open",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topics",
+      "width": 640,
+      "state": "default",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topics",
+      "width": 640,
+      "state": "menu open",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "resources",
+      "width": 720,
+      "state": "default",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "resources",
+      "width": 720,
+      "state": "menu open",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "resources",
+      "width": 640,
+      "state": "default",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "resources",
+      "width": 640,
+      "state": "menu open",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-ai-use-policy",
+      "width": 720,
+      "state": "default",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-ai-use-policy",
+      "width": 720,
+      "state": "menu open",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-ai-use-policy",
+      "width": 640,
+      "state": "default",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-ai-use-policy",
+      "width": 640,
+      "state": "menu open",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-prayer-care-messages",
+      "width": 720,
+      "state": "default",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-prayer-care-messages",
+      "width": 720,
+      "state": "menu open",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-prayer-care-messages",
+      "width": 640,
+      "state": "default",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-prayer-care-messages",
+      "width": 640,
+      "state": "menu open",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-event-announcements",
+      "width": 720,
+      "state": "default",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-event-announcements",
+      "width": 720,
+      "state": "menu open",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-event-announcements",
+      "width": 640,
+      "state": "default",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-event-announcements",
+      "width": 640,
+      "state": "menu open",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-volunteer-reminders",
+      "width": 720,
+      "state": "default",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-volunteer-reminders",
+      "width": 720,
+      "state": "menu open",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-volunteer-reminders",
+      "width": 640,
+      "state": "default",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-volunteer-reminders",
+      "width": 640,
+      "state": "menu open",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-meeting-minutes",
+      "width": 720,
+      "state": "default",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-meeting-minutes",
+      "width": 720,
+      "state": "menu open",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-meeting-minutes",
+      "width": 640,
+      "state": "default",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-meeting-minutes",
+      "width": 640,
+      "state": "menu open",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-bulletin-slides",
+      "width": 720,
+      "state": "default",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-bulletin-slides",
+      "width": 720,
+      "state": "menu open",
+      "viewport": 720,
+      "scrollWidth": 720,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-bulletin-slides",
+      "width": 640,
+      "state": "default",
+      "viewport": 640,
+      "scrollWidth": 640,
+      "clipped": [],
+      "overlaps": []
+    },
+    {
+      "screen": "topic-bulletin-slides",
+      "width": 640,
+      "state": "menu open",
       "viewport": 640,
       "scrollWidth": 640,
       "clipped": [],

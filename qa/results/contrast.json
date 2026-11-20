@@ -1,9 +1,9 @@
 {
   "check": "contrast",
   "target": "built",
-  "ranAt": "2026-11-19T18:27:01.302Z",
+  "ranAt": "2026-11-20T01:53:33.333Z",
   "status": "pass",
-  "summary": "12 token pairs (0 off), 11 rendered color pairs, 0 text below minimum, 0 accent misuses",
+  "summary": "12 token pairs (0 off), 13 rendered color pairs, 0 text below minimum, 0 accent misuses",
   "tokenPairs": [
     {
       "pair": "ink on white",
@@ -118,8 +118,17 @@
       "bg": "#ffffff",
       "min": 4.5,
       "ratio": 5.18,
-      "count": 28,
+      "count": 112,
       "example": "home@390: a.ghost \"See what we cover\""
+    },
+    {
+      "pair": "#c2410c on #ffffff (min 3)",
+      "fg": "#c2410c",
+      "bg": "#ffffff",
+      "min": 3,
+      "ratio": 5.18,
+      "count": 60,
+      "example": "topic@390: span.tt \"A church AI use policy\""
     },
     {
       "pair": "#b42318 on #ffffff (min 4.5)",
@@ -163,7 +172,7 @@
       "bg": "#ffffff",
       "min": 4.5,
       "ratio": 8.86,
-      "count": 252,
+      "count": 465,
       "example": "home@390: p \"Turn a week of notes into a draft in you\""
     },
     {
@@ -172,8 +181,17 @@
       "bg": "#f4f4f2",
       "min": 3,
       "ratio": 17.15,
-      "count": 6,
+      "count": 27,
       "example": "register@390: span.t \"Three seats for your office\""
+    },
+    {
+      "pair": "#111111 on #f4f4f2 (min 4.5)",
+      "fg": "#111111",
+      "bg": "#f4f4f2",
+      "min": 4.5,
+      "ratio": 17.15,
+      "count": 21,
+      "example": "topic@390: label \"Make a Project for the newsletter. Add i\""
     },
     {
       "pair": "#111111 on #ffffff (min 4.5)",
@@ -181,7 +199,7 @@
       "bg": "#ffffff",
       "min": 4.5,
       "ratio": 18.88,
-      "count": 772,
+      "count": 1283,
       "example": "home@390: a.mark \"Claude for Church Offices\""
     },
     {
@@ -190,7 +208,7 @@
       "bg": "#ffffff",
       "min": 3,
       "ratio": 18.88,
-      "count": 226,
+      "count": 534,
       "example": "home@390: h1#h1 \"Turn a week of staff notes into a newsle\""
     },
     {
@@ -199,7 +217,7 @@
       "bg": "#111111",
       "min": 4.5,
       "ratio": 18.88,
-      "count": 20,
+      "count": 41,
       "example": "register@390: li.cur \"2Attendees\""
     }
   ],
