@@ -136,6 +136,20 @@ export const MESSAGES = {
   role: 'Choose a role.',
 } as const;
 
+/**
+ * Member area (design/topic-c-*: Course home, Topics, Resources, Account).
+ * Unlisted: nothing on the public site links here, every page is noindex, and
+ * `npm run check:launch` blocks launch until MEMBER_ACCESS names how members
+ * get in (host password protection or a login service). Account needs a
+ * login service, so it is not built and not in the nav (no dead links).
+ */
+export const MEMBER_NAV = [
+  { label: 'Course home', path: '/course/' },
+  { label: 'Topics', path: '/topics/' },
+  { label: 'Resources', path: '/resources/' },
+] as const;
+export const MEMBER_ACCESS: string | null = null;
+
 if (SOLD_OUT && !ROUTES.questions.built) {
   throw new Error('SOLD_OUT sends people to /questions/, which does not exist until Stage 2.');
 }

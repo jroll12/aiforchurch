@@ -1,0 +1,83 @@
+---
+/*
+ * 11 Topic page (design/topic-c-desktop.dc.html and topic-c-mobile.dc.html),
+ * one per lesson in course/modules. Topic 1 is the designed page; topics 2
+ * to 7 reuse its layout with their own lesson content (derived, not designed).
+ * Member area: unlisted and noindex (src/config.ts MEMBER_NAV).
+ */
+import Base from '../../../layouts/Base.astro';
+import ProgressBar from '../../../components/ProgressBar.astro';
+import StepList from '../../../components/StepList.astro';
+import CalloutPanel from '../../../components/CalloutPanel.astro';
+import DownloadRow from '../../../components/DownloadRow.astro';
+import Icon from '../../../components/Icon.astro';
+import { allLessons, downloadPath, inline, type Lesson } from '../../../lib/lessons';
+import { url } from '../../../lib/url';
+
+export function getStaticPaths() {
+  const lessons = allLessons();
+  return lessons.map((lesson) => ({ params: { slug: lesson.slug }, props: { lesson, total: lessons.length, next: lessons.find((l) => l.dir === lesson.next) ?? null } }));
+}
+
+interface Props {
+  lesson: Lesson;
+  total: number;
+  next: Lesson | null;
+}
+const { lesson, total, next } = Astro.props;
+const href = (file: string) => url(file === 'handout.md' ? downloadPath(lesson.slug, 'handout') : downloadPath(lesson.slug, 'samples'));
+const num = String(lesson.topic).padStart(2, '0');
+---
+<Base page="topic" title={lesson.title} markHref={url('/course/')} member>
+<main>
+<section class="top" aria-labelledby="h1"><div class="g">
+<div class="l"><p class="k">Topic {lesson.topic} of {total}</p><p class="num" aria-hidden="true">{num}</p></div>
+<div class="r">
+<h1 id="h1">{lesson.title}</h1>
+<p class="meta">{lesson.duration}</p>
+<p class="outcome">{lesson.outcome}</p>
+<ProgressBar total={lesson.steps.length} />
+</div>
+</div></section>
+
+<section class="s" aria-labelledby="idea"><div class="g">
+<h2 class="lab" id="idea">{lesson.idea.heading}</h2>
+<div class="ct">{lesson.idea.text.map((p) => <p class="big" set:html={inline(p)} />)}</div>
+</div></section>
+
+<section class="s" aria-labelledby="ex"><div class="g">
+<h2 class="lab" id="ex">The exercise</h2>
+<div class="ct"><StepList steps={lesson.steps} store={`cfco:progress:${lesson.slug}`} /></div>
+</div></section>
+
+<section class="s" aria-labelledby="watch"><div class="g">
+<h2 class="lab" id="watch">Watch for this</h2>
+<div class="ct"><CalloutPanel title={lesson.watch.title} text={lesson.watch.text} /></div>
+</div></section>
+
+<section class="s rule" aria-labelledby="habit"><div class="g">
+<h2 class="lab" id="habit">The habit</h2>
+<div class="ct"><h3>{lesson.habit.title}</h3>{lesson.habit.text.map((p) => <p class="big" set:html={inline(p)} />)}</div>
+</div></section>
+
+<section class="s" aria-labelledby="safe"><div class="g">
+<h2 class="lab" id="safe">Data safety</h2>
+<div class="ct"><div class="safe" data-component="Notice"><Icon name="shield-check" size={26} /><div>{lesson.safety.map((p) => <p set:html={inline(p)} />)}</div></div></div>
+</div></section>
+
+<section class="s" aria-labelledby="dl"><div class="g">
+<h2 class="lab" id="dl">Downloads</h2>
+<div class="ct dls">{lesson.downloads.map((d) => <DownloadRow href={href(d.file)} name={d.name} description={d.description} />)}</div>
+</div></section>
+
+{next && (
+  <section class="s" aria-labelledby="next"><div class="g">
+  <h2 class="lab" id="next">Next</h2>
+  <div class="ct"><a class="nx" data-component="Button" href={url(`/topics/${next.slug}/`)}><span class="lb">Next topic</span><span class="tt">{next.title}<Icon name="arrow-right" size={32} /></span></a></div>
+  </div></section>
+)}
+</main>
+<script>
+  import '../../../scripts/progress.js';
+</script>
+</Base>

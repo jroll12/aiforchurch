@@ -605,3 +605,98 @@ textarea.inp { height: 120px; padding: 12px 14px; line-height: 1.5; resize: none
   .pg-board .ft { break-inside: avoid; }
   .pg-board .ft .g { padding-top: 6pt; padding-bottom: 0; font-size: 9pt; }
 }
+
+/* =====================================================================
+ * Member area. The Topic page is transcribed from design/topic-c-*.dc.html
+ * (mobile first, desktop from 900px). Course home, Topics and Resources are
+ * derived from the same patterns. Rules shared with Home and Register are
+ * scoped to .pg-topic where the Topic artboard sizes differ.
+ * ===================================================================== */
+@media (min-width: 900px) {
+  .hd--member .nav { gap: 28px; }
+}
+.pg .hd--member .nav a[aria-current="page"] { text-decoration: underline; } /* design: current section underlined */
+
+.pg-topic .top .g { padding-top: 32px; padding-bottom: 32px; }
+.pg-topic .k { margin-bottom: 0; }
+.pg-topic .num { font: 300 72px/0.9 var(--sans); letter-spacing: -0.05em; } /* declared margins are cancelled by the artboard's p reset, as rendered */
+.pg .pg-topic .top h1, .pg-topic.pg .top h1 {
+  font-size: clamp(2.25rem, 1.6rem + 2.667vw, 4rem); /* 36px at 390, 64px at 1440 (design/topic-c-*) */
+  line-height: 1;
+  letter-spacing: -0.035em;
+  margin-bottom: 14px;
+}
+.meta { font: 700 14px/1.4 var(--sans); letter-spacing: .1em; text-transform: uppercase; }
+.pg .outcome { font-size: 21px; line-height: 1.35; font-weight: 500; letter-spacing: -0.01em; }
+.pl { font-weight: 700; margin-bottom: 10px; }
+.seg { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+.seg i { display: block; height: 16px; border: 1.5px solid var(--ink); }
+.seg i.d { background: var(--ink); }
+.seg i.c { background: var(--tint); border-width: 3px; }
+.pg-topic .big { font-size: 19px; line-height: 1.5; font-weight: 400; letter-spacing: 0; }
+.pg-topic .big + .big { margin-top: 12px; }
+
+.steps { list-style: none; margin: 0; padding: 0; border-bottom: 1px solid var(--hair); }
+.stp { display: grid; grid-template-columns: 44px 28px 1fr; column-gap: 12px; align-items: start; padding: 18px 12px; border-top: 1px solid var(--hair); }
+.stp.cur { outline: 2px solid var(--ink); outline-offset: -2px; background: var(--tint); }
+.stp .no { font: 300 40px/0.9 var(--sans); letter-spacing: -0.04em; }
+.stp input { width: 28px; height: 28px; margin: 2px 0 0; accent-color: var(--accent); }
+.stp label { display: inline-block; min-height: 44px; font-size: 18px; line-height: 1.5; cursor: pointer; } /* derived: 44px hit area */
+.stp.done label { color: var(--ink2); }
+.here { display: inline-block; margin-top: 10px; background: var(--ink); color: var(--ground); font: 700 14px/1 var(--sans); letter-spacing: .08em; text-transform: uppercase; padding: 7px 10px; }
+
+.call { border: 1.5px solid var(--ink); padding: 20px; }
+.call .t { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.call h3 { font-size: 24px; line-height: 1.2; }
+.call p { font-size: 17px; }
+.call p + p { margin-top: 8px; }
+.rule h3 { font-size: 30px; line-height: 1.1; letter-spacing: -0.03em; margin-bottom: 10px; }
+.safe { display: flex; gap: 14px; align-items: flex-start; border: 1.5px solid var(--ink); padding: 20px; font-size: 17px; }
+.safe p + p { margin-top: 8px; }
+
+.dls { border-bottom: 1px solid var(--hair); }
+.pg a.dl { display: flex; flex-direction: column; gap: 10px; padding: 18px 0; border-top: 1px solid var(--hair); color: var(--ink); text-decoration: none; }
+.dl .nm { font: 800 20px/1.25 var(--sans); letter-spacing: -0.01em; }
+.dl .mt { color: var(--ink2); font-size: 17px; }
+.dl .go { display: flex; align-items: center; gap: 8px; color: var(--accent); font-weight: 700; font-size: 17px; min-height: 44px; }
+.pg a.nx { display: flex; flex-direction: column; gap: 6px; text-decoration: none; min-height: 44px; }
+.nx .lb { font: 700 14px/1.4 var(--sans); letter-spacing: .1em; text-transform: uppercase; color: var(--ink); }
+.nx .tt { display: flex; align-items: center; justify-content: space-between; gap: 12px; font: 800 28px/1.1 var(--sans); letter-spacing: -0.03em; color: var(--accent); }
+
+@media (min-width: 900px) {
+  .pg-topic .top .g { padding-top: 56px; padding-bottom: 48px; }
+  .pg-topic .top .l { grid-column: 1 / 4; }
+  .pg-topic .top .r { grid-column: 4 / 13; }
+  .pg-topic .k { grid-column: auto; padding-top: 0; }
+  .pg-topic .num { font-size: 120px; line-height: .85; }
+  .pg .pg-topic .top h1, .pg-topic.pg .top h1 { margin-bottom: 20px; }
+  .pg .outcome { font-size: 26px; }
+  .pg-topic .big { font-size: 22px; line-height: 1.45; max-width: 760px; }
+  .stp { grid-template-columns: 72px 36px 1fr; column-gap: 16px; padding: 20px 16px; }
+  .stp .no { font-size: 56px; }
+  .stp input { margin-top: 4px; }
+  .stp label { font-size: 20px; }
+  .call { padding: 28px; max-width: 760px; }
+  .call .t { gap: 12px; }
+  .call h3 { font-size: 26px; }
+  .call p { font-size: 18px; }
+  .rule h3 { font-size: 40px; margin-bottom: 12px; }
+  .safe { gap: 16px; padding: 24px; max-width: 760px; font-size: 20px; }
+  .pg a.dl { display: grid; grid-template-columns: 1fr auto; gap: 16px; align-items: center; padding: 22px 0; }
+  .dl .nm { font-size: 22px; }
+  .pg a.nx { display: inline-flex; }
+  .nx .tt { justify-content: flex-start; gap: 14px; font-size: 40px; }
+}
+
+/* Derived member pages (Course home, Topics, Resources): topic links in a list. */
+.tlist { list-style: none; margin: 0; padding: 0; border-bottom: 1px solid var(--hair); }
+.tlist li { border-top: 1px solid var(--hair); }
+.pg .tlist a { display: grid; grid-template-columns: 56px 1fr; column-gap: 16px; align-items: baseline; padding: 16px 0; min-height: 44px; text-decoration: none; color: var(--ink); }
+.tlist .n { font: 300 40px/0.9 var(--sans); letter-spacing: -0.04em; }
+.tlist .tt { font: 800 20px/1.25 var(--sans); letter-spacing: -0.01em; color: var(--accent); }
+.tlist .d { grid-column: 2; color: var(--ink2); font-size: 17px; }
+@media (min-width: 900px) {
+  .pg .tlist a { grid-template-columns: 90px 1fr; padding: 20px 0; }
+  .tlist .n { font-size: 56px; }
+  .tlist .tt { font-size: 24px; }
+}

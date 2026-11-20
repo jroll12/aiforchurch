@@ -1,0 +1,26 @@
+---
+/*
+ * Resources (member area; derived, not designed): every lesson's downloads,
+ * using each lesson's own download names. Files are built by
+ * `npm run build:downloads` into public/downloads/.
+ */
+import Base from '../../layouts/Base.astro';
+import DownloadRow from '../../components/DownloadRow.astro';
+import { allLessons, downloadPath } from '../../lib/lessons';
+import { url } from '../../lib/url';
+
+const lessons = allLessons();
+---
+<Base page="resources" title="Resources" markHref={url('/course/')} member>
+<main>
+<section class="top plain" aria-labelledby="h1"><div class="g">
+<h1 id="h1">Resources</h1>
+</div></section>
+{lessons.map((l) => (
+  <section class="s" aria-labelledby={`r${l.topic}`}><div class="g">
+  <h2 class="lab" id={`r${l.topic}`}>{l.title}</h2>
+  <div class="ct dls">{l.downloads.map((d) => <DownloadRow href={url(downloadPath(l.slug, d.file === 'handout.md' ? 'handout' : 'samples'))} name={d.name} description={d.description} />)}</div>
+  </div></section>
+))}
+</main>
+</Base>

@@ -1,0 +1,12 @@
+---
+/* CalloutPanel (design/topic-c-*): "Watch for this", a boxed mistake with the circle-alert icon. */
+import Icon from './Icon.astro';
+import { inline } from '../lib/lessons';
+
+interface Props {
+  title: string;
+  text: string[];
+}
+const { title, text } = Astro.props;
+---
+<div class="call" data-component="CalloutPanel"><div class="t"><Icon name="circle-alert" size={26} /><h3>{title}</h3></div>{text.map((p) => <p set:html={inline(p)} />)}</div>

@@ -1,0 +1,14 @@
+---
+/*
+ * ProgressBar (design/topic-c-*): "N of 4 steps done" and four segments:
+ * done (ink), current (tint, 3px border), to do. progress.js keeps it in
+ * step with the StepList; the server renders the first visit (none done).
+ */
+interface Props {
+  total: number;
+  done?: number;
+}
+const { total, done = 0 } = Astro.props;
+const label = `${done} of ${total} steps done`;
+---
+<div data-component="ProgressBar" role="img" aria-label={label} data-progress><p class="pl">{label}</p><div class="seg">{Array.from({ length: total }, (_, k) => <i class:list={{ d: k < done, c: k === done }}></i>)}</div></div>

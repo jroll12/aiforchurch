@@ -1,0 +1,12 @@
+---
+/* DownloadRow (design/topic-c-*): a file name, a one-line description and "Download". */
+import Icon from './Icon.astro';
+
+interface Props {
+  href: string;
+  name: string;
+  description: string;
+}
+const { href, name, description } = Astro.props;
+---
+<a class="dl" data-component="DownloadRow" href={href} download><span><span class="nm">{name}</span><br><span class="mt">{description}</span></span><span class="go"><Icon name="download" size={22} />Download</span></a>

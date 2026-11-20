@@ -1,0 +1,49 @@
+---
+/*
+ * Course home (member area; derived, not designed). The member nav's first
+ * item in design/topic-c-desktop.dc.html. Built only from design text and the
+ * lessons in course/modules, so it needs no new copy.
+ */
+import Base from '../../layouts/Base.astro';
+import TopicList from '../../components/TopicList.astro';
+import StepCard from '../../components/StepCard.astro';
+import Notice from '../../components/Notice.astro';
+import Button from '../../components/Button.astro';
+import { DESIGN } from '../../copy';
+import { allLessons } from '../../lib/lessons';
+import { url } from '../../lib/url';
+
+const lessons = allLessons();
+---
+<Base page="course" title="Course home" markHref={url('/course/')} member>
+<main>
+<section class="top plain" aria-labelledby="h1"><div class="g">
+<h1 id="h1">Course home</h1>
+<p class="lede">{DESIGN.lede}</p>
+</div></section>
+
+<section class="s" aria-labelledby="c1"><div class="g">
+<h2 class="lab" id="c1">Topics</h2>
+<div class="ct"><TopicList lessons={lessons} detail="outcome" /><p class="more">{DESIGN.more}</p></div>
+</div></section>
+
+<section class="s" aria-labelledby="c2"><div class="g">
+<h2 class="lab" id="c2">How the half-day runs</h2>
+<div class="ct cols3">
+<StepCard step={1} title="Learn the idea">A five-minute explanation of each task, in plain words.</StepCard>
+<StepCard step={2} title="Try it">Work through a short exercise using invented sample files.</StepCard>
+<StepCard step={3} title="Catch the mistake">Watch Claude get something wrong, then learn the habit that catches it.</StepCard>
+</div>
+</div></section>
+
+<section class="s" aria-labelledby="c3"><div class="g">
+<h2 class="lab" id="c3">Data safety</h2>
+<div class="ct"><Notice variant="box" label={DESIGN.safe.label}>{DESIGN.safe.text}</Notice></div>
+</div></section>
+
+<section class="s" aria-labelledby="c4"><div class="g">
+<h2 class="lab" id="c4">Downloads</h2>
+<div class="ct"><Button href={url('/resources/')} variant="alt" arrow>Resources</Button></div>
+</div></section>
+</main>
+</Base>

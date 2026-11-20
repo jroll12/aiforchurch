@@ -1,0 +1,22 @@
+---
+/*
+ * StepList (design/topic-c-*): numbered exercise steps, each with a checkbox.
+ * The first unticked step is current: outlined, tinted, aria-current="step"
+ * and marked "You are here". progress.js moves it as boxes are ticked and
+ * remembers the ticks in this browser only (localStorage; nothing is sent).
+ */
+import { inline } from '../lib/lessons';
+
+interface Props {
+  steps: string[];
+  store: string; // localStorage key for this topic
+}
+const { steps, store } = Astro.props;
+---
+<ol class="steps" data-component="StepList" data-store={store}>
+{steps.map((text, k) => (
+  <li class:list={['stp', { cur: k === 0 }]} aria-current={k === 0 ? 'step' : undefined}>
+    <span class="no" aria-hidden="true">{k + 1}</span><input type="checkbox" id={`st${k + 1}`}><div><label for={`st${k + 1}`} set:html={inline(text)} /><br><span class="here" hidden={k !== 0}>You are here</span></div>
+  </li>
+))}
+</ol>

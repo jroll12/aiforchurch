@@ -1,0 +1,78 @@
+{
+  "newsletter": {
+    "handout": "1a3de6ece66dff0a732bffc2993e4e44ea9bc4310cd3f37cba88be6afc9df199",
+    "samples": "6478fce407d9686408c13fba24ec3704125759ec5f306ea47d1d39173342a297",
+    "pages": 1,
+    "fontPt": 10.5,
+    "files": [
+      "calendar.csv",
+      "past-newsletter-1.md",
+      "past-newsletter-2.md",
+      "staff-notes.md",
+      "voice-guide.md"
+    ]
+  },
+  "ai-use-policy": {
+    "handout": "da059495d268f7173bf7c3364da87fc304ee1e2a12c966355bfe19e01784aca4",
+    "samples": "b161253beefdeecdcd7ffeccea63a0bbfa01a3287e48334137bfbcf8c075b081",
+    "pages": 1,
+    "fontPt": 10.5,
+    "files": [
+      "board-notes.md",
+      "current-computer-policy.md",
+      "staff-survey.csv"
+    ]
+  },
+  "prayer-care-messages": {
+    "handout": "4797f93a96819d456cc21f2b9bcc6a4da0637e7e76ab1b4506e8c0c44fb06587",
+    "samples": "ee630e6dab0babb25fa7ade7ac511882b19e2271843b17d2a7f3f238383afae8",
+    "pages": 1,
+    "fontPt": 10.5,
+    "files": [
+      "prayer-chain-guide.md",
+      "prayer-log.csv"
+    ]
+  },
+  "event-announcements": {
+    "handout": "a963927cdd8ec9d1c66653cb074e6bb06359c93f557cef32133e733ac5ff5ab8",
+    "samples": "a05a853e6b12aa50fa3b94ee5d143e471069df34b0702d5787c4308eb2061b22",
+    "pages": 1,
+    "fontPt": 10.5,
+    "files": [
+      "announcement-guide.md",
+      "leader-email.md",
+      "ministry-calendar.csv"
+    ]
+  },
+  "volunteer-reminders": {
+    "handout": "7cf93fa3d8204eb313aca0f261bd331f0e69ad99b556679386675bc2845331e8",
+    "samples": "b0ebc55c10c46ebdfeaed78cc3663068b26ac0637318137bfc66d64e6d1c9f44",
+    "pages": 1,
+    "fontPt": 10.5,
+    "files": [
+      "reminder-guide.md",
+      "signup-sheet.csv",
+      "swap-email.md"
+    ]
+  },
+  "meeting-minutes": {
+    "handout": "70c97f51ceb197f7b73a7fef3a0c3c39c84da2c7fd7caa6d1de992dd33f1634d",
+    "samples": "cae0239acc45e5644ac321a7cdc2f0e06601f484b861576cb845f1fe9c3dfd74",
+    "pages": 1,
+    "fontPt": 10.5,
+    "files": [
+      "past-minutes.md",
+      "secretary-notes.md"
+    ]
+  },
+  "bulletin-slides": {
+    "handout": "67e9c9d53938e70b1a1f102f6e885d4c1f6de666f12d9ab53fa1de010262b06c",
+    "samples": "2da0c6ad23794f479ef31613a7b4fde7035ebecf5e7c00ba6dfb65250e44b1df",
+    "pages": 1,
+    "fontPt": 10.5,
+    "files": [
+      "bulletin-master.md",
+      "old-slides.md"
+    ]
+  }
+}

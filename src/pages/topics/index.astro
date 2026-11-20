@@ -1,0 +1,20 @@
+---
+/* Topics (member area; derived, not designed): the seven lessons in order. Design text and lesson content only. */
+import Base from '../../layouts/Base.astro';
+import TopicList from '../../components/TopicList.astro';
+import { DESIGN } from '../../copy';
+import { allLessons } from '../../lib/lessons';
+import { url } from '../../lib/url';
+---
+<Base page="topics" title="Topics" markHref={url('/course/')} member>
+<main>
+<section class="top plain" aria-labelledby="h1"><div class="g">
+<h1 id="h1">Topics</h1>
+<p class="lede">{DESIGN.more}</p>
+</div></section>
+<section class="s" aria-labelledby="t1"><div class="g">
+<h2 class="lab" id="t1">What you will do</h2>
+<div class="ct"><TopicList lessons={allLessons()} detail="duration" /></div>
+</div></section>
+</main>
+</Base>

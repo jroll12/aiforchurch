@@ -11,17 +11,19 @@ import { NOINDEX, SITE_NAME } from '../config';
 import { DESCRIPTIONS } from '../copy';
 
 interface Props {
-  page: 'home' | 'register' | 'workshop' | 'board' | 'about' | 'review' | 'confirmation' | 'questions';
+  page: 'home' | 'register' | 'workshop' | 'board' | 'about' | 'review' | 'confirmation' | 'questions' | 'topic' | 'course' | 'topics' | 'resources';
+  member?: boolean;
   title?: string;
   headerCta?: boolean;
   markHref: string;
 }
 
-const { page, title, headerCta = false, markHref } = Astro.props;
+const { page, title, headerCta = false, markHref, member = false } = Astro.props;
 const fullTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME;
 const description = DESCRIPTIONS[page] ?? null;
 // Review order and Confirmation hold a visitor's own order: never indexed, even after launch (derived).
-const noindex = NOINDEX || page === 'review' || page === 'confirmation';
+// Member pages are unlisted and never indexed (src/config.ts MEMBER_NAV).
+const noindex = NOINDEX || page === 'review' || page === 'confirmation' || member;
 ---
 <!doctype html>
 <html lang="en">
@@ -39,7 +41,7 @@ const noindex = NOINDEX || page === 'review' || page === 'confirmation';
 </head>
 <body>
 <div class={`pg pg-${page}`}>
-<PageHeader cta={headerCta} markHref={markHref} />
+<PageHeader cta={headerCta} markHref={markHref} member={member} />
 <slot />
 <Footer />
 </div>

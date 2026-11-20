@@ -8,30 +8,33 @@
  */
 import Icon from './Icon.astro';
 import Button from './Button.astro';
-import { NAV, ROUTES, SITE_NAME, SOLD_OUT } from '../config';
+import { MEMBER_NAV, NAV, ROUTES, SITE_NAME, SOLD_OUT } from '../config';
 import { DESIGN } from '../copy';
 import { url } from '../lib/url';
 
 interface Props {
   cta?: boolean;
   markHref: string;
+  member?: boolean; // the member area's nav (design/topic-c-*), labeled "Member"
 }
 
-const { cta = false, markHref } = Astro.props;
-const items = NAV.filter((item) => item.built);
+const { cta = false, markHref, member = false } = Astro.props;
+const items = member ? MEMBER_NAV : NAV.filter((item) => item.built);
 const here = Astro.url.pathname;
+// In the member area, a topic page counts as being in Topics.
+const current = (p: string) => url(p) === here || (member && p === '/topics/' && here.startsWith(url('/topics/')));
 const action = SOLD_OUT
   ? { label: DESIGN.waitlist, href: url(ROUTES.questions.path) }
   : { label: DESIGN.reserve, href: url(ROUTES.register.path) };
 ---
-<header class:list={['hd', { 'hd--cta': cta }]} data-component="PageHeader">
+<header class:list={['hd', { 'hd--cta': cta, 'hd--member': member }]} data-component="PageHeader">
 <div class="g">
 <a class="mark" href={markHref}>{SITE_NAME}</a>
 {items.length > 0 && (
   <button class="menu" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><Icon name="menu" size={22} class="i-menu" /><Icon name="x" size={22} class="i-x" /></button>
 )}
 {items.length > 0 && (
-  <nav class="nav" id="site-nav" aria-label="Main">{items.map((item) => <a href={url(item.path)} aria-current={url(item.path) === here ? 'page' : undefined}>{item.label}</a>)}</nav>
+  <nav class="nav" id="site-nav" aria-label={member ? 'Member' : 'Main'}>{items.map((item) => <a href={url(item.path)} aria-current={current(item.path) ? 'page' : undefined}>{item.label}</a>)}</nav>
 )}
 {cta && <Button href={action.href} class="hcta">{action.label}</Button>}
 </div>

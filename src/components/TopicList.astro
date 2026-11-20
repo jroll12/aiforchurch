@@ -1,0 +1,14 @@
+---
+/* TopicList (derived): the seven lessons as numbered links, each with a line under the title. */
+import type { Lesson } from '../lib/lessons';
+import { url } from '../lib/url';
+
+interface Props {
+  lessons: Lesson[];
+  detail: 'outcome' | 'duration';
+}
+const { lessons, detail } = Astro.props;
+---
+<ol class="tlist" role="list" data-component="TopicList">{lessons.map((l) => (
+  <li><a href={url(`/topics/${l.slug}/`)}><span class="n" aria-hidden="true">{String(l.topic).padStart(2, '0')}</span><span class="tt">{l.title}</span><span class="d">{detail === 'outcome' ? l.outcome : l.duration}</span></a></li>
+))}</ol>
