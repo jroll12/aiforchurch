@@ -6,7 +6,9 @@ The seven workshop topics as lessons: what the facilitator teaches, what attende
 
 ## Where this belongs
 
-START-HERE.md says the course content lives in its own repo, roloff-course-kit, which has not been started. This folder is laid out the way that repo will be (`modules/01-newsletter/` and so on), so moving it there is one copy. Nothing in `course/` is part of the public site, and the site build never reads it.
+START-HERE.md says the course content lives in its own repo, roloff-course-kit, which has not been started. This folder is laid out the way that repo will be (`modules/01-newsletter/` and so on), so moving it there is one copy.
+
+The site's member pages read `modules/` at build time (src/lib/lessons.ts): /course/, /topics/ and /resources/. They are unlisted and noindex, and open to anyone with the address until member access is set (qa/questions.md D51). The public pages never link to them.
 
 ## The seven modules
 
@@ -35,6 +37,16 @@ START-HERE.md says the course content lives in its own repo, roloff-course-kit, 
 | `examples/answer-key.md` | What is wrong in the flawed draft, for the facilitator only, never projected |
 
 The rules every module follows are in STYLE.md, and `node qa/checks/course.mjs` enforces them. That check also runs inside `npm run check`.
+
+## Also in this folder
+
+- **facilitator/:** the kit to run the half-day: run of show, setup checklist, opening and closing scripts, how to use each flawed draft, and what to do if Claude is down.
+- **emails/:** five attendee emails, from registration received to after the workshop. Drafts for the form service or Jarret to send.
+- **review/** and review-report.md: the blind test findings.
+
+## Downloads
+
+`npm run build:downloads` turns each handout.md into a one-page PDF and each samples/ folder into a zip, in public/downloads/ with a manifest of source hashes. Run it after editing a handout or a sample file; `npm run verify` fails if a download no longer matches its source.
 
 ## Placeholders in the course
 

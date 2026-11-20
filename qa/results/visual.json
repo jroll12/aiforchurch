@@ -1,9 +1,9 @@
 {
   "check": "visual",
   "target": "built",
-  "ranAt": "2026-11-20T01:54:36.702Z",
+  "ranAt": "2026-11-20T02:20:36.617Z",
   "status": "review",
-  "summary": "substitute reference (artboards rendered in Chromium; design/screenshots/ not provided). home@390: heights 4193/4383px, 20% pixels changed; home@1440: heights 3232/3232px, 0% pixels changed; register@390: heights 3499/3549px, 12% pixels changed; register@1440: heights 2574/2574px, 0.1% pixels changed; topic@390: heights 3196/3278px, 12.7% pixels changed; topic@1440: heights 2623/2679px, 5.5% pixels changed. Derived pages, no reference: 18 screenshots for review",
+  "summary": "substitute reference (artboards rendered in Chromium; design/screenshots/ not provided). home@390: heights 4193/4383px, 20% pixels changed; home@1440: heights 3232/3232px, 0.3% pixels changed; register@390: heights 3499/3549px, 12% pixels changed; register@1440: heights 2574/2574px, 0.1% pixels changed; topic@390: heights 3196/3278px, 12.7% pixels changed; topic@1440: heights 2623/2679px, 5.5% pixels changed. Derived pages, no reference: 18 screenshots for review",
   "rows": [
     {
       "screen": "home",
@@ -19,7 +19,7 @@
       "image": "qa/screenshots/home-1440.jpg",
       "designHeight": 3232,
       "builtHeight": 3232,
-      "changedPercent": 0
+      "changedPercent": 0.3
     },
     {
       "screen": "register",

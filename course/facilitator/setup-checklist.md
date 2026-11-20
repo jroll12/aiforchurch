@@ -31,7 +31,9 @@ Work through this the week before, then again on the morning. Every [PLACEHOLDER
 - [ ] Projector and screen: from the venue, or brought [CONFIRM].
 - [ ] The right cable or adapter for the projector laptop.
 - [ ] Mirror the screen, so what you see is what the room sees.
-- [ ] Open a flawed draft in a Markdown preview and check that the tables read as tables, and that the back row can read them at a large text size.
+- [ ] Open `.md` files in any text editor or Markdown preview app the laptop already has [CONFIRM]. Install nothing new.
+- [ ] Make a separate projector folder on the projector laptop. Copy in only the seven flawed drafts, never an answer key or any other `examples/` file. Name each copy by its module, such as `02-flawed-draft.md`.
+- [ ] Open a flawed draft from the projector folder in a Markdown preview and check that the tables read as tables, and that the back row can read them at a large text size.
 
 ### A test Claude account
 
@@ -50,6 +52,7 @@ Work through this the week before, then again on the morning. Every [PLACEHOLDER
 - [ ] One printed set of every answer key, for you only. Keep it face down.
 - [ ] One printed set of every flawed draft, in case the projector fails.
 - [ ] Two printed copies of [if-claude-is-down.md](if-claude-is-down.md) and of the run of show.
+- [ ] One printed copy of [opening-and-closing.md](opening-and-closing.md) and of [flawed-drafts.md](flawed-drafts.md), for you.
 - [ ] One printed set of every sample file per table, for the fallback [CONFIRM table count].
 
 ### Practice files ready to share

@@ -4,7 +4,7 @@ This kit is for running the half-day, in-person workshop. The facilitator is Jar
 
 The lessons themselves are in `course/modules/`. This kit does not repeat them. It says what happens in the room, minute by minute, and what to do when something goes wrong.
 
-**Drafted with AI, then taught and checked by Jarret Roloff.** Like the modules, this kit is a draft until Jarret approves it. Nothing in `course/` is part of the public site.
+The site’s honesty line covers this kit too: “Course materials are drafted with AI, then taught and checked by Jarret Roloff.” Like the modules, this kit is a draft until Jarret approves it. Nothing in `course/` is part of the public site.
 
 ## The files, in the order to use them
 

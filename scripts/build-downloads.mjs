@@ -96,7 +96,7 @@ pre{font:400 ${size - 1.5}pt/1.3 var(--sans);white-space:pre-wrap;border:1pt sol
 code{font-family:inherit;font-weight:700}
 footer{margin-top:8pt;border-top:4pt solid var(--ink);padding-top:4pt;font-size:${size - 2}pt;color:var(--ink2)}
 </style></head><body>${body}
-<footer>Course materials are drafted with AI, then taught and checked by Jarret Roloff. Practice files are invented and labeled FAKE.</footer></body></html>`;
+<footer>Course materials are drafted with AI, then taught and checked by Jarret Roloff.</footer></body></html>`;
 
 /* ---------- zip writer (stored, no compression) ---------- */
 const CRC = new Int32Array(256).map((_, n) => {

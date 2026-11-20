@@ -14,7 +14,7 @@ Print this page and keep it with the run of show.
 - **The exercise:** walk through the four handout steps on the screen. Read each prompt aloud and say what it asks Claude to do and why. Then project the module’s `examples/flawed-draft.md` and say: this is what Claude gave back.
 - **The check:** the room does step 4 by hand. They check the flawed draft against the printed sample files, using the handout checklist. This takes the exercise time as well as the mistake time, so there is room to go slowly.
 - **The reveal:** from your printed answer key, as in [flawed-drafts.md](flawed-drafts.md).
-- **Files:** use the printed sample files at each table, or the USB sticks, or the local copy on the projector laptop. The files link may not open without Wi-Fi.
+- **Files:** use the printed sample files at each table, or the USB sticks, if you brought them, or the local copy on the projector laptop. The files link may not open without Wi-Fi.
 - **Afterwards:** tell attendees to try the prompts at their desk next week, with the handout.
 
 ## What changes for each topic

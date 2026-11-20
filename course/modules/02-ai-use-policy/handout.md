@@ -33,7 +33,7 @@ Step 3:
 Check the draft again. Move any rule with no source line, and anything saying what the law or our denomination requires, to the open questions. Keep every unanswered question from the board notes there. For each, say who should answer: the pastor, the board or a lawyer.
 ```
 
-Step 4 is yours, on a printout. Find each rule in the table; a rule with no row is an open question. Tick each row whose source line says the same. If the notes and the current policy disagree, the newer board decision wins; list it [CONFIRM].
+Step 4 is yours, on screen in class. Find each rule in the table; a rule with no row is an open question. Tick each row whose source line says the same. If the notes and the current policy disagree, the newer board decision wins; list it [CONFIRM].
 
 ## Decision-line check
 

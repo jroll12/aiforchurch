@@ -1,7 +1,17 @@
 {
   "target": "built",
-  "ranAt": "2026-11-20T01:55:38.598Z",
+  "ranAt": "2026-11-20T02:20:52.779Z",
   "summary": [
+    {
+      "check": "text-diff",
+      "status": "pass",
+      "summary": "13 differences, 0 unexplained, 0 stale expectations"
+    },
+    {
+      "check": "provenance",
+      "status": "pass",
+      "summary": "1276 strings on 15 derived and member pages at 390 and 1440; 0 with no allowed source, 0 placeholders missing from PLACEHOLDERS.md, 23 taken from spec wording (listed for confirmation)"
+    },
     {
       "check": "overflow",
       "status": "pass",
@@ -35,7 +45,7 @@
     {
       "check": "visual",
       "status": "review",
-      "summary": "substitute reference (artboards rendered in Chromium; design/screenshots/ not provided). home@390: heights 4193/4383px, 20% pixels changed; home@1440: heights 3232/3232px, 0% pixels changed; register@390: heights 3499/3549px, 12% pixels changed; register@1440: heights 2574/2574px, 0.1% pixels changed; topic@390: heights 3196/3278px, 12.7% pixels changed; topic@1440: heights 2623/2679px, 5.5% pixels changed. Derived pages, no reference: 18 screenshots for review"
+      "summary": "substitute reference (artboards rendered in Chromium; design/screenshots/ not provided). home@390: heights 4193/4383px, 20% pixels changed; home@1440: heights 3232/3232px, 0.3% pixels changed; register@390: heights 3499/3549px, 12% pixels changed; register@1440: heights 2574/2574px, 0.1% pixels changed; topic@390: heights 3196/3278px, 12.7% pixels changed; topic@1440: heights 2623/2679px, 5.5% pixels changed. Derived pages, no reference: 18 screenshots for review"
     },
     {
       "check": "print",
@@ -46,6 +56,11 @@
       "check": "network",
       "status": "pass",
       "summary": "36 page loads; hosts seen: 127.0.0.1, fonts.googleapis.com, fonts.gstatic.com"
+    },
+    {
+      "check": "guards",
+      "status": "pass",
+      "summary": "0 findings; 207 repo files scanned for dashes"
     },
     {
       "check": "behavior",
@@ -66,21 +81,6 @@
       "check": "downloads",
       "status": "pass",
       "summary": "7 lessons: handout PDFs one page each, zips match samples/, 0 findings"
-    },
-    {
-      "check": "text-diff",
-      "status": "pass",
-      "summary": "13 differences, 0 unexplained, 0 stale expectations"
-    },
-    {
-      "check": "provenance",
-      "status": "pass",
-      "summary": "1288 strings on 15 derived and member pages at 390 and 1440; 0 with no allowed source, 0 placeholders missing from PLACEHOLDERS.md, 23 taken from spec wording (listed for confirmation)"
-    },
-    {
-      "check": "guards",
-      "status": "pass",
-      "summary": "0 findings; 205 repo files scanned for dashes"
     }
   ]
 }

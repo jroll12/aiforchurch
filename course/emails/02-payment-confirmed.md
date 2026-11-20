@@ -17,6 +17,7 @@ Your reference code: [REFERENCE CODE]
 
 - Date: [DATE]
 - Start time: [START TIME]
+- Ends: 12:30 p.m. [CONFIRM]
 - Venue: [VENUE]
 
 **What happens next**

@@ -6,7 +6,7 @@ By the end, you can format messages without exposing private details.
 
 **Do every step in the same chat.** Later prompts build on earlier ones.
 
-**With a real log, never paste the private column or any row marked pastor only or do not share.** Paste only the request column and share level, names replaced by [NAME 1], [NAME 2] and so on, and only if your church’s AI use policy allows it. Put names back yourself.
+**With a real log, never paste the private column or any row marked pastor only or do not share.** Paste only whole-church rows, request and share level, with names as [NAME 1], [NAME 2] and other identifying details (health, children, dates, places) removed, if your AI use policy allows it. Put names back yourself.
 
 ## The four steps
 
@@ -20,7 +20,7 @@ By the end, you can format messages without exposing private details.
 Step 1, guide and log pasted below:
 
 ```
-I format our church's prayer chain messages. Below are our prayer chain guide and this week's prayer log. Do not write any message yet. List each request with its share level, and which may go in the whole-church email.
+I format our church's prayer chain messages. Below are our prayer chain guide and a practice prayer log. Do not write any message yet. List each request with its share level, and which may go in the whole-church email.
 ```
 
 Step 2:
@@ -42,8 +42,8 @@ Step 4 is yours. Check each line of the email and card against its log row. The 
 - [ ] Each request line is the name, then that row’s request words.
 - [ ] Nothing from the private column or office note.
 - [ ] Only rows whose share level in the log is whole church.
-- [ ] Every detail has a row in the permission table.
+- [ ] Every detail in the email has a row in the permission table.
 - [ ] A request someone else gave is marked [CONFIRM] or left out.
 - [ ] No pastor-only or do-not-share request, not even unnamed.
 
-Practice only with the FAKE files. For a real log, see the bold line.
+Practice only with the FAKE files.

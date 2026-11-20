@@ -1,7 +1,7 @@
 {
   "check": "downloads",
   "target": "built",
-  "ranAt": "2026-11-20T01:54:41.363Z",
+  "ranAt": "2026-11-20T02:20:41.244Z",
   "status": "pass",
   "summary": "7 lessons: handout PDFs one page each, zips match samples/, 0 findings",
   "findings": []

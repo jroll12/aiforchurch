@@ -138,6 +138,16 @@ Shared
   - `PAYMENT_REF_PARAM` null blocks launch.
   - qa/audit-report.md rows 1, 2, 14 and 18 to 20.
 
+## Derived in Stage 5: member area
+
+- **D51 Member access:** the member pages are unlisted and noindex, and `MEMBER_ACCESS` null blocks launch. They are open to anyone with the address until host password protection or a login service is set. Downloads (PDFs, zips) cannot carry noindex without a host header (X-Robots-Tag); set it when hosting is chosen, with PDFs as application/pdf and zips as application/zip.
+- **D52 Account omitted:** the Topic artboard's nav has Account; no account page exists, so it is left out (hard rule 6).
+- **D53 Next topic title:** Topic 1's next link reads "A church AI use policy", the title in lesson 02 and the approved Workshop topic list. The artboard says "Church AI use policy". Logged in qa/checks/expected-diffs.json. Pick one and both places change.
+- **D54 Step checkboxes:** 28x28 as designed. The label around each gives a 44px hit area; the gap beside the box does not toggle it (same approach as D16).
+- **D55 Progress without JavaScript:** the bar shows "0 of 4 steps done" and step 1 as "You are here". Its label is a polite live region, so screen readers hear each change.
+- **D56 Draft lessons on the pages:** all seven lessons are `status: draft` but show as course content. The member area is not public until D51 is settled; approve each lesson before then (course/README.md).
+- **D57 Handout PDF footer:** the honesty line only, exactly as on the site.
+
 ## Calls made on Jarret's behalf (Stage 5, 2026-11-20: "Do what you think is best")
 
 Each call is easy to reverse and is listed again in qa/stage5-report.md for the review pass.

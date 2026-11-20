@@ -1,7 +1,7 @@
 {
   "check": "keyboard",
   "target": "built",
-  "ranAt": "2026-11-20T01:54:11.886Z",
+  "ranAt": "2026-11-20T02:20:11.824Z",
   "status": "pass",
   "summary": "36 page layouts walked, all stops visible, FAQ, errors and menu OK",
   "problems": [],
@@ -3299,7 +3299,7 @@
           },
           {
             "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
-            "top": 3427,
+            "top": 3506,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -3308,7 +3308,7 @@
           },
           {
             "el": "a.dl \"Sample files, all labeled FAKEA prayer r\"",
-            "top": 3571,
+            "top": 3650,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -3317,7 +3317,7 @@
           },
           {
             "el": "a.nx \"Next topicEvent announcements from a min\"",
-            "top": 3858,
+            "top": 3937,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -3436,7 +3436,7 @@
           },
           {
             "el": "a.dl \"Handout (PDF)One page to print or keep.D\"",
-            "top": 2420,
+            "top": 2482,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -3445,7 +3445,7 @@
           },
           {
             "el": "a.dl \"Sample files, all labeled FAKEA prayer r\"",
-            "top": 2522,
+            "top": 2584,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,
@@ -3454,7 +3454,7 @@
           },
           {
             "el": "a.nx \"Next topicEvent announcements from a min\"",
-            "top": 2735,
+            "top": 2797,
             "outline": "solid 2px rgb(17, 17, 17) offset 2px",
             "outlineStyle": "solid",
             "outlineWidth": 2,

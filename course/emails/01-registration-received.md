@@ -18,7 +18,7 @@ Seats: [SEATS]. Total: [TOTAL].
 **What happens next**
 
 1. If you finished paying, a second email will say “You are in.”
-2. If you have not paid yet, pay here: [PAYMENT LINK URL]. Your seats are confirmed when payment arrives. Use your reference code with any payment. [CONFIRM]
+2. If you have not paid yet, pay here: [PAYMENT LINK URL]. One payment covers all [SEATS] seats. [CONFIRM] Your seats are confirmed when payment arrives. Use your reference code with any payment. [CONFIRM]
 3. If the payment did not go through, your registration is saved. Try the payment again, or email us for help.
 4. We will email each attendee before the workshop with the room details and anything to prepare. [CONFIRM]
 

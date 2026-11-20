@@ -46,7 +46,7 @@ Every detail in the message must trace to the request column of a row whose shar
 
 ## Data safety
 
-Practice only with the FAKE files; their private column is there to practice leaving it out. With a real log, never paste the private column or any row marked pastor only or do not share: paste only the request column and share level, with names replaced by [NAME 1], [NAME 2] and so on, and only if your church’s AI use policy (Topic 2) allows it.
+Practice only with the FAKE files; their private column is there to practice leaving it out. With a real log, never paste the private column or any row marked pastor only or do not share: paste only whole-church rows, and only the request column and share level, with names replaced by [NAME 1], [NAME 2] and so on and other identifying details (health, children, dates, places) taken out, and only if your church’s AI use policy (Topic 2) allows it.
 
 ## Downloads
 

@@ -1,7 +1,7 @@
 {
   "check": "overflow",
   "target": "built",
-  "ranAt": "2026-11-20T01:54:11.470Z",
+  "ranAt": "2026-11-20T02:20:10.842Z",
   "status": "pass",
   "summary": "208 page states measured, 0 with horizontal scroll",
   "failures": [],

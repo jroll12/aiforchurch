@@ -6,13 +6,13 @@ The handout prompts usually stop Claude from making the mistake live. That is th
 
 ## How to run it
 
-It takes 7 minutes in topics 1 to 3, and 5 minutes in topics 4 to 7, including the habit.
+It takes 7 minutes in topics 1 to 3, and 5 minutes in topics 4 to 7, including the habit. If a topic runs over, the Questions time at the end is the buffer.
 
-1. **Project the draft.** Open the module’s `examples/flawed-draft.md` straight from its file, in a Markdown preview, so the tables read as tables. Do not open the `examples/` folder on screen, and never open the answer key on the projector.
+1. **Project the draft.** Open the module’s flawed draft from the projector folder (see [setup-checklist.md](setup-checklist.md)), in a Markdown preview, so the tables read as tables. Do not open the `examples/` folder on screen, and never open the answer key on the projector.
 2. **Set the task.** Say: this is a draft like the one you just made. It has mistakes in it. Use the checklist at the bottom of your handout and the sample files, and find them.
-3. **Let the room look.** Give them two or three minutes. Pairs work well. Don’t hint.
+3. **Let the room look.** Give them two or three minutes in topics 1 to 3, and 2 minutes at most in topics 4 to 7. Pairs work well. Don’t hint.
 4. **Take answers.** For each one, ask: which line in which sample file shows it? An answer counts when someone can point to the source.
-5. **Reveal.** Read from your printed answer key. Name anything the room missed. Also read the key’s “not mistakes”, so nobody leaves thinking a right line was wrong.
+5. **Reveal.** Read from your printed answer key. Name anything the room missed. In topics 1 to 3, also read the key’s “not mistakes”, so nobody leaves thinking a right line was wrong. In topics 4 to 7, read them only if someone asks.
 6. **Close with the habit.** Read the handout checklist. Each box is true of a correct draft and false of this one.
 
 Keep the answer key printed and face down, or on a second device that is not connected to the projector.
@@ -21,7 +21,7 @@ Keep the answer key printed and face down, or on a second device that is not con
 
 1. **Weekly newsletter:** Bible study still on Tuesday at 9:30 in Fellowship Hall from an old newsletter, an invented car wash time, the lunch room that disagrees with the calendar, an RSVP date with no row in the table, and the food pantry drive left out.
 2. **AI use policy:** “Adopted by the board” when it is a draft, a state law nobody stated, the tabled congregation question written as a rule, the old January review instead of six months, and no open questions list.
-3. **Prayer chain:** Helen’s knee replacement and Ray’s fall from the private column, an invented update on Helen, Walter Price’s prayer-team-only request, an unspoken request from a pastor-only row, and no [CONFIRM] on whether Ray agreed.
+3. **Prayer chain:** Helen’s knee replacement and Ray’s fall from the private column, an invented update on Helen, Walter Price’s prayer-team-only request, an unspoken request from a pastor-only row, “hip” in the card to Ray, every request reworded instead of in the person’s own words, and no [CONFIRM] on whether Ray agreed.
 4. **Event announcements:** the spring tea still on April 18 when the newer email moves it to April 25, the grief group on April 1 (a Wednesday) instead of April 7, and an invented room for youth game night.
 5. **Volunteer reminders:** Greg reminded for April 12 when he swapped with Nora, and Sam guessed into the empty coffee slot on April 19.
 6. **Meeting minutes:** the tabled roof motion recorded as carried 6 to 0, the cleanup vote called unanimous, the third quote handed to Tom with an invented date, an invented date for Linda, Carol’s action item missing, and no [CONFIRM] anywhere.

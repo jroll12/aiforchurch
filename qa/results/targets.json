@@ -1,7 +1,7 @@
 {
   "check": "targets",
   "target": "built",
-  "ranAt": "2026-11-20T01:54:03.038Z",
+  "ranAt": "2026-11-20T02:20:02.238Z",
   "status": "pass",
   "summary": "618 targets measured, 0 below 44px",
   "failures": [],
@@ -2597,7 +2597,7 @@
         {
           "group": "link",
           "el": "a.lnk \"Email the one-page summary to your board\"",
-          "w": 348.8,
+          "w": 348.7,
           "h": 44,
           "ok": true
         }
@@ -2639,7 +2639,7 @@
         {
           "group": "link",
           "el": "a.lnk \"Email the one-page summary to your board\"",
-          "w": 348.8,
+          "w": 348.7,
           "h": 44,
           "ok": true
         }
@@ -2709,7 +2709,7 @@
         {
           "group": "link",
           "el": "a.lnk \"Email the one-page summary to your board\"",
-          "w": 348.8,
+          "w": 348.7,
           "h": 44,
           "ok": true
         }

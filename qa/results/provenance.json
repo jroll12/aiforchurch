@@ -1,9 +1,9 @@
 {
   "check": "provenance",
   "target": "built",
-  "ranAt": "2026-11-20T01:55:38.541Z",
+  "ranAt": "2026-11-20T02:19:06.817Z",
   "status": "pass",
-  "summary": "1288 strings on 15 derived and member pages at 390 and 1440; 0 with no allowed source, 0 placeholders missing from PLACEHOLDERS.md, 23 taken from spec wording (listed for confirmation)",
+  "summary": "1276 strings on 15 derived and member pages at 390 and 1440; 0 with no allowed source, 0 placeholders missing from PLACEHOLDERS.md, 23 taken from spec wording (listed for confirmation)",
   "orphans": [],
   "unlisted": [],
   "specSourced": [
@@ -919,7 +919,6 @@
         "placeholder+design | visible | Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]",
         "design | aria-label | Open menu",
         "design | aria-label | Member",
-        "pattern | aria-label | 0 of 4 steps done",
         "design | title | A church AI use policy | Claude for Church Offices"
       ]
     },
@@ -973,7 +972,6 @@
         "placeholder+design | visible | Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]",
         "design | aria-label | Open menu",
         "design | aria-label | Member",
-        "pattern | aria-label | 0 of 4 steps done",
         "design | title | A church AI use policy | Claude for Church Offices"
       ]
     },
@@ -1012,7 +1010,7 @@
         "course | visible | Permission check.",
         "placeholder+course | visible | Every detail in the message must trace to the request column of a row whose share level allows it. A detail from the private column, from the office note, from a row with a narrower share level, or from nowhere comes out, or is marked [CONFIRM] so someone can ask the person. Then read the final message against the log one row at a time; when the log and Claude’s table disagree, the log wins.",
         "design | visible | Data safety",
-        "placeholder+course | visible | Practice only with the FAKE files; their private column is there to practice leaving it out. With a real log, never paste the private column or any row marked pastor only or do not share: paste only the request column and share level, with names replaced by [NAME 1], [NAME 2] and so on, and only if your church’s AI use policy (Topic 2) allows it.",
+        "placeholder+course | visible | Practice only with the FAKE files; their private column is there to practice leaving it out. With a real log, never paste the private column or any row marked pastor only or do not share: paste only whole-church rows, and only the request column and share level, with names replaced by [NAME 1], [NAME 2] and so on and other identifying details (health, children, dates, places) taken out, and only if your church’s AI use policy (Topic 2) allows it.",
         "design | visible | Downloads",
         "design | visible | Handout (PDF) One page to print or keep.",
         "design | visible | Download",
@@ -1025,7 +1023,6 @@
         "placeholder+design | visible | Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]",
         "design | aria-label | Open menu",
         "design | aria-label | Member",
-        "pattern | aria-label | 0 of 4 steps done",
         "design | title | Prayer chain and care messages, privacy first | Claude for Church Offices"
       ]
     },
@@ -1066,7 +1063,7 @@
         "course | visible | Permission check.",
         "placeholder+course | visible | Every detail in the message must trace to the request column of a row whose share level allows it. A detail from the private column, from the office note, from a row with a narrower share level, or from nowhere comes out, or is marked [CONFIRM] so someone can ask the person. Then read the final message against the log one row at a time; when the log and Claude’s table disagree, the log wins.",
         "design | visible | Data safety",
-        "placeholder+course | visible | Practice only with the FAKE files; their private column is there to practice leaving it out. With a real log, never paste the private column or any row marked pastor only or do not share: paste only the request column and share level, with names replaced by [NAME 1], [NAME 2] and so on, and only if your church’s AI use policy (Topic 2) allows it.",
+        "placeholder+course | visible | Practice only with the FAKE files; their private column is there to practice leaving it out. With a real log, never paste the private column or any row marked pastor only or do not share: paste only whole-church rows, and only the request column and share level, with names replaced by [NAME 1], [NAME 2] and so on and other identifying details (health, children, dates, places) taken out, and only if your church’s AI use policy (Topic 2) allows it.",
         "design | visible | Downloads",
         "design | visible | Handout (PDF) One page to print or keep.",
         "design | visible | Download",
@@ -1079,7 +1076,6 @@
         "placeholder+design | visible | Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]",
         "design | aria-label | Open menu",
         "design | aria-label | Member",
-        "pattern | aria-label | 0 of 4 steps done",
         "design | title | Prayer chain and care messages, privacy first | Claude for Church Offices"
       ]
     },
@@ -1131,7 +1127,6 @@
         "placeholder+design | visible | Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]",
         "design | aria-label | Open menu",
         "design | aria-label | Member",
-        "pattern | aria-label | 0 of 4 steps done",
         "placeholder+approved+design | title | Event announcements from a ministry calendar [CONFIRM] | Claude for Church Offices"
       ]
     },
@@ -1185,7 +1180,6 @@
         "placeholder+design | visible | Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]",
         "design | aria-label | Open menu",
         "design | aria-label | Member",
-        "pattern | aria-label | 0 of 4 steps done",
         "placeholder+approved+design | title | Event announcements from a ministry calendar [CONFIRM] | Claude for Church Offices"
       ]
     },
@@ -1237,7 +1231,6 @@
         "placeholder+design | visible | Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]",
         "design | aria-label | Open menu",
         "design | aria-label | Member",
-        "pattern | aria-label | 0 of 4 steps done",
         "placeholder+approved+design | title | Volunteer schedules and reminder emails [CONFIRM] | Claude for Church Offices"
       ]
     },
@@ -1291,7 +1284,6 @@
         "placeholder+design | visible | Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]",
         "design | aria-label | Open menu",
         "design | aria-label | Member",
-        "pattern | aria-label | 0 of 4 steps done",
         "placeholder+approved+design | title | Volunteer schedules and reminder emails [CONFIRM] | Claude for Church Offices"
       ]
     },
@@ -1343,7 +1335,6 @@
         "placeholder+design | visible | Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]",
         "design | aria-label | Open menu",
         "design | aria-label | Member",
-        "pattern | aria-label | 0 of 4 steps done",
         "placeholder+approved+design | title | Meeting notes into minutes and action items [CONFIRM] | Claude for Church Offices"
       ]
     },
@@ -1397,7 +1388,6 @@
         "placeholder+design | visible | Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]",
         "design | aria-label | Open menu",
         "design | aria-label | Member",
-        "pattern | aria-label | 0 of 4 steps done",
         "placeholder+approved+design | title | Meeting notes into minutes and action items [CONFIRM] | Claude for Church Offices"
       ]
     },
@@ -1446,7 +1436,6 @@
         "placeholder+design | visible | Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]",
         "design | aria-label | Open menu",
         "design | aria-label | Member",
-        "pattern | aria-label | 0 of 4 steps done",
         "placeholder+approved+design | title | Bulletin and slide text from one source [CONFIRM] | Claude for Church Offices"
       ]
     },
@@ -1497,7 +1486,6 @@
         "placeholder+design | visible | Roloff AI, Hendricks County, Indiana. [CONTACT EMAIL]",
         "design | aria-label | Open menu",
         "design | aria-label | Member",
-        "pattern | aria-label | 0 of 4 steps done",
         "placeholder+approved+design | title | Bulletin and slide text from one source [CONFIRM] | Claude for Church Offices"
       ]
     }

@@ -1,7 +1,7 @@
 {
   "check": "flow",
   "target": "built",
-  "ranAt": "2026-11-20T01:54:52.891Z",
+  "ranAt": "2026-11-20T02:20:52.764Z",
   "status": "pass",
   "summary": "35 of 35 flow assertions hold on dist-mock/",
   "failed": [],
@@ -89,8 +89,8 @@
     {
       "name": "Edit: the reference code survives editing",
       "ok": true,
-      "actual": "ENUMXG",
-      "wanted": "ENUMXG"
+      "actual": "77MAJT",
+      "wanted": "77MAJT"
     },
     {
       "name": "Pay: failed send shows the error state and stays on Review",
@@ -121,11 +121,11 @@
       "ok": true,
       "actual": [
         "/__mock/pay/one",
-        "ENUMXG"
+        "77MAJT"
       ],
       "wanted": [
         "/__mock/pay/one",
-        "ENUMXG"
+        "77MAJT"
       ]
     },
     {
@@ -146,7 +146,7 @@
       "name": "Pay: payload carries the reference code and the registration",
       "ok": true,
       "actual": {
-        "ref": "ENUMXG",
+        "ref": "77MAJT",
         "seats": "1",
         "option": "One seat",
         "price": "[SEAT PRICE]",
@@ -165,7 +165,7 @@
         "sentAt": true
       },
       "wanted": {
-        "ref": "ENUMXG",
+        "ref": "77MAJT",
         "seats": "1",
         "option": "One seat",
         "price": "[SEAT PRICE]",
@@ -423,7 +423,7 @@
       "accept": "application/json",
       "contentType": "application/x-www-form-urlencoded;charset=UTF-8",
       "fields": {
-        "ref": "ENUMXG",
+        "ref": "77MAJT",
         "seats": "1",
         "option": "One seat",
         "price": "[SEAT PRICE]",
@@ -435,7 +435,7 @@
         "question": "Bulletins",
         "consent": "yes",
         "payment": "online",
-        "sent_at": "2026-11-20T01:54:42.035Z",
+        "sent_at": "2026-11-20T02:20:41.910Z",
         "_gotcha": ""
       }
     },
@@ -472,7 +472,7 @@
         "question": "Bulletins",
         "consent": "yes",
         "payment": "online",
-        "sent_at": "2026-11-20T01:54:51.845Z",
+        "sent_at": "2026-11-20T02:20:51.728Z",
         "_gotcha": ""
       }
     }

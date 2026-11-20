@@ -42,6 +42,17 @@ To clear a [CONFIRM]:
 
 `npm run check:launch` lists every one still on a page.
 
+## Member area and course placeholders (Stage 5)
+
+The member pages, handout PDFs, facilitator kit and emails are built from course/. Their placeholders are filled in the course files, then `npm run build:downloads` rebuilds the PDFs and zips. `npm run check:launch` reads only the built pages, so it does not see the PDFs or the emails: clear these by hand.
+
+| Placeholder | Where | What to supply | Set in |
+| --- | --- | --- | --- |
+| [FILES LINK] | every handout (and its PDF), emails 3 and 5 | where attendees get the practice files: the Resources page, a shared folder, or printed copies | each course/modules/*/handout.md, course/emails/ |
+| [CONFIRM] on topics 4 to 7 | member Course home, Topics, Resources, the four topic pages (H1 and title) | the real topic names (call C1) | each lesson.md `title:` |
+| [NAME], [REFERENCE CODE], [ORGANIZATION NAME], [SEATS], [TOTAL] | emails | filled per registration by whoever sends the email | course/emails/ |
+| [BOARD PAGE LINK], [ROOM AND ENTRANCE], [PARKING DETAILS] | emails | the board page address once hosted; room and parking facts | course/emails/ |
+
 ## Not placeholders
 
 - **[NAME 1], [NAME 2]:** on the member Topic page for prayer chain messages. They are what attendees are taught to type in place of real names, so they are never filled in.

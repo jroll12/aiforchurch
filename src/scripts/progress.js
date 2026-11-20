@@ -26,7 +26,6 @@ if (list && bar) {
       li.querySelector('.here').hidden = k !== cur;
     });
     const label = `${done} of ${boxes.length} steps done`;
-    bar.setAttribute('aria-label', label);
     bar.querySelector('.pl').textContent = label;
     [...bar.querySelectorAll('.seg i')].forEach((seg, k) => {
       seg.className = boxes[k].checked ? 'd' : k === cur ? 'c' : '';

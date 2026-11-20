@@ -28,7 +28,7 @@ The welcome sits inside the arrival slot, so topic 1 still starts at 9:15. Wheth
 Each topic has the same three parts.
 
 - **The idea:** read “The idea, 5 minutes” from the lesson in your own words. Show the handout’s title and outcome.
-- **The exercise:** run the four steps on the test account on the projector, one step ahead of the room. Attendees do the same steps on their own laptops, pasting the prompts from the handout. Walk the room while they work.
+- **The exercise:** demo each step on the test account on the projector, then walk the room while people do it on their own laptops, pasting the prompts from the handout.
 - **The mistake and the habit:** project the module’s `examples/flawed-draft.md` and run “catch the mistake” as in [flawed-drafts.md](flawed-drafts.md). Close with the habit from the handout checklist.
 
 On the screen, never show a `lesson.md` (its Facilitator notes give the answers) or an `examples/answer-key.md`.
@@ -74,7 +74,7 @@ On the screen, never show a `lesson.md` (its Facilitator notes give the answers)
   - Idea: Claude can add rules nobody decided, or say what the law requires with no source. What they take home is a draft for the board, not a finished policy.
   - Say it plainly: Claude cannot give legal advice. What the law requires is a question for a lawyer, and the policy is for the board to decide.
   - If someone has no staff survey, that is fine. The prompt works with the board notes and the current policy alone.
-- **Attendees:** start a new chat, paste the board notes, staff survey and current computer policy, ask for a draft headed “Draft for board review” with a rules table, move anything unsourced or legal to open questions marked [CONFIRM], then check each row against its source.
+- **Attendees:** start a new chat, paste the board notes, staff survey and current computer policy, ask Claude to list what was decided and what was left open, ask for a draft headed “Draft for board review” with a rules table, move anything unsourced or legal to open questions marked [CONFIRM], then check each row against its source.
 - **On screen:** the handout’s title and outcome; then the test account; then the flawed draft; then the handout’s Decision-line check.
 
 ## 10:15 to 10:45: Topic 3, Prayer chain and care messages, privacy first

@@ -1,7 +1,7 @@
 {
   "check": "launch",
   "target": "built",
-  "ranAt": "2026-11-20T01:55:51.478Z",
+  "ranAt": "2026-11-20T02:20:56.407Z",
   "status": "fail",
   "summary": "not ready to launch: 20 blockers (14 placeholder, 4 service, 1 indexing, 1 member access), 3 warnings",
   "blockers": [

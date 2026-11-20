@@ -15,6 +15,7 @@ The workshop is one week away.
 
 - Date: [DATE]
 - Start time: [START TIME]. We start with sign-in and laptop setup. [CONFIRM]
+- Ends: 12:30 p.m. [CONFIRM]
 - Venue: [VENUE]
 - Room and entrance: [ROOM AND ENTRANCE]
 
@@ -33,6 +34,8 @@ If you need anything to take part, email [CONTACT EMAIL].
 - If your board must approve it, send them the one-page summary.
 
 The summary is here: [BOARD PAGE LINK]
+
+The practice files are here: [FILES LINK]
 
 **Safe by design.** Workshops use invented sample data only. Bring no real names, giving, prayer or child information.
 

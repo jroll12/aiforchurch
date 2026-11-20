@@ -12,7 +12,9 @@ Hello [NAME],
 A short reminder: the workshop is tomorrow.
 
 - Start time: [START TIME]
+- Ends: 12:30 p.m. [CONFIRM]
 - Venue: [VENUE]
+- Room and entrance: [ROOM AND ENTRANCE]
 - Parking: [PARKING DETAILS] [CONFIRM]
 - Bring: a laptop and its charger [CONFIRM]
 
